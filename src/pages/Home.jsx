@@ -102,7 +102,7 @@ export default function Home() {
           <div className="hero__visual">
             <div className="hero__blob" />
             <div className="hero__img">
-              <img src={HeroImg} alt="ChibiWoef" className="hero__emoji" />
+              <img src={HeroImg} alt="ChibiWoef" className="hero__emoji" fetchpriority="high" decoding="async" />
             </div>
           </div>
         </div>
@@ -114,7 +114,7 @@ export default function Home() {
           <div className="about__img-wrap">
             <div className="about__img-bg" />
             <div className="about__img-card">
-              <img src={AboutImg} alt="ChibiWoef" />
+              <img src={AboutImg} alt="ChibiWoef" loading="lazy" decoding="async" />
             </div>
           </div>
           <div>
@@ -162,7 +162,7 @@ export default function Home() {
             {features.map((f) => (
               <div className="feature-card" key={f.title}>
                 <div className="feature-card__icon" style={{ background: f.bg }}>
-                  <img src={f.img} alt="" />
+                  <img src={f.img} alt="" loading="lazy" decoding="async" />
                 </div>
                 <h3 className="feature-card__title">{f.title}</h3>
                 <p className="feature-card__text">{f.text}</p>
