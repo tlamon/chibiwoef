@@ -1,168 +1,87 @@
 import { Link } from "react-router-dom";
 
-const volledigeTrimbeurt = [
+const sizes = [
+  { label: "Klein", sub: "tot 10 kg", example: "Chihuahua, Yorkie, Pom" },
+  { label: "Middel", sub: "10 – 25 kg", example: "Cocker, Beagle, Corgi" },
+  { label: "Groot", sub: "25+ kg", example: "Golden, Husky, Setter" },
+];
+
+const pakketten = [
   {
-    size: "Mini / Klein  (tot 7 kg)",
-    includes:
-      "Wassen, föhnen, borstelen, ras-specifieke knipbeurt, oorreinigen, nagels knippen",
-    price: "€45 – €65",
-    example: "bv. Chihuahua, Yorkshire, Pomeranian",
+    icon: "✂️",
+    name: "Volledig trimmen",
+    desc: "Wassen · föhnen · ras-specifieke knipbeurt · nagels · oren",
+    prices: ["€45 – €60", "€65 – €85", "€90 – €125"],
+    main: true,
   },
   {
-    size: "Middelgroot  (7–18 kg)",
-    includes:
-      "Wassen, föhnen, borstelen, ras-specifieke knipbeurt, oorreinigen, nagels knippen",
-    price: "€65 – €85",
-    example: "bv. Cocker Spaniel, Beagle, Corgi",
+    icon: "🛁",
+    name: "Shampoo & Blowdry",
+    desc: "Wassen · föhnen · borstelen · nagels · oren",
+    prices: ["€30 – €42", "€42 – €58", "€60 – €80"],
+    main: false,
   },
   {
-    size: "Groot  (18–36 kg)",
-    includes:
-      "Wassen, föhnen, borstelen, ras-specifieke knipbeurt, oorreinigen, nagels knippen",
-    price: "€85 – €115",
-    example: "bv. Golden Retriever, Border Collie",
-  },
-  {
-    size: "Extra Groot  (36+ kg)",
-    includes:
-      "Wassen, föhnen, borstelen, ras-specifieke knipbeurt, oorreinigen, nagels knippen",
-    price: "€115 – €150",
-    example: "bv. Berner Sennenhond, Newfoundlander",
+    icon: "🐱",
+    name: "Katverzorging",
+    desc: "Wassen · föhnen · borstelen · nagels knippen",
+    prices: ["€45 – €55", "€55 – €70", "€70+"],
+    main: false,
   },
 ];
 
-const shampooBlowout = [
+const vachtTypes = [
   {
-    size: "Mini / Klein  (tot 7 kg)",
-    includes: "Borstelen, wassen, föhnen, nagels knippen, oorreinigen",
-    price: "€35 – €45",
-    example: "bv. Chihuahua, Yorkshire, Pomeranian",
+    type: "Kortharig / glad",
+    ras: "Labrador, Dachshund, Beagle, Boxer",
+    badge: "Inbegrepen",
+    color: "green",
   },
   {
-    size: "Middelgroot  (7–18 kg)",
-    includes: "Borstelen, wassen, föhnen, nagels knippen, oorreinigen",
-    price: "€45 – €60",
-    example: "bv. Cocker Spaniel, Beagle, Corgi",
+    type: "Langhaar / zacht",
+    ras: "Maltese, Shih Tzu, Lhasa Apso, Havanese",
+    badge: "+€5 – €15",
+    color: "neutral",
   },
   {
-    size: "Groot  (18–36 kg)",
-    includes: "Borstelen, wassen, föhnen, nagels knippen, oorreinigen",
-    price: "€60 – €80",
-    example: "bv. Golden Retriever, Border Collie",
+    type: "Draadhaar / ruw",
+    ras: "Schnauzer, Westie, Fox Terrier, Airedale",
+    badge: "+€8 – €20",
+    color: "neutral",
   },
   {
-    size: "Extra Groot  (36+ kg)",
-    includes: "Borstelen, wassen, föhnen, nagels knippen, oorreinigen",
-    price: "€80 – €100",
-    example: "bv. Berner Sennenhond, Newfoundlander",
-  },
-];
-
-const katVerzorging = [
-  {
-    size: "Korthaar",
-    includes: "Wassen, föhnen, borstelen, nagels knippen",
-    price: "€50",
-    example: "bv. Europese korthaar, Brits korthaar",
+    type: "Krulhaar / pluis",
+    ras: "Poedel, Bichon, Goldendoodle, Labradoodle",
+    badge: "+€10 – €25",
+    color: "orange",
   },
   {
-    size: "Langhaar",
-    includes: "Wassen, föhnen, borstelen, klitten verwijderen, nagels knippen",
-    price: "€65 – €80",
-    example: "bv. Maine Coon, Ragdoll, Pers",
-  },
-  {
-    size: "Leeuwenknip",
-    includes: "Volledig scheerbeurt, wassen, föhnen, nagels knippen",
-    price: "€75 – €95",
-    example: "bv. Pers, Maine Coon, Ragdoll",
+    type: "Zwaar geknopt / verwaarloosd",
+    ras: "Elk ras — extra ontklittijd vereist",
+    badge: "Op aanvraag",
+    color: "red",
   },
 ];
 
-const extras = [
-  {
-    name: "Nagels vijlen",
-    price: "€10",
-    desc: "Gladde afwerking na het knippen",
-  },
-  {
-    name: "Tandenpoetsen",
-    price: "€8",
-    desc: "Speciale tandpasta voor honden",
-  },
-  {
-    name: "Onthaar behandeling",
-    price: "€15 – €35",
-    desc: "Vermindert haaruitval tot 90%",
-  },
-  {
-    name: "Vlo & teek behandeling",
-    price: "€12 – €20",
-    desc: "Medicinale shampoo spoeling",
-  },
-  {
-    name: "Bessen gezichtsmasker",
-    price: "€8",
-    desc: "Antioxidant masker voor het gezicht",
-  },
-  {
-    name: "Pootwax behandeling",
-    price: "€15",
-    desc: "Voedt en beschermt de pootjes",
-  },
-  {
-    name: "Pawdicure",
-    price: "€20",
-    desc: "Knippen + vijlen + verzachtende balsem",
-  },
-  { name: "Bandana / Strik", price: "€4", desc: "Kies je favoriete model" },
+const losseBehandelingen = [
+  { name: "Nagels knippen", price: "€10" },
+  { name: "Nagels knippen + vijlen", price: "€15" },
+  { name: "Oren reinigen", price: "€8" },
+  { name: "Tandenpoetsen", price: "€8" },
+  { name: "Vlo & teek shampoo", price: "€12 – €18" },
+  { name: "Onthaarbehandeling", price: "€15 – €35" },
+  { name: "Pootwax verzorging", price: "€12" },
+  { name: "Pawdicure (knippen + vijlen + balsem)", price: "€20" },
+  { name: "Bandana of strik", price: "€4" },
 ];
 
 const opvang = [
-  { label: "Hondendagopvang (hele dag)", price: "€28 / dag" },
-  { label: "Logeren (per nacht)", price: "€45 / nacht" },
-  { label: "Weekendpakket (vr – zo)", price: "€115" },
-  { label: "Weekpakket (7 nachten)", price: "€275" },
-  { label: "Kattenopvang", price: "€32 / nacht" },
+  { name: "Hondendagopvang (volle dag)", price: "€28 / dag" },
+  { name: "Logeren per nacht", price: "€42 / nacht" },
+  { name: "Weekendpakket (vr – zo)", price: "€110" },
+  { name: "Weekpakket (7 nachten)", price: "€270" },
+  { name: "Kattenopvang", price: "€30 / nacht" },
 ];
-
-function PriceTable({ rows }) {
-  return (
-    <table className="price-table">
-      <thead>
-        <tr>
-          <th>Formaat / Type</th>
-          <th>Inbegrepen</th>
-          <th>Prijs</th>
-        </tr>
-      </thead>
-      <tbody>
-        {rows.map((r) => (
-          <tr key={r.size}>
-            <td>
-              <strong>{r.size}</strong>
-              {r.example && (
-                <span
-                  style={{
-                    display: "block",
-                    fontWeight: "normal",
-                    fontSize: "0.82em",
-                    color: "var(--muted)",
-                    marginTop: "2px",
-                  }}
-                >
-                  {r.example}
-                </span>
-              )}
-            </td>
-            <td>{r.includes}</td>
-            <td style={{ whiteSpace: "nowrap" }}>{r.price}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  );
-}
 
 export default function Tarieven() {
   return (
@@ -171,147 +90,132 @@ export default function Tarieven() {
         <span className="badge">Prijslijst 2026</span>
         <h1 className="page-hero__title">Onze Tarieven</h1>
         <p className="page-hero__sub">
-          Prijzen kunnen variëren afhankelijk van de vachtconditie, het ras en
-          de grootte van jouw hond. We doen altijd een gratis vachtinspectie bij
-          aankomst om de beste service te garanderen. Bij veel knopen of vlooien
-          kunnen wij extra kosten aanrekenen. Hieronder vind je een overzicht
-          van de standaard prijzen per hond. Voor specifieke vragen of een op maat
-          gemaakte offerte, neem gerust contact met ons op! We helpen je graag
-          verder.
+          Prijzen zijn richtprijzen en kunnen variëren op basis van
+          vachtconditie, ras en temperament. Definitieve prijs na gratis
+          vachtinspectie bij aankomst.
         </p>
       </div>
 
       <section className="tarieven">
         <div className="container">
-          {/* Volledige Trimbeurt — Hond */}
-          <div className="price-section">
-            <div className="price-section__header">
-              <span className="price-section__icon">✂️</span>
-              <div>
-                <h2 className="price-section__title">
-                  Volledige Trimbeurt — Hond
+          <div className="menu-wrap">
+            {/* === Grooming pakketten === */}
+            <div className="menu-block">
+              <div className="menu-block__head">
+                <h2 className="menu-block__title">Trim pakketten</h2>
+                <p className="menu-block__sub">
+                  Prijs per formaat van de hond — klein, middel of groot
+                </p>
+              </div>
+              <div className="size-table-wrap">
+                <table className="size-table">
+                  <thead>
+                    <tr>
+                      <th>Behandeling</th>
+                      {sizes.map((g) => (
+                        <th key={g.label}>
+                          {g.label}
+                          <small>{g.sub}</small>
+                          <em>{g.example}</em>
+                        </th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {pakketten.map((p) => (
+                      <tr key={p.name}>
+                        <td>
+                          <strong>{p.name}</strong>
+                          <span className="size-table__desc">{p.desc}</span>
+                        </td>
+                        {p.prices.map((pr, i) => (
+                          <td key={i} className="size-table__price">
+                            {pr}
+                          </td>
+                        ))}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            {/* === Vacht-specifieke toeslagen === */}
+            <div className="menu-block">
+              <div className="menu-block__head">
+                <h2 className="menu-block__title">
+                  Vacht-specifieke toeslagen
                 </h2>
-                <p className="price-section__sub">
-                  Inclusief borstelen, ras-specifieke knipbeurt, nagels knippen,
-                  oorreinigen &amp; tandverzorging
+                <p className="menu-block__sub">
+                  Bovenop de standaardprijs, afhankelijk van het vachttype
                 </p>
               </div>
+              <ul className="menu-list">
+                {vachtTypes.map((v) => (
+                  <li className="menu-row" key={v.type}>
+                    <div>
+                      <span className="menu-row__name">{v.type}</span>
+                      <span className="menu-row__desc">{v.ras}</span>
+                    </div>
+                    <span className="menu-row__price">{v.badge}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
-            <PriceTable rows={volledigeTrimbeurt} />
-            <p className="price-note">
-              * Prijzen kunnen variëren naargelang de vachtstaat, het ras en het
-              temperament van jouw hond. Bij elke afspraak doen we een gratis
-              vachtinspectie.
-            </p>
-          </div>
 
-          {/* Shampoo & Blowdry */}
-          <div className="price-section">
-            <div className="price-section__header">
-              <span className="price-section__icon">🛁</span>
-              <div>
-                <h2 className="price-section__title">
-                  Shampoo &amp; Blowdry — Hond
+            {/* === Los boekbaar === */}
+            <div className="menu-block">
+              <div className="menu-block__head">
+                <h2 className="menu-block__title">
+                  Los boekbare behandelingen
                 </h2>
-                <p className="price-section__sub">
-                  Inclusief borstelen, wassen, föhnen, nagels knippen &amp;
-                  oorreinigen
+                <p className="menu-block__sub">
+                  Apart in te plannen of toe te voegen aan elke beurt
                 </p>
               </div>
+              <ul className="menu-list">
+                {losseBehandelingen.map((b) => (
+                  <li className="menu-row" key={b.name}>
+                    <span className="menu-row__name">{b.name}</span>
+                    <span className="menu-row__price">{b.price}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
-            <PriceTable rows={shampooBlowout} />
-          </div>
 
-          {/* Katverzorging */}
-          <div className="price-section">
-            <div className="price-section__header">
-              <span className="price-section__icon">🐱</span>
-              <div>
-                <h2 className="price-section__title">Katverzorging</h2>
-                <p className="price-section__sub">
-                  Rustige, stressarme verzorging voor jouw poes of kater
+            {/* === Opvang === */}
+            <div className="menu-block">
+              <div className="menu-block__head">
+                <h2 className="menu-block__title">Opvang & Dagopvang</h2>
+                <p className="menu-block__sub">
+                  Liefdevolle begeleide opvang als een tweede thuis
                 </p>
               </div>
+              <ul className="menu-list">
+                {opvang.map((b) => (
+                  <li className="menu-row" key={b.name}>
+                    <span className="menu-row__name">{b.name}</span>
+                    <span className="menu-row__price">{b.price}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
-            <PriceTable rows={katVerzorging} />
-          </div>
 
-          {/* Extra behandelingen */}
-          <div className="price-section">
-            <div className="price-section__header">
-              <span className="price-section__icon">⭐</span>
-              <div>
-                <h2 className="price-section__title">Extra Behandelingen</h2>
-                <p className="price-section__sub">
-                  Voeg een van deze populaire extras toe aan elke grooming beurt
-                </p>
+            {/* CTA */}
+            <div className="cta-banner">
+              <h2 className="cta-banner__title">Klaar om te boeken?</h2>
+              <p className="cta-banner__sub">
+                Plekjes zijn beperkt — plan vandaag nog een afspraak voor jouw
+                kleintje.
+              </p>
+              <div className="cta-banner__actions">
+                <Link to="/contact" className="btn btn-primary">
+                  Afspraak maken →
+                </Link>
+                <a href="tel:+32000000000" className="btn btn-ghost-white">
+                  📞 Bel ons
+                </a>
               </div>
-            </div>
-            <div className="addons-grid">
-              {extras.map((a) => (
-                <div className="addon-card" key={a.name}>
-                  <span className="addon-card__name">{a.name}</span>
-                  <span className="addon-card__price">{a.price}</span>
-                  <span className="addon-card__desc">{a.desc}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Opvang & Dagopvang */}
-          <div className="price-section">
-            <div className="price-section__header">
-              <span className="price-section__icon">🏡</span>
-              <div>
-                <h2 className="price-section__title">Opvang &amp; Dagopvang</h2>
-                <p className="price-section__sub">
-                  Liefdevolle, begeleide opvang als een tweede thuis voor jouw
-                  huisdier
-                </p>
-              </div>
-            </div>
-            <div
-              className="addons-grid"
-              style={{
-                gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))",
-              }}
-            >
-              {opvang.map((b) => (
-                <div
-                  className="addon-card"
-                  key={b.label}
-                  style={{
-                    flexDirection: "row",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                  }}
-                >
-                  <span className="addon-card__name">{b.label}</span>
-                  <span
-                    className="addon-card__price"
-                    style={{ flexShrink: 0, marginLeft: "12px" }}
-                  >
-                    {b.price}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* CTA */}
-          <div className="cta-banner" style={{ margin: "40px 0 0" }}>
-            <h2 className="cta-banner__title">Klaar om te boeken?</h2>
-            <p className="cta-banner__sub">
-              Plekjes zijn beperkt. Boek vandaag nog een afspraak voor jouw
-              kleintje.
-            </p>
-            <div className="cta-banner__actions">
-              <Link to="/contact" className="btn btn-primary">
-                Plan een Afspraak →
-              </Link>
-              <a href="tel:+32000000000" className="btn btn-ghost-white">
-                📞 Bel ons
-              </a>
             </div>
           </div>
         </div>
