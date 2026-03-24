@@ -16,16 +16,16 @@ const pakketten = [
   },
   {
     icon: "🛁",
-    name: "Shampoo & Blowdry",
+    name: "Was & Splash",
     desc: "Wassen · föhnen · borstelen · nagels · oren",
     prices: ["€30 – €42", "€42 – €58", "€60 – €80"],
     main: false,
   },
   {
     icon: "🐱",
-    name: "Katverzorging",
+    name: "Kat verwenbeurt",
     desc: "Wassen · föhnen · borstelen · nagels knippen",
-    prices: ["€45 – €55", "€55 – €70", "€70+"],
+    prices: ["€55"],
     main: false,
   },
 ];
@@ -56,8 +56,8 @@ const furTypes = [
     color: "orange",
   },
   {
-    type: "Zwaar geknopt / verwaarloosd",
-    ras: "Elk ras — extra ontklittijd vereist",
+    type: "Zware klitten / matten",
+    ras: "Elk ras: extra ontklittijd vereist",
     badge: "Op aanvraag",
     color: "red",
   },
@@ -65,10 +65,11 @@ const furTypes = [
 
 const treatments = [
   { name: "Pawdicure: Nagels knippen/vijlen", price: "€10" },
-  { name: "Oren reinigen met ", price: "€8" },
-  { name: "Tandenpoetsen", price: "€8" },
+  { name: "Oren reinigen met reinigingsvloeistof", price: "€8" },
+  { name: "Tandjes poetsen", price: "€8" },
   { name: "Vlooien & teken shampoo", price: "€12" },
-  { name: "Honden | Katten massage 15min", price: "€25" }
+  { name: "Honden | Katten massage 15min", price: "€25" },
+  { name: "Puppy gewenning", price: "gratis" },
 ];
 
 export default function Tarieven() {

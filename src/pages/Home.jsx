@@ -43,7 +43,7 @@ const features = [
     img: PawImg, // ← replace with your icon
     bg: "#EDEAE2",
     title: "Persoonlijke aanpak",
-    text: "We nemen de tijd om jouw hond te leren kennen. Zo weten we precies wat werkt en voelt jouw viervoeter zich altijd op zijn gemak.",
+    text: "We nemen de tijd om jouw hond te leren kennen. Zo krijgt elke woef een eigen dossier. Zo weten we precies hoe we jouw Chibi het best in de watten kunnen leggen.",
   },
 ];
 
@@ -51,15 +51,15 @@ const services = [
   {
     slug: "groom",
     icon: "✂️",
-    title: "Trim & Grooming",
-    text: "Van een uitgebreide wasbeurt en ras-specifieke knipbeurt tot nagelknippen en oorreinigen. Jouw hond stapt er fris en prachtig uit.",
+    title: "Volledige trimbeurt",
+    text: "Uitgebreide was en schuimbeurt, knippen en/of plukken, nageltjes, oortjes, tandjes.. Check! Jouw hond verlaat het salon zo glanzend dat andere honden er jaloers van gaan blaffen.",
     theme: "groom",
   },
   {
     slug: "vet",
     icon: "🛁",
-    title: "Bad & Blowdry",
-    text: "Een heerlijke shampoobeurt met een warming brush finish. Perfect als tussendoor behandeling om de vacht fris en glanzend te houden.",
+    title: "Was & Splash",
+    text: "Een heerlijke shampoo, even uitwaaien onder de fohn en lekker borstelen. Nageltjes niet vergeten. Perfect als tussendoor behandeling om de vacht fris en glanzend te houden.",
     theme: "vet",
   },
   {
