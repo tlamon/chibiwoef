@@ -6,6 +6,7 @@ import PawImg from "../assets/paw.png";
 import CombImg from "../assets/comb.png";
 import ScissorsImg from "../assets/scissors.png";
 import HairdryerImg from "../assets/hairdryer.png";
+import HeartImg from "../assets/heart.png";
 
 const features = [
   {
@@ -129,6 +130,12 @@ export default function Home() {
               src={CombImg}
               alt=""
               className="hero__float hero__float--paw"
+              aria-hidden="true"
+            />
+            <img
+              src={HeartImg}
+              alt=""
+              className="hero__float hero__float--heart"
               aria-hidden="true"
             />
           </div>

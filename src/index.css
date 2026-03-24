@@ -248,11 +248,17 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.15; color: var
     bottom: 20%;
     left: 6%;
     transform: rotate(-60deg);}
+.hero__float--heart    {
+    width: 30px;
+    top: 20%;
+    left: 13%;
+    transform: rotate(-10deg);}
 
 @media (max-width: 900px) {
   .hero__float--scissors { width: 52px; }
   .hero__float--pom      { width: 60px; }
   .hero__float--paw      { width: 42px; }
+  .hero__float--heart    { width: 38px; }
 }
 
 @media (max-width: 900px) {
