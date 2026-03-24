@@ -3,6 +3,9 @@ import HeroImg from "../assets/shiba.png";
 import AboutImg from "../assets/maltipoo.jpg";
 // Feature card images — swap each one for your own PNG
 import PawImg from "../assets/paw.png";
+import CombImg from "../assets/comb.png";
+import ScissorsImg from "../assets/scissors.png";
+import HairdryerImg from "../assets/hairdryer.png";
 
 const features = [
   {
@@ -77,7 +80,7 @@ export default function Home() {
             <div className="hero__badge">
               Chibi = klein & lief • Woef = <span className="emoji">🐶</span>
             </div>
-            <h1 className="hero__title">Chibi woef ♡</h1>
+            <h1 className="hero__title">Chibi woef</h1>
             <h2 className="hero__subtitle">
               Nieuw honden trimsalon in Haacht in het najaar van 2026
             </h2>
@@ -110,6 +113,24 @@ export default function Home() {
                 decoding="async"
               />
             </div>
+            <img
+              src={ScissorsImg}
+              alt=""
+              className="hero__float hero__float--scissors"
+              aria-hidden="true"
+            />
+            <img
+              src={HairdryerImg}
+              alt=""
+              className="hero__float hero__float--pom"
+              aria-hidden="true"
+            />
+            <img
+              src={CombImg}
+              alt=""
+              className="hero__float hero__float--paw"
+              aria-hidden="true"
+            />
           </div>
         </div>
       </section>
