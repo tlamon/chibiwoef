@@ -92,7 +92,7 @@ export default function Home() {
               <Link to="/contact" className="btn btn-primary">
                 Plan een afspraak →
               </Link>
-              <Link to="/pricelist" className="btn btn-secondary">
+              <Link to="/tarieven" className="btn btn-secondary">
                 Bekijk tarieven
               </Link>
             </div>
@@ -203,7 +203,7 @@ export default function Home() {
                 <div className="service-card__body">
                   <h3 className="service-card__title">{s.title}</h3>
                   <p className="service-card__text">{s.text}</p>
-                  <Link to="/pricelist" className="service-card__link">
+                  <Link to="/tarieven" className="service-card__link">
                     Bekijk tarieven →
                   </Link>
                 </div>

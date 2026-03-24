@@ -6,21 +6,23 @@ export default function Footer() {
       <div className="container">
         <div className="footer__grid">
           <div>
-            <div className="footer__brand">🐾 Paws &amp; Whiskers Pet Care</div>
+            <div className="footer__brand">♥ Chibi Woef</div>
             <p className="footer__tagline">
-              Caring for your furry, feathered, and scaly family members with
-              love and expertise since 2012.
+              Zorg voor je harige vriendjes met liefde en expertise sinds 2026.
             </p>
           </div>
 
           <div>
-            <div className="footer__heading">Pages</div>
+            <div className="footer__heading">Pagina's</div>
             <ul className="footer__links">
               <li>
                 <Link to="/">Home</Link>
               </li>
               <li>
                 <Link to="/tarieven">Tarieven</Link>
+              </li>
+              <li>
+                <Link to="/huisregels">Huisregels</Link>
               </li>
               <li>
                 <Link to="/contact">Plan een afspraak</Link>
@@ -32,20 +34,18 @@ export default function Footer() {
             <div className="footer__heading">Contact</div>
             <ul className="footer__links">
               <li>
-                <a href="tel:+15551234567">📞 (555) 123-4567</a>
+                <a href="tel:0496/309.459">📞 0496/309.459</a>
               </li>
               <li>
-                <a href="mailto:hello@pawsandwhiskers.com">
-                  ✉️ hello@pawsandwhiskers.com
-                </a>
+                <a href="mailto:hello@chibiwoef.com">✉️ hello@chibiwoef.com</a>
               </li>
-              <li>📍 123 Maple Street, Portland, OR 97201</li>
+              <li>📍 Haacht</li>
             </ul>
           </div>
         </div>
 
         <div className="footer__bottom">
-          <span>© 2026 Paws &amp; Whiskers Pet Care. All rights reserved.</span>
+          <span>© 2026 Chibi Woef. All rights reserved.</span>
           <span className="footer__paw">🐾</span>
         </div>
       </div>

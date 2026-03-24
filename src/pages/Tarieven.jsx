@@ -168,11 +168,16 @@ export default function Tarieven() {
   return (
     <main>
       <div className="page-hero">
-        <span className="badge">Eerlijke & Transparante Prijzen</span>
+        <span className="badge">Prijslijst 2026</span>
         <h1 className="page-hero__title">Onze Tarieven</h1>
         <p className="page-hero__sub">
-          Geen verrassingen, geen verborgen kosten. Elke prijs is inclusief een
-          gratis vachtinspectie en persoonlijk advies.
+          Prijzen kunnen variëren afhankelijk van de vachtconditie, het ras en
+          de grootte van jouw hond. We doen altijd een gratis vachtinspectie bij
+          aankomst om de beste service te garanderen. Bij veel knopen of vlooien
+          kunnen wij extra kosten aanrekenen. Hieronder vind je een overzicht
+          van de standaard prijzen per hond. Voor specifieke vragen of een op maat
+          gemaakte offerte, neem gerust contact met ons op! We helpen je graag
+          verder.
         </p>
       </div>
 

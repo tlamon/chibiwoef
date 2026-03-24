@@ -16,6 +16,7 @@
   --ocre-dark: #d9b382;
   --charcoal: #2E2B28;
   --charcoal: #4e321f;
+  --brown-light: #c09e85;
   --brown-dark: #4e321f;
   --muted: #7D6E65;
   --white: #FFFFFF;
@@ -157,10 +158,10 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.15; color: var
 }
 
 /* FOOTER */
-.footer { background: var(--charcoal); color: rgba(255,255,255,0.65); padding: 56px 0 28px; }
+.footer { background: var(--brown-light); color: var(--white); padding: 56px 0 28px; }
 .footer__grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
 .footer__brand { font-family: var(--font-heading); font-size: 20px; color: var(--white); margin-bottom: 10px; }
-.footer__tagline { font-size: 14px; line-height: 1.75; max-width: 270px; }
+.footer__tagline { font-size: 20px; line-height: 2rem; max-width: 270px; font-family: var(--font-zen); letter-spacing: 0.06rem; font-weight: 700;}
 .footer__heading { font-family: var(--font-body); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--white); margin-bottom: 16px; }
 .footer__links { list-style: none; display: flex; flex-direction: column; gap: 8px; }
 .footer__links a, .footer__links li { font-size: 14px; transition: var(--transition); }
@@ -337,6 +338,13 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.15; color: var
 .addon-card__name { font-weight: 600; font-size: 15px; }
 .addon-card__price { color: var(--teal-dark); font-weight: 700; font-size: 18px; }
 .addon-card__desc { font-size: 13px; color: var(--muted); }
+
+/* 404 */
+.not-found { display: flex; align-items: center; justify-content: center; padding: 80px 24px; }
+.not-found__inner { text-align: center; max-width: 440px; display: flex; flex-direction: column; align-items: center; gap: 24px; }
+.not-found__code { font-size: clamp(72px, 15vw, 120px); color: var(--teal-dark); line-height: 1; margin: 0; }
+.not-found__meme { width: 100%; max-width: 360px; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); }
+.not-found__msg { font-size: 18px; color: var(--muted); }
 
 /* CONTACT */
 .contact { padding: 64px 0 80px; }
