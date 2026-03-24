@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
-import logoText from "../assets/logo-text.png";
+import logoImg from "../assets/logo.png";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -10,7 +10,13 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="navbar__inner">
         <Link to="/" className="navbar__logo" onClick={close}>
-          <img src={logoText} alt="ChibiWoef" className="logo-text" />
+          <img src={logoImg} alt="Chibi Woef" className="logo-img" />
+          <h3 className="logo-text">
+            Chibi Woef <br />{" "}
+            <span>
+              hondentrimsalon<small>♡</small>
+            </span>
+          </h3>
         </Link>
 
         <button

@@ -30,7 +30,7 @@ const pakketten = [
   },
 ];
 
-const vachtTypes = [
+const furTypes = [
   {
     type: "Kortharig / glad",
     ras: "Labrador, Dachshund, Beagle, Boxer",
@@ -63,24 +63,12 @@ const vachtTypes = [
   },
 ];
 
-const losseBehandelingen = [
-  { name: "Nagels knippen", price: "€10" },
-  { name: "Nagels knippen + vijlen", price: "€15" },
-  { name: "Oren reinigen", price: "€8" },
+const treatments = [
+  { name: "Pawdicure: Nagels knippen/vijlen", price: "€10" },
+  { name: "Oren reinigen met ", price: "€8" },
   { name: "Tandenpoetsen", price: "€8" },
-  { name: "Vlo & teek shampoo", price: "€12 – €18" },
-  { name: "Onthaarbehandeling", price: "€15 – €35" },
-  { name: "Pootwax verzorging", price: "€12" },
-  { name: "Pawdicure (knippen + vijlen + balsem)", price: "€20" },
-  { name: "Bandana of strik", price: "€4" },
-];
-
-const opvang = [
-  { name: "Hondendagopvang (volle dag)", price: "€28 / dag" },
-  { name: "Logeren per nacht", price: "€42 / nacht" },
-  { name: "Weekendpakket (vr – zo)", price: "€110" },
-  { name: "Weekpakket (7 nachten)", price: "€270" },
-  { name: "Kattenopvang", price: "€30 / nacht" },
+  { name: "Vlooien & teken shampoo", price: "€12" },
+  { name: "Honden | Katten massage 15min", price: "€25" }
 ];
 
 export default function Tarieven() {
@@ -151,7 +139,7 @@ export default function Tarieven() {
                 </p>
               </div>
               <ul className="menu-list">
-                {vachtTypes.map((v) => (
+                {furTypes.map((v) => (
                   <li className="menu-row" key={v.type}>
                     <div>
                       <span className="menu-row__name">{v.type}</span>
@@ -174,25 +162,7 @@ export default function Tarieven() {
                 </p>
               </div>
               <ul className="menu-list">
-                {losseBehandelingen.map((b) => (
-                  <li className="menu-row" key={b.name}>
-                    <span className="menu-row__name">{b.name}</span>
-                    <span className="menu-row__price">{b.price}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* === Opvang === */}
-            <div className="menu-block">
-              <div className="menu-block__head">
-                <h2 className="menu-block__title">Opvang & Dagopvang</h2>
-                <p className="menu-block__sub">
-                  Liefdevolle begeleide opvang als een tweede thuis
-                </p>
-              </div>
-              <ul className="menu-list">
-                {opvang.map((b) => (
+                {treatments.map((b) => (
                   <li className="menu-row" key={b.name}>
                     <span className="menu-row__name">{b.name}</span>
                     <span className="menu-row__price">{b.price}</span>
