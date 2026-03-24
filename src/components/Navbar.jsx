@@ -48,7 +48,8 @@ export default function Navbar() {
               >
                 Tarieven
               </NavLink>
-            </li>            <li>
+            </li>{" "}
+            <li>
               <NavLink
                 to="/huisregels"
                 className={({ isActive }) =>
@@ -58,7 +59,8 @@ export default function Navbar() {
               >
                 Huisregels
               </NavLink>
-            </li>            <li>
+            </li>{" "}
+            <li>
               <NavLink
                 to="/contact"
                 className={({ isActive }) =>

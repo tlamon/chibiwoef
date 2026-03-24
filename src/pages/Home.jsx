@@ -77,14 +77,14 @@ export default function Home() {
             <div className="hero__badge">
               Chibi = klein & lief • Woef = <span className="emoji">🐶</span>
             </div>
-            <h1 className="hero__title">
-              Chibi
-              <span className="strawberry-font">woef</span>
-            </h1>
-            <h2 className="sunny-font">Honden kapsalon in Haacht sinds 2026</h2>
-            <p className="hero__subtitle">
+            <h1 className="hero__title">Chibi woef ♡</h1>
+            <h2 className="hero__subtitle">
+              Nieuw honden trimsalon in Haacht in het najaar van 2026
+            </h2>
+            <br />
+            <p className="hero__text">
               <em>Chibi</em> (ちび) is Japans voor klein, schattig en dierbaar.
-              Woef spreekt voor zich. Bij ChibiWoef behandelen we jouw hond
+              Woef spreekt voor zich. Bij Chibi Woef behandelen we jouw hond
               zoals wij onze eigen kleintjes behandelen, want voor ons zijn het
               echte kindjes.
             </p>
@@ -102,7 +102,13 @@ export default function Home() {
           <div className="hero__visual">
             <div className="hero__blob" />
             <div className="hero__img">
-              <img src={HeroImg} alt="ChibiWoef" className="hero__emoji" fetchpriority="high" decoding="async" />
+              <img
+                src={HeroImg}
+                alt="ChibiWoef"
+                className="hero__emoji"
+                fetchpriority="high"
+                decoding="async"
+              />
             </div>
           </div>
         </div>
@@ -114,14 +120,17 @@ export default function Home() {
           <div className="about__img-wrap">
             <div className="about__img-bg" />
             <div className="about__img-card">
-              <img src={AboutImg} alt="ChibiWoef" loading="lazy" decoding="async" />
+              <img
+                src={AboutImg}
+                alt="ChibiWoef"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
           </div>
           <div>
             <p className="about__label">Wie of wat is Chibi?</p>
-            <h2 className="about__title sunny-font">
-              Chibi = klein, lief & dierbaar
-            </h2>
+            <h2 className="about__title">Chibi = klein, lief & dierbaar</h2>
             <p className="about__text">
               <em>Chibi</em> (ちび) komt uit het Japans en betekent zoiets als
               "klein en schattig" of "kleintje". Het is een koosnaampje dat we
@@ -134,7 +143,7 @@ export default function Home() {
               geduld en echte aandacht wordt verzorgd.
             </p>
             <p className="about__text">
-              ChibiWoef is een nieuw trimsalon, klein van opzet maar groot van
+              Chibi Woef is een nieuw trimsalon, klein van opzet maar groot van
               hart. We zijn net gestart en leren nog elke dag. Kom gerust eens
               snuffelen. Wij kijken er naar uit om jouw chibi te ontmoeten!
             </p>
@@ -152,8 +161,8 @@ export default function Home() {
       {/* ── Why Choose Us ── */}
       <section className="features">
         <div className="container text-center">
-          <span className="badge">Waarom ChibiWoef?</span>
-          <h2 className="section-heading sunny-font">Wat we doen?</h2>
+          <span className="badge">Waarom Chibi Woef? 🐾</span>
+          <h2 className="section-heading">Wat we doen?</h2>
           <p className="section-sub">
             We staan voor vakmanschap, rust en een oprechte liefde voor honden.
             Dat merk je vanaf het eerste moment.
@@ -161,7 +170,10 @@ export default function Home() {
           <div className="features__grid">
             {features.map((f) => (
               <div className="feature-card" key={f.title}>
-                <div className="feature-card__icon" style={{ background: f.bg }}>
+                <div
+                  className="feature-card__icon"
+                  style={{ background: f.bg }}
+                >
                   <img src={f.img} alt="" loading="lazy" decoding="async" />
                 </div>
                 <h3 className="feature-card__title">{f.title}</h3>
@@ -175,7 +187,7 @@ export default function Home() {
       {/* ── Services ── */}
       <section className="services">
         <div className="container text-center">
-          <span className="badge">Wat we doen</span>
+          <span className="badge">Wat we doen ♥</span>
           <h2 className="section-heading">onze diensten</h2>
           <p className="section-sub">
             Van een uitgebreide trimbeurt tot een snelle wasbeurt of kleine
