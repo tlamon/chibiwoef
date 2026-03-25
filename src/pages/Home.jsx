@@ -9,6 +9,7 @@ import HairdryerImg from "../assets/hairdryer.png";
 import HeartImg from "../assets/heart.png";
 import BadImg from "../assets/was-splash.png";
 import massageImg from "../assets/massage.png";
+import brushingImg from "../assets/brushing.png";
 
 const features = [
   {
@@ -52,7 +53,7 @@ const features = [
 const services = [
   {
     slug: "groom",
-    img: ScissorsImg,
+    img: brushingImg,
     title: "Volledige trimbeurt",
     text: "Uitgebreide was en schuimbeurt, knippen en/of plukken, nageltjes, oortjes, tandjes.. Check! Jouw hond verlaat het salon zo glanzend dat andere honden er jaloers van gaan blaffen.",
     theme: "groom",
@@ -68,7 +69,7 @@ const services = [
     slug: "board",
     img: massageImg,
     title: "Massage",
-    text: "Geef jouw hond of kat een zachte en warme massage. Dit is niet alleen ontspannend, maar stimuleert ook de bloedcirculatie en bevordert een gezonde vacht. Perfect voor oudere of gespannen honden/katten of dieren die aan artritis lijden.",
+    text: "Geef jouw hond of kat een zachte en warme massage. Dit is niet alleen ontspannend, maar stimuleert ook de bloedcirculatie en bevordert een gezonde vacht. Perfect voor gespannen of oudere dieren die aan artritis lijden.",
     theme: "board",
   },
 ];
