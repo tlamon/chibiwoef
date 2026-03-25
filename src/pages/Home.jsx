@@ -7,6 +7,8 @@ import CombImg from "../assets/comb.png";
 import ScissorsImg from "../assets/scissors.png";
 import HairdryerImg from "../assets/hairdryer.png";
 import HeartImg from "../assets/heart.png";
+import BadImg from "../assets/was-splash.png";
+import massageImg from "../assets/massage.png";
 
 const features = [
   {
@@ -50,23 +52,23 @@ const features = [
 const services = [
   {
     slug: "groom",
-    icon: "✂️",
+    img: ScissorsImg,
     title: "Volledige trimbeurt",
     text: "Uitgebreide was en schuimbeurt, knippen en/of plukken, nageltjes, oortjes, tandjes.. Check! Jouw hond verlaat het salon zo glanzend dat andere honden er jaloers van gaan blaffen.",
     theme: "groom",
   },
   {
     slug: "vet",
-    icon: "🛁",
+    img: BadImg,
     title: "Was & Splash",
     text: "Een heerlijke shampoo, even uitwaaien onder de fohn en lekker borstelen. Nageltjes niet vergeten. Perfect als tussendoor behandeling om de vacht fris en glanzend te houden.",
     theme: "vet",
   },
   {
     slug: "board",
-    icon: "💅",
-    title: "Kleine behandelingen",
-    text: "Alleen nagels knippen, oren reinigen of een tandenborstelbeurt nodig? We helpen je snel en vakkundig zonder vaste afspraak voor grote beurten.",
+    img: massageImg,
+    title: "Massage",
+    text: "Geef jouw hond of kat een heerlijk zachte en warme massage. Dit is niet alleen ontspannend, maar stimuleert ook de bloedcirculatie en bevordert een gezonde vacht. Perfect voor oudere of gespannen honden/katten of diegene die aan artritis leiden.",
     theme: "board",
   },
 ];
@@ -123,7 +125,7 @@ export default function Home() {
             <img
               src={HairdryerImg}
               alt=""
-              className="hero__float hero__float--pom"
+              className="hero__float hero__float--dryer"
               aria-hidden="true"
             />
             <img
@@ -227,7 +229,9 @@ export default function Home() {
                 className={`service-card service-card--${s.theme}`}
                 key={s.slug}
               >
-                <div className="service-card__thumb">{s.icon}</div>
+                <div className="service-card__thumb">
+                  <img src={s.img} alt="" loading="lazy" decoding="async" />
+                </div>
                 <div className="service-card__body">
                   <h3 className="service-card__title">{s.title}</h3>
                   <p className="service-card__text">{s.text}</p>

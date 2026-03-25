@@ -33,7 +33,7 @@
   --radius-pill: 100px;
   --font-heading: 'Balsamiq Sans', sans-serif;
   --font-subtitle: 'Gochi Hand', cursive;
-  --font-zen: 'Zen Loop', cursive;
+  --font-zen: 'Zen Loop', Avenir, 'Century Gothic', Futura, system-ui, sans-serif;
   --font-body: 'Avenir Next', Avenir, 'Century Gothic', Futura, system-ui, sans-serif;
   --transition: all 0.22s ease;
   --max-width: 1140px;
@@ -139,7 +139,7 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.15; color: var
 }
 .navbar__logo .logo-text span {
   font-family: var(--font-zen);
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.11rem;
   font-size: 1.7rem;
     padding-left: 3px;
 }
@@ -239,8 +239,8 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.15; color: var
     top: 1%;
     right: 16%;
     transform: rotate(10deg); }
-.hero__float--pom      {
-    width: 120px;
+.hero__float--dryer      {
+    width: 130px;
     bottom: 20%;
     right: 0;}
 .hero__float--paw      {
@@ -256,7 +256,7 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.15; color: var
 
 @media (max-width: 900px) {
   .hero__float--scissors { width: 52px; }
-  .hero__float--pom      { width: 60px; }
+  .hero__float--dryer      { width: 60px; }
   .hero__float--paw      { width: 42px; }
   .hero__float--heart    { width: 38px; }
 }
@@ -333,7 +333,8 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.15; color: var
 .services__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px; }
 .service-card { border-radius: var(--radius-xl); overflow: hidden; background: var(--white); box-shadow: var(--shadow-sm); transition: var(--transition); display: flex; flex-direction: column; }
 .service-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
-.service-card__thumb { background: var(--teal-light); padding: 36px; display: flex; align-items: center; justify-content: center; font-size: 60px; min-height: 155px; }
+.service-card__thumb { background: var(--teal-light); display: flex; align-items: center; justify-content: center; min-height: 155px; }
+.service-card__thumb img { object-fit: contain; }
 .service-card--vet .service-card__thumb   { background: #F0E4D8; }
 .service-card--board .service-card__thumb { background: #DCE8D4; }
 .service-card__body { padding: 24px; flex: 1; display: flex; flex-direction: column; }
