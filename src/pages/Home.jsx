@@ -68,7 +68,7 @@ const services = [
     slug: "board",
     img: massageImg,
     title: "Massage",
-    text: "Geef jouw hond of kat een heerlijk zachte en warme massage. Dit is niet alleen ontspannend, maar stimuleert ook de bloedcirculatie en bevordert een gezonde vacht. Perfect voor oudere of gespannen honden/katten of diegene die aan artritis leiden.",
+    text: "Geef jouw hond of kat een heerlijk zachte en warme massage. Dit is niet alleen ontspannend, maar stimuleert ook de bloedcirculatie en bevordert een gezonde vacht. Perfect voor oudere of gespannen honden/katten of dieren die aan artritis lijden.",
     theme: "board",
   },
 ];
