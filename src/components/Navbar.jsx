@@ -74,7 +74,7 @@ export default function Navbar() {
                 }
                 onClick={close}
               >
-                Plan een afspraak
+                Contact
               </NavLink>
             </li>
           </ul>

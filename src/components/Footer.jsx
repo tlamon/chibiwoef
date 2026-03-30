@@ -8,7 +8,7 @@ export default function Footer() {
           <div>
             <div className="footer__brand">♥ Chibi Woef</div>
             <p className="footer__tagline">
-              Zorg voor je harige vriendjes met liefde en expertise sinds 2026.
+              Zorg voor jouw fluffy vriendjes met liefde en begrip sinds 2026.
             </p>
           </div>
 
@@ -25,7 +25,7 @@ export default function Footer() {
                 <Link to="/huisregels">Huisregels</Link>
               </li>
               <li>
-                <Link to="/contact">Plan een afspraak</Link>
+                <Link to="/contact">Contact</Link>
               </li>
             </ul>
           </div>

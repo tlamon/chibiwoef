@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 import HeroImg from "../assets/shiba.png";
 import AboutImg from "../assets/maltipoo.jpg";
-// Feature card images — swap each one for your own PNG
-import PawImg from "../assets/paw.png";
+import PawImg from "../assets/paw.svg";
 import CombImg from "../assets/comb.png";
 import ScissorsImg from "../assets/scissors.png";
 import HairdryerImg from "../assets/hairdryer.png";
@@ -10,43 +9,33 @@ import HeartImg from "../assets/heart.png";
 import BadImg from "../assets/was-splash.png";
 import massageImg from "../assets/massage.png";
 import brushingImg from "../assets/brushing.png";
+import MobileImg from "../assets/mobile.png";
+import PugPhoneImg from "../assets/pug-phone.png";
 
 const features = [
   {
-    img: PawImg, // ← replace with your icon
+    img: PawImg,
     bg: "#D8E0D0",
     title: "Vakkundige verzorging",
-    text: "Met een professionele trimmersopleiding op zak gaan we vol passie aan de slag. Jouw hond verdient het allerbeste — en dat leveren we.",
+    text: "Met professionele trimmersopleiding op zak gaan we vol passie aan de slag. Jouw hondje verdient het allerbeste.",
   },
   {
-    img: PawImg, // ← replace with your icon
+    img: PawImg,
     bg: "#F5F0EB",
     title: "Natuurlijke producten",
     text: "We werken uitsluitend met hypoallergene, diervriendelijke shampoos en verzorgingsproducten. Zacht voor de huid, geweldig voor de vacht.",
   },
   {
-    img: PawImg, // ← replace with your icon
+    img: PawImg,
     bg: "#EDEAE2",
-    title: "Rustige, huiselijke sfeer",
-    text: "Geen drukke kennel, maar een fijne salon waar jouw hond zich meteen thuis voelt. Stressvrij, warm en persoonlijk.",
+    title: "Rustige, warme sfeer",
+    text: "Hier draait alles om comfort en ontspanning. We creëren een stressvrije omgeving waar jouw hond zich veilig en geliefd voelt.",
   },
   {
-    img: PawImg, // ← replace with your icon
-    bg: "#D8E0D0",
-    title: "Alle rassen welkom",
-    text: "Van kleine Chihuahua tot grote Berner Sennenhond — elk ras en elk karakter krijgt de aandacht en aanpak die het verdient.",
-  },
-  {
-    img: PawImg, // ← replace with your icon
-    bg: "#F9E8E2",
-    title: "Makkelijk afspraak maken",
-    text: "In een paar klikken een afspraak inplannen. Je ontvangt een bevestiging en herinnering zodat je nooit een beurt mist.",
-  },
-  {
-    img: PawImg, // ← replace with your icon
+    img: PawImg,
     bg: "#EDEAE2",
     title: "Persoonlijke aanpak",
-    text: "We nemen de tijd om jouw hond te leren kennen. Zo krijgt elke woef een eigen dossier. Zo weten we precies hoe we jouw Chibi het best in de watten kunnen leggen.",
+    text: "We nemen de tijd om jouw hond te leren kennen. Zo krijgt elke woef een eigen dossier. Zo weten we precies hoe we jouw trouwe viervoeter het best in de watten kunnen leggen. Want elke chibi is uniek!",
   },
 ];
 
@@ -55,7 +44,7 @@ const services = [
     slug: "groom",
     img: brushingImg,
     title: "Volledige trimbeurt",
-    text: "Uitgebreide was en schuimbeurt, knippen en/of plukken, nageltjes, oortjes, tandjes.. Check! Jouw hond verlaat het salon zo glanzend dat andere honden er jaloers van gaan blaffen.",
+    text: "Uitgebreide was en schuimbeurt, knippen en/of plukken, nageltjes, oortjes, tandjes.. Check! Jouw woef verlaat het salon zo glanzend dat andere honden jaloers gaan blaffen.",
     theme: "groom",
   },
   {
@@ -77,7 +66,6 @@ const services = [
 export default function Home() {
   return (
     <main>
-      {/* ── Hero ── */}
       <section className="hero">
         <div className="hero__inner">
           <div>
@@ -86,18 +74,17 @@ export default function Home() {
             </div>
             <h1 className="hero__title">Chibi woef</h1>
             <h2 className="hero__subtitle">
-              Nieuw honden trimsalon in Haacht in het najaar van 2026
+              Zorg voor jouw fluffy vriendjes met liefde en begrip.
             </h2>
             <br />
             <p className="hero__text">
-              <em>Chibi</em> (ちび) is Japans voor klein, schattig en dierbaar.
-              Woef spreekt voor zich. Bij Chibi Woef behandelen we jouw hond
-              zoals wij onze eigen kleintjes behandelen, want voor ons zijn het
-              echte kindjes.
+              Hi! Zoek je nog een warme, rustige plek om jouw hond te laten
+              trimmen en verzorgen? Wij gaan open in Haacht in het najaar van
+              2026.
             </p>
             <div className="hero__actions">
               <Link to="/contact" className="btn btn-primary">
-                Plan een afspraak →
+                Plan een afspraak
               </Link>
               <Link to="/tarieven" className="btn btn-secondary">
                 Bekijk tarieven
@@ -160,7 +147,7 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <p className="about__label">Wie of wat is Chibi?</p>
+            <span className="badge">Wie of wat is Chibi?</span>
             <h2 className="about__title">Chibi = klein, lief & dierbaar</h2>
             <p className="about__text">
               <em>Chibi</em> (ちび) komt uit het Japans en betekent zoiets als
@@ -183,20 +170,27 @@ export default function Home() {
               className="btn btn-primary"
               style={{ marginTop: "28px" }}
             >
-              Plan een afspraak →
+              Contacteer mij →
             </Link>
           </div>
         </div>
       </section>
 
-      {/* ── Why Choose Us ── */}
       <section className="features">
         <div className="container text-center">
           <span className="badge">Waarom Chibi Woef? 🐾</span>
-          <h2 className="section-heading">Wat we doen?</h2>
+          <h2 className="section-heading">Wie ik ben</h2>
           <p className="section-sub">
-            We staan voor vakmanschap, rust en een oprechte liefde voor honden.
-            Dat merk je vanaf het eerste moment.
+            Dieren zijn voor mij altijd een constante geweest; een bron van
+            onvoorwaardelijke liefde en troost die ik vaak makkelijker bij hen
+            vond dan bij mensen. Ze leren me elke dag hoe waardevol het is om
+            simpelweg in het 'nu' te leven. Wat begon als het verzorgen van mijn
+            eigen honden, groeide uit tot een diepe passie die ik nu mag
+            omzetten in mijn beroep. Tijdens mijn opleiding bij Toscanzahoeve
+            leer ik de fijne knepen van het vak, zodat ik in het najaar van 2026
+            de deuren van Chibi Woef kan openen. <br />
+            Een plek waar rust, begrip en oprechte zorg voor jouw viervoeter
+            centraal staan.
           </p>
           <div className="features__grid">
             {features.map((f) => (
@@ -218,11 +212,11 @@ export default function Home() {
       {/* ── Services ── */}
       <section className="services">
         <div className="container text-center">
-          <span className="badge">Wat we doen ♥</span>
-          <h2 className="section-heading">onze diensten</h2>
+          <span className="badge">Wat ik doe ♥</span>
+          <h2 className="section-heading">Diensten</h2>
           <p className="section-sub">
-            Van een uitgebreide trimbeurt tot een snelle wasbeurt of kleine
-            behandeling — we helpen jouw hond er altijd tiptop uit te zien.
+            Van een volledige trimbeurt tot een snelle Was en Splash of losse
+            behandeling. Ik help jouw hond er altijd tiptop uit te zien.
           </p>
           <div className="services__grid">
             {services.map((s) => (
@@ -248,19 +242,20 @@ export default function Home() {
 
       {/* ── CTA Banner ── */}
       <div className="container" style={{ paddingBottom: "0" }}>
-        <div className="cta-banner">
-          <h2 className="cta-banner__title">
-            Klaar voor de allermooiste versie van jouw hond?
-          </h2>
-          <p className="cta-banner__sub">
-            Afspraken zijn snel vol — plan vandaag nog jouw beurt in!
-          </p>
-          <div className="cta-banner__actions">
-            <Link to="/contact" className="btn btn-primary">
-              Nu inplannen →
-            </Link>
-            <a href="tel:+15551234567" className="btn btn-ghost-white">
-              📞 Bel ons
+        <div
+          className="cta-banner"
+          style={{ backgroundImage: `url(${PugPhoneImg})` }}
+        >
+          <img
+            src={MobileImg}
+            className="cta-banner__icon"
+            alt=""
+            aria-hidden="true"
+          />
+          <div className="cta-banner__text">
+            <h2 className="cta-banner__title">Plan een afspraak</h2>
+            <a href="tel:+32496309459" className="cta-banner__phone">
+              +32 496 309 459
             </a>
           </div>
         </div>
