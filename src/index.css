@@ -183,11 +183,15 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.15; color: var
 /* FOOTER */
 .footer { background: var(--teal); color: var(--white); padding: 56px 0 28px; }
 .footer__grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
-.footer__brand { font-family: var(--font-heading); font-size: 20px; color: var(--white); margin-bottom: 10px; }
-.footer__tagline { font-size: 20px; line-height: 2rem; max-width: 270px; font-family: var(--font-zen); letter-spacing: 0.06rem; font-weight: 700;}
+.footer__brand {
+    font-family: var(--font-heading);
+    font-size: 25px;
+    color: var(--white);
+    margin-bottom: 10px;}
+.footer__tagline { font-size: 25px; line-height: 2rem; max-width: 270px; font-family: var(--font-zen); letter-spacing: 0.06rem; font-weight: 700;}
 .footer__heading { font-family: var(--font-body); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--white); margin-bottom: 16px; }
 .footer__links { list-style: none; display: flex; flex-direction: column; gap: 8px; }
-.footer__links a, .footer__links li { font-size: 14px; transition: var(--transition); }
+.footer__links a, .footer__links li { font-size: 16px; transition: var(--transition); }
 .footer__links a:hover { color: var(--teal); }
 .footer__bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 22px; display: flex; align-items: center; justify-content: space-between; font-size: 13px; }
 .footer__paw { font-size: 18px; }
@@ -276,6 +280,9 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.15; color: var
 
 /* ABOUT */
 .about { padding: 80px 0; }
+.about__title {
+  margin-bottom: 1rem;
+}
 .about__inner {
   max-width: var(--max-width); margin: 0 auto; padding: 0 24px;
   display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 64px;
@@ -353,8 +360,8 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.15; color: var
 .cta-banner { background-color: var(--blush-1); background-size: auto 110%; background-position: right bottom; background-repeat: no-repeat; color: var(--charcoal); padding: 40px 48px; border-radius: var(--radius-xl); margin: 0 0 80px; display: flex; flex-direction: row; align-items: center; gap: 28px; min-height: 300px; }
 .cta-banner__icon { width: 100px; object-fit: contain; flex-shrink: 0; }
 .cta-banner__text { display: flex; flex-direction: column; gap: 4px; text-align: left; }
-.cta-banner__title { font-size: clamp(18px, 2.4vw, 24px); color: var(--charcoal); margin: 0; }
-.cta-banner__phone { font-size: clamp(22px, 3vw, 30px); font-weight: 700; color: var(--blush-5); text-decoration: none; letter-spacing: 0.02em; }
+.cta-banner__title { font-size: clamp(22px, 2.4vw, 28px); color: var(--charcoal); margin: 0; }
+.cta-banner__phone { font-size: clamp(28px, 3vw, 30px); font-weight: 700; color: var(--blush-5); text-decoration: none; letter-spacing: 0.02em; }
 .cta-banner__phone:hover { text-decoration: underline; }
 @media (max-width: 600px) {
   .cta-banner {
@@ -377,7 +384,7 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.15; color: var
 .menu-wrap {  margin: 0 auto; display: flex; flex-direction: column; gap: 52px; }
 
 .menu-block__head { margin-bottom: 20px; padding-bottom: 12px;}
-.menu-block__title { font-size: clamp(18px, 2.2vw, 22px); margin: 0 0 3px; }
+.menu-block__title { font-size: clamp(22px, 2.8vw, 28px); margin: 0 0 3px; }
 .menu-block__sub { color: var(--muted); font-style: italic; margin: 0; }
 
 .size-table-wrap { overflow-x: auto; }
@@ -492,4 +499,30 @@ h1, h2, h3, h4 { font-family: var(--font-heading); line-height: 1.15; color: var
 @media (max-width: 600px) {
   .book-form-card { padding: 24px 18px; }
   .section { padding: 56px 0; }
+}
+
+/* ============================================================
+   MOBILE FONT SIZE OVERRIDES (≤768px)
+   ============================================================ */
+@media (max-width: 768px) {
+  .section-sub { font-size: 18px; }
+  .feature-card__text { font-size: 16px; }
+  .service-card__title { font-size: 22px; }
+  .service-card__text { font-size: 15px; }
+  .service-card__link { font-size: 15px; }
+  .breed-card__name { font-size: 16px; }
+  .breed-card__price { font-size: 16px; }
+  .breed-card__variants { font-size: 14px; }
+  .size-table thead th { font-size: 14px; }
+  .size-table tbody td { font-size: 15px; }
+  .size-table__price { font-size: 15px; }
+  .menu-row__name { font-size: 16px; }
+  .menu-row__desc { font-size: 15px; }
+  .menu-row__price { font-size: 16px; }
+  .footer__links a, .footer__links li { font-size: 16px; }
+  .footer__bottom { font-size: 14px; }
+  .info-card__value { font-size: 16px; }
+  .hours-grid dt, .hours-grid dd { font-size: 15px; }
+  .breed-search { font-size: 16px; }
+  .menu-block__sub { font-size: 16px; }
 }
