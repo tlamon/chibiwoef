@@ -1,19 +1,21 @@
 import Cal, { getCalApi } from "@calcom/embed-react";
 import { useEffect } from "react";
+import MobileImg from "../assets/mobile2.png";
+import HomeImg from "../assets/home.png";
+import EnvelopeImg from "../assets/envelope.png";
 
 const CAL_USERNAME = "chibiwoef";
 
 const INFO = {
   address: "Haacht, België",
-  phone: "+32 000 00 00 00",
+  phone: "+32 496 309 459",
   email: "hallo@chibiwoef.be",
 };
 
 const HOURS = [
-  { day: "Ma – Vr", time: "9:00 – 18:00" },
-  { day: "Zaterdag", time: "9:00 – 17:00" },
-  { day: "Zondag", time: "Gesloten" },
-  { day: "Feestdagen", time: "Gesloten" },
+  { day: "Di – Wo", time: "09:00 – 18:00" },
+  // { day: "Zaterdag", time: "09:00 – 12:00" },
+  // { day: "Zondag en feestdagen", time: "Gesloten" },
 ];
 
 export default function Contact() {
@@ -38,15 +40,20 @@ export default function Contact() {
         <div className="container">
           <div className="contact__grid">
             <div>
-              <h2 className="contact__info-heading">Kom ons bezoeken 👋</h2>
+              <h2 className="contact__info-heading">Kom ons bezoeken ♡</h2>
               <p className="contact__info-sub">
-                We leren jouw chibi graag kennen. Stel een vraag, bel ons of
-                plan meteen een afspraak via de kalender.
+                We leren jouw chibi graag kennen. Bel ons gerust als je vragen
+                hebt of plan meteen een afspraak via de kalender.
               </p>
 
               <div className="contact-info-cards">
                 <div className="info-card">
-                  <span className="info-card__icon">📍</span>
+                  <img
+                    src={HomeImg}
+                    className="info-card__icon info-card__icon--img"
+                    alt=""
+                    aria-hidden="true"
+                  />
                   <div>
                     <p className="info-card__label">Adres</p>
                     <p className="info-card__value">{INFO.address}</p>
@@ -54,7 +61,12 @@ export default function Contact() {
                 </div>
 
                 <div className="info-card">
-                  <span className="info-card__icon">📞</span>
+                  <img
+                    src={MobileImg}
+                    className="info-card__icon info-card__icon--img info-card__icon--mobile"
+                    alt=""
+                    aria-hidden="true"
+                  />
                   <div>
                     <p className="info-card__label">Telefoon</p>
                     <a
@@ -67,7 +79,12 @@ export default function Contact() {
                 </div>
 
                 <div className="info-card">
-                  <span className="info-card__icon">✉️</span>
+                  <img
+                    src={EnvelopeImg}
+                    className="info-card__icon info-card__icon--img"
+                    alt=""
+                    aria-hidden="true"
+                  />
                   <div>
                     <p className="info-card__label">E-mail</p>
                     <a

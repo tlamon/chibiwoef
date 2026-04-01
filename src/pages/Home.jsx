@@ -6,9 +6,9 @@ import CombImg from "../assets/comb.png";
 import ScissorsImg from "../assets/scissors.png";
 import HairdryerImg from "../assets/hairdryer.png";
 import HeartImg from "../assets/heart.png";
-import BadImg from "../assets/was-splash.png";
+import HaircutImg from "../assets/haircut.jpg";
 import massageImg from "../assets/massage.png";
-import brushingImg from "../assets/brushing.png";
+import ChihuahuaImg from "../assets/chihuahua.jpg";
 import MobileImg from "../assets/mobile.png";
 import PugPhoneImg from "../assets/pug-phone.png";
 
@@ -42,14 +42,14 @@ const features = [
 const services = [
   {
     slug: "groom",
-    img: brushingImg,
+    img: HaircutImg,
     title: "Volledige trimbeurt",
     text: "Uitgebreide was en schuimbeurt, knippen en/of plukken, nageltjes, oortjes, tandjes.. Check! Jouw woef verlaat het salon zo glanzend dat andere honden jaloers gaan blaffen.",
     theme: "groom",
   },
   {
     slug: "vet",
-    img: BadImg,
+    img: ChihuahuaImg,
     title: "Was & Splash",
     text: "Een heerlijke shampoo, even uitwaaien onder de fohn en lekker borstelen. Nageltjes niet vergeten. Perfect als tussendoor behandeling om de vacht fris en glanzend te houden.",
     theme: "vet",

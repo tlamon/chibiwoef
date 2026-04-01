@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import PawIcon from "../assets/paw.svg";
 import MobileImg from "../assets/mobile.png";
 import PugPhoneImg from "../assets/pug-phone.png";
+import TopDogImg from "../assets/sleepy.png";
 
 const treatments = [
   {
@@ -330,23 +331,28 @@ export default function Tarieven() {
                   Apart in te plannen of toe te voegen aan elke beurt
                 </p>
               </div>
-              <ul className="menu-list">
-                {treatments.map((b) => (
-                  <li className="menu-row menu-row--treatment" key={b.name}>
-                    <img
-                      src={PawIcon}
-                      className="menu-row__paw"
-                      alt=""
-                      aria-hidden="true"
-                    />
-                    <div className="menu-row__body">
-                      <span className="menu-row__name">{b.name}</span>
-                      <span className="menu-row__desc">{b.desc}</span>
-                    </div>
-                    <span className="menu-row__price">{b.price}</span>
-                  </li>
-                ))}
-              </ul>
+              <div className="box-white">
+                <div className="menu-top-dog">
+                  <img src={TopDogImg} alt="" className="top-dog__img" />
+                </div>
+                <ul className="menu-list">
+                  {treatments.map((b) => (
+                    <li className="menu-row menu-row--treatment" key={b.name}>
+                      <img
+                        src={PawIcon}
+                        className="menu-row__paw"
+                        alt=""
+                        aria-hidden="true"
+                      />
+                      <div className="menu-row__body">
+                        <span className="menu-row__name">{b.name}</span>
+                        <span className="menu-row__desc">{b.desc}</span>
+                      </div>
+                      <span>{b.price}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
 
             <div className="menu-block">
@@ -357,11 +363,11 @@ export default function Tarieven() {
                 </p>
               </div>
 
-              <div className="included-box">
-                <p className="included-box__label">
+              <div>
+                <p className="box-yellow__label">
                   Inbegrepen bij elke trimbeurt
                 </p>
-                <p className="included-box__items">
+                <p className="box-yellow__items">
                   Borstelen · Ontwollen · Verwijderen dode haren · Wassen
                   (diepreinigende + verzorgende shampoo + conditioner) · Föhnen
                   en volledig drogen · Reinigen oren en ogen · Nagels knippen ·
@@ -370,59 +376,53 @@ export default function Tarieven() {
                 </p>
               </div>
 
-              <div className="coat-legend">
-                <span className="coat-legend__item">
-                  <strong>Lengte vacht tot 1 cm</strong> — kort geschoren vacht
-                </span>
-                <span className="coat-legend__sep">·</span>
-                <span className="coat-legend__item">
-                  <strong>Van 1 tot 2.5 cm</strong> — schaarwerk met meer vacht
-                </span>
-              </div>
+              <div className="box-white breed-wrap">
+                <div className="breed-search-wrap">
+                  <div className="bone-wrap">
+                    <input
+                      type="search"
+                      className="breed-search"
+                      placeholder="Ras zoeken…"
+                      value={query}
+                      onChange={(e) => setQuery(e.target.value)}
+                      aria-label="Zoek op ras"
+                    />
+                  </div>
+                  {filteredBreeds.length === 0 && (
+                    <p className="breed-no-result">
+                      Geen resultaten voor &ldquo;{query}&rdquo;. Neem contact
+                      op voor een offerte op maat.
+                    </p>
+                  )}
+                </div>
 
-              <div className="breed-search-wrap">
-                <input
-                  type="search"
-                  className="breed-search"
-                  placeholder="Ras zoeken…"
-                  value={query}
-                  onChange={(e) => setQuery(e.target.value)}
-                  aria-label="Zoek op ras"
-                />
-                {filteredBreeds.length === 0 && (
-                  <p className="breed-no-result">
-                    Geen resultaten voor &ldquo;{query}&rdquo;. Neem contact op
-                    voor een offerte op maat.
-                  </p>
+                {filteredBreeds.length > 0 && (
+                  <div className="breed-grid">
+                    {filteredBreeds.map((b, i) => {
+                      const prices = [
+                        ...new Set(b.variants.map((v) => v.prijs)),
+                      ].join(" / ");
+                      const labels = b.variants
+                        .filter((v) => v.label)
+                        .map((v) => v.label)
+                        .join(" / ");
+                      return (
+                        <div className="breed-card" key={i}>
+                          <div className="breed-card__info">
+                            <span className="breed-card__name">{b.ras}</span>
+                            {labels && (
+                              <span className="breed-card__variants">
+                                {labels}
+                              </span>
+                            )}
+                          </div>
+                          <span className="breed-card__price">{prices}</span>
+                        </div>
+                      );
+                    })}
+                  </div>
                 )}
               </div>
-
-              {filteredBreeds.length > 0 && (
-                <div className="breed-grid">
-                  {filteredBreeds.map((b, i) => {
-                    const prices = [
-                      ...new Set(b.variants.map((v) => v.prijs)),
-                    ].join(" / ");
-                    const labels = b.variants
-                      .filter((v) => v.label)
-                      .map((v) => v.label)
-                      .join(" / ");
-                    return (
-                      <div className="breed-card" key={i}>
-                        <div className="breed-card__info">
-                          <span className="breed-card__name">{b.ras}</span>
-                          {labels && (
-                            <span className="breed-card__variants">
-                              {labels}
-                            </span>
-                          )}
-                        </div>
-                        <span className="breed-card__price">{prices}</span>
-                      </div>
-                    );
-                  })}
-                </div>
-              )}
 
               <p className="menu-block__note">
                 Staat jouw woef er niet bij? Contacteer mij gerust voor een

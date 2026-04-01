@@ -24,7 +24,7 @@ export default function Huisregels() {
   return (
     <main>
       <div className="page-hero">
-        <span className="badge">Voor alle snoetjes</span>
+        <span className="badge">Voor alle snoetjes 🐾</span>
         <h1 className="page-hero__title">Huisregels</h1>
         <p className="page-hero__sub">
           Om een veilige en prettige omgeving te garanderen voor alle dieren en
