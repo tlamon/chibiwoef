@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import HeroImg from "../assets/shiba.png";
+import HeroImg from "../assets/shiba.webp";
 import AboutImg from "../assets/maltipoo.jpg";
 import PawImg from "../assets/paw.svg";
 import CombImg from "../assets/comb.png";
@@ -7,10 +7,10 @@ import ScissorsImg from "../assets/scissors.png";
 import HairdryerImg from "../assets/hairdryer.png";
 import HeartImg from "../assets/heart.png";
 import HaircutImg from "../assets/haircut.jpg";
-import massageImg from "../assets/massage.png";
+import massageImg from "../assets/massage.webp";
 import ChihuahuaImg from "../assets/chihuahua.jpg";
-import MobileImg from "../assets/mobile.png";
-import PugPhoneImg from "../assets/pug-phone.png";
+import MobileImg from "../assets/mobile.webp";
+import PugPhoneImg from "../assets/pug-phone.webp";
 
 const features = [
   {
@@ -44,7 +44,7 @@ const services = [
     slug: "groom",
     img: HaircutImg,
     title: "Volledige trimbeurt",
-    text: "Uitgebreide was en schuimbeurt, knippen en/of plukken, nageltjes, oortjes, tandjes.. Check! Jouw woef verlaat het salon zo glanzend dat andere honden jaloers gaan blaffen.",
+    text: "Uitgebreide was en schuimbeurt, knippen en/of plukken, nageltjes, oortjes, tandjes.. Check! ✔ Jouw woef verlaat het salon zo glanzend dat andere honden jaloers gaan blaffen.",
     theme: "groom",
   },
   {
@@ -72,13 +72,13 @@ export default function Home() {
             <div className="hero__badge">
               Chibi = klein & lief • Woef = <span className="emoji">🐶</span>
             </div>
-            <h1 className="hero__title">Chibi woef</h1>
+            <h1 className="hero__title">Chibi Woef</h1>
             <h2 className="hero__subtitle">
               Zorg voor jouw fluffy vriendjes met liefde en begrip.
             </h2>
             <br />
             <p className="hero__text">
-              Hi! Zoek je nog een warme, rustige plek om jouw hond te laten
+              Hello! Zoek je nog een warme, rustige plek om jouw hond te laten
               trimmen en verzorgen? Wij gaan open in Haacht in het najaar van
               2026.
             </p>
@@ -185,12 +185,12 @@ export default function Home() {
             onvoorwaardelijke liefde en troost die ik vaak makkelijker bij hen
             vond dan bij mensen. Ze leren me elke dag hoe waardevol het is om
             simpelweg in het 'nu' te leven. Wat begon als het verzorgen van mijn
-            eigen honden, groeide uit tot een diepe passie die ik nu mag
-            omzetten in mijn beroep. Tijdens mijn opleiding bij Toscanzahoeve
-            leer ik de fijne knepen van het vak, zodat ik in het najaar van 2026
-            de deuren van Chibi Woef kan openen. <br />
-            Een plek waar rust, begrip en oprechte zorg voor jouw viervoeter
-            centraal staan.
+            eigen hondjes en katjes, groeide uit tot een diepe passie die ik nu
+            mag omzetten in mijn beroep. Tijdens mijn opleiding bij
+            Toscanzahoeve leer ik de fijne knepen van het vak, zodat ik in het
+            najaar van 2026 de deuren van Chibi Woef kan openen. <br />
+            Een plek waar rust, begrip en oprechte zorg voor jouw trouwe
+            viervoeter centraal staan.
           </p>
           <div className="features__grid">
             {features.map((f) => (

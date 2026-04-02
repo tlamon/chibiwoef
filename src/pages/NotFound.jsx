@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import MemeImg from "../assets/lipstick-dog.png";
+import MemeImg from "../assets/lipstick-dog.webp";
 
 export default function NotFound() {
   return (

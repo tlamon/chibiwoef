@@ -1,8 +1,8 @@
 import { useState, useMemo } from "react";
 import { Link } from "react-router-dom";
 import PawIcon from "../assets/paw.svg";
-import MobileImg from "../assets/mobile.png";
-import PugPhoneImg from "../assets/pug-phone.png";
+import MobileImg from "../assets/mobile.webp";
+import PugPhoneImg from "../assets/pug-phone.webp";
 import TopDogImg from "../assets/sleepy.png";
 
 const treatments = [

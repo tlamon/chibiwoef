@@ -1096,7 +1096,7 @@ h4 {
 /* Bone-shaped search container */
 .bone-wrap {
   position: relative;
-  background: var(--teal-light);
+  background: var(--ocre);
   border-radius: 12px;
   padding: 25px;
   display: flex;
@@ -1112,11 +1112,11 @@ h4 {
   top: 50%;
   width: 90px;
   height: 80px;
-  background: var(--teal-light);
+  background: var(--ocre);
   border-radius: 50%;
   box-shadow:
-    -10px 35px 0 var(--teal-light),
-    -10px -35px 0 var(--teal-light);
+    -10px 35px 0 var(--ocre),
+    -10px -35px 0 var(--ocre);
 }
 .bone-wrap::before {
   left: -12px;
@@ -1126,8 +1126,8 @@ h4 {
   right: -12px;
   transform: translateY(-50%);
   box-shadow:
-    10px 35px 0 var(--teal-light),
-    10px -35px 0 var(--teal-light);
+    10px 35px 0 var(--ocre),
+    10px -35px 0 var(--ocre);
 }
 
 @media (max-width: 640px) {
@@ -1195,7 +1195,7 @@ h4 {
   justify-content: space-between;
   align-items: baseline;
   gap: 8px;
-  padding: 10px 0;
+  padding: 5px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 .breed-card:nth-child(odd) {

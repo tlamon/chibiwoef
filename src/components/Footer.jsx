@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import MobileImg from "../assets/mobile.png";
+import MobileImg from "../assets/mobile.webp";
 import PawIcon from "../assets/paw.svg";
 
 export default function Footer() {
