@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { Link } from "react-router-dom";
 import PawIcon from "../assets/paw.svg";
 import MobileImg from "../assets/mobile.webp";
@@ -298,6 +298,10 @@ const breeds = [
 ];
 
 export default function Tarieven() {
+  useEffect(() => {
+    document.title = "Tarieven – Chibi Woef";
+  }, []);
+
   const [query, setQuery] = useState("");
 
   const filteredBreeds = useMemo(() => {

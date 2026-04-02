@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import HeroImg from "../assets/shiba.webp";
 import AboutImg from "../assets/maltipoo.jpg";
@@ -64,6 +65,10 @@ const services = [
 ];
 
 export default function Home() {
+  useEffect(() => {
+    document.title = "Chibi Woef – Hondentrimsalon in Haacht";
+  }, []);
+
   return (
     <main>
       <section className="hero">

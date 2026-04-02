@@ -1,7 +1,12 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import MemeImg from "../assets/lipstick-dog.webp";
 
 export default function NotFound() {
+  useEffect(() => {
+    document.title = "Pagina niet gevonden – Chibi Woef";
+  }, []);
+
   return (
     <main className="not-found">
       <div className="not-found__inner">

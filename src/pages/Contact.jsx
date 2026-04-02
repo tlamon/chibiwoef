@@ -20,6 +20,10 @@ const HOURS = [
 
 export default function Contact() {
   useEffect(() => {
+    document.title = "Afspraak maken – Chibi Woef";
+  }, []);
+
+  useEffect(() => {
     getCalApi({ namespace: CAL_USERNAME }).then((cal) => {
       cal("ui", { theme: "light", hideEventTypeDetails: false });
     });

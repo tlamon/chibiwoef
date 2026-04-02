@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import PawIcon from "../assets/paw.svg";
 
 const rules = [
@@ -21,6 +22,10 @@ const rules = [
 ];
 
 export default function Huisregels() {
+  useEffect(() => {
+    document.title = "Huisregels – Chibi Woef";
+  }, []);
+
   return (
     <main>
       <div className="page-hero">
