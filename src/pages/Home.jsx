@@ -79,13 +79,14 @@ export default function Home() {
             </div>
             <h1 className="hero__title">Chibi Woef</h1>
             <h2 className="hero__subtitle">
-              Zorg voor jouw fluffy vriendjes met liefde en begrip.
+              Zorg voor jouw trouwe viervoeter met liefde en begrip.
             </h2>
             <br />
             <p className="hero__text">
-              Hello! Zoek je nog een warme, rustige plek om jouw hond te laten
-              trimmen en verzorgen? Wij gaan open in Haacht in het najaar van
-              2026.
+              Hello! Zoek je nog een warme en stressvrije plek om jouw hond of kat te verwennen? Bij Chibi Woef kan je terecht voor een professionele was- en trimbeurt, een ontspannende massage of gewoon een momentje van rust en aandacht voor jouw trouwe viervoeter.
+              Wij maken gebruik van natuurlijke, cruelty-free producten en kalmerende kruiden.
+              Klaar om jouw chibi te laten stralen? Kom snel eens snuffelen want wij openen binnenkort in Haacht en kunnen niet wachten om jouw fluffy vriendje te ontmoeten!
+              Tot snel bij Chibi Woef!
             </p>
             <div className="hero__actions">
               <Link to="/contact" className="btn btn-primary">

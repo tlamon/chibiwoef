@@ -141,11 +141,20 @@ export default function Privacy() {
                   blokkeren in je browser.
                 </li>
                 <li>
-                  <strong>Google Analytics</strong> — in de toekomst kan deze
-                  website gebruik maken van Google Analytics om bezoekersgedrag
-                  te analyseren. Hiervoor wordt uw toestemming gevraagd via een
-                  cookiebanner voordat enige analytische cookies worden
-                  geplaatst. U kunt uw toestemming te allen tijde intrekken.
+                  <strong>Google Analytics</strong> — deze website maakt gebruik
+                  van Google Analytics om bezoekersgedrag te analyseren. Dit
+                  plaatst analytische cookies uitsluitend{" "}
+                  <em>na uw toestemming</em> via de cookiebanner. U kunt uw
+                  toestemming te allen tijde intrekken door de cookies in uw
+                  browser te verwijderen. Meer info:{" "}
+                  <a
+                    href="https://policies.google.com/privacy"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Google Privacy Policy
+                  </a>
+                  .
                 </li>
               </ul>
 
