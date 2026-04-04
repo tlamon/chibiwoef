@@ -62,7 +62,10 @@ export default function Footer() {
         </div>
 
         <div className="footer__bottom">
-          <span>© 2026 Chibi Woef. All rights reserved.</span>
+          <span>
+            © 2026 Chibi Woef. All rights reserved. ·{" "}
+            <Link to="/privacy">Privacyverklaring</Link>
+          </span>
           <span className="footer__paw">
             <img
               src={PawIcon}

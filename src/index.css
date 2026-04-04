@@ -1544,3 +1544,32 @@ h4 {
     font-size: 16px;
   }
 }
+
+/* ── Privacy page ─────────────────────────────────── */
+.huisregels {
+  padding: 2rem 0 4rem;
+}
+
+.privacy-content h2 {
+  font-family: var(--font-title);
+  font-size: 1.15rem;
+  color: var(--teal-dark);
+  margin: 2rem 0 0.5rem;
+}
+.privacy-content h2:first-child {
+  margin-top: 0;
+}
+.privacy-content p,
+.privacy-content li {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--text);
+}
+.privacy-content ul {
+  padding-left: 1.4rem;
+  margin: 0.5rem 0;
+}
+.privacy-content a {
+  color: var(--teal-dark);
+  text-decoration: underline;
+}
