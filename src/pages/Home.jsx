@@ -30,7 +30,7 @@ const features = [
     img: PawImg,
     bg: "#EDEAE2",
     title: "Rustige, warme sfeer",
-    text: "Hier draait alles om comfort en ontspanning. We creëren een stressvrije omgeving waar jouw hond zich veilig en geliefd voelt.",
+    text: "Hier draait alles om comfort en ontspanning. We creëren een stressvrije omgeving en maken gebruik van aromatherapie en kalmerende kruiden, waardoor jouw viervoeter zich veilig en geliefd voelt.",
   },
   {
     img: PawImg,
@@ -192,9 +192,9 @@ export default function Home() {
             vond dan bij mensen. Ze leren me elke dag hoe waardevol het is om
             simpelweg in het 'nu' te leven. Wat begon als het verzorgen van mijn
             eigen hondjes en katjes, groeide uit tot een diepe passie die ik nu
-            mag omzetten in mijn beroep. Tijdens mijn opleiding bij
-            Toscanzahoeve leer ik de fijne knepen van het vak, zodat ik in het
-            najaar van 2026 de deuren van Chibi Woef kan openen. <br />
+            mag omzetten in mijn beroep. Tijdens een erkende opleiding bij
+            Toscanzahoeve leer ik de fijne knepen van het vak, zodat ik
+            eind 2026 de deuren van Chibi Woef kan openen. <br />
             Een plek waar rust, begrip en oprechte zorg voor jouw trouwe
             viervoeter centraal staan.
           </p>
@@ -218,11 +218,10 @@ export default function Home() {
       {/* ── Services ── */}
       <section className="services">
         <div className="container text-center">
-          <span className="badge">Wat ik doe ♥</span>
-          <h2 className="section-heading">Diensten</h2>
+          <span className="badge">Wat we doen ♥</span>
+          <h2 className="section-heading">Aanbod</h2>
           <p className="section-sub">
-            Van een volledige trimbeurt tot een snelle Was en Splash of losse
-            behandeling. Ik help jouw hond er altijd tiptop uit te zien.
+            Wij willen de wereld graag een beetje mooier maken, één chibi tegelijk. Daarom maken we gebruik van natuurlijke en diervriendelijke producten en bieden we een persoonlijke, stressvrije aanpak. Jouw trouwe viervoeter staat hier centraal. Zo kunnen we samen zorgen voor een stralende vacht en een gelukkig hart.
           </p>
           <div className="services__grid">
             {services.map((s) => (
