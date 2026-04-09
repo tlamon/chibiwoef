@@ -1,8 +1,12 @@
 import { Link } from "react-router-dom";
-import MobileImg from "../assets/mobile.webp";
+import { useTranslation } from "react-i18next";
 import PawIcon from "../assets/paw.svg";
 
 export default function Footer() {
+  const { i18n } = useTranslation();
+  const { t } = useTranslation();
+  const lang = (i18n.resolvedLanguage || "nl").split("-")[0];
+
   return (
     <footer className="footer">
       <div className="container">
@@ -18,16 +22,19 @@ export default function Footer() {
             <div className="footer__heading">Pagina's</div>
             <ul className="footer__links">
               <li>
-                <Link to="/">Home</Link>
+                <Link to={`/${lang}`}>{t("nav.home")}</Link>
               </li>
               <li>
-                <Link to="/tarieven">Tarieven</Link>
+                <Link to={`/${lang}/tarieven`}>{t("nav.tarieven")}</Link>
               </li>
               <li>
-                <Link to="/huisregels">Huisregels</Link>
+                <Link to={`/${lang}/huisregels`}>{t("nav.huisregels")}</Link>
               </li>
               <li>
-                <Link to="/contact">Contact</Link>
+                <Link to={`/${lang}/rassen`}>{t("nav.rassen")}</Link>
+              </li>
+              <li>
+                <Link to={`/${lang}/contact`}>{t("nav.contact")}</Link>
               </li>
             </ul>
           </div>
@@ -64,14 +71,14 @@ export default function Footer() {
         <div className="footer__bottom">
           <span>
             © 2026 Chibi Woef. All rights reserved. ·{" "}
-            <Link to="/privacy">Privacyverklaring</Link>
+            <Link to={`/${lang}/privacy`}>Privacyverklaring</Link>
           </span>
           <span className="footer__paw">
             <img
               src={PawIcon}
               alt=""
               aria-hidden="true"
-              style={{ width: "20px", opacity: 0.7 }}
+              className="footer__paw-icon"
             />
           </span>
         </div>

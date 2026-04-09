@@ -117,12 +117,7 @@ export default function Contact() {
               <Cal
                 namespace={CAL_USERNAME}
                 calLink={CAL_USERNAME}
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  minHeight: "600px",
-                  border: "none",
-                }}
+                className="cal-embed"
                 config={{ theme: "light" }}
               />
             </div>

@@ -37,7 +37,7 @@ export default function Huisregels() {
         </p>
       </div>
 
-      <section className="tarieven">
+      <section className="pricing-section">
         <div className="container">
           <div className="menu-wrap">
             <div className="menu-block">

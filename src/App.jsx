@@ -1,4 +1,10 @@
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  useLocation,
+  Navigate,
+} from "react-router-dom";
 import { useEffect } from "react";
 import CookieConsent, { getCookieConsentValue } from "react-cookie-consent";
 import { Link } from "react-router-dom";
@@ -11,8 +17,16 @@ import Contact from "./pages/Contact";
 import Huisregels from "./pages/Huisregels";
 import NotFound from "./pages/NotFound";
 import Privacy from "./pages/Privacy";
+import BreedList from "./pages/BreedList";
+import BreedDetail from "./pages/BreedDetail";
+import FciGroup from "./pages/FciGroup";
 
 const GA_ID = "G-RCSNBD9NJN";
+
+function getCurrentLangFromPath(pathname) {
+  const lang = pathname.split("/")[1];
+  return lang === "en" ? "en" : "nl";
+}
 
 function initGA() {
   ReactGA.initialize(GA_ID);
@@ -41,11 +55,18 @@ export default function App() {
       <ScrollToTop />
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/tarieven" element={<Tarieven />} />
-        <Route path="/huisregels" element={<Huisregels />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/" element={<Navigate to="/nl" />} />
+        <Route path="/:lang" element={<Home />} />
+        <Route path="/:lang/tarieven" element={<Tarieven />} />
+        <Route path="/:lang/huisregels" element={<Huisregels />} />
+        <Route path="/:lang/contact" element={<Contact />} />
+        <Route path="/:lang/privacy" element={<Privacy />} />
+        <Route path="/:lang/rassen" element={<BreedList />} />
+        <Route path="/:lang/rassen/:slug" element={<BreedDetail />} />
+        <Route path="/:lang/groep/:groupSlug" element={<FciGroup />} />
+        <Route path="/:lang/breeds" element={<BreedList />} />
+        <Route path="/:lang/breeds/:slug" element={<BreedDetail />} />
+        <Route path="/:lang/group/:groupSlug" element={<FciGroup />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
@@ -55,48 +76,21 @@ export default function App() {
         buttonText="Accepteren"
         declineButtonText="Weigeren"
         enableDeclineButton
+        disableStyles
+        containerClasses="cookie-consent"
+        contentClasses="cookie-consent__content"
+        buttonClasses="cookie-consent__accept"
+        declineButtonClasses="cookie-consent__decline"
         onAccept={() => {
           initGA();
           ReactGA.send({ hitType: "pageview", page: window.location.pathname });
-        }}
-        style={{
-          background: "var(--teal-dark)",
-          color: "#fff",
-          fontSize: "0.875rem",
-          alignItems: "center",
-          gap: "1rem",
-          padding: "1rem 1.5rem",
-        }}
-        buttonStyle={{
-          background: "var(--ocre)",
-          color: "#fff",
-          fontFamily: "var(--font-body)",
-          fontWeight: "700",
-          fontSize: "0.875rem",
-          borderRadius: "999px",
-          padding: "0.5rem 1.25rem",
-          border: "none",
-          cursor: "pointer",
-        }}
-        declineButtonStyle={{
-          background: "transparent",
-          color: "rgba(255,255,255,0.7)",
-          fontFamily: "var(--font-body)",
-          fontSize: "0.875rem",
-          border: "1px solid rgba(255,255,255,0.4)",
-          borderRadius: "999px",
-          padding: "0.5rem 1.25rem",
-          cursor: "pointer",
         }}
       >
         Wij gebruiken cookies voor analytische doeleinden (Google Analytics) om
         onze website te verbeteren.{" "}
         <Link
-          to="/privacy"
-          style={{
-            color: "rgba(255,255,255,0.85)",
-            textDecoration: "underline",
-          }}
+          to={`/${getCurrentLangFromPath(window.location.pathname)}/privacy`}
+          className="cookie-consent__link"
         >
           Meer info
         </Link>

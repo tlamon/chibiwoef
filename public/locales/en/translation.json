@@ -1,0 +1,79 @@
+{
+  "nav": {
+    "home": "Home",
+    "rassen": "Breeds",
+    "tarieven": "Prices",
+    "huisregels": "House Rules",
+    "contact": "Contact"
+  },
+  "breedList": {
+    "pageTitle": "Dog Breeds",
+    "metaDescription": "A list of all the dog breeds we groom at Chibi Woef.",
+    "title": "Our Breeds",
+    "intro": "Here is a list of all the dog breeds we treat with love and care. Click on a breed for more information.",
+    "searchPlaceholder": "Search for a breed...",
+    "groupLabel": "FCI Group",
+    "noResults": "No breeds found for this search term."
+  },
+  "breedGroups": {
+    "1": "Sheepdogs and Cattle Dogs",
+    "2": "Pinschers, Schnauzers and Molossoids",
+    "3": "Terriers",
+    "4": "Dachshunds",
+    "5": "Spitz and Primitive Types",
+    "6": "Scenthounds and Related Breeds",
+    "7": "Pointing Dogs",
+    "8": "Retrievers, Spaniels and Water Dogs",
+    "9": "Companion and Toy Dogs",
+    "10": "Sighthounds"
+  },
+  "fciGroups": {
+    "pageDescriptionPrefix": "More information about FCI group",
+    "breedsInGroup": "Breeds in this group",
+    "backToBreeds": "Back to all breeds",
+    "shareGroup": "Share this group page"
+  },
+  "breedDetail": {
+    "metaDescriptionPrefix": "Learn more about grooming a",
+    "badge": "Breed Card",
+    "groomingTitle": "Grooming Information",
+    "groomingInfoPlaceholder": "Detailed grooming guide and information for this breed is coming soon.",
+    "characterTitle": "Character",
+    "characterPlaceholder": "Character information for this breed will be added soon.",
+    "coatCareTitle": "Coat Care",
+    "groupOverviewTitle": "FCI Group",
+    "group1Overview": "Intelligent, driven to work, loyal and highly trainable. Can be reserved with strangers.",
+    "group2Overview": "Watchful, physically strong and often strong-willed. Schnauzers have a specific hand-stripping coat.",
+    "group3Overview": "Fearless, energetic and often feisty. Most terriers have a wiry hand-strip coat that requires regular trimming or hand-stripping.",
+    "group4Overview": "Long-backed, short-legged dogs with big personalities in a small frame. Coat care varies by variety: smooth is simple, long-haired needs brushing, and wire-haired needs hand-stripping.",
+    "group5Overview": "Independent, alert and often quite strong-minded. Most spitz and primitive types have a double coat with heavy shedding periods that require plenty of brushing and de-shedding.",
+    "group6Overview": "Scent-driven hounds with a friendly but often independent character. Most have short, easy-care coats, with extra attention needed for ears, skin folds or rough coats that require hand-stripping in some breeds.",
+    "group7Overview": "Athletic, people-focused hunting dogs with strong drive and high energy. Coat care ranges from near-maintenance-free short coats to wire coats that need hand-stripping and long-haired setters that require regular combing.",
+    "group8Overview": "People-oriented working dogs that are usually cooperative and soft in character. Coat care ranges from short easy-care coats to rich feathering and curly coats that need regular brushing or trimming.",
+    "group9Overview": "Small companion dogs with a strong bond to their family. Coat care varies widely: from almost maintenance-free short coats to intensive brushing and trimming for long-haired and curly breeds.",
+    "group10Overview": "Fast, independent and often notably calm indoors. Coat care ranges from nearly maintenance-free to very intensive in long-haired sighthounds.",
+    "quickFacts": "Quick Facts",
+    "groupLabel": "FCI Group",
+    "coatLabel": "Coat Type",
+    "sizeLabel": "Size",
+    "backToList": "Back to all breeds",
+    "coat": {
+      "short": "Short coat",
+      "long": "Long coat",
+      "wire": "Wire coat",
+      "curly": "Curly coat",
+      "double": "Double coat",
+      "corded": "Corded coat",
+      "hairless": "Hairless",
+      "unknown": "Unknown"
+    },
+    "size": {
+      "toy": "Toy",
+      "small": "Small",
+      "medium": "Medium",
+      "large": "Large",
+      "standard": "Standard",
+      "unknown": "Unknown"
+    }
+  }
+}

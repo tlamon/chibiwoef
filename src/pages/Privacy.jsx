@@ -1,7 +1,11 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export default function Privacy() {
+  const { i18n } = useTranslation();
+  const lang = (i18n.resolvedLanguage || "nl").split("-")[0];
+
   useEffect(() => {
     document.title = "Privacyverklaring – Chibi Woef";
   }, []);
@@ -16,12 +20,9 @@ export default function Privacy() {
         </p>
       </div>
 
-      <section className="huisregels">
+      <section className="policy-section">
         <div className="container">
-          <div
-            className="box-white"
-            style={{ maxWidth: "760px", margin: "0 auto" }}
-          >
+          <div className="box-white privacy-box">
             <div className="privacy-content">
               <h2>1. Wie zijn wij?</h2>
               <p>
@@ -162,7 +163,7 @@ export default function Privacy() {
               <p>
                 Deze privacyverklaring kan worden gewijzigd. De meest recente
                 versie is altijd beschikbaar op{" "}
-                <Link to="/privacy">chibiwoef.be/privacy</Link>.
+                <Link to={`/${lang}/privacy`}>chibiwoef.be/privacy</Link>.
               </p>
               <p>
                 <em>Laatste update: april 2026</em>

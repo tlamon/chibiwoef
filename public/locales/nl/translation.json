@@ -1,0 +1,79 @@
+{
+  "nav": {
+    "home": "Home",
+    "rassen": "Rassen",
+    "tarieven": "Tarieven",
+    "huisregels": "Huisregels",
+    "contact": "Contact"
+  },
+  "breedList": {
+    "pageTitle": "Hondenrassen",
+    "metaDescription": "Een lijst van alle hondenrassen die we trimmen bij Chibi Woef.",
+    "title": "Onze Rassen",
+    "intro": "Hier is een lijst van alle hondenrassen die we met liefde en zorg behandelen. Klik op een ras voor meer informatie.",
+    "searchPlaceholder": "Zoek een ras...",
+    "groupLabel": "FCI-groep",
+    "noResults": "Geen rassen gevonden met deze zoekterm."
+  },
+  "breedGroups": {
+    "1": "Herdershonden en Veedrijvers",
+    "2": "Pinschers, Schnauzers en Molossers",
+    "3": "Terriërs",
+    "4": "Teckels",
+    "5": "Spitsen en Oertypen",
+    "6": "Lopende Honden en Zweethonden",
+    "7": "Voorstaande Honden",
+    "8": "Retrievers, Spaniëls en Waterhonden",
+    "9": "Gezelschapshonden",
+    "10": "Windhonden"
+  },
+  "fciGroups": {
+    "pageDescriptionPrefix": "Meer informatie over FCI groep",
+    "breedsInGroup": "Rassen in deze groep",
+    "backToBreeds": "Terug naar alle rassen",
+    "shareGroup": "Deel deze groepspagina"
+  },
+  "breedDetail": {
+    "metaDescriptionPrefix": "Leer meer over het trimmen van een",
+    "badge": "Rasfiche",
+    "groomingTitle": "Trim Informatie",
+    "groomingInfoPlaceholder": "Gedetailleerde trimgids en informatie voor dit ras komt binnenkort.",
+    "characterTitle": "Karakter",
+    "characterPlaceholder": "Karakterinformatie voor dit ras volgt binnenkort.",
+    "coatCareTitle": "Vachtverzorging",
+    "groupOverviewTitle": "FCI Groep",
+    "group1Overview": "Intelligent, werkgedreven, loyaal en zeer trainbaar. Kunnen gereserveerd zijn naar vreemden.",
+    "group2Overview": "Waaks, fysiek sterk en vaak een sterke eigen wil. Schnauzers hebben een specifieke trimvacht.",
+    "group3Overview": "Onverschrokken, energiek en vaak fel van karakter. De meeste terriërs hebben een ruwharige plukvacht die regelmatig getrimd of geplukt moet worden.",
+    "group4Overview": "Lange rug, korte poten en een groot karakter in klein formaat. Vachtverzorging verschilt duidelijk per variant: gladhaar is eenvoudig, langhaar vraagt borstelwerk en ruwharig moet geplukt worden.",
+    "group5Overview": "Onafhankelijk, alert en vaak behoorlijk eigenzinnig. De meeste spitsen en oertypen hebben een dubbele vacht met stevige ruiperiodes die veel borstelen en ontwollen vragen.",
+    "group6Overview": "Neusgedreven speurhonden met vaak een vriendelijk maar zelfstandig karakter. De meeste hebben een korte, onderhoudsvriendelijke vacht, met extra aandacht voor oren, huidplooien of ruwe plukvachten bij enkele rassen.",
+    "group7Overview": "Atletische, mensgerichte jachthonden met een sterke werklust en veel energie. Vachtverzorging varieert van bijna onderhoudsvrije korthaar tot ruwharige plukvachten en langharige setters die regelmatig kamwerk vragen.",
+    "group8Overview": "Mensgerichte werkhonden die meestal zacht van karakter zijn en graag samenwerken. Vachtverzorging varieert van korte onderhoudsvriendelijke vachten tot rijke bevedering en krulvachten die regelmatig borstelen of trimmen vragen.",
+    "group9Overview": "Kleine gezelschapshonden met een sterke band met hun gezin. De vachtzorg loopt sterk uiteen: van bijna onderhoudsvrij korthaar tot intensief borstel- en trimwerk bij langharige en krullende rassen.",
+    "group10Overview": "Snel, onafhankelijk en binnenshuis vaak opvallend rustig. De vachtverzorging varieert van bijna onderhoudsvrij tot zeer intensief bij langharige windhonden.",
+    "quickFacts": "Weetjes",
+    "groupLabel": "FCI-groep",
+    "coatLabel": "Vachttype",
+    "sizeLabel": "Formaat",
+    "backToList": "Terug naar alle rassen",
+    "coat": {
+      "short": "Kortharig",
+      "long": "Langharig",
+      "wire": "Ruwharig",
+      "curly": "Krullend",
+      "double": "Dubbele vacht",
+      "corded": "Koordvacht",
+      "hairless": "Naakthond",
+      "unknown": "Onbekend"
+    },
+    "size": {
+      "toy": "Toy",
+      "small": "Klein",
+      "medium": "Middelgroot",
+      "large": "Groot",
+      "standard": "Standaard",
+      "unknown": "Onbekend"
+    }
+  }
+}

@@ -325,7 +325,7 @@ export default function Tarieven() {
         </p>
       </div>
 
-      <section className="tarieven">
+      <section className="pricing-section">
         <div className="container">
           <div className="menu-wrap">
             <div className="menu-block">
@@ -436,10 +436,13 @@ export default function Tarieven() {
             </div>
 
             {/* CTA */}
-            <div
-              className="cta-banner"
-              style={{ backgroundImage: `url(${PugPhoneImg})` }}
-            >
+            <div className="cta-banner cta-banner--with-bg">
+              <img
+                src={PugPhoneImg}
+                className="cta-banner__bg"
+                alt=""
+                aria-hidden="true"
+              />
               <img
                 src={MobileImg}
                 className="cta-banner__icon"

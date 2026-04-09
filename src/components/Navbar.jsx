@@ -1,15 +1,18 @@
 import { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import logoImg from "../assets/logo.png";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const { t, i18n } = useTranslation();
+  const lang = (i18n.resolvedLanguage || "nl").split("-")[0];
   const close = () => setOpen(false);
 
   return (
     <nav className="navbar">
       <div className="navbar__inner">
-        <Link to="/" className="navbar__logo" onClick={close}>
+        <Link to={`/${lang}`} className="navbar__logo" onClick={close}>
           <img src={logoImg} alt="Chibi Woef" className="logo-img" />
           <h3 className="logo-text">
             Chibi Woef <br />{" "}
@@ -34,47 +37,47 @@ export default function Navbar() {
           <ul className="navbar__links">
             <li>
               <NavLink
-                to="/"
+                to={`/${lang}`}
                 end
                 className={({ isActive }) =>
                   `navbar__link${isActive ? " active" : ""}`
                 }
                 onClick={close}
               >
-                Home
+                {t("nav.home")}
               </NavLink>
             </li>
             <li>
               <NavLink
-                to="/tarieven"
+                to={`/${lang}/tarieven`}
                 className={({ isActive }) =>
                   `navbar__link${isActive ? " active" : ""}`
                 }
                 onClick={close}
               >
-                Tarieven
+                {t("nav.tarieven")}
               </NavLink>
-            </li>{" "}
+            </li>
             <li>
               <NavLink
-                to="/huisregels"
+                to={`/${lang}/huisregels`}
                 className={({ isActive }) =>
                   `navbar__link${isActive ? " active" : ""}`
                 }
                 onClick={close}
               >
-                Huisregels
+                {t("nav.huisregels")}
               </NavLink>
-            </li>{" "}
+            </li>
             <li>
               <NavLink
-                to="/contact"
+                to={`/${lang}/contact`}
                 className={({ isActive }) =>
                   `navbar__link cta-link${isActive ? " active" : ""}`
                 }
                 onClick={close}
               >
-                Contact
+                {t("nav.contact")}
               </NavLink>
             </li>
           </ul>

@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import HeroImg from "../assets/shiba.webp";
 import AboutImg from "../assets/maltipoo.jpg";
 import PawImg from "../assets/paw.svg";
@@ -15,26 +16,26 @@ import PugPhoneImg from "../assets/pug-phone.webp";
 
 const features = [
   {
+    slug: "care",
     img: PawImg,
-    bg: "#D8E0D0",
     title: "Vakkundige verzorging",
     text: "Met professionele trimmersopleiding op zak gaan we vol passie aan de slag. Jouw hondje verdient het allerbeste.",
   },
   {
+    slug: "products",
     img: PawImg,
-    bg: "#F5F0EB",
     title: "Natuurlijke producten",
     text: "We werken uitsluitend met hypoallergene, diervriendelijke shampoos en verzorgingsproducten. Zacht voor de huid, geweldig voor de vacht.",
   },
   {
+    slug: "atmosphere",
     img: PawImg,
-    bg: "#EDEAE2",
     title: "Rustige, warme sfeer",
     text: "Hier draait alles om comfort en ontspanning. We creëren een stressvrije omgeving en maken gebruik van aromatherapie en kalmerende kruiden, waardoor jouw viervoeter zich veilig en geliefd voelt.",
   },
   {
+    slug: "personal",
     img: PawImg,
-    bg: "#EDEAE2",
     title: "Persoonlijke aanpak",
     text: "We nemen de tijd om jouw hond te leren kennen. Zo krijgt elke woef een eigen dossier. Zo weten we precies hoe we jouw trouwe viervoeter het best in de watten kunnen leggen. Want elke chibi is uniek!",
   },
@@ -65,6 +66,9 @@ const services = [
 ];
 
 export default function Home() {
+  const { i18n } = useTranslation();
+  const lang = (i18n.resolvedLanguage || "nl").split("-")[0];
+
   useEffect(() => {
     document.title = "Chibi Woef – Hondentrimsalon in Haacht";
   }, []);
@@ -83,16 +87,21 @@ export default function Home() {
             </h2>
             <br />
             <p className="hero__text">
-              Hello! Zoek je nog een warme en stressvrije plek om jouw hond of kat te verwennen? Bij Chibi Woef kan je terecht voor een professionele was- en trimbeurt, een ontspannende massage of gewoon een momentje van rust en aandacht voor jouw trouwe viervoeter.
-              Wij maken gebruik van natuurlijke, cruelty-free producten en kalmerende kruiden.
-              Klaar om jouw chibi te laten stralen? Kom snel eens snuffelen want wij openen binnenkort in Haacht en kunnen niet wachten om jouw fluffy vriendje te ontmoeten!
-              Tot snel bij Chibi Woef!
+              Hello! Zoek je nog een warme en stressvrije plek om jouw hond of
+              kat te verwennen? Bij Chibi Woef kan je terecht voor een
+              professionele was- en trimbeurt, een ontspannende massage of
+              gewoon een momentje van rust en aandacht voor jouw trouwe
+              viervoeter. Wij maken gebruik van natuurlijke, cruelty-free
+              producten en kalmerende kruiden. Klaar om jouw chibi te laten
+              stralen? Kom snel eens snuffelen want wij openen binnenkort in
+              Haacht en kunnen niet wachten om jouw fluffy vriendje te
+              ontmoeten! Tot snel bij Chibi Woef!
             </p>
             <div className="hero__actions">
-              <Link to="/contact" className="btn btn-primary">
+              <Link to={`/${lang}/contact`} className="btn btn-primary">
                 Plan een afspraak
               </Link>
-              <Link to="/tarieven" className="btn btn-secondary">
+              <Link to={`/${lang}/tarieven`} className="btn btn-secondary">
                 Bekijk tarieven
               </Link>
             </div>
@@ -172,9 +181,8 @@ export default function Home() {
               snuffelen. Wij kijken er naar uit om jouw chibi te ontmoeten!
             </p>
             <Link
-              to="/contact"
-              className="btn btn-primary"
-              style={{ marginTop: "28px" }}
+              to={`/${lang}/contact`}
+              className="btn btn-primary about-contact-btn"
             >
               Contacteer mij →
             </Link>
@@ -193,8 +201,8 @@ export default function Home() {
             simpelweg in het 'nu' te leven. Wat begon als het verzorgen van mijn
             eigen hondjes en katjes, groeide uit tot een diepe passie die ik nu
             mag omzetten in mijn beroep. Tijdens een erkende opleiding bij
-            Toscanzahoeve leer ik de fijne knepen van het vak, zodat ik
-            eind 2026 de deuren van Chibi Woef kan openen. <br />
+            Toscanzahoeve leer ik de fijne knepen van het vak, zodat ik eind
+            2026 de deuren van Chibi Woef kan openen. <br />
             Een plek waar rust, begrip en oprechte zorg voor jouw trouwe
             viervoeter centraal staan.
           </p>
@@ -202,8 +210,7 @@ export default function Home() {
             {features.map((f) => (
               <div className="feature-card" key={f.title}>
                 <div
-                  className="feature-card__icon"
-                  style={{ background: f.bg }}
+                  className={`feature-card__icon feature-card__icon--${f.slug}`}
                 >
                   <img src={f.img} alt="" loading="lazy" decoding="async" />
                 </div>
@@ -221,7 +228,12 @@ export default function Home() {
           <span className="badge">Wat we doen ♥</span>
           <h2 className="section-heading">Aanbod</h2>
           <p className="section-sub">
-            Wij willen de wereld graag een beetje mooier maken, één chibi tegelijk. Daarom maken we gebruik van natuurlijke en diervriendelijke producten en bieden we een persoonlijke, stressvrije aanpak. Jouw trouwe viervoeter staat hier centraal. Zo kunnen we samen zorgen voor een stralende vacht en een gelukkig hart.
+            Wij willen de wereld graag een beetje mooier maken, één chibi
+            tegelijk. Daarom maken we gebruik van natuurlijke en
+            diervriendelijke producten en bieden we een persoonlijke,
+            stressvrije aanpak. Jouw trouwe viervoeter staat hier centraal. Zo
+            kunnen we samen zorgen voor een stralende vacht en een gelukkig
+            hart.
           </p>
           <div className="services__grid">
             {services.map((s) => (
@@ -235,7 +247,7 @@ export default function Home() {
                 <div className="service-card__body">
                   <h3 className="service-card__title">{s.title}</h3>
                   <p className="service-card__text">{s.text}</p>
-                  <Link to="/tarieven" className="service-card__link">
+                  <Link to={`/${lang}/tarieven`} className="service-card__link">
                     Bekijk tarieven →
                   </Link>
                 </div>
@@ -246,11 +258,14 @@ export default function Home() {
       </section>
 
       {/* ── CTA Banner ── */}
-      <div className="container" style={{ paddingBottom: "0" }}>
-        <div
-          className="cta-banner"
-          style={{ backgroundImage: `url(${PugPhoneImg})` }}
-        >
+      <div className="container container--no-bottom-padding">
+        <div className="cta-banner cta-banner--with-bg">
+          <img
+            src={PugPhoneImg}
+            className="cta-banner__bg"
+            alt=""
+            aria-hidden="true"
+          />
           <img
             src={MobileImg}
             className="cta-banner__icon"
