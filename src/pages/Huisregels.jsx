@@ -12,10 +12,9 @@ const rules = [
   "Kom op tijd, niet te vroeg of te laat. Een vertraging van meer dan 15 minuten kan betekenen dat de afspraak verzet wordt.",
   "Sessies doen we graag een-op-een, dus vragen we dat het baasje ons niet stoort tijdens de behandeling. We houden je op de hoogte wanneer je jouw trouwe vriend weer kunt komen ophalen. Uitzonderingen hierop kunnen gelden wanneer het dier erg jong, oud of angstig is.",
   "Annuleren of wijzigen is gratis tot 24 uur voor de afspraak. Daarna rekenen wij 50% van het tarief.",
-  "Wij behouden het recht om een trimbeurt stop te zetten wanneer het dier grote stress ervaart en/of agressief gedrag vertoont.",
-  "Alle honden dienen up-to-date gevaccineerd te zijn (Distemper, Parvo, Hepatitis & Rabiës).",
+  "Wij behouden het recht om een trimbeurt stop te zetten wanneer het dier grote stress ervaart en/of agressief gedrag vertoont. We gaan steeds op zoek naar een oplossing die het beste is voor jouw woef, en zullen dit altijd in overleg doen.",
   "Katten moeten ingeënt zijn tegen kattenziekte en niesziekte.",
-  "Bij vlooien of teken brengen wij extra behandelingskosten in rekening.",
+  "Bij vlooien of teken kunnen we uw afspraak annuleren of brengen wij extra behandelingskosten in rekening. Het salon moet nadien grondig worden gereinigd en gedesinfecteerd, wat extra tijd en middelen kost. Gelieve uw huisdier vooraf te behandelen tegen deze parasieten om ongemak en extra kosten te voorkomen.",
   "Betaling vindt plaats direct na afloop van de dienst.",
   "Prijzen kunnen variëren op basis van vachtconditie, ras en temperament. Bij extra vuile vacht of veel klitvorming neemt dit meer tijd in beslag en rekenen wij een meerprijs aan.",
   "Wij maken graag foto's van onze viervoetige gasten voor op sociale media. Geef aan als u hier bezwaar tegen heeft.",
@@ -37,12 +36,12 @@ export default function Huisregels() {
         </p>
       </div>
 
-      <section className="tarieven">
+      <section className="pricing-section">
         <div className="container">
-          <div className="menu-wrap">
-            <div className="menu-block">
-              <div className="menu-block__head">
-                <h2 className="menu-block__title">Onze huisregels</h2>
+          <div className="content-stack">
+            <div className="content-block">
+              <div className="content-block__head">
+                <h2 className="content-block__title">Onze huisregels</h2>
               </div>
               <ul className="rules-list">
                 {rules.map((rule, i) => (

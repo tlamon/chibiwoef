@@ -11,7 +11,6 @@ import HaircutImg from "../assets/haircut.jpg";
 import massageImg from "../assets/massage.webp";
 import ChihuahuaImg from "../assets/chihuahua.jpg";
 import MobileImg from "../assets/mobile.webp";
-import PugPhoneImg from "../assets/pug-phone.webp";
 
 const features = [
   {
@@ -83,10 +82,15 @@ export default function Home() {
             </h2>
             <br />
             <p className="hero__text">
-              Hello! Zoek je nog een warme en stressvrije plek om jouw hond of kat te verwennen? Bij Chibi Woef kan je terecht voor een professionele was- en trimbeurt, een ontspannende massage of gewoon een momentje van rust en aandacht voor jouw trouwe viervoeter.
-              Wij maken gebruik van natuurlijke, cruelty-free producten en kalmerende kruiden.
-              Klaar om jouw chibi te laten stralen? Kom snel eens snuffelen want wij openen binnenkort in Haacht en kunnen niet wachten om jouw fluffy vriendje te ontmoeten!
-              Tot snel bij Chibi Woef!
+              Hello! Zoek je nog een warme en stressvrije plek om jouw hond of
+              kat te verwennen? Bij Chibi Woef kan je terecht voor een
+              professionele was- en trimbeurt, een ontspannende massage of
+              gewoon een momentje van rust en aandacht voor jouw trouwe
+              viervoeter. Wij maken gebruik van natuurlijke, cruelty-free
+              producten en kalmerende kruiden. Klaar om jouw chibi te laten
+              stralen? Kom snel eens snuffelen want wij openen binnenkort in
+              Haacht en kunnen niet wachten om jouw fluffy vriendje te
+              ontmoeten! Tot snel bij Chibi Woef!
             </p>
             <div className="hero__actions">
               <Link to="/contact" className="btn btn-primary">
@@ -193,8 +197,8 @@ export default function Home() {
             simpelweg in het 'nu' te leven. Wat begon als het verzorgen van mijn
             eigen hondjes en katjes, groeide uit tot een diepe passie die ik nu
             mag omzetten in mijn beroep. Tijdens een erkende opleiding bij
-            Toscanzahoeve leer ik de fijne knepen van het vak, zodat ik
-            eind 2026 de deuren van Chibi Woef kan openen. <br />
+            Toscanzahoeve leer ik de fijne knepen van het vak, zodat ik eind
+            2026 de deuren van Chibi Woef kan openen. <br />
             Een plek waar rust, begrip en oprechte zorg voor jouw trouwe
             viervoeter centraal staan.
           </p>
@@ -221,7 +225,12 @@ export default function Home() {
           <span className="badge">Wat we doen ♥</span>
           <h2 className="section-heading">Aanbod</h2>
           <p className="section-sub">
-            Wij willen de wereld graag een beetje mooier maken, één chibi tegelijk. Daarom maken we gebruik van natuurlijke en diervriendelijke producten en bieden we een persoonlijke, stressvrije aanpak. Jouw trouwe viervoeter staat hier centraal. Zo kunnen we samen zorgen voor een stralende vacht en een gelukkig hart.
+            Wij willen de wereld graag een beetje mooier maken, één chibi
+            tegelijk. Daarom maken we gebruik van natuurlijke en
+            diervriendelijke producten en bieden we een persoonlijke,
+            stressvrije aanpak. Jouw trouwe viervoeter staat hier centraal. Zo
+            kunnen we samen zorgen voor een stralende vacht en een gelukkig
+            hart.
           </p>
           <div className="services__grid">
             {services.map((s) => (
@@ -247,10 +256,7 @@ export default function Home() {
 
       {/* ── CTA Banner ── */}
       <div className="container" style={{ paddingBottom: "0" }}>
-        <div
-          className="cta-banner"
-          style={{ backgroundImage: `url(${PugPhoneImg})` }}
-        >
+        <div className="cta-banner cta-banner--contact">
           <img
             src={MobileImg}
             className="cta-banner__icon"

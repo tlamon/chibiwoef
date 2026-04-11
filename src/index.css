@@ -14,6 +14,7 @@
   --cream: #f5f0eb;
   --teal: #9fb391;
   --teal-light: #d8e0d0;
+  --teal-extralight: #f3f9f2;
   --teal-dark: #4d5e42;
   --blush-1: #e5ccc6;
   --blush-2: #cca8a8;
@@ -26,7 +27,6 @@
   --ocre-light: #f3dec3;
   --ocre: #f2d8a5;
   --ocre-dark: #d9b382;
-  --charcoal: #2e2b28;
   --charcoal: #4e321f;
   --brown-light: #c09e85;
   --brown-dark: #4e321f;
@@ -54,16 +54,6 @@
 
 html {
   scroll-behavior: smooth;
-}
-
-.gochi-font {
-  font-family: var(--font-subtitle);
-  font-weight: normal;
-}
-
-.zen-loop-font {
-  font-family: var(--font-zen);
-  letter-spacing: 0.03rem;
 }
 
 body {
@@ -110,9 +100,6 @@ h4 {
 }
 .text-center {
   text-align: center;
-}
-.text-muted {
-  color: var(--muted);
 }
 
 .badge {
@@ -620,15 +607,6 @@ h4 {
   width: 100%;
   height: auto;
 }
-.about__label {
-  font-size: 20px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: var(--teal-dark);
-  margin-bottom: 10px;
-  font-family: var(--font-zen);
-  letter-spacing: 0.03rem;
-}
 .about__text {
   font-size: 16px;
   color: var(--muted);
@@ -642,9 +620,6 @@ h4 {
   .about__img-wrap {
     max-width: 280px;
     margin: 0 auto;
-  }
-  .about__label {
-    font-size: 25px;
   }
 }
 
@@ -808,6 +783,9 @@ h4 {
   gap: 28px;
   min-height: 300px;
 }
+.cta-banner--contact {
+  background-image: url("./assets/pug-phone.webp");
+}
 .cta-banner__icon {
   width: 100px;
   object-fit: contain;
@@ -870,109 +848,49 @@ h4 {
 }
 
 /* PRICELIST */
-.tarieven {
-  padding: 48px 0 80px;
+.content-block {
+  margin: 4rem 0;
 }
-
-.menu-wrap {
+.content-stack {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 52px;
 }
 
-.menu-block__head {
+.content-block__head {
   margin-bottom: 20px;
   padding-bottom: 12px;
 }
-.menu-block__title {
+.content-block__title {
   font-size: clamp(22px, 2.8vw, 28px);
   margin: 0 0 3px;
 }
-.menu-block__sub {
+.content-block__sub {
   color: var(--muted);
   font-style: italic;
-  margin: 0;
+  margin: 3rem 0 0;
 }
 
-.size-table-wrap {
-  overflow-x: auto;
-}
-.size-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-.size-table thead th {
-  padding: 0 14px 10px;
-  text-align: center;
-  font-size: 12px;
-  font-weight: 600;
-  border-bottom: 1px solid var(--border);
-  color: var(--muted);
-  font-family: var(--font-body);
-}
-.size-table thead th:first-child {
-  text-align: left;
-  padding-left: 0;
-  min-width: 200px;
-}
-.size-table thead th small {
-  display: block;
-  font-size: 11px;
-  font-weight: 400;
-  margin-top: 1px;
-}
-.size-table thead th em {
-  display: block;
-  font-style: italic;
-  font-size: 10px;
-  font-weight: 400;
-}
-.size-table tbody tr {
-  border-bottom: 1px solid var(--border);
-}
-.size-table tbody tr:last-child {
-  border-bottom: none;
-}
-.size-table tbody td {
-  padding: 14px 14px;
-  font-size: 14px;
-  vertical-align: top;
-}
-.size-table tbody td:first-child {
-  padding-left: 0;
-}
-.size-table tbody td:not(:first-child) {
-  text-align: center;
-}
-.size-table__desc {
-  display: block;
-  font-size: 12px;
-  color: var(--muted);
-  font-style: italic;
-  margin-top: 3px;
-  font-weight: normal;
-}
-.size-table__price {
-  font-size: 14px;
-  font-weight: 700;
-  white-space: nowrap;
-}
-
-.menu-list {
+.treatment-list {
   list-style: none;
+  border: 3px solid var(--teal-light);
+  padding: 2rem;
+  margin: 4rem 0 0;
+  border-radius: var(--radius-lg);
+  background-color: var(--teal-extralight);
 }
-.menu-top-dog {
+.treatment-mascot {
   position: absolute;
   right: 50px;
   top: -55px;
 }
-.menu-top-dog img {
+.treatment-mascot img {
   width: 120px;
   height: auto;
   object-fit: contain;
 }
-.menu-row {
+.treatment-row {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -980,14 +898,14 @@ h4 {
   padding: 13px 0;
   border-bottom: 1px solid var(--border);
 }
-.menu-row:last-child {
+.treatment-row:last-child {
   border-bottom: none;
 }
-.menu-row__name {
+.treatment-row__title {
   color: var(--teal-dark);
   font-family: var(--font-heading);
 }
-.menu-row__desc {
+.treatment-row__desc {
   display: block;
   font-size: 14px;
   color: var(--muted);
@@ -995,30 +913,99 @@ h4 {
   margin-top: 3px;
   font-weight: normal;
 }
-.menu-row--treatment {
+.treatment-row--service {
   align-items: flex-start;
   gap: 12px;
 }
-.menu-row__paw {
+.treatment-row__icon {
   width: 18px;
   height: 18px;
   flex-shrink: 0;
   opacity: 0.5;
   margin-top: 2px;
 }
-.menu-row__body {
+.treatment-row__body {
   flex: 1;
   min-width: 0;
 }
 
+.pricing-table-wrap {
+  overflow-x: auto;
+}
+
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.pricing-table thead th {
+  padding: 0 14px 10px;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+  color: var(--muted);
+  font-family: var(--font-zen);
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.pricing-table thead th:first-child {
+  text-align: left;
+  padding-left: 0;
+  min-width: 230px;
+}
+
+.pricing-table thead th small {
+  display: block;
+  font-weight: bold;
+  margin-top: 1px;
+  margin-left: 1rem;
+  background-color: var(--teal-light);
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  letter-spacing: 0;
+}
+
+.pricing-table tbody tr {
+  border-bottom: 1px solid var(--border);
+}
+
+.pricing-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.pricing-table tbody td {
+  padding: 14px 14px;
+  vertical-align: top;
+}
+
+.pricing-table tbody td:first-child {
+  padding-left: 0;
+}
+
+.pricing-table tbody td:not(:first-child) {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.pricing-table__desc {
+  font-size: 12px;
+  color: var(--muted);
+  font-style: italic;
+  margin: 0 1rem;
+  font-weight: normal;
+}
+
 @media (max-width: 640px) {
-  .menu-wrap {
+  .content-stack {
     gap: 40px;
   }
-  .size-table tbody td {
+  .pricing-table tbody td {
     padding: 12px 8px;
   }
-  .size-table thead th {
+  .pricing-table thead th {
     padding: 0 8px 10px;
   }
 }
@@ -1082,159 +1069,82 @@ h4 {
   margin: 0;
 }
 
-.breed-wrap {
-  margin-top: 5rem;
-  position: relative;
-}
-.breed-search-wrap {
-  top: -1.5rem;
-  left: 0;
-  position: absolute;
-  width: 100%;
+.privacy-box {
+  max-width: 760px;
+  margin: 0 auto;
 }
 
-/* Bone-shaped search container */
-.bone-wrap {
-  position: relative;
+.pricing-bone {
+  position: absolute;
   background: var(--ocre);
   border-radius: 12px;
-  padding: 25px;
-  display: flex;
-  align-items: center;
+  padding: 20px 28px;
   margin: 0 auto;
-  width: 50%;
+  width: min(680px, 40%);
+  text-align: center;
+  transform: translateX(50%);
+  right: 50%;
+  top: -2rem;
 }
-/* The four knobs — two on the left via ::before, two on the right via ::after */
-.bone-wrap::before,
-.bone-wrap::after {
+
+.pricing-bone::before,
+.pricing-bone::after {
   content: "";
   position: absolute;
   top: 50%;
-  width: 90px;
-  height: 80px;
+  width: 76px;
+  height: 68px;
   background: var(--ocre);
   border-radius: 50%;
-  box-shadow:
-    -10px 35px 0 var(--ocre),
-    -10px -35px 0 var(--ocre);
 }
-.bone-wrap::before {
+
+.pricing-bone::before {
   left: -12px;
   transform: translateY(-50%);
+  box-shadow:
+    -10px 30px 0 var(--ocre),
+    -10px -30px 0 var(--ocre);
 }
-.bone-wrap::after {
+
+.pricing-bone::after {
   right: -12px;
   transform: translateY(-50%);
   box-shadow:
-    10px 35px 0 var(--ocre),
-    10px -35px 0 var(--ocre);
+    10px 30px 0 var(--ocre),
+    10px -30px 0 var(--ocre);
 }
 
 @media (max-width: 640px) {
-  .bone-wrap {
-    width: 90%;
-    padding: 10px;
-    border-radius: 8px;
+  .pricing-bone {
+    width: 100%;
+    padding: 16px;
+    border-radius: 10px;
+    position: relative;
+    margin: 10px auto 20px;
   }
-  .bone-wrap::before,
-  .bone-wrap::after {
-    width: 50px;
-    height: 40px;
-    box-shadow:
-      -10px 25px 0 var(--teal-light),
-      -10px -25px 0 var(--teal-light);
+
+  .pricing-bone::before,
+  .pricing-bone::after {
+    width: 44px;
+    height: 36px;
   }
-  .bone-wrap::after {
-    box-shadow:
-      10px 25px 0 var(--teal-light),
-      10px -25px 0 var(--teal-light);
-  }
-  .bone-wrap::before {
+
+  .pricing-bone::before {
     left: -6px;
+    box-shadow:
+      -8px 20px 0 var(--ocre),
+      -8px -20px 0 var(--ocre);
   }
-  .bone-wrap::after {
+
+  .pricing-bone::after {
     right: -6px;
+    box-shadow:
+      8px 20px 0 var(--ocre),
+      8px -20px 0 var(--ocre);
   }
 }
 
-.breed-search {
-  width: 100%;
-  padding: 8px 12px;
-  font-size: 15px;
-  font-family: var(--font-body);
-  border: none;
-  border-radius: var(--radius-sm);
-  background: var(--white);
-  color: var(--charcoal);
-  outline: none;
-  position: relative;
-  z-index: 1;
-  transition: box-shadow 0.18s;
-}
-.breed-search:focus {
-  box-shadow: 0 0 0 2px var(--teal);
-}
-.breed-search::placeholder {
-  color: var(--muted);
-}
-.breed-no-result {
-  font-size: 14px;
-  color: var(--muted);
-  padding: 16px 0;
-  text-align: center;
-}
-
-.breed-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  margin-top: 40px;
-  padding-top: 1rem;
-}
-.breed-card {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 8px;
-  padding: 5px 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-}
-.breed-card:nth-child(odd) {
-  padding-right: 0;
-  border-right: none;
-}
-.breed-card:nth-child(even) {
-  padding-left: 0;
-}
-.breed-card__info {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  min-width: 0;
-}
-.breed-card__name {
-  font-family: var(--font-heading);
-  color: var(--teal-dark);
-}
-.breed-card__variants {
-  font-size: 12px;
-  color: var(--muted);
-}
-
-@media (max-width: 600px) {
-  .breed-grid {
-    grid-template-columns: 1fr;
-    margin-top: 20px;
-  }
-  .breed-card:nth-child(odd) {
-    border-right: none;
-    padding-right: 0;
-  }
-  .breed-card:nth-child(even) {
-    padding-left: 0;
-  }
-}
-
-.menu-block__note {
+.pricing-note {
   font-size: 13px;
   color: var(--muted);
   font-style: italic;
@@ -1392,81 +1302,8 @@ h4 {
   box-shadow: var(--shadow-md);
   border: 1.5px solid var(--border);
 }
-.book-form-card__title {
-  font-size: clamp(22px, 2.4vw, 28px);
-  margin-bottom: 6px;
-}
-.book-form-card__sub {
-  font-size: 15px;
-  color: var(--muted);
-  margin-bottom: 28px;
-}
-.form-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px;
-}
-.form-full {
-  grid-column: 1 / -1;
-}
-.form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-.form-label {
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--charcoal);
-}
-.form-input,
-.form-select,
-.form-textarea {
-  padding: 11px 15px;
-  border: 1.5px solid var(--border);
-  border-radius: var(--radius-sm);
-  font-family: var(--font-body);
-  font-size: 15px;
-  color: var(--charcoal);
-  background: var(--cream);
-  transition: var(--transition);
-  outline: none;
-  width: 100%;
-}
-.form-input:focus,
-.form-select:focus,
-.form-textarea:focus {
-  border-color: var(--teal-dark);
-  background: var(--white);
-  box-shadow: 0 0 0 3px rgba(77, 94, 66, 0.14);
-}
-.form-textarea {
-  resize: vertical;
-  min-height: 100px;
-}
-.form-submit {
-  width: 100%;
-  padding: 15px;
-  font-size: 16px;
-  margin-top: 6px;
-}
-.form-success {
-  background: #e7f8f0;
-  border: 1.5px solid #6dc798;
-  border-radius: var(--radius-md);
-  padding: 16px 20px;
-  font-size: 15px;
-  color: #1e6b47;
-  display: flex;
-  gap: 10px;
-  align-items: flex-start;
-  line-height: 1.6;
-}
 @media (max-width: 900px) {
   .contact__grid {
-    grid-template-columns: 1fr;
-  }
-  .form-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -1498,29 +1335,10 @@ h4 {
   .service-card__link {
     font-size: 15px;
   }
-  .breed-card__name {
+  .treatment-row__title {
     font-size: 16px;
   }
-  .breed-card__price {
-    font-size: 16px;
-    text-align: right;
-  }
-  .breed-card__variants {
-    font-size: 14px;
-  }
-  .size-table thead th {
-    font-size: 14px;
-  }
-  .size-table tbody td {
-    font-size: 15px;
-  }
-  .size-table__price {
-    font-size: 15px;
-  }
-  .menu-row__name {
-    font-size: 16px;
-  }
-  .menu-row__desc {
+  .treatment-row__desc {
     font-size: 15px;
   }
   .footer__links a,
@@ -1537,16 +1355,13 @@ h4 {
   .hours-grid dd {
     font-size: 15px;
   }
-  .breed-search {
-    font-size: 16px;
-  }
-  .menu-block__sub {
+  .content-block__sub {
     font-size: 16px;
   }
 }
 
 /* ── Privacy page ─────────────────────────────────── */
-.huisregels {
+.policy-section {
   padding: 2rem 0 4rem;
 }
 

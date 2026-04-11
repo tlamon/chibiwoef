@@ -16,12 +16,9 @@ export default function Privacy() {
         </p>
       </div>
 
-      <section className="huisregels">
+      <section className="policy-section">
         <div className="container">
-          <div
-            className="box-white"
-            style={{ maxWidth: "760px", margin: "0 auto" }}
-          >
+          <div className="box-white privacy-box">
             <div className="privacy-content">
               <h2>1. Wie zijn wij?</h2>
               <p>
