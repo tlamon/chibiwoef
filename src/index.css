@@ -651,8 +651,8 @@ h4 {
 .feature-card__icon {
   margin-left: auto;
   margin-right: auto;
-  width: 64px;
-  height: 64px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -661,9 +661,9 @@ h4 {
   flex-shrink: 0;
 }
 .feature-card__icon img {
-  width: 36px;
-  height: 36px;
-  object-fit: contain;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
 }
 .feature-card__title {
   font-size: 1.6rem;

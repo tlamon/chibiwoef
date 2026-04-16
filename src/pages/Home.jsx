@@ -11,6 +11,8 @@ import HaircutImg from "../assets/haircut.jpg";
 import massageImg from "../assets/massage.webp";
 import ChihuahuaImg from "../assets/chihuahua.jpg";
 import MobileImg from "../assets/mobile.webp";
+import LavenderImg from "../assets/lavendel.png";
+import EucalyptusImg from "../assets/eucalyptus.png";
 
 const features = [
   {
@@ -20,14 +22,14 @@ const features = [
     text: "Met professionele trimmersopleiding op zak gaan we vol passie aan de slag. Jouw hondje verdient het allerbeste.",
   },
   {
-    img: PawImg,
-    bg: "#F5F0EB",
+    img: LavenderImg,
+    bg: "#e0d0e4",
     title: "Natuurlijke producten",
     text: "We werken uitsluitend met hypoallergene, diervriendelijke shampoos en verzorgingsproducten. Zacht voor de huid, geweldig voor de vacht.",
   },
   {
-    img: PawImg,
-    bg: "#EDEAE2",
+    img: EucalyptusImg,
+    bg: "#D8E0D0",
     title: "Rustige, warme sfeer",
     text: "Hier draait alles om comfort en ontspanning. We creëren een stressvrije omgeving en maken gebruik van aromatherapie en kalmerende kruiden, waardoor jouw viervoeter zich veilig en geliefd voelt.",
   },
