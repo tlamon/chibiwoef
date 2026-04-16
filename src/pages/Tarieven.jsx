@@ -18,19 +18,19 @@ const treatments = [
     price: "€ 10",
   },
   {
-    name: "Tandjes poetsen",
-    desc: "Voor een frisse snuit en een gezond gebit.",
-    price: "€ 10",
-  },
-  {
     name: "Vlooien & teken shampoo",
     desc: "Extra intensieve wasbeurt. Verplicht bij ongewenste gastjes om de hygiene in het salon te bewaren.",
     price: "€ 12",
   },
   {
-    name: "Ontspanningsmassage (15 min)",
+    name: "Ontspanningsmassage (20 min)",
     desc: "Een rustmoment voor hond of kat; bevordert de bloedsomloop en verlaagt stress.",
     price: "€ 25",
+  },
+  {
+    name: "Zen massage (40 min)",
+    desc: "Diepe ontspanning voor lichaam en geest; ideaal voor oudere of angstige dieren.",
+    price: "€ 45",
   },
   {
     name: "Puppy gewenning",

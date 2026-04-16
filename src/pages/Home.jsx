@@ -13,31 +13,26 @@ import ChihuahuaImg from "../assets/chihuahua.jpg";
 import MobileImg from "../assets/mobile.webp";
 import LavenderImg from "../assets/lavendel.png";
 import EucalyptusImg from "../assets/eucalyptus.png";
+import ChamomileImg from "../assets/kamille.png";
 
 const features = [
   {
-    img: PawImg,
-    bg: "#D8E0D0",
-    title: "Vakkundige verzorging",
-    text: "Met professionele trimmersopleiding op zak gaan we vol passie aan de slag. Jouw hondje verdient het allerbeste.",
+    img: EucalyptusImg,
+    bg: "var(--teal-light)",
+    title: "Kalmte & Rust",
+    text: "In ons kleinschalige salon werken we één-op-één, in een prikkelarme omgeving. De kalmerende werking van lavendel aromatherapie en zachte muziek zorgen voor een stressvrije ervaring.",
   },
   {
     img: LavenderImg,
-    bg: "#e0d0e4",
+    bg: "var(--lavender-light)",
     title: "Natuurlijke producten",
     text: "We werken uitsluitend met hypoallergene, diervriendelijke shampoos en verzorgingsproducten. Zacht voor de huid, geweldig voor de vacht.",
   },
   {
-    img: EucalyptusImg,
-    bg: "#D8E0D0",
-    title: "Rustige, warme sfeer",
-    text: "Hier draait alles om comfort en ontspanning. We creëren een stressvrije omgeving en maken gebruik van aromatherapie en kalmerende kruiden, waardoor jouw viervoeter zich veilig en geliefd voelt.",
-  },
-  {
-    img: PawImg,
-    bg: "#EDEAE2",
-    title: "Persoonlijke aanpak",
-    text: "We nemen de tijd om jouw hond te leren kennen. Zo krijgt elke woef een eigen dossier. Zo weten we precies hoe we jouw trouwe viervoeter het best in de watten kunnen leggen. Want elke chibi is uniek!",
+    img: ChamomileImg,
+    bg: "var(--ocre-light)",
+    title: "Individuele aandacht",
+    text: "Voor ons is elk dier uniek. We nemen de tijd om vertrouwen te bouwen en passen de behandeling aan de behoeften van jouw viervoeter aan.",
   },
 ];
 
@@ -123,7 +118,7 @@ export default function Home() {
               aria-hidden="true"
             />
             <img
-              src={HairdryerImg}
+              src={ChamomileImg}
               alt=""
               className="hero__float hero__float--dryer"
               aria-hidden="true"
