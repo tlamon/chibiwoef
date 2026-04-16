@@ -2,6 +2,9 @@ import { useEffect } from "react";
 import PawIcon from "../assets/paw.svg";
 import MobileImg from "../assets/mobile.webp";
 import TopDogImg from "../assets/sleepy.png";
+import DogXsIcon from "../assets/dog-xs.svg";
+import DogSIcon from "../assets/dog-s.svg";
+import DogMIcon from "../assets/dog-m.svg";
 
 const treatments = [
   {
@@ -32,49 +35,49 @@ const treatments = [
   {
     name: "Puppy gewenning",
     desc: "Een eerste, zachte kennismaking met geurtjes en geluidjes.",
-    price: "Gratis (tot 6 mnd)",
+    price: "Gratis (tot 6 maanden)",
   },
 ];
 
 const pricingRows = [
   {
     coatType: "Korthaar / glad",
-    note: "Basisonderhoud, wassen & drogen",
+    note: "Basisonderhoud, wassen & drogen, nagels knippen, en oren reinigen",
     xs: "€ 45",
     s: "€ 55",
     m: "€ 70",
   },
   {
     coatType: "Dubbele vacht",
-    note: "Ontwollen & naturel model",
+    note: "Ontwollen & naturel model, wassen & drogen, nagels knippen en oren reinigen",
     xs: "€ 60",
     s: "€ 75",
     m: "€ 90",
   },
   {
     coatType: "Langhaar / bevedering",
-    note: "Intensief was-, droog- & knipwerk",
+    note: "Ontwollen, was-, droog- & knipwerk, nagels knippen en oren reinigen",
     xs: "€ 70",
     s: "€ 85",
     m: "€ 105",
   },
   {
     coatType: "Krul / fleece (tot 1 cm)",
-    note: "Volledige snit (kort)",
+    note: "Ontwollen, was-, droog- & knipwerk, nagels knippen en oren reinigen, volledige snit (kort)",
     xs: "€ 75",
     s: "€ 90",
     m: "€ 110",
   },
   {
     coatType: "Krul / fleece (1 - 2.5 cm)",
-    note: "Maatwerk & modelknippen",
+    note: "Ontwollen, wassen, drogen & modelknippen, nagels knippen en oren reinigen ",
     xs: "€ 95",
     s: "€ 110",
     m: "€ 135",
   },
   {
     coatType: "Ruwharig (plukken)",
-    note: "Ambachtelijk handmatig plukwerk",
+    note: "Ambachtelijk handmatig plukwerk, wassen & drogen, nagels knippen en oren reinigen",
     xs: "€ 75",
     s: "€ 95",
     m: "€ 120",
@@ -122,14 +125,43 @@ export default function Tarieven() {
                       <tr>
                         <th>Vachttype</th>
                         <th>
-                          XS
-                          <small>&lt; 5 kg</small>
+                          <div className="pricing-size-head">
+                            <img
+                              src={DogXsIcon}
+                              className="pricing-size-head__icon pricing-size-head__icon--xs"
+                              alt=""
+                              aria-hidden="true"
+                            />
+                            <span className="pricing-size-head__label">
+                              XS (&lt;5kg)
+                            </span>
+                          </div>
                         </th>
                         <th>
-                          S<small>5 - 10 kg</small>
+                          <div className="pricing-size-head">
+                            <img
+                              src={DogSIcon}
+                              className="pricing-size-head__icon pricing-size-head__icon--s"
+                              alt=""
+                              aria-hidden="true"
+                            />
+                            <span className="pricing-size-head__label">
+                              S (5kg - 10kg)
+                            </span>
+                          </div>
                         </th>
                         <th>
-                          M<small>10 - 20 kg</small>
+                          <div className="pricing-size-head">
+                            <img
+                              src={DogMIcon}
+                              className="pricing-size-head__icon pricing-size-head__icon--m"
+                              alt=""
+                              aria-hidden="true"
+                            />
+                            <span className="pricing-size-head__label">
+                              M (10kg - 20kg)
+                            </span>
+                          </div>
                         </th>
                       </tr>
                     </thead>

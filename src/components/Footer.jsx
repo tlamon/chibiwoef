@@ -10,7 +10,7 @@ export default function Footer() {
           <div>
             <div className="footer__brand">♥ Chibi Woef</div>
             <p className="footer__tagline">
-              Zorg voor jouw fluffy vriendjes met liefde en begrip sinds 2026.
+              Zorg voor jouw fluffy vriendjes met liefde en begrip vanaf eind 2026.
             </p>
           </div>
 

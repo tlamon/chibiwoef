@@ -968,6 +968,55 @@ h4 {
   letter-spacing: 0;
 }
 
+.pricing-size-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.pricing-size-head__icon {
+  display: block;
+  height: auto;
+  color: var(--charcoal);
+}
+
+.pricing-size-head__icon--xs {
+  width: 28px;
+}
+
+.pricing-size-head__icon--s {
+  width: 42px;
+}
+
+.pricing-size-head__icon--m {
+  width: 52px;
+}
+
+.pricing-size-head__label {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 0;
+  line-height: 1.2;
+}
+
+@media (max-width: 860px) {
+  .pricing-size-head__label {
+    font-size: 0.8rem;
+  }
+  .pricing-size-head__icon--xs {
+    width: 28px;
+  }
+  .pricing-size-head__icon--s {
+    width: 34px;
+  }
+  .pricing-size-head__icon--m {
+    width: 42px;
+  }
+}
+
 .pricing-table tbody tr {
   border-bottom: 1px solid var(--border);
 }
