@@ -47,7 +47,7 @@ const treatments = [
 const pricingRows = [
   {
     coatType: "Korthaar / glad",
-    note: "Basisonderhoud, wassen & drogen, nagels knippen, en oren reinigen",
+    note: "Wassen & drogen, nagels knippen en oren reinigen",
     xs: "€ 45",
     s: "€ 55",
     m: "€ 70",
@@ -96,17 +96,6 @@ export default function Tarieven() {
 
   return (
     <main>
-      <div className="page-hero">
-        <span className="badge">Prijslijst 2026</span>
-        <h1 className="page-hero__title">Tarieven</h1>
-        <p className="page-hero__sub">
-          Prijzen zijn richtprijzen en kunnen variëren op basis van
-          vachtconditie, ras en temperament. We werken voorlopig met honden tot
-          en met een gewicht van 30 kg. Definitieve prijs na gratis
-          vachtinspectie bij aankomst.
-        </p>
-      </div>
-
       <section className="pricing-section">
         <div className="container">
           <div className="content-stack">
@@ -218,7 +207,7 @@ export default function Tarieven() {
                 </p>
               </div>
 
-              <div className="box-white">
+              <div>
                 <p className="box-white__label">
                   Belangrijk om te weten: Scope & Rust
                 </p>

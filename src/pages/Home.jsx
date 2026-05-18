@@ -17,8 +17,8 @@ import ChamomileImg from "../assets/kamille.png";
 
 const features = [
   {
-    img: EucalyptusImg,
-    bg: "var(--teal-light)",
+    img: ChamomileImg,
+    bg: "var(--ocre-light)",
     title: "Kalmte & Rust",
     text: "In ons kleinschalige salon werken we één-op-één, in een prikkelarme omgeving. De kalmerende werking van lavendel aromatherapie en zachte muziek zorgen voor een stressvrije ervaring.",
   },
@@ -29,8 +29,8 @@ const features = [
     text: "We werken uitsluitend met hypoallergene, diervriendelijke shampoos en verzorgingsproducten. Zacht voor de huid, geweldig voor de vacht.",
   },
   {
-    img: ChamomileImg,
-    bg: "var(--ocre-light)",
+    img: EucalyptusImg,
+    bg: "var(--teal-light)",
     title: "Individuele aandacht",
     text: "Voor ons is elk dier uniek. We nemen de tijd om vertrouwen te bouwen en passen de behandeling aan de behoeften van jouw viervoeter aan.",
   },
@@ -83,11 +83,10 @@ export default function Home() {
               kat te verwennen? Bij Chibi Woef kan je terecht voor een
               professionele was- en trimbeurt, een ontspannende massage of
               gewoon een momentje van rust en aandacht voor jouw trouwe
-              viervoeter. Wij maken gebruik van natuurlijke, cruelty-free
-              producten en kalmerende kruiden. Klaar om jouw chibi te laten
-              stralen? Kom snel eens snuffelen want wij openen binnenkort in
-              Haacht en kunnen niet wachten om jouw fluffy vriendje te
-              ontmoeten! Tot snel bij Chibi Woef!
+              viervoeter. Klaar om jouw chibi te laten stralen? Wij openen
+              binnenkort in Haacht en kunnen niet wachten om jullie te
+              ontmoeten! <br />
+              Tot snel bij Chibi Woef! 🐾
             </p>
             <div className="hero__actions">
               <Link to="/contact" className="btn btn-primary">
