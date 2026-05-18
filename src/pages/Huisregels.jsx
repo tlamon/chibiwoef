@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import PawIcon from "../assets/paw.svg";
 import RulesIcon from "../assets/rules.png";
 import HeartIcon from "../assets/heart.png";
+import PoodleImg from "../assets/poodle.jpg";
 
 const rules = [
   {
@@ -107,11 +108,20 @@ export default function Huisregels() {
           </div>
         </div>
 
+        {/* ── Poodle blob decoration ── */}
+        <div className="rules-poodle-blob">
+          <img
+            src={PoodleImg}
+            alt=""
+            aria-hidden="true"
+            className="rules-poodle-blob__img"
+          />
+        </div>
         <p className="page-hero__sub">
           Dankjewel voor je begrip{" "}
           <img src={HeartIcon} alt="" aria-hidden="true" />
         </p>
-      </div>
+      </div>{" "}
     </main>
   );
 }

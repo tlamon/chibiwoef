@@ -1244,9 +1244,10 @@ h4 {
   list-style: none;
   background: var(--white);
   border-radius: var(--radius-lg);
-  overflow: hidden;
+  overflow: auto;
   padding: 20px;
   text-align: left;
+  position: relative;
 }
 .rules-list__item {
   display: flex;
@@ -1273,6 +1274,21 @@ h4 {
   flex-shrink: 0;
   opacity: 0.45;
   margin-top: 4px;
+}
+
+.rules-poodle-blob {
+  width: 280px;
+  height: auto;
+  margin: 1rem auto;
+  overflow: hidden;
+}
+
+.rules-poodle-blob__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
 }
 
 /* 404 */
