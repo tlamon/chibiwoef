@@ -9,13 +9,13 @@ import DogMIcon from "../assets/dog-m.svg";
 const treatments = [
   {
     name: "Pawdicure",
-    desc: "Nageltjes knippen en/of vijlen voor pootjes die gehoord mogen worden.",
+    desc: "Nagels knippen en/of vijlen. We knippen nooit te kort en vijlen bij voorkeur om splijten te voorkomen. Voor honden die het spannend vinden, knippen we de nagels in meerdere korte sessies. Bij ingegroeide nagels verwijzen we je graag door naar de dierenarts voor een veilige behandeling.",
     price: "€ 10",
   },
   {
     name: "Oren reinigen",
     desc: "Milde reiniging met professionele vloeistof. Bij infecties sturen we je (uit liefde) door naar de dierenarts.",
-    price: "€ 10",
+    price: "€ 8",
   },
   {
     name: "Vlooien & teken shampoo",
@@ -23,19 +23,24 @@ const treatments = [
     price: "€ 12",
   },
   {
-    name: "Ontspanningsmassage (20 min)",
-    desc: "Een rustmoment voor hond of kat; bevordert de bloedsomloop en verlaagt stress.",
+    name: "Ontspanningsmassage (20-30 min)",
+    desc: "Een rustmoment voor hond of kat; bevordert de bloedsomloop en verlaagt stress. ",
     price: "€ 25",
   },
   {
-    name: "Zen massage (40 min)",
-    desc: "Diepe ontspanning voor lichaam en geest; ideaal voor oudere of angstige dieren.",
+    name: "Zen massage (40-60 min)",
+    desc: "Diepe ontspanning voor lichaam en geest; ideaal voor oudere of angstige dieren. We werken met zachte, langzame bewegingen en aromatherapie om een serene ervaring te creëren. Bij honden met mobiliteitsproblemen of chronische pijn kan deze massage verlichting bieden en de levenskwaliteit verbeteren.",
     price: "€ 45",
   },
   {
-    name: "Puppy gewenning",
-    desc: "Een eerste, zachte kennismaking met geurtjes en geluidjes.",
+    name: "Puppy gewenning (15-30 min)",
+    desc: "Een eerste, zachte kennismaking met de geuren en kleuren van een trimsalon. We maken er een leuk, speels moment van met veel positieve associaties, zodat jouw kleine vriendje zich meteen thuis voelt op de tafel, in het bad en onder de föhn.",
     price: "Gratis (tot 6 maanden)",
+  },
+  {
+    name: "Standaard gewenning",
+    desc: "Op maat gemaakte sessie om angstige of onzekere dieren te laten wennen aan het salon. Hierbij maken we gebruik van positieve associaties, zoals lekkernijen, zachte aanrakingen en aanmoediging om vertrouwen op te bouwen. Soms is het nodig om meerdere sessies te plannen, afhankelijk van het comfortniveau van jouw hond.",
+    price: "vanaf €15 per kwartier",
   },
 ];
 
@@ -62,14 +67,14 @@ const pricingRows = [
     m: "€ 105",
   },
   {
-    coatType: "Krul / fleece (tot 1 cm)",
+    coatType: "Krul / fleece (tot 2 cm)",
     note: "Ontwollen, was-, droog- & knipwerk, nagels knippen en oren reinigen, volledige snit (kort)",
     xs: "€ 75",
     s: "€ 90",
     m: "€ 110",
   },
   {
-    coatType: "Krul / fleece (1 - 2.5 cm)",
+    coatType: "Krul / fleece (langer dan 2 cm)",
     note: "Ontwollen, wassen, drogen & modelknippen, nagels knippen en oren reinigen ",
     xs: "€ 95",
     s: "€ 110",
@@ -97,7 +102,8 @@ export default function Tarieven() {
         <p className="page-hero__sub">
           Prijzen zijn richtprijzen en kunnen variëren op basis van
           vachtconditie, ras en temperament. We werken voorlopig met honden tot
-          en met 20 kg. Definitieve prijs na gratis vachtinspectie bij aankomst.
+          en met een gewicht van 30 kg. Definitieve prijs na gratis
+          vachtinspectie bij aankomst.
         </p>
       </div>
 
@@ -115,8 +121,8 @@ export default function Tarieven() {
                 <div className="content-block__head">
                   <p className="content-block__sub">
                     Richtprijzen incl. 21% BTW. De definitieve prijs hangt af
-                    van de vachtconditie en het gedrag. Voorlopig werken we tot
-                    en met 20 kg.
+                    van de vachtconditie en het gedrag. Voorlopig werken we met
+                    dieren tot en met een gewicht van 30 kg.
                   </p>
                 </div>
                 <div className="pricing-table-wrap">
@@ -159,7 +165,7 @@ export default function Tarieven() {
                               aria-hidden="true"
                             />
                             <span className="pricing-size-head__label">
-                              M (10kg - 20kg)
+                              M (10kg - 30kg)
                             </span>
                           </div>
                         </th>
@@ -207,7 +213,7 @@ export default function Tarieven() {
                 </ul>
 
                 <p className="pricing-note">
-                  Heb je een hond boven 20 kg? Laat het gerust weten, dan denken
+                  Heb je een hond boven 30 kg? Laat het gerust weten, dan denken
                   we graag mee en verwijzen we je warm door waar nodig.
                 </p>
               </div>
@@ -218,11 +224,11 @@ export default function Tarieven() {
                 </p>
                 <p className="box-white__items">
                   Onze prijzen zijn gebaseerd op een uurtarief van € 60. De
-                  bovenstaande tabel dient als richtlijn voor honden met een
-                  goed onderhouden vacht. Bij extreme klitten, vervilting of
+                  bovenstaande tabel dient als richtlijn voor honden/katten met
+                  een goed onderhouden vacht. Bij extreme klitten, vervilting of
                   gedrag dat extra tijd vraagt, rekenen we een toeslag van € 15
                   per begonnen kwartier. Zo garanderen we de rust en kwaliteit
-                  die uw woef verdient.
+                  die uw dier verdient.
                 </p>
               </div>
             </div>
