@@ -11,12 +11,6 @@ export default function Navbar() {
       <div className="navbar__inner">
         <Link to="/" className="navbar__logo" onClick={close}>
           <img src={logoImg} alt="Chibi Woef" className="logo-img" />
-          <h3 className="logo-text">
-            Chibi Woef <br />{" "}
-            <span>
-              hondentrimsalon<small>♡</small>
-            </span>
-          </h3>
         </Link>
 
         <button
@@ -46,17 +40,6 @@ export default function Navbar() {
             </li>
             <li>
               <NavLink
-                to="/tarieven"
-                className={({ isActive }) =>
-                  `navbar__link${isActive ? " active" : ""}`
-                }
-                onClick={close}
-              >
-                Tarieven
-              </NavLink>
-            </li>{" "}
-            <li>
-              <NavLink
                 to="/huisregels"
                 className={({ isActive }) =>
                   `navbar__link${isActive ? " active" : ""}`
@@ -64,6 +47,17 @@ export default function Navbar() {
                 onClick={close}
               >
                 Huisregels
+              </NavLink>
+            </li>{" "}
+            <li>
+              <NavLink
+                to="/tarieven"
+                className={({ isActive }) =>
+                  `navbar__link${isActive ? " active" : ""}`
+                }
+                onClick={close}
+              >
+                Tarieven
               </NavLink>
             </li>{" "}
             <li>
