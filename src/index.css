@@ -52,7 +52,7 @@
   --font-body:
     "Avenir Next", Avenir, "Century Gothic", Futura, system-ui, sans-serif;
   --transition: all 0.22s ease;
-  --max-width: 1140px;
+  --max-width: 768px;
 }
 
 html {
@@ -169,6 +169,10 @@ h4 {
   transform: translateY(-2px);
 }
 @media (max-width: 768px) {
+  .container.rules,
+  .container.pricing {
+    padding: 0;
+  }
   .btn {
     font-size: 20px;
   }
@@ -342,7 +346,7 @@ h4 {
 .footer__tagline {
   font-size: 25px;
   line-height: 2rem;
-  max-width: 270px;
+  max-width: 768px;
   font-family: var(--font-zen);
   letter-spacing: 0.06rem;
   font-weight: 700;
@@ -463,7 +467,7 @@ h4 {
   color: var(--muted);
   line-height: 1.75;
   margin-bottom: 36px;
-  max-width: 420px;
+  max-width: 768px;
 }
 .hero__actions {
   display: flex;
@@ -474,7 +478,7 @@ h4 {
 
 .hero__paw-track {
   width: 100%;
-  max-width: 420px;
+  max-width: 768px;
   height: 30px;
   background-image: url("./assets/paws.png");
   background-repeat: repeat-x;
@@ -535,7 +539,7 @@ h4 {
   transform: rotate(-10deg);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .hero__float--scissors {
     width: 52px;
   }
@@ -550,7 +554,10 @@ h4 {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
+  .hero {
+    padding: 40px 0 30px;
+  }
   .hero__inner {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -617,11 +624,14 @@ h4 {
   margin-bottom: 14px;
 }
 @media (max-width: 768px) {
+  .about {
+    padding: 10px 0;
+  }
   .about__inner {
     grid-template-columns: 1fr;
   }
   .about__img-wrap {
-    max-width: 280px;
+    max-width: 90%;
     margin: 0 auto;
   }
 }
@@ -690,12 +700,12 @@ h4 {
   color: var(--muted);
   line-height: 1.7;
 }
-@media (max-width: 1024px) and (min-width: 601px) {
+@media (max-width: 768px) and (min-width: 601px) {
   .features__grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .features__grid {
     grid-template-columns: 1fr;
   }
@@ -769,12 +779,12 @@ h4 {
 .service-card__link:hover {
   gap: 10px;
 }
-@media (max-width: 1024px) and (min-width: 601px) {
+@media (max-width: 768px) and (min-width: 601px) {
   .services__grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .services__grid {
     grid-template-columns: 1fr;
   }
@@ -825,7 +835,7 @@ h4 {
 .cta-banner__phone:hover {
   text-decoration: underline;
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .cta-banner {
     padding: 24px;
     border-radius: var(--radius-lg);
@@ -855,7 +865,7 @@ h4 {
 .page-hero__sub {
   font-size: 18px;
   color: var(--muted);
-  max-width: 500px;
+  max-width: 768px;
   margin: 0 auto;
   font-family: var(--font-heading);
   justify-items: center;
@@ -952,6 +962,11 @@ h4 {
   flex: 1;
   min-width: 0;
 }
+@media (max-width: 768px) {
+  .treatment-mascot {
+    display: none;
+  }
+}
 
 .pricing-section {
   background-color: var(--card-bg);
@@ -1033,7 +1048,7 @@ h4 {
   line-height: 1.2;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 768px) {
   .pricing-size-head__label {
     font-size: 0.8rem;
   }
@@ -1078,7 +1093,7 @@ h4 {
   font-weight: normal;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
   .content-stack {
     gap: 40px;
   }
@@ -1150,7 +1165,7 @@ h4 {
 }
 
 .privacy-box {
-  max-width: 760px;
+  max-width: 768px;
   margin: 0 auto;
 }
 
@@ -1194,13 +1209,17 @@ h4 {
     10px -30px 0 var(--ocre);
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
+  .pricing-section {
+    padding: 40px 16px;
+  }
   .pricing-bone {
     width: 100%;
     padding: 16px;
     border-radius: 10px;
     position: relative;
     margin: 10px auto 20px;
+    top: -3.5rem;
   }
 
   .pricing-bone::before,
@@ -1300,7 +1319,7 @@ h4 {
 }
 .not-found__inner {
   text-align: center;
-  max-width: 440px;
+  max-width: 768px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1314,7 +1333,7 @@ h4 {
 }
 .not-found__meme {
   width: 100%;
-  max-width: 360px;
+  max-width: 768px;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
 }
@@ -1420,12 +1439,12 @@ h4 {
   box-shadow: var(--shadow-md);
   border: 1.5px solid var(--border);
 }
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .contact__grid {
     grid-template-columns: 1fr;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .book-form-card {
     padding: 24px 18px;
   }
@@ -1438,6 +1457,9 @@ h4 {
    MOBILE FONT SIZE OVERRIDES (≤768px)
    ============================================================ */
 @media (max-width: 768px) {
+  .rules-list {
+    margin: 0;
+  }
   .section-sub {
     font-size: 18px;
   }

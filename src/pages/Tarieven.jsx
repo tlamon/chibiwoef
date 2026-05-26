@@ -97,7 +97,7 @@ export default function Tarieven() {
   return (
     <main>
       <section className="pricing-section">
-        <div className="container">
+        <div className="container pricing">
           <div className="content-stack">
             <div className="content-block">
               <div className="box-white">

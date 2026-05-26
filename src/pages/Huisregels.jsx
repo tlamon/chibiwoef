@@ -77,7 +77,7 @@ export default function Huisregels() {
           Om een veilige en prettige omgeving te garanderen voor alle dieren en
           hun baasjes, houden wij ons graag aan de volgende regels.
         </p>
-        <div className="container">
+        <div className="container rules">
           <div className="content-stack">
             <div className="content-block">
               <div className="rules-icon-wrap">
