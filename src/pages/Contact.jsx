@@ -33,7 +33,7 @@ export default function Contact() {
     <main>
       <div className="page-hero">
         <span className="badge">Kom jij ook graag snuffelen?</span>
-        <h1 className="page-hero__title">Plan een afspraak</h1>
+        <h1 className="page-hero__title">Plan hier binnenkort een afspraak</h1>
         <p className="page-hero__sub">
           Kies een dienst en een tijdstip dat jou past. Je ontvangt meteen een
           bevestiging in je agenda.
@@ -44,10 +44,10 @@ export default function Contact() {
         <div className="container">
           <div className="contact__grid">
             <div>
-              <h2 className="contact__info-heading">Kom ons bezoeken ♡</h2>
+              <h2 className="contact__info-heading">Coming soon ♡</h2>
               <p className="contact__info-sub">
-                We leren jouw chibi graag kennen. Bel ons gerust als je vragen
-                hebt of plan meteen een afspraak via de kalender.
+                In september openen we onze deuren. Bel ons gerust als je al
+                vragen hebt.
               </p>
 
               <div className="contact-info-cards">
@@ -113,7 +113,7 @@ export default function Contact() {
             </div>
 
             {/* ── Cal.com embed ── */}
-            <div className="book-form-card">
+            {/* <div className="book-form-card">
               <Cal
                 namespace={CAL_USERNAME}
                 calLink={CAL_USERNAME}
@@ -125,7 +125,7 @@ export default function Contact() {
                 }}
                 config={{ theme: "light" }}
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

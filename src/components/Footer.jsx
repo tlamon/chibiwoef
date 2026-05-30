@@ -43,14 +43,14 @@ export default function Footer() {
                   0496/309.459
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="mailto:hello@chibiwoef.com">
                   <span className="footer__contact-icon footer__contact-icon--text">
                     ◛
                   </span>
                   hello@chibiwoef.com
                 </a>
-              </li>
+              </li> */}
               <li className="footer__contact-item">
                 <span className="footer__contact-icon footer__contact-icon--text">
                   ⌂

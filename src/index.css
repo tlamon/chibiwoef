@@ -52,7 +52,7 @@
   --font-body:
     "Avenir Next", Avenir, "Century Gothic", Futura, system-ui, sans-serif;
   --transition: all 0.22s ease;
-  --max-width: 768px;
+  --max-width: 1140px;
 }
 
 html {
