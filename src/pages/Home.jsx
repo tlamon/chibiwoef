@@ -71,7 +71,7 @@ export default function Home() {
         <div className="hero__inner">
           <div>
             <div className="hero__badge">
-              Coming Soon! <span className="emoji">🐶</span>
+              Coming Soon! <span className="emoji">🐶</span> Najaar 2026
             </div>
             <h1 className="hero__title">Chibi Woef</h1>
             <h2 className="hero__subtitle">
@@ -80,8 +80,8 @@ export default function Home() {
             <br />
             <p className="hero__text">
               Hello! Zoek je nog een warme en stressvrije plek om jouw hond of
-              kat te verwennen? Bij Chibi Woef kan je binnenkort terecht voor een
-              professionele was- en trimbeurt, een ontspannende massage of
+              kat te verwennen? Bij Chibi Woef kan je binnenkort terecht voor
+              een professionele was- en trimbeurt, een ontspannende massage of
               gewoon een momentje van rust en aandacht voor jouw trouwe
               viervoeter. Klaar om jouw chibi te laten stralen? Wij openen
               binnenkort in Haacht en kunnen niet wachten om jullie te
@@ -142,7 +142,6 @@ export default function Home() {
       <section className="about">
         <div className="about__inner">
           <div className="about__img-wrap">
-            <div className="about__img-bg" />
             <div className="about__img-card">
               <img
                 src={AboutImg}

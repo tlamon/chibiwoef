@@ -44,7 +44,9 @@ export default function Contact() {
         <div className="container">
           <div className="contact__grid">
             <div>
-              <h2 className="contact__info-heading">Coming soon ♡</h2>
+              <h2 className="contact__info-heading">
+                Coming soon ♡ Najaar 2026{" "}
+              </h2>
               <p className="contact__info-sub">
                 In september openen we onze deuren. Bel ons gerust als je al
                 vragen hebt.
