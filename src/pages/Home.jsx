@@ -96,7 +96,6 @@ export default function Home() {
                 Bekijk tarieven
               </Link>
             </div>
-            <div className="hero__paw-track" />
           </div>
 
           <div className="hero__visual">
@@ -140,6 +139,7 @@ export default function Home() {
 
       {/* ── About ── */}
       <section className="about">
+        {/* <div className="paw-track about__paw-track" /> */}
         <div className="about__inner">
           <div className="about__img-wrap">
             <div className="about__img-card">

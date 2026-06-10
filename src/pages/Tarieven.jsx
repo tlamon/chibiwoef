@@ -15,12 +15,12 @@ const treatments = [
   {
     name: "Oren reinigen",
     desc: "Milde reiniging met professionele vloeistof. Bij infecties sturen we je (uit liefde) door naar de dierenarts.",
-    price: "€ 8",
+    price: "€ 5",
   },
   {
-    name: "Vlooien & teken shampoo",
-    desc: "Extra intensieve wasbeurt. Verplicht bij ongewenste gastjes om de hygiene in het salon te bewaren.",
-    price: "€ 12",
+    name: "Vlooien & teken behandeling",
+    desc: "Extra intensieve wasbeurt. Verplicht bij ongewenste gastjes en om de hygiene in het salon te bewaren.",
+    price: "€ 25",
   },
   {
     name: "Ontspanningsmassage (20-30 min)",
@@ -34,13 +34,13 @@ const treatments = [
   },
   {
     name: "Puppy gewenning (15-30 min)",
-    desc: "Een eerste, zachte kennismaking met de geuren en kleuren van een trimsalon. We maken er een leuk, speels moment van met veel positieve associaties, zodat jouw kleine vriendje zich meteen thuis voelt op de tafel, in het bad en onder de föhn.",
-    price: "Gratis (tot 6 maanden)",
+    desc: "Een eerste, zachte kennismaking met de geuren en kleuren van een trimsalon. We maken er een leuk, speels moment van met veel positieve associaties, zodat jouw dikke vriend zich goed voelt op de tafel, in het bad en onder de föhn.",
+    price: "Gratis (tot 5 maanden)",
   },
   {
-    name: "Standaard gewenning",
-    desc: "Op maat gemaakte sessie om angstige of onzekere dieren te laten wennen aan het salon. Hierbij maken we gebruik van positieve associaties, zoals lekkernijen, zachte aanrakingen en aanmoediging om vertrouwen op te bouwen. Soms is het nodig om meerdere sessies te plannen, afhankelijk van het comfortniveau van jouw hond.",
-    price: "vanaf €15 per kwartier",
+    name: "Standaard gewenning (15-30 min)",
+    desc: "Speciaal voor angstige of onzekere dieren die een trimsalon niet gewend zijn. Hierbij maken we gebruik van positieve associaties met de tools, geuren en geluiden. We werken met lekkernijen, zachte aanrakingen en aanmoediging om vertrouwen op te bouwen. Soms is het nodig om meerdere sessies te plannen, afhankelijk van het comfortniveau van jouw hond. De ene keer gaat het dier eens in het bad, de andere keer maken we er een spelletje van met de föhn. We stemmen dit volledig af op de behoeften van jouw dier.",
+    price: "€ 15 - € 30",
   },
 ];
 
@@ -50,7 +50,7 @@ const pricingRows = [
     note: "Wassen & drogen, nagels knippen en oren reinigen",
     xs: "€ 45",
     s: "€ 55",
-    m: "€ 70",
+    m: "€ 65",
   },
   {
     coatType: "Dubbele vacht",
@@ -203,7 +203,8 @@ export default function Tarieven() {
 
                 <p className="pricing-note">
                   Heb je een hond boven 30 kg? Laat het gerust weten, dan denken
-                  we graag mee en verwijzen we je warm door waar nodig.
+                  we graag mee en verwijzen we je eventueel warm door waar
+                  nodig.
                 </p>
               </div>
 
@@ -212,12 +213,11 @@ export default function Tarieven() {
                   Belangrijk om te weten: Scope & Rust
                 </p>
                 <p className="box-white__items">
-                  Onze prijzen zijn gebaseerd op een uurtarief van € 60. De
-                  bovenstaande tabel dient als richtlijn voor honden/katten met
-                  een goed onderhouden vacht. Bij extreme klitten, vervilting of
-                  gedrag dat extra tijd vraagt, rekenen we een toeslag van € 15
-                  per begonnen kwartier. Zo garanderen we de rust en kwaliteit
-                  die uw dier verdient.
+                  De bovenstaande tabel dient als richtlijn voor honden/katten
+                  met een goed onderhouden vacht. Bij extreme klitten,
+                  vervilting of ongewenst gedrag vraagt dit extra tijd, daarom
+                  rekenen we dan een toeslag van €25. Zo garanderen we de rust
+                  en kwaliteit die uw dier verdient.
                 </p>
               </div>
             </div>

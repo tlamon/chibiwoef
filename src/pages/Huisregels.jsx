@@ -55,7 +55,7 @@ const rules = [
   },
   {
     title: "Mogelijke meerprijs",
-    text: "Prijzen kunnen variëren op basis van vachtconditie, ras en temperament. Bij extra vuile vacht of veel klitvorming neemt dit meer tijd in beslag en rekenen wij een meerprijs aan van €15 per begonnen kwartier. Bij angstige of onhandelbare dieren raden we u aan om eerst een gewenningstraject te volgen zodat we de behandeling in alle rust kunnen uitvoeren. We bespreken dit altijd vooraf en zoeken samen naar de beste oplossing voor jouw dier.",
+    text: "Prijzen kunnen variëren op basis van vachtconditie, ras en temperament. Bij extra vuile vacht of veel klitvorming neemt dit meer tijd in beslag en rekenen wij een meerprijs aan van €25. Bij angstige of onhandelbare dieren raden we u aan om eerst een gewenningstraject te volgen zodat we de behandeling in alle rust kunnen uitvoeren. We bespreken dit altijd vooraf en zoeken samen naar de beste oplossing voor jouw dier.",
   },
   {
     title: "Foto's op sociale media",
