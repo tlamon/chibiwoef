@@ -939,6 +939,28 @@ h4 {
   font-style: italic;
   margin: 3rem 0 0;
 }
+.pricing-promo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 18px;
+}
+.pricing-promo__item {
+  display: inline-block;
+  width: fit-content;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+.pricing-promo__item--current {
+  background: #ffe6d6;
+  color: #a54d2f;
+}
+.pricing-promo__item--next {
+  background: #efe3f5;
+  color: #7a5288;
+}
 
 .treatment-list {
   list-style: none;
@@ -1118,6 +1140,20 @@ h4 {
 .pricing-table tbody td {
   padding: 14px 14px;
   vertical-align: top;
+}
+.pricing-price {
+  display: inline-block;
+}
+.pricing-price--original {
+  color: var(--muted);
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #a54d2f;
+  margin-right: 8px;
+}
+.pricing-price--promo {
+  color: #a54d2f;
+  font-weight: 700;
 }
 
 .pricing-table tbody td:first-child {

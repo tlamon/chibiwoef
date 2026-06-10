@@ -13,9 +13,9 @@ const treatments = [
     price: "€ 10",
   },
   {
-    name: "Oren reinigen",
+    name: "Oren reinigen en/of plukken",
     desc: "Milde reiniging met professionele vloeistof. Bij infecties sturen we je (uit liefde) door naar de dierenarts.",
-    price: "€ 5",
+    price: "€ 10",
   },
   {
     name: "Vlooien & teken behandeling",
@@ -63,36 +63,47 @@ const pricingRows = [
     coatType: "Langhaar / bevedering",
     note: "Ontwollen, was-, droog- & knipwerk, nagels knippen en oren reinigen",
     xs: "€ 70",
-    s: "€ 85",
-    m: "€ 105",
+    s: "€ 80",
+    m: "€ 100",
   },
   {
     coatType: "Krul / fleece (tot 2 cm)",
     note: "Ontwollen, was-, droog- & knipwerk, nagels knippen en oren reinigen, volledige snit (kort)",
-    xs: "€ 75",
-    s: "€ 90",
-    m: "€ 110",
+    xs: "€ 70",
+    s: "€ 85",
+    m: "€ 100",
   },
   {
     coatType: "Krul / fleece (langer dan 2 cm)",
     note: "Ontwollen, wassen, drogen & modelknippen, nagels knippen en oren reinigen ",
-    xs: "€ 95",
-    s: "€ 110",
-    m: "€ 135",
+    xs: "€ 85",
+    s: "€ 100",
+    m: "€ 120",
   },
   {
     coatType: "Ruwharig (plukken)",
     note: "Ambachtelijk handmatig plukwerk, wassen & drogen, nagels knippen en oren reinigen",
-    xs: "€ 75",
-    s: "€ 95",
-    m: "€ 120",
+    xs: "€ 70",
+    s: "€ 85",
+    m: "€ 110",
   },
 ];
+
+const formatEuro = (amount) => `€ ${amount}`;
+
+const parseEuro = (price) => Number(price.replace(/[^\d]/g, ""));
+
+const getDiscountedPrice = (price, discount) => {
+  const discountedAmount = parseEuro(price) * (1 - discount);
+  return formatEuro(Math.round(discountedAmount / 5) * 5);
+};
 
 export default function Tarieven() {
   useEffect(() => {
     document.title = "Tarieven – Chibi Woef";
   }, []);
+
+  const currentDiscount = 0.15;
 
   return (
     <main>
@@ -113,6 +124,18 @@ export default function Tarieven() {
                     van de vachtconditie en het gedrag. Voorlopig werken we met
                     dieren tot en met een gewicht van 30 kg.
                   </p>
+                  <div className="pricing-promo">
+                    <p className="pricing-promo__item pricing-promo__item--current">
+                      <strong>
+                        Opstartactie september t.e.m. november 2026:
+                      </strong>{" "}
+                      15% kennismakingskorting op alle trimbeurten.
+                    </p>
+                    <p className="pricing-promo__item pricing-promo__item--next">
+                      <strong>December 2026 t.e.m. februari 2027:</strong> 10%
+                      opstartkorting op alle trimbeurten.
+                    </p>
+                  </div>
                 </div>
                 <div className="pricing-table-wrap">
                   <table className="pricing-table">
@@ -171,9 +194,30 @@ export default function Tarieven() {
                               {row.note}
                             </span>
                           </td>
-                          <td>{row.xs}</td>
-                          <td>{row.s}</td>
-                          <td>{row.m}</td>
+                          <td>
+                            <span className="pricing-price pricing-price--original">
+                              {row.xs}
+                            </span>
+                            <span className="pricing-price pricing-price--promo">
+                              {getDiscountedPrice(row.xs, currentDiscount)}
+                            </span>
+                          </td>
+                          <td>
+                            <span className="pricing-price pricing-price--original">
+                              {row.s}
+                            </span>
+                            <span className="pricing-price pricing-price--promo">
+                              {getDiscountedPrice(row.s, currentDiscount)}
+                            </span>
+                          </td>
+                          <td>
+                            <span className="pricing-price pricing-price--original">
+                              {row.m}
+                            </span>
+                            <span className="pricing-price pricing-price--promo">
+                              {getDiscountedPrice(row.m, currentDiscount)}
+                            </span>
+                          </td>
                         </tr>
                       ))}
                     </tbody>

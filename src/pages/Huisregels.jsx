@@ -35,7 +35,7 @@ const rules = [
   },
   {
     title: "Een-op-een begeleiding",
-    text: "Sessies doen we graag een-op-een, dus vragen we dat het baasje ons niet stoort tijdens de behandeling. Dit kan helpen om jouw dier zich beter te laten ontspannen en vertrouwen te bouwen. We houden je op de hoogte wanneer je jouw trouwe vriend weer kunt komen ophalen. Uitzonderingen hierop kunnen gelden wanneer het dier erg jong, oud of angstig is.",
+    text: "Sessies doen we graag een-op-een, dus vragen we dat het baasje ons niet stoort tijdens de behandeling. Dit kan helpen om jouw dier zich beter te laten ontspannen en vertrouwen te bouwen. We houden je op de hoogte wanneer je jouw trouwe vriend weer kunt komen ophalen. Uitzonderingen hierop kunnen natuurlijk gelden afhankelijk van de gemoedelijke omstandigheden of wanneer het dier erg jong of oud is.",
   },
   {
     title: "Veiligheid eerst",
@@ -51,7 +51,7 @@ const rules = [
   },
   {
     title: "Betaling",
-    text: "Betaling vindt plaats direct na afloop van de dienst via Cash, Bancontact of Payconiq. We vragen vriendelijk om contant geld mee te brengen of de betaling via de app te doen, aangezien we niet altijd wisselgeld kunnen geven.",
+    text: "Betaling vindt plaats direct na afloop van de dienst via Cash, Bancontact/Payconiq of PayPal. We vragen vriendelijk om contant geld mee te brengen of de betaling via de app te doen, aangezien we niet altijd wisselgeld kunnen geven.",
   },
   {
     title: "Mogelijke meerprijs",
