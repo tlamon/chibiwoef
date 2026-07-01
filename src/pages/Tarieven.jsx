@@ -228,7 +228,7 @@ export default function Tarieven() {
                                 </span>
                               </div>
                             </td>
-                            <td>
+                            <td data-label="XS (<5kg)">
                               <span className="pricing-price pricing-price--original">
                                 {row.xs}
                               </span>
@@ -236,7 +236,7 @@ export default function Tarieven() {
                                 {getDiscountedPrice(row.xs, currentDiscount)}
                               </span>
                             </td>
-                            <td>
+                            <td data-label="S (5kg - 10kg)">
                               <span className="pricing-price pricing-price--original">
                                 {row.s}
                               </span>
@@ -244,7 +244,7 @@ export default function Tarieven() {
                                 {getDiscountedPrice(row.s, currentDiscount)}
                               </span>
                             </td>
-                            <td>
+                            <td data-label="M (10kg - 30kg)">
                               <span className="pricing-price pricing-price--original">
                                 {row.m}
                               </span>

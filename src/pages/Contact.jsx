@@ -13,8 +13,10 @@ const INFO = {
 };
 
 const HOURS = [
-  { day: "Di – Wo", time: "09:00 – 18:00" },
-  // { day: "Zaterdag", time: "09:00 – 12:00" },
+  { day: "Maandag", time: "08:00 – 18:00" },
+  { day: "Donderdag", time: "13:00 – 18:00" },
+  { day: "Vrijdag", time: "08:00 – 18:00" },
+  { day: "Zaterdag", time: "08:00 – 12:00" },
   // { day: "Zondag en feestdagen", time: "Gesloten" },
 ];
 
