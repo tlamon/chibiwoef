@@ -1042,7 +1042,7 @@ h4 {
 }
 
 .pricing-table-wrap {
-  overflow-x: auto;
+  overflow: visible;
 }
 
 .pricing-table {
@@ -1140,6 +1140,7 @@ h4 {
 .pricing-table tbody td {
   padding: 14px 14px;
   vertical-align: top;
+  overflow: visible;
 }
 .pricing-price {
   display: inline-block;
@@ -1158,6 +1159,83 @@ h4 {
 
 .pricing-table tbody td:first-child {
   padding-left: 0;
+}
+
+.pricing-coat-head {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  max-width: 100%;
+}
+
+.pricing-info {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.pricing-info__btn {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--teal-dark);
+  border-radius: 999px;
+  background: var(--teal-extralight);
+  color: var(--teal-dark);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.pricing-info__btn:hover,
+.pricing-info__btn:focus-visible {
+  background: var(--teal-dark);
+  color: var(--white);
+}
+
+.pricing-info__tooltip {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 10px);
+  transform: none;
+  width: min(320px, calc(100vw - 56px));
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  background: var(--charcoal);
+  color: var(--white);
+  font-size: 0.88rem;
+  line-height: 1.45;
+  box-shadow: var(--shadow-md);
+  text-transform: none;
+  letter-spacing: 0;
+  z-index: 30;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition:
+    opacity 0.18s ease,
+    visibility 0.18s ease;
+}
+
+.pricing-info__tooltip::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 10px;
+  transform: none;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid var(--charcoal);
+}
+
+.pricing-info:hover .pricing-info__tooltip,
+.pricing-info:focus-within .pricing-info__tooltip,
+.pricing-info.is-open .pricing-info__tooltip {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .pricing-table tbody td:not(:first-child) {
@@ -1182,6 +1260,19 @@ h4 {
   }
   .pricing-table thead th {
     padding: 0 8px 10px;
+    font-size: 1.2rem;
+  }
+  .pricing-table thead th:first-child {
+    min-width: 0;
+  }
+  .pricing-info__tooltip {
+    left: 0;
+    transform: none;
+    width: min(260px, calc(100vw - 56px));
+  }
+  .pricing-info__tooltip::before {
+    left: 10px;
+    transform: none;
   }
 }
 

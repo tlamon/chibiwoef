@@ -167,8 +167,10 @@ export default function Home() {
             </p>
             <p className="about__text">
               Chibi Woef is een nieuw trimsalon, klein van opzet maar groot van
-              hart. We zijn net gestart en leren nog elke dag. Kom gerust eens
-              snuffelen. Wij kijken er naar uit om jouw chibi te ontmoeten!
+              hart.
+              Bij angstige of gevoelige dieren kiezen we altijd voor vertrouwen boven perfectie.
+Liever een rustige, positieve ervaring met stapjes vooruit, dan een ‘perfecte’ trimbeurt die stress of angst veroorzaakt.
+Soms plannen we daarom bewust meerdere korte sessies, zoals de kamsessies of gewenningsessies, zodat jouw dier zich veilig voelt en graag terugkomt.
             </p>
             <Link
               to="/contact"

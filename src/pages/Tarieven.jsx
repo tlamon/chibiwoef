@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import PawIcon from "../assets/paw.svg";
 import MobileImg from "../assets/mobile.webp";
 import TopDogImg from "../assets/sleepy.png";
@@ -42,47 +42,52 @@ const treatments = [
     desc: "Speciaal voor angstige of onzekere dieren die een trimsalon niet gewend zijn. Hierbij maken we gebruik van positieve associaties met de tools, geuren en geluiden. We werken met lekkernijen, zachte aanrakingen en aanmoediging om vertrouwen op te bouwen. Soms is het nodig om meerdere sessies te plannen, afhankelijk van het comfortniveau van jouw hond. De ene keer gaat het dier eens in het bad, de andere keer maken we er een spelletje van met de föhn. We stemmen dit volledig af op de behoeften van jouw dier.",
     price: "€ 15 - € 30",
   },
+  {
+    name: "Tussentijdse kambeurt",
+    desc: "Opfris- en ontknoop kambeurt voor honden én katten. Ideaal om klitten te voorkomen, de vacht luchtig te houden en/of jouw dier rustig te laten wennen aan het borstelen en verzorging. Kleine & middelgrote dieren: ±30 min (€ 20 - € 30). Grote honden: ±40 min (€ 40). 🐾 <b>10 kambeurten = 1 kambeurt gratis</b> (10 kambeurtenkaart in het salon verkrijgbaar)",
+    price: "€ 20 - € 40",
+  },
 ];
 
 const pricingRows = [
   {
     coatType: "Korthaar / glad",
-    note: "Wassen & drogen, nagels knippen en oren reinigen",
+    note: "Wassen & drogen, nagels knippen, ogen en oren reinigen",
     xs: "€ 45",
     s: "€ 55",
     m: "€ 65",
   },
   {
     coatType: "Dubbele vacht",
-    note: "Ontwollen & naturel model, wassen & drogen, nagels knippen en oren reinigen",
+    note: "Ontwollen & naturel model, wassen & drogen, nagels knippen, ogen en oren reinigen",
     xs: "€ 60",
     s: "€ 75",
     m: "€ 90",
   },
   {
     coatType: "Langhaar / bevedering",
-    note: "Ontwollen, was-, droog- & knipwerk, nagels knippen en oren reinigen",
+    note: "Ontwollen, was-, droog- & knipwerk, nagels knippen, ogen en oren reinigen",
     xs: "€ 70",
     s: "€ 80",
     m: "€ 100",
   },
   {
     coatType: "Krul / fleece (tot 2 cm)",
-    note: "Ontwollen, was-, droog- & knipwerk, nagels knippen en oren reinigen, volledige snit (kort)",
+    note: "Ontwollen, was-, droog- & knipwerk, nagels knippen, ogen en oren reinigen, volledige snit (kort)",
     xs: "€ 70",
     s: "€ 85",
     m: "€ 100",
   },
   {
     coatType: "Krul / fleece (langer dan 2 cm)",
-    note: "Ontwollen, wassen, drogen & modelknippen, nagels knippen en oren reinigen ",
+    note: "Ontwollen, wassen, drogen & modelknippen, nagels knippen, ogen en oren reinigen ",
     xs: "€ 85",
     s: "€ 100",
     m: "€ 120",
   },
   {
     coatType: "Ruwharig (plukken)",
-    note: "Ambachtelijk handmatig plukwerk, wassen & drogen, nagels knippen en oren reinigen",
+    note: "Wassen & drogen, plukken, knipwerk, nagels knippen, ogen en oren reinigen",
     xs: "€ 70",
     s: "€ 85",
     m: "€ 110",
@@ -104,6 +109,7 @@ export default function Tarieven() {
   }, []);
 
   const currentDiscount = 0.15;
+  const [openInfoRow, setOpenInfoRow] = useState(null);
 
   return (
     <main>
@@ -184,42 +190,71 @@ export default function Tarieven() {
                       </tr>
                     </thead>
                     <tbody>
-                      {pricingRows.map((row) => (
-                        <tr key={row.coatType}>
-                          <td>
-                            <span className="treatment-row__title">
-                              {row.coatType}
-                            </span>
-                            <span className="treatment-row__desc">
-                              {row.note}
-                            </span>
-                          </td>
-                          <td>
-                            <span className="pricing-price pricing-price--original">
-                              {row.xs}
-                            </span>
-                            <span className="pricing-price pricing-price--promo">
-                              {getDiscountedPrice(row.xs, currentDiscount)}
-                            </span>
-                          </td>
-                          <td>
-                            <span className="pricing-price pricing-price--original">
-                              {row.s}
-                            </span>
-                            <span className="pricing-price pricing-price--promo">
-                              {getDiscountedPrice(row.s, currentDiscount)}
-                            </span>
-                          </td>
-                          <td>
-                            <span className="pricing-price pricing-price--original">
-                              {row.m}
-                            </span>
-                            <span className="pricing-price pricing-price--promo">
-                              {getDiscountedPrice(row.m, currentDiscount)}
-                            </span>
-                          </td>
-                        </tr>
-                      ))}
+                      {pricingRows.map((row, index) => {
+                        const tooltipId = `pricing-note-${index}`;
+                        const isOpen = openInfoRow === row.coatType;
+
+                        return (
+                          <tr key={row.coatType}>
+                            <td>
+                              <div className="pricing-coat-head">
+                                <span className="treatment-row__title">
+                                  {row.coatType}
+                                </span>
+                                <span
+                                  className={`pricing-info${isOpen ? " is-open" : ""}`}
+                                >
+                                  <button
+                                    type="button"
+                                    className="pricing-info__btn"
+                                    aria-label={`Meer info over ${row.coatType}`}
+                                    aria-expanded={isOpen}
+                                    aria-describedby={tooltipId}
+                                    onClick={() =>
+                                      setOpenInfoRow(
+                                        isOpen ? null : row.coatType,
+                                      )
+                                    }
+                                  >
+                                    i
+                                  </button>
+                                  <span
+                                    id={tooltipId}
+                                    role="tooltip"
+                                    className="pricing-info__tooltip"
+                                  >
+                                    {row.note}
+                                  </span>
+                                </span>
+                              </div>
+                            </td>
+                            <td>
+                              <span className="pricing-price pricing-price--original">
+                                {row.xs}
+                              </span>
+                              <span className="pricing-price pricing-price--promo">
+                                {getDiscountedPrice(row.xs, currentDiscount)}
+                              </span>
+                            </td>
+                            <td>
+                              <span className="pricing-price pricing-price--original">
+                                {row.s}
+                              </span>
+                              <span className="pricing-price pricing-price--promo">
+                                {getDiscountedPrice(row.s, currentDiscount)}
+                              </span>
+                            </td>
+                            <td>
+                              <span className="pricing-price pricing-price--original">
+                                {row.m}
+                              </span>
+                              <span className="pricing-price pricing-price--promo">
+                                {getDiscountedPrice(row.m, currentDiscount)}
+                              </span>
+                            </td>
+                          </tr>
+                        );
+                      })}
                     </tbody>
                   </table>
                 </div>
@@ -238,7 +273,10 @@ export default function Tarieven() {
                       />
                       <div className="treatment-row__body">
                         <span className="treatment-row__title">{b.name}</span>
-                        <span className="treatment-row__desc">{b.desc}</span>
+                        <span
+                          className="treatment-row__desc"
+                          dangerouslySetInnerHTML={{ __html: b.desc }}
+                        />
                       </div>
                       <span>{b.price}</span>
                     </li>
@@ -259,9 +297,11 @@ export default function Tarieven() {
                 <p className="box-white__items">
                   De bovenstaande tabel dient als richtlijn voor honden/katten
                   met een goed onderhouden vacht. Bij extreme klitten,
-                  vervilting of ongewenst gedrag vraagt dit extra tijd, daarom
-                  rekenen we dan een toeslag van €25. Zo garanderen we de rust
-                  en kwaliteit die uw dier verdient.
+                  vervilting of ongewenst gedrag vraagt dit extra tijd en geld.
+                  Bij angstige dieren kies ik daarom bewust om eerst rust en
+                  vertrouwen op te bouwen. <br />
+                  Liever een gelukkig dier dan een perfecte snoet met veel
+                  stress.
                 </p>
               </div>
             </div>
