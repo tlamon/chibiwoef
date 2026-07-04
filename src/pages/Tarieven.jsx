@@ -15,7 +15,12 @@ const treatments = [
   {
     name: "Oren reinigen en/of plukken",
     desc: "Milde reiniging met professionele vloeistof. Bij infecties sturen we je (uit liefde) door naar de dierenarts.",
-    price: "€ 10",
+    price: "€ 8",
+  },
+  {
+    name: "Katten trimbeurt (vachtverzorging) ♔",
+    desc: "Speciaal voor onze gevoelige harige hoogheden die weigeren mee te werken aan hun eigen vachtverzorging. Omdat katten nu eenmaal de baas zijn, kammen en ontwollen we in alle rust en volledig op hun tempo de koninklijke vacht. Inclusief een vorstelijke manicure (nagels knippen) en een zachte oorreiniging. Wassen? Dat doen we uw majesteit absoluut niet aan!",
+    price: "€ 35",
   },
   {
     name: "Ontspanningsmassage (20-30 min)",
