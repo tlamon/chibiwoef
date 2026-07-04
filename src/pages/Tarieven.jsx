@@ -39,7 +39,7 @@ const treatments = [
   },
   {
     name: "Groene klei behandeling",
-    desc: "Heeft jouw hond last van een gevoelige huid, hardnekkige jeuk of een droge, schilferige vacht? Deze gerichte, natuurlijke Vertargil groene klei behandeling helpt om de huid direct te kalmeren en het herstel te ondersteunen. Tijdens de trimbeurt masseren we de zuivere, minerale leempasta in op de probleezones. Terwijl de hond heerlijk ontspant in een warme handdoek, laten we de klei 10-15 minuten intrekken. Daarna spoelen we het masker grondig uit en wassen we de vacht met een milde shampoo. De groene klei behandeling is geschikt voor alle vachttypes en kan enkel in combinatie met een wasbeurt.",
+    desc: "Heeft jouw hond last van een gevoelige huid, hardnekkige jeuk of een droge, schilferige vacht? Deze gerichte, natuurlijke Vertargil groene klei behandeling helpt om de huid direct te kalmeren en het herstel te ondersteunen. Tijdens de trimbeurt masseren we de zuivere, minerale leempasta in op de probleemzones. Terwijl de hond heerlijk ontspant in een warme handdoek, laten we de klei 10-15 minuten intrekken. Daarna spoelen we het masker grondig uit en wassen we de vacht met een milde shampoo. De groene klei behandeling is geschikt voor alle vachttypes en kan enkel in combinatie met een wasbeurt.",
     price: "vanaf € 15",
   },
   {
