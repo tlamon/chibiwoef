@@ -18,19 +18,9 @@ const treatments = [
     price: "€ 10",
   },
   {
-    name: "Vlooien & teken behandeling",
-    desc: "Extra intensieve wasbeurt. Verplicht bij ongewenste gastjes en om de hygiene in het salon te bewaren.",
-    price: "€ 25",
-  },
-  {
     name: "Ontspanningsmassage (20-30 min)",
     desc: "Een rustmoment voor hond of kat; bevordert de bloedsomloop en verlaagt stress. ",
     price: "€ 25",
-  },
-  {
-    name: "Zen massage (40-60 min)",
-    desc: "Diepe ontspanning voor lichaam en geest; ideaal voor oudere of angstige dieren. We werken met zachte, langzame bewegingen en aromatherapie om een serene ervaring te creëren. Bij honden met mobiliteitsproblemen of chronische pijn kan deze massage verlichting bieden en de levenskwaliteit verbeteren.",
-    price: "€ 45",
   },
   {
     name: "Puppy gewenning (15-30 min)",
@@ -39,13 +29,23 @@ const treatments = [
   },
   {
     name: "Standaard gewenning (15-30 min)",
-    desc: "Speciaal voor angstige of onzekere dieren die een trimsalon niet gewend zijn. Hierbij maken we gebruik van positieve associaties met de tools, geuren en geluiden. We werken met lekkernijen, zachte aanrakingen en aanmoediging om vertrouwen op te bouwen. Soms is het nodig om meerdere sessies te plannen, afhankelijk van het comfortniveau van jouw hond. De ene keer gaat het dier eens in het bad, de andere keer maken we er een spelletje van met de föhn. We stemmen dit volledig af op de behoeften van jouw dier.",
+    desc: "Speciaal voor angstige of onzekere dieren die een trimsalon niet gewend zijn. Hierbij maken we gebruik van positieve associaties met de tools, geuren en geluiden. We werken met lekkernijen, zachte aanrakingen en aanmoediging om vertrouwen op te bouwen. Soms is het nodig om meerdere sessies in te plannen, afhankelijk van het comfortniveau van jouw hond. De ene keer gaat het dier eens in het bad, de andere keer maken we er een spelletje van met de föhn. We stemmen dit volledig af op de behoeften van jouw dier.",
     price: "€ 15 - € 30",
   },
   {
     name: "Tussentijdse kambeurt",
     desc: "Opfris- en ontknoop kambeurt voor honden én katten. Ideaal om klitten te voorkomen, de vacht luchtig te houden en/of jouw dier rustig te laten wennen aan het borstelen en verzorging. Kleine & middelgrote dieren: ±30 min (€ 20 - € 30). Grote honden: ±40 min (€ 40). 🐾 <b>10 kambeurten = 1 kambeurt gratis</b> (10 kambeurtenkaart in het salon verkrijgbaar)",
     price: "€ 20 - € 40",
+  },
+  {
+    name: "Groene klei behandeling",
+    desc: "Heeft jouw hond last van een gevoelige huid, hardnekkige jeuk of een droge, schilferige vacht? Deze gerichte, natuurlijke Vertargil groene klei behandeling helpt om de huid direct te kalmeren en het herstel te ondersteunen. Tijdens de trimbeurt masseren we de zuivere, minerale leempasta in op de probleezones. Terwijl de hond heerlijk ontspant in een warme handdoek, laten we de klei 10-15 minuten intrekken. Daarna spoelen we het masker grondig uit en wassen we de vacht met een milde shampoo. De groene klei behandeling is geschikt voor alle vachttypes en kan enkel in combinatie met een wasbeurt.",
+    price: "vanaf € 15",
+  },
+  {
+    name: "Vlooien & teken behandeling",
+    desc: "Extra intensieve wasbeurt met vlooien en teken shampoo. Verplicht bij ongewenste gastjes en om de hygiene in het salon te bewaren.",
+    price: "+ € 25",
   },
 ];
 
