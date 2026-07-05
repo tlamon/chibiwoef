@@ -1230,12 +1230,19 @@ h4 {
   border-bottom: 6px solid var(--charcoal);
 }
 
-.pricing-info:hover .pricing-info__tooltip,
 .pricing-info:focus-within .pricing-info__tooltip,
 .pricing-info.is-open .pricing-info__tooltip {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .pricing-info:hover .pricing-info__tooltip {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
 }
 
 .pricing-table tbody td:not(:first-child) {
@@ -1317,6 +1324,18 @@ h4 {
   }
   .pricing-info__tooltip::before {
     display: none;
+  }
+
+  .pricing-info:focus-within .pricing-info__tooltip {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .pricing-info.is-open .pricing-info__tooltip {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
   }
 }
 

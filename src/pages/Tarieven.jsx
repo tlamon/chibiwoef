@@ -20,7 +20,7 @@ const treatments = [
   {
     name: "Katten trimbeurt (vachtverzorging) ♔",
     desc: "Speciaal voor onze gevoelige harige hoogheden die weigeren mee te werken aan hun eigen vachtverzorging. Omdat katten nu eenmaal de baas zijn, kammen en ontwollen we in alle rust en volledig op hun tempo de koninklijke vacht. Inclusief een vorstelijke manicure (nagels knippen) en een zachte oorreiniging. Wassen? Dat doen we uw majesteit absoluut niet aan!",
-    price: "€ 35",
+    price: "€ 45",
   },
   {
     name: "Ontspanningsmassage (20-30 min)",
@@ -109,12 +109,33 @@ const getDiscountedPrice = (price, discount) => {
 };
 
 export default function Tarieven() {
+  const [openInfoRow, setOpenInfoRow] = useState(null);
+
   useEffect(() => {
     document.title = "Tarieven – Chibi Woef";
   }, []);
 
+  useEffect(() => {
+    if (!openInfoRow) {
+      return undefined;
+    }
+
+    const timeoutId = window.setTimeout(() => {
+      setOpenInfoRow(null);
+
+      const activeElement = document.activeElement;
+      if (
+        activeElement instanceof HTMLElement &&
+        activeElement.classList.contains("pricing-info__btn")
+      ) {
+        activeElement.blur();
+      }
+    }, 2000);
+
+    return () => window.clearTimeout(timeoutId);
+  }, [openInfoRow]);
+
   const currentDiscount = 0.15;
-  const [openInfoRow, setOpenInfoRow] = useState(null);
 
   return (
     <main>
