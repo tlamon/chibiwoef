@@ -2,9 +2,6 @@ import { useEffect, useState } from "react";
 import PawIcon from "../assets/paw.svg";
 import MobileImg from "../assets/mobile.webp";
 import TopDogImg from "../assets/sleepy.png";
-import DogXsIcon from "../assets/dog-xs.svg";
-import DogSIcon from "../assets/dog-s.svg";
-import DogMIcon from "../assets/dog-m.svg";
 
 const treatments = [
   {
@@ -54,88 +51,190 @@ const treatments = [
   },
 ];
 
-const pricingRows = [
-  {
-    coatType: "Korthaar / glad",
-    note: "Wassen & drogen, nagels knippen, ogen en oren reinigen",
-    xs: "€ 45",
-    s: "€ 55",
-    m: "€ 65",
-  },
-  {
-    coatType: "Dubbele vacht",
-    note: "Ontwollen & naturel model, wassen & drogen, nagels knippen, ogen en oren reinigen",
-    xs: "€ 60",
-    s: "€ 75",
-    m: "€ 90",
-  },
-  {
-    coatType: "Langhaar / bevedering",
-    note: "Ontwollen, was-, droog- & knipwerk, nagels knippen, ogen en oren reinigen",
-    xs: "€ 70",
-    s: "€ 80",
-    m: "€ 100",
-  },
-  {
-    coatType: "Krul / fleece (tot 2 cm)",
-    note: "Ontwollen, was-, droog- & knipwerk, nagels knippen, ogen en oren reinigen, volledige snit (kort)",
-    xs: "€ 70",
-    s: "€ 85",
-    m: "€ 100",
-  },
-  {
-    coatType: "Krul / fleece (langer dan 2 cm)",
-    note: "Ontwollen, wassen, drogen & modelknippen, nagels knippen, ogen en oren reinigen ",
-    xs: "€ 85",
-    s: "€ 100",
-    m: "€ 120",
-  },
-  {
-    coatType: "Ruwharig (plukken)",
-    note: "Wassen & drogen, plukken, knipwerk, nagels knippen, ogen en oren reinigen",
-    xs: "€ 70",
-    s: "€ 85",
-    m: "€ 110",
-  },
+const breedPriceRows = [
+  { breed: "Affenpinscher", price: "€ 61" },
+  { breed: "Afgaanse windhond", price: "€ 102" },
+  { breed: "Airedale terrier", price: "€ 132" },
+  { breed: "Akita Inu", price: "€ 86" },
+  { breed: "Alaskan malamute", price: "€ 122" },
+  { breed: "Amerikaanse Bulldog", price: "€ 61" },
+  { breed: "Amerikaanse cocker", price: "€ 97" },
+  { breed: "Amerikaanse Staffordshire terrier", price: "€ 56" },
+  { breed: "Anatolische herder", price: "€ 97" },
+  { breed: "Argentijnse dog", price: "€ 66" },
+  { breed: "Australische herder", price: "€ 70" },
+  { breed: "Australische terrier", price: "€ 61" },
+  { breed: "Barzoi", price: "€ 76" },
+  { breed: "Basenji", price: "€ 56" },
+  { breed: "Basset fauve de Bretagne", price: "€ 76" },
+  { breed: "Basset hound", price: "€ 51" },
+  { breed: "Beagle", price: "€ 50" },
+  { breed: "Bearded collie", price: "€ 97" },
+  { breed: "Beauceron", price: "€ 76" },
+  { breed: "Bedlington terrier", price: "€ 66" },
+  { breed: "Berner sennenhond", price: "€ 120" },
+  { breed: "Bichon frise", price: "€ 61" },
+  { breed: "Bloedhond", price: "€ 71" },
+  { breed: "Bobtail", price: "€ 122" },
+  { breed: "Boemer", price: "€ 56" },
+  { breed: "Border collie", price: "€ 70" },
+  { breed: "Border terrier", price: "€ 66" },
+  { breed: "Bordeaux dog", price: "€ 66" },
+  { breed: "Boston terrier", price: "€ 40" },
+  { breed: "Bouvier", price: "€ 122" },
+  { breed: "Boxer", price: "€ 61" },
+  { breed: "Briard", price: "€ 112" },
+  { breed: "Bulldog Amerikaans", price: "€ 61" },
+  { breed: "Bulldog Frans / Frenchy", price: "€ 55" },
+  { breed: "Bulldog Engels", price: "€ 55" },
+  { breed: "Bullmastiff", price: "€ 66" },
+  { breed: "Bull terrier", price: "€ 51" },
+  { breed: "Cairn terrier", price: "€ 66" },
+  { breed: "Cavalier King Charles", price: "€ 65" },
+  { breed: "Cavapoo", price: "€ 71" },
+  { breed: "Chihuahua korthaar", price: "€ 45" },
+  { breed: "Chihuahua langhaar", price: "€ 50" },
+  { breed: "Chinese naakthond", price: "€ 45" },
+  { breed: "Clumber spaniel", price: "€ 71" },
+  { breed: "Cockapoo", price: "€ 86" },
+  { breed: "Corgi", price: "€ 56" },
+  { breed: "Coton de tulear", price: "€ 71" },
+  { breed: "Dalmatier", price: "€ 66" },
+  { breed: "Deerhond", price: "€ 97" },
+  { breed: "Doodle klein (<10kg)", price: "€ 76" },
+  { breed: "Doodle middel (10-20kg)", price: "€ 97" },
+  { breed: "Doodle groot (>20kg)", price: "€ 115" },
+  { breed: "Dobermann", price: "€ 66" },
+  { breed: "Drentsche patrijshond", price: "€ 66" },
+  { breed: "Duitse dog", price: "€ 86" },
+  { breed: "Duitse herder", price: "€ 86" },
+  { breed: "Duitse jacht terrier", price: "€ 66" },
+  { breed: "Duitse staande hond glad", price: "€ 61" },
+  { breed: "Duitse staande hond ruw", price: "€ 91" },
+  { breed: "Dwergkees / Pomeriaan", price: "€ 61" },
+  { breed: "Dwergpinscher", price: "€ 45" },
+  { breed: "Engelse Bulldog", price: "€ 55" },
+  { breed: "Engelse Cocker Spaniel", price: "€ 80" },
+  { breed: "Engelse setter", price: "€ 76" },
+  { breed: "Engelse Springer Spaniel", price: "€ 76" },
+  { breed: "Finse spits", price: "€ 112" },
+  { breed: "Flatcoated retriever", price: "€ 66" },
+  { breed: "Franse Bulldog", price: "€ 55" },
+  { breed: "Fox terrier glad", price: "€ 81" },
+  { breed: "Fox terrier ruw", price: "€ 81" },
+  { breed: "Friese stabij", price: "€ 66" },
+  { breed: "Galgo", price: "€ 51" },
+  { breed: "Golden retriever", price: "€ 75" },
+  { breed: "Gordon setter", price: "€ 81" },
+  { breed: "Grand Basset Griffon Vendeen", price: "€ 71" },
+  { breed: "Griffon", price: "€ 51" },
+  { breed: "Greyhound", price: "€ 61" },
+  { breed: "Groenendaler", price: "€ 71" },
+  { breed: "Grote Zwitserse sennenhond", price: "€ 76" },
+  { breed: "Havanezer", price: "€ 71" },
+  { breed: "Heidewachtel", price: "€ 71" },
+  { breed: "Hollandse herder lang", price: "€ 71" },
+  { breed: "Hollandse herder ruw", price: "€ 76" },
+  { breed: "Hovawart", price: "€ 76" },
+  { breed: "Husky", price: "€ 75" },
+  { breed: "Ierse setter", price: "€ 76" },
+  { breed: "Ierse terrier", price: "€ 86" },
+  { breed: "Ierse wolfshond", price: "€ 127" },
+  { breed: "Italiaans windhondje", price: "€ 40" },
+  { breed: "Jack Russell terrier kort", price: "€ 60" },
+  { breed: "Jack Russell terrier ruw", price: "€ 85" },
+  { breed: "Japanse spaniel", price: "€ 51" },
+  { breed: "Keeshond klein / Dwergkees / Pomeriaan (<5kg)", price: "€ 61" },
+  { breed: "Keeshond middel (5-10kg)", price: "€ 70" },
+  { breed: "Keeshond groot (>10kg)", price: "€ 75" },
+  { breed: "Kerry blue terrier", price: "€ 97" },
+  { breed: "Kooikerhondje", price: "€ 91" },
+  { breed: "Laekense herder", price: "€ 76" },
+  { breed: "Labradoedel klein (<10kg)", price: "€ 76" },
+  { breed: "Labradoedel middel (10-20kg)", price: "€ 97" },
+  { breed: "Labradoedel groot (>20kg)", price: "€ 115" },
+  { breed: "Labrador retriever", price: "€ 65" },
+  { breed: "Landseer ECT", price: "€ 122" },
+  { breed: "Leonberger", price: "€ 183" },
+  { breed: "Lhasa apso", price: "€ 71" },
+  { breed: "Maltezer", price: "€ 65" },
+  { breed: "Mastiff", price: "€ 81" },
+  { breed: "Mastino Napoletano", price: "€ 76" },
+  { breed: "Mechelse herder", price: "€ 71" },
+  { breed: "Mini Australische herder", price: "€ 46" },
+  { breed: "Mini Maltezer", price: "€ 56" },
+  { breed: "Mopshond", price: "€ 45" },
+  { breed: "Morkie", price: "€ 56" },
+  { breed: "Munsterlander", price: "€ 71" },
+  { breed: "Newfoundlander", price: "€ 122" },
+  { breed: "Norfolk terrier", price: "€ 66" },
+  { breed: "Norwich terrier", price: "€ 66" },
+  { breed: "Nova Scotia duck tolling retriever", price: "€ 66" },
+  { breed: "Otterhound", price: "€ 76" },
+  { breed: "Pekinees", price: "€ 71" },
+  { breed: "Picardische herder", price: "€ 102" },
+  { breed: "Poedel groot (koningspoedel)", price: "€ 122" },
+  { breed: "Poedel klein", price: "€ 70" },
+  { breed: "Poedel middenslag", price: "€ 90" },
+  { breed: "Poedel toy", price: "€ 70" },
+  { breed: "Pomeranian / dwergkees", price: "€ 61" },
+  { breed: "Powderpuff", price: "€ 56" },
+  { breed: "Pyreneese berghond", price: "€ 122" },
+  { breed: "Rhodesian Ridgeback", price: "€ 71" },
+  { breed: "Saarloos wolfshond", price: "€ 81" },
+  { breed: "Saluki", price: "€ 66" },
+  { breed: "Samojeed", price: "€ 112" },
+  { breed: "Schapendoes", price: "€ 112" },
+  { breed: "Schipperke", price: "€ 56" },
+  { breed: "Schnauzer dwerg", price: "€ 56" },
+  { breed: "Schnauzer middel", price: "€ 76" },
+  { breed: "Schnauzer riezen", price: "€ 97" },
+  { breed: "Schotse collie", price: "€ 76" },
+  { breed: "Schotse terrier", price: "€ 81" },
+  { breed: "Sealyham terrier", price: "€ 66" },
+  { breed: "Shar pei", price: "€ 61" },
+  { breed: "Sheltie", price: "€ 71" },
+  { breed: "Shiba inu", price: "€ 66" },
+  { breed: "Shih-tzu", price: "€ 65" },
+  { breed: "Siberische husky", price: "€ 76" },
+  { breed: "Sint Bernard kort", price: "€ 97" },
+  { breed: "Sint Bernard lang", price: "€ 122" },
+  { breed: "Sky terrier", price: "€ 66" },
+  { breed: "Soft coated wheaten terrier", price: "€ 66" },
+  { breed: "Spaanse waterhond", price: "€ 81" },
+  { breed: "Sussex spaniel", price: "€ 66" },
+  { breed: "Teckel kort", price: "€ 50" },
+  { breed: "Teckel lang", price: "€ 55" },
+  { breed: "Teckel ruw", price: "€ 80" },
+  { breed: "Tervuerense herder", price: "€ 86" },
+  { breed: "Tibetaanse spaniel", price: "€ 71" },
+  { breed: "Tibetaanse terrier", price: "€ 81" },
+  { breed: "Vizsla glad", price: "€ 56" },
+  { breed: "Vizsla ruw", price: "€ 76" },
+  { breed: "Vlinderhondje", price: "€ 51" },
+  { breed: "Weimaraner kort", price: "€ 56" },
+  { breed: "Weimaraner ruw", price: "€ 86" },
+  { breed: "Welsh springer spaniel", price: "€ 66" },
+  { breed: "Welsh terrier", price: "€ 86" },
+  { breed: "West Highland white terrier", price: "€ 61" },
+  { breed: "Whippet", price: "€ 50" },
+  { breed: "Wolfskeeshond", price: "€ 70" },
+  { breed: "Yorkshire terrier", price: "€ 60" },
+  { breed: "Zwitserse herder", price: "€ 81" },
 ];
 
-const formatEuro = (amount) => `€ ${amount}`;
-
-const parseEuro = (price) => Number(price.replace(/[^\d]/g, ""));
-
-const getDiscountedPrice = (price, discount) => {
-  const discountedAmount = parseEuro(price) * (1 - discount);
-  return formatEuro(Math.round(discountedAmount / 5) * 5);
-};
+const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 
 export default function Tarieven() {
-  const [openInfoRow, setOpenInfoRow] = useState(null);
+  const [selectedLetter, setSelectedLetter] = useState("A");
 
   useEffect(() => {
     document.title = "Tarieven – Chibi Woef";
   }, []);
 
-  useEffect(() => {
-    if (!openInfoRow) {
-      return undefined;
-    }
-
-    const timeoutId = window.setTimeout(() => {
-      setOpenInfoRow(null);
-
-      const activeElement = document.activeElement;
-      if (
-        activeElement instanceof HTMLElement &&
-        activeElement.classList.contains("pricing-info__btn")
-      ) {
-        activeElement.blur();
-      }
-    }, 2000);
-
-    return () => window.clearTimeout(timeoutId);
-  }, [openInfoRow]);
-
-  const currentDiscount = 0.15;
+  const breedsByLetter = breedPriceRows.filter(
+    (row) => row.breed.charAt(0).toUpperCase() === selectedLetter,
+  );
 
   return (
     <main>
@@ -169,121 +268,65 @@ export default function Tarieven() {
                     </p>
                   </div>
                 </div>
-                <div className="pricing-table-wrap">
-                  <table className="pricing-table">
-                    <thead>
-                      <tr>
-                        <th>Vachttype</th>
-                        <th>
-                          <div className="pricing-size-head">
-                            <img
-                              src={DogXsIcon}
-                              className="pricing-size-head__icon pricing-size-head__icon--xs"
-                              alt=""
-                              aria-hidden="true"
-                            />
-                            <span className="pricing-size-head__label">
-                              XS (&lt;5kg)
-                            </span>
-                          </div>
-                        </th>
-                        <th>
-                          <div className="pricing-size-head">
-                            <img
-                              src={DogSIcon}
-                              className="pricing-size-head__icon pricing-size-head__icon--s"
-                              alt=""
-                              aria-hidden="true"
-                            />
-                            <span className="pricing-size-head__label">
-                              S (5kg - 10kg)
-                            </span>
-                          </div>
-                        </th>
-                        <th>
-                          <div className="pricing-size-head">
-                            <img
-                              src={DogMIcon}
-                              className="pricing-size-head__icon pricing-size-head__icon--m"
-                              alt=""
-                              aria-hidden="true"
-                            />
-                            <span className="pricing-size-head__label">
-                              M (10kg - 30kg)
-                            </span>
-                          </div>
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {pricingRows.map((row, index) => {
-                        const tooltipId = `pricing-note-${index}`;
-                        const isOpen = openInfoRow === row.coatType;
+                <section
+                  className="breed-pricing"
+                  aria-label="Prijsindicatie per ras"
+                >
+                  <h3 className="breed-pricing__title">
+                    Prijsindicatie per ras
+                  </h3>
+                  <p className="breed-pricing__hint">
+                    Selecteer een letter om de rassen en prijzen te bekijken.
+                  </p>
 
-                        return (
-                          <tr key={row.coatType}>
-                            <td>
-                              <div className="pricing-coat-head">
-                                <span className="treatment-row__title">
-                                  {row.coatType}
-                                </span>
-                                <span
-                                  className={`pricing-info${isOpen ? " is-open" : ""}`}
-                                >
-                                  <button
-                                    type="button"
-                                    className="pricing-info__btn"
-                                    aria-label={`Meer info over ${row.coatType}`}
-                                    aria-expanded={isOpen}
-                                    aria-describedby={tooltipId}
-                                    onClick={() =>
-                                      setOpenInfoRow(
-                                        isOpen ? null : row.coatType,
-                                      )
-                                    }
-                                  >
-                                    i
-                                  </button>
-                                  <span
-                                    id={tooltipId}
-                                    role="tooltip"
-                                    className="pricing-info__tooltip"
-                                  >
-                                    {row.note}
-                                  </span>
-                                </span>
-                              </div>
-                            </td>
-                            <td data-label="XS (<5kg)">
-                              <span className="pricing-price pricing-price--original">
-                                {row.xs}
-                              </span>
-                              <span className="pricing-price pricing-price--promo">
-                                {getDiscountedPrice(row.xs, currentDiscount)}
-                              </span>
-                            </td>
-                            <td data-label="S (5kg - 10kg)">
-                              <span className="pricing-price pricing-price--original">
-                                {row.s}
-                              </span>
-                              <span className="pricing-price pricing-price--promo">
-                                {getDiscountedPrice(row.s, currentDiscount)}
-                              </span>
-                            </td>
-                            <td data-label="M (10kg - 30kg)">
-                              <span className="pricing-price pricing-price--original">
-                                {row.m}
-                              </span>
-                              <span className="pricing-price pricing-price--promo">
-                                {getDiscountedPrice(row.m, currentDiscount)}
-                              </span>
-                            </td>
-                          </tr>
-                        );
-                      })}
-                    </tbody>
-                  </table>
-                </div>
+                  <div className="breed-pricing__letters" role="tablist">
+                    {alphabet.map((letter) => {
+                      const hasBreeds = breedPriceRows.some(
+                        (row) => row.breed.charAt(0).toUpperCase() === letter,
+                      );
+
+                      return (
+                        <button
+                          key={letter}
+                          type="button"
+                          role="tab"
+                          className={`breed-pricing__letter${selectedLetter === letter ? " is-active" : ""}`}
+                          aria-selected={selectedLetter === letter}
+                          aria-controls="breed-pricing-list"
+                          onClick={() => setSelectedLetter(letter)}
+                          disabled={!hasBreeds}
+                        >
+                          {letter}
+                        </button>
+                      );
+                    })}
+                  </div>
+
+                  <div
+                    className="breed-pricing__panel"
+                    id="breed-pricing-list"
+                    role="tabpanel"
+                  >
+                    {breedsByLetter.length > 0 ? (
+                      <ul className="breed-pricing__grid">
+                        {breedsByLetter.map((row) => (
+                          <li key={row.breed} className="breed-pricing__item">
+                            <span className="breed-pricing__name">
+                              {row.breed}
+                            </span>
+                            <span className="breed-pricing__price">
+                              {row.price}
+                            </span>
+                          </li>
+                        ))}
+                      </ul>
+                    ) : (
+                      <p className="breed-pricing__empty">
+                        Geen rassen beschikbaar voor deze letter.
+                      </p>
+                    )}
+                  </div>
+                </section>
 
                 <ul className="treatment-list">
                   {treatments.map((b) => (
