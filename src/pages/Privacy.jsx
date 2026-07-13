@@ -18,7 +18,7 @@ export default function Privacy() {
 
       <section className="policy-section">
         <div className="container">
-          <div className="box-white privacy-box">
+          <div className="box-white">
             <div className="privacy-content">
               <h2>1. Wie zijn wij?</h2>
               <p>

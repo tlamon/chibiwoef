@@ -919,12 +919,6 @@ h4 {
 .content-block {
   margin: 1rem 0;
 }
-.content-stack {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 52px;
-}
 
 .content-block__head {
   margin-bottom: 20px;
@@ -1035,10 +1029,36 @@ h4 {
 }
 
 .pricing-section {
-  background-color: var(--card-bg);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='250'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.72' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='250' height='250' filter='url(%23g)' opacity='0.1'/%3E%3C/svg%3E");
-  background-blend-mode: multiply;
-  padding: 64px 24px;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: var(--white);
+  --pricing-hero-height: 320px;
+  padding: 220px 24px 64px;
+}
+
+.pricing-section::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: var(--pricing-hero-height);
+  z-index: -2;
+  background: linear-gradient(165deg, #a9c6d8 0%, var(--lavender-light) 45%);
+}
+
+.pricing-section::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(var(--pricing-hero-height) - 250px);
+  height: 250px;
+  z-index: -1;
+  pointer-events: none;
+  background-image: url("./assets/bg-bubbles.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center bottom;
 }
 
 /* Yellow box */
@@ -1100,22 +1120,15 @@ h4 {
   margin: 0;
 }
 
-.privacy-box {
-  max-width: 768px;
-  margin: 0 auto;
-}
-
 .pricing-bone {
-  position: absolute;
   background: var(--ocre);
   border-radius: 12px;
   padding: 20px 28px;
   margin: 0 auto;
   width: min(680px, 40%);
   text-align: center;
+  margin-right: 50%;
   transform: translateX(50%);
-  right: 50%;
-  top: -2rem;
 }
 
 .pricing-bone::before,
@@ -1147,14 +1160,21 @@ h4 {
 
 @media (max-width: 768px) {
   .pricing-section {
-    padding: 40px 16px;
+    --pricing-hero-height: 250px;
+    padding: 170px 16px 40px;
+  }
+
+  .pricing-section::after {
+    top: calc(var(--pricing-hero-height) - 250px);
+    height: 250px;
+    background-size: 140% auto;
+    background-position: center bottom;
   }
   .pricing-bone {
     width: 100%;
     padding: 16px;
-    border-radius: 10px;
     position: relative;
-    margin: 10px auto 20px;
+    transform: none;
     top: -3.5rem;
   }
 
@@ -1183,7 +1203,7 @@ h4 {
   font-size: 13px;
   color: var(--muted);
   font-style: italic;
-  margin-top: 20px;
+  margin: 20px 0;
   text-align: center;
 }
 

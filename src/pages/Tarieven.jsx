@@ -240,155 +240,149 @@ export default function Tarieven() {
     <main>
       <section className="pricing-section">
         <div className="container pricing">
-          <div className="content-stack">
-            <div className="content-block">
-              <div className="box-white">
-                <div className="treatment-mascot">
-                  <img src={TopDogImg} alt="" className="top-dog__img" />
-                </div>
-                <div className="pricing-bone" role="note" aria-live="polite">
-                  <h2>Prijslijst</h2>
-                </div>
-                <div className="content-block__head">
-                  <p className="content-block__sub">
-                    Richtprijzen incl. 21% BTW. De definitieve prijs hangt af
-                    van de vachtconditie en het gedrag. Voorlopig werken we met
-                    dieren tot en met een gewicht van 30 kg.
-                  </p>
-                  <div className="pricing-promo">
-                    <p className="pricing-promo__item pricing-promo__item--current">
-                      <strong>
-                        Opstartactie september t.e.m. november 2026:
-                      </strong>{" "}
-                      15% kennismakingskorting op alle trimbeurten.
-                    </p>
-                    <p className="pricing-promo__item pricing-promo__item--next">
-                      <strong>December 2026 t.e.m. februari 2027:</strong> 10%
-                      opstartkorting op alle trimbeurten.
-                    </p>
-                  </div>
-                </div>
-                <section
-                  className="breed-pricing"
-                  aria-label="Prijsindicatie per ras"
-                >
-                  <h3 className="breed-pricing__title">
-                    Prijsindicatie per ras
-                  </h3>
-                  <p className="breed-pricing__hint">
-                    Selecteer een letter om de rassen en prijzen te bekijken.
-                  </p>
-
-                  <div className="breed-pricing__letters" role="tablist">
-                    {alphabet.map((letter) => {
-                      const hasBreeds = breedPriceRows.some(
-                        (row) => row.breed.charAt(0).toUpperCase() === letter,
-                      );
-
-                      return (
-                        <button
-                          key={letter}
-                          type="button"
-                          role="tab"
-                          className={`breed-pricing__letter${selectedLetter === letter ? " is-active" : ""}`}
-                          aria-selected={selectedLetter === letter}
-                          aria-controls="breed-pricing-list"
-                          onClick={() => setSelectedLetter(letter)}
-                          disabled={!hasBreeds}
-                        >
-                          {letter}
-                        </button>
-                      );
-                    })}
-                  </div>
-
-                  <div
-                    className="breed-pricing__panel"
-                    id="breed-pricing-list"
-                    role="tabpanel"
-                  >
-                    {breedsByLetter.length > 0 ? (
-                      <ul className="breed-pricing__grid">
-                        {breedsByLetter.map((row) => (
-                          <li key={row.breed} className="breed-pricing__item">
-                            <span className="breed-pricing__name">
-                              {row.breed}
-                            </span>
-                            <span className="breed-pricing__price">
-                              {row.price}
-                            </span>
-                          </li>
-                        ))}
-                      </ul>
-                    ) : (
-                      <p className="breed-pricing__empty">
-                        Geen rassen beschikbaar voor deze letter.
-                      </p>
-                    )}
-                  </div>
-                </section>
-
-                <ul className="treatment-list">
-                  {treatments.map((b) => (
-                    <li
-                      className="treatment-row treatment-row--service"
-                      key={b.name}
-                    >
-                      <img
-                        src={PawIcon}
-                        className="treatment-row__icon"
-                        alt=""
-                        aria-hidden="true"
-                      />
-                      <div className="treatment-row__body">
-                        <span className="treatment-row__title">{b.name}</span>
-                        <span
-                          className="treatment-row__desc"
-                          dangerouslySetInnerHTML={{ __html: b.desc }}
-                        />
-                      </div>
-                      <span>{b.price}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                <p className="pricing-note">
-                  Heb je een hond boven 30 kg? Laat het gerust weten, dan denken
-                  we graag mee en verwijzen we je eventueel warm door waar
-                  nodig.
+          <div className="content-block">
+            <div className="treatment-mascot">
+              <img src={TopDogImg} alt="" className="top-dog__img" />
+            </div>
+            <div className="pricing-bone" role="note" aria-live="polite">
+              <h2>Prijslijst</h2>
+            </div>
+            <div className="content-block__head">
+              <p className="content-block__sub">
+                Richtprijzen incl. 21% BTW. De definitieve prijs hangt af van de
+                vachtconditie en het gedrag. Voorlopig werken we met dieren tot
+                en met een gewicht van 30 kg.
+              </p>
+              <div className="pricing-promo">
+                <p className="pricing-promo__item pricing-promo__item--current">
+                  <strong>Opstartactie september t.e.m. november 2026:</strong>{" "}
+                  15% kennismakingskorting op alle trimbeurten.
                 </p>
-              </div>
-
-              <div>
-                <p className="box-white__label">
-                  Belangrijk om te weten: Scope & Rust
-                </p>
-                <p className="box-white__items">
-                  De bovenstaande tabel dient als richtlijn voor honden/katten
-                  met een goed onderhouden vacht. Bij extreme klitten,
-                  vervilting of ongewenst gedrag vraagt dit extra tijd en geld.
-                  Bij angstige dieren kies ik daarom bewust om eerst rust en
-                  vertrouwen op te bouwen. <br />
-                  Liever een gelukkig dier dan een perfecte snoet met veel
-                  stress.
+                <p className="pricing-promo__item pricing-promo__item--next">
+                  <strong>December 2026 t.e.m. februari 2027:</strong> 10%
+                  opstartkorting op alle trimbeurten.
                 </p>
               </div>
             </div>
+            <section
+              className="breed-pricing"
+              aria-label="Prijsindicatie per ras"
+            >
+              <h3 className="breed-pricing__title">Prijsindicatie per ras</h3>
+              <p className="breed-pricing__hint">
+                Selecteer een letter om de rassen en prijzen te bekijken.
+              </p>
 
-            {/* CTA */}
-            <div className="cta-banner cta-banner--contact">
-              <img
-                src={MobileImg}
-                className="cta-banner__icon"
-                alt=""
-                aria-hidden="true"
-              />
-              <div className="cta-banner__text">
-                <h2 className="cta-banner__title">Plan een afspraak</h2>
-                <a href="tel:+32496309459" className="cta-banner__phone">
-                  +32 496 309 459
-                </a>
+              <div className="breed-pricing__letters" role="tablist">
+                {alphabet.map((letter) => {
+                  const hasBreeds = breedPriceRows.some(
+                    (row) => row.breed.charAt(0).toUpperCase() === letter,
+                  );
+
+                  return (
+                    <button
+                      key={letter}
+                      type="button"
+                      role="tab"
+                      className={`breed-pricing__letter${selectedLetter === letter ? " is-active" : ""}`}
+                      aria-selected={selectedLetter === letter}
+                      aria-controls="breed-pricing-list"
+                      onClick={() => setSelectedLetter(letter)}
+                      disabled={!hasBreeds}
+                    >
+                      {letter}
+                    </button>
+                  );
+                })}
               </div>
+
+              <div
+                className="breed-pricing__panel"
+                id="breed-pricing-list"
+                role="tabpanel"
+              >
+                {breedsByLetter.length > 0 ? (
+                  <ul className="breed-pricing__grid">
+                    {breedsByLetter.map((row) => (
+                      <li key={row.breed} className="breed-pricing__item">
+                        <span className="breed-pricing__name">{row.breed}</span>
+                        <span className="breed-pricing__price">
+                          {row.price}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p className="breed-pricing__empty">
+                    Geen rassen beschikbaar voor deze letter.
+                  </p>
+                )}
+              </div>
+            </section>
+
+            <ul className="treatment-list">
+              {treatments.map((b) => (
+                <li
+                  className="treatment-row treatment-row--service"
+                  key={b.name}
+                >
+                  <img
+                    src={PawIcon}
+                    className="treatment-row__icon"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <div className="treatment-row__body">
+                    <span className="treatment-row__title">{b.name}</span>
+                    <span
+                      className="treatment-row__desc"
+                      dangerouslySetInnerHTML={{ __html: b.desc }}
+                    />
+                  </div>
+                  <span>{b.price}</span>
+                </li>
+              ))}
+            </ul>
+
+            <p className="pricing-note">
+              Heb je een hond boven 30 kg? Laat het gerust weten, dan denken we
+              graag mee en verwijzen we je eventueel warm door waar nodig.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container text-center">
+          <div>
+            <p className="box-white__label">
+              Belangrijk om te weten: Scope & Rust
+            </p>
+            <p className="box-white__items">
+              De bovenstaande tabel dient als richtlijn voor honden/katten met
+              een goed onderhouden vacht. Bij extreme klitten, vervilting of
+              ongewenst gedrag vraagt dit extra tijd en geld. Bij angstige
+              dieren kies ik daarom bewust om eerst rust en vertrouwen op te
+              bouwen. <br />
+              Liever een gelukkig dier dan een perfecte snoet met veel stress.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="services">
+        <div class="container">
+          <div className="cta-banner cta-banner--contact">
+            <img
+              src={MobileImg}
+              className="cta-banner__icon"
+              alt=""
+              aria-hidden="true"
+            />
+            <div className="cta-banner__text">
+              <h2 className="cta-banner__title">Plan een afspraak</h2>
+              <a href="tel:+32496309459" className="cta-banner__phone">
+                +32 496 309 459
+              </a>
             </div>
           </div>
         </div>

@@ -78,33 +78,31 @@ export default function Huisregels() {
           hun baasjes, houden wij ons graag aan de volgende regels.
         </p>
         <div className="container rules">
-          <div className="content-stack">
-            <div className="content-block">
-              <div className="rules-icon-wrap">
-                <img
-                  src={RulesIcon}
-                  className="rules-icon"
-                  alt=""
-                  aria-hidden="true"
-                />
-              </div>
-              <ul className="rules-list">
-                {rules.map((rule, i) => (
-                  <li key={i} className="rules-list__item">
-                    <img
-                      src={PawIcon}
-                      className="rules-list__paw"
-                      alt=""
-                      aria-hidden="true"
-                    />
-                    <div className="rules-list__content">
-                      <span className="rules-list__title">{rule.title}</span>
-                      <span className="rules-list__text">{rule.text}</span>
-                    </div>
-                  </li>
-                ))}
-              </ul>
+          <div className="content-block">
+            <div className="rules-icon-wrap">
+              <img
+                src={RulesIcon}
+                className="rules-icon"
+                alt=""
+                aria-hidden="true"
+              />
             </div>
+            <ul className="rules-list">
+              {rules.map((rule, i) => (
+                <li key={i} className="rules-list__item">
+                  <img
+                    src={PawIcon}
+                    className="rules-list__paw"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <div className="rules-list__content">
+                    <span className="rules-list__title">{rule.title}</span>
+                    <span className="rules-list__text">{rule.text}</span>
+                  </div>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
 
