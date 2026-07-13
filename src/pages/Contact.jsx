@@ -9,7 +9,7 @@ const CAL_USERNAME = "chibiwoef";
 const INFO = {
   address: "Haacht, België",
   phone: "+32 496 309 459",
-  email: "hallo@chibiwoef.be",
+  email: "chibiwoef@gmail.com",
 };
 
 const HOURS = [

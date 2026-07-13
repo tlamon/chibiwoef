@@ -10,7 +10,8 @@ export default function Footer() {
           <div>
             <div className="footer__brand">♥ Chibi Woef</div>
             <p className="footer__tagline">
-              Zorg voor jouw trouwe viervoeters met liefde en begrip vanaf eind 2026.
+              Zorg voor jouw trouwe viervoeters met liefde en begrip vanaf eind
+              2026.
             </p>
           </div>
 
@@ -44,11 +45,11 @@ export default function Footer() {
                 </a>
               </li>
               {/* <li>
-                <a href="mailto:hello@chibiwoef.com">
+                <a href="mailto:chibiwoef@gmail.com">
                   <span className="footer__contact-icon footer__contact-icon--text">
                     ◛
                   </span>
-                  hello@chibiwoef.com
+                  chibiwoef@gmail.com
                 </a>
               </li> */}
               <li className="footer__contact-item">

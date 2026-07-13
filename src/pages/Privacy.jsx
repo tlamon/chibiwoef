@@ -27,7 +27,7 @@ export default function Privacy() {
                 Haacht, België
                 <br />
                 E-mail:{" "}
-                <a href="mailto:hallo@chibiwoef.be">hallo@chibiwoef.be</a>
+                <a href="mailto:chibiwoef@gmail.com">chibiwoef@gmail.com</a>
                 <br />
                 Tel: <a href="tel:+32496309459">+32 496 309 459</a>
               </p>
@@ -100,7 +100,7 @@ export default function Privacy() {
               </ul>
               <p>
                 Stuur je verzoek naar{" "}
-                <a href="mailto:hallo@chibiwoef.be">hallo@chibiwoef.be</a>. We
+                <a href="mailto:chibiwoef@gmail.com">chibiwoef@gmail.com</a>. We
                 reageren binnen 30 dagen.
               </p>
 
