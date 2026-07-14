@@ -149,7 +149,7 @@ const breedPriceRows = [
   { breed: "Nova Scotia duck tolling retriever", price: "€ 70" },
   { breed: "Otterhound", price: "€ 76" },
   { breed: "Pekinees", price: "€ 60" },
-  { breed: "Poedel groot (koningspoedel)", price: "€ 122" },
+  { breed: "Poedel groot (koningspoedel)", price: "€ 120" },
   { breed: "Poedel klein", price: "€ 70" },
   { breed: "Poedel middenslag", price: "€ 90" },
   { breed: "Poedel toy", price: "€ 70" },
