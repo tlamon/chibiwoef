@@ -219,17 +219,13 @@ export default function Tarieven() {
             <div className="content-block__head">
               <p className="content-block__sub">
                 Richtprijzen incl. 21% BTW. De definitieve prijs hangt af van de
-                vachtconditie en het gedrag. Voorlopig werken we met dieren tot
-                en met een gewicht van 30 kg.
+                vachtconditie en het gedrag. Voorlopig werk ik enkel met dieren
+                tot en met een gewicht van 30 kg.
               </p>
               <div className="pricing-promo">
                 <p className="pricing-promo__item pricing-promo__item--current">
-                  <strong>Opstartactie september t.e.m. november 2026:</strong>{" "}
-                  15% kennismakingskorting op alle trimbeurten.
-                </p>
-                <p className="pricing-promo__item pricing-promo__item--next">
-                  <strong>December 2026 t.e.m. februari 2027:</strong> 10%
-                  opstartkorting op alle trimbeurten.
+                  <strong>Opstartactie oktober t.e.m. december 2026:</strong>{" "}
+                  10% kennismakingskorting op alle trimbeurten.
                 </p>
               </div>
             </div>

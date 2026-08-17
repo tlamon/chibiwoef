@@ -44,19 +44,19 @@ export default function Footer() {
                   0496/309.459
                 </a>
               </li>
-              {/* <li>
+              <li>
                 <a href="mailto:chibiwoef@gmail.com">
                   <span className="footer__contact-icon footer__contact-icon--text">
                     ◛
                   </span>
                   chibiwoef@gmail.com
                 </a>
-              </li> */}
+              </li>
               <li className="footer__contact-item">
                 <span className="footer__contact-icon footer__contact-icon--text">
                   ⌂
                 </span>
-                Haacht
+                Langerheide, Haacht
               </li>
             </ul>
           </div>

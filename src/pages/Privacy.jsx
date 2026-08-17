@@ -24,7 +24,7 @@ export default function Privacy() {
               <p>
                 <strong>Chibi Woef</strong> — hondentrimsalon
                 <br />
-                Haacht, België
+                Langerheide, Haacht, België
                 <br />
                 E-mail:{" "}
                 <a href="mailto:chibiwoef@gmail.com">chibiwoef@gmail.com</a>

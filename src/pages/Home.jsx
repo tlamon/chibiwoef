@@ -71,7 +71,7 @@ export default function Home() {
         <div className="hero__inner">
           <div>
             <div className="hero__badge">
-              Coming Soon! <span className="emoji">🐶</span> Najaar 2026
+              Coming Soon! <span className="emoji">🐶</span> Oktober 2026
             </div>
             <h1 className="hero__title">Chibi Woef</h1>
             <h2 className="hero__subtitle">

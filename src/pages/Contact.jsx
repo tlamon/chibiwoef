@@ -7,7 +7,7 @@ import EnvelopeImg from "../assets/envelope.png";
 const CAL_USERNAME = "chibiwoef";
 
 const INFO = {
-  address: "Haacht, België",
+  address: "Langerheide, Haacht, België",
   phone: "+32 496 309 459",
   email: "chibiwoef@gmail.com",
 };
@@ -47,10 +47,10 @@ export default function Contact() {
           <div className="contact__grid">
             <div>
               <h2 className="contact__info-heading">
-                Coming soon ♡ Najaar 2026{" "}
+                Coming soon ♡ Oktober 2026{" "}
               </h2>
               <p className="contact__info-sub">
-                In september openen we onze deuren. Bel ons gerust als je al
+                In oktober openen we onze deuren. Bel ons gerust als je al
                 vragen hebt.
               </p>
 

@@ -11,7 +11,7 @@ const rules = [
   },
   {
     title: "Plasje doen voor de afspraak",
-    text: "Een sessie duurt gemiddeld 1,5-2 uur, afhankelijk van de behandeling, zorg dat jouw dier dit niet met een volle blaas hoeft te doen.",
+    text: "Een sessie duurt gemiddeld rond de 2 uur, afhankelijk van de behandeling, zorg dat jouw dier dit niet met een volle blaas hoeft te doen.",
   },
   {
     title: "Niet met volle maag",
@@ -34,8 +34,8 @@ const rules = [
     text: "Kom op tijd, niet te vroeg of te laat. Een vertraging van meer dan 15 minuten kan betekenen dat de afspraak verzet of geannuleerd wordt.",
   },
   {
-    title: "Een-op-een begeleiding",
-    text: "Sessies doen we graag een-op-een, dus vragen we dat het baasje ons niet stoort tijdens de behandeling. Dit kan helpen om jouw dier zich beter te laten ontspannen en vertrouwen te bouwen. We houden je op de hoogte wanneer je jouw trouwe vriend weer kunt komen ophalen. Uitzonderingen hierop kunnen natuurlijk gelden afhankelijk van de gemoedelijke omstandigheden of wanneer het dier erg jong of oud is.",
+    title: "Een-op-een begeleiding?",
+    text: "Liefst wel, maar bij angstige, heel jonge of oudere dieren maak ik ook uitzonderingen. Sessies doe ik liever een-op-een omdat dit kan helpen om jouw dier zich beter te laten ontspannen en om het vertrouwen op te bouwen. We houden je op de hoogte wanneer je jouw trouwe vriend weer kunt komen ophalen.",
   },
   {
     title: "Veiligheid eerst",
@@ -47,7 +47,7 @@ const rules = [
   },
   {
     title: "Vlooienbeleid",
-    text: "Bij vlooien kunnen we uw afspraak annuleren of brengen wij extra behandelingskosten in rekening. Het salon moet nadien grondig worden gereinigd en gedesinfecteerd, wat extra tijd en middelen kost. Gelieve uw huisdier daarom vooraf te behandelen tegen deze parasieten om ongemak en extra kosten te voorkomen. Indien dit niet mogelijk is, kunnen we samen zoeken naar een oplossing, zoals het plannen van een extra vlooienbehandeling bij ons voor de trimbeurt.",
+    text: "Bij vlooien kunnen we uw afspraak annuleren of brengen wij extra behandelingskosten in rekening. Het salon moet nadien grondig worden gereinigd en gedesinfecteerd, wat extra tijd en middelen kost. Afspraken die na een vlooienbehandeling plaatsvinden moeten worden geannulleerd. Gelieve uw huisdier daarom vooraf te behandelen tegen deze parasieten om ongemak en extra kosten te voorkomen. Indien dit niet mogelijk is, kunnen we samen zoeken naar een oplossing, zoals het plannen van een extra vlooienbehandeling bij ons voor de trimbeurt.",
   },
   {
     title: "Betaling",
@@ -55,11 +55,11 @@ const rules = [
   },
   {
     title: "Mogelijke meerprijs",
-    text: "Prijzen kunnen variëren op basis van vachtconditie, ras en temperament. Bij extra vuile vacht of veel klitvorming neemt dit meer tijd in beslag en rekenen wij een meerprijs aan van €25. Bij angstige of onhandelbare dieren raden we u aan om eerst een gewenningstraject te volgen zodat we de behandeling in alle rust kunnen uitvoeren. We bespreken dit altijd vooraf en zoeken samen naar de beste oplossing voor jouw dier.",
+    text: "Prijzen kunnen variëren op basis van vachtconditie, ras en temperament. Bij extra vuile vacht of veel klitvorming neemt dit meer tijd in beslag en rekenen wij een meerprijs aan vanaf €25. Bij angstige of onhandelbare dieren raden we u aan om eerst een gewenningstraject te volgen zodat we de behandeling in alle rust kunnen uitvoeren. We bespreken dit altijd vooraf en zoeken samen naar de beste oplossing voor jouw dier.",
   },
   {
     title: "Foto's op sociale media",
-    text: "Wij maken graag foto's van onze viervoetige gasten voor op sociale media. Geef gerust aan als u hier bezwaar tegen heeft.",
+    text: "Ik maak graag foto's van mijn pluizige bezoekers voor op sociale media. Geef gerust aan als u hier bezwaar tegen heeft.",
   },
 ];
 
