@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import MobileImg from "../assets/mobile.webp";
 import PawIcon from "../assets/paw.svg";
+import InstagramIcon from "../assets/instagram.svg";
+import FacebookIcon from "../assets/facebook.svg";
 
 export default function Footer() {
   return (
@@ -56,7 +58,7 @@ export default function Footer() {
                 <span className="footer__contact-icon footer__contact-icon--text">
                   ⌂
                 </span>
-                Langerheide, Haacht
+                Langerheide 26, Haacht
               </li>
             </ul>
           </div>
@@ -72,9 +74,35 @@ export default function Footer() {
               src={PawIcon}
               alt=""
               aria-hidden="true"
-              style={{ width: "20px", opacity: 0.7 }}
+              className="footer__paw-icon"
             />
           </span>
+          <a
+            href="https://www.facebook.com/profile.php?id=61594738795832"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+            className="footer__social footer__social--first"
+          >
+            <img
+              src={FacebookIcon}
+              alt="Facebook"
+              className="footer__social-icon"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/chibiwoef"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            className="footer__social"
+          >
+            <img
+              src={InstagramIcon}
+              alt="Instagram"
+              className="footer__social-icon"
+            />
+          </a>
         </div>
       </div>
     </footer>

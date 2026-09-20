@@ -3,20 +3,24 @@ import { useEffect } from "react";
 import MobileImg from "../assets/mobile2.png";
 import HomeImg from "../assets/home.png";
 import EnvelopeImg from "../assets/envelope.png";
+import InstagramImg from "../assets/instagram.svg";
+import FacebookImg from "../assets/facebook.svg";
+import WhatsAppImg from "../assets/whatsapp.svg";
+import MessengerImg from "../assets/messenger.svg";
 
 const CAL_USERNAME = "chibiwoef";
 
 const INFO = {
-  address: "Langerheide, Haacht, België",
+  address: "Langerheide 26, 3150 Haacht, België",
   phone: "+32 496 309 459",
   email: "chibiwoef@gmail.com",
 };
 
 const HOURS = [
   { day: "Maandag", time: "08:00 – 18:00" },
-  { day: "Donderdag", time: "13:00 – 18:00" },
+  { day: "Donderdag", time: "08:00 – 18:00" },
   { day: "Vrijdag", time: "08:00 – 18:00" },
-  { day: "Zaterdag", time: "08:00 – 12:00" },
+  { day: "Zaterdag", time: "08:00 – 13:00" },
   // { day: "Zondag en feestdagen", time: "Gesloten" },
 ];
 
@@ -46,12 +50,10 @@ export default function Contact() {
         <div className="container">
           <div className="contact__grid">
             <div>
-              <h2 className="contact__info-heading">
-                Coming soon ♡ Oktober 2026{" "}
-              </h2>
+              <h2 className="contact__info-heading">Maak een afspraak ♡ </h2>
               <p className="contact__info-sub">
-                In oktober openen we onze deuren. Bel ons gerust als je al
-                vragen hebt.
+                Weldra opent ChibiWoef haar deuren, maar je kunt nu al een
+                afspraak plannen!
               </p>
 
               <div className="contact-info-cards">
@@ -103,6 +105,58 @@ export default function Contact() {
                     </a>
                   </div>
                 </div>
+              </div>
+
+              <div className="contact__social">
+                <a
+                  href="https://www.instagram.com/chibiwoef"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                  className="contact__social-link"
+                >
+                  <img src={InstagramImg} alt="Instagram" className="contact__social-icon" />
+                </a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=61594738795832"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                  className="contact__social-link"
+                >
+                  <img src={FacebookImg} alt="Facebook" className="contact__social-icon" />
+                </a>
+              </div>
+
+              <p className="contact__messaging-heading">Stuur een bericht</p>
+              <div className="contact__messaging">
+                <a
+                  href="https://wa.me/32496309459"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="contact__messaging-btn"
+                >
+                  <img src={WhatsAppImg} alt="" aria-hidden="true" className="contact__messaging-icon" />
+                  WhatsApp
+                </a>
+                <a
+                  href="https://m.me/61594738795832"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="contact__messaging-btn"
+                >
+                  <img src={MessengerImg} alt="" aria-hidden="true" className="contact__messaging-icon" />
+                  Messenger
+                </a>
+                <a
+                  href="https://ig.me/m/chibiwoef"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="contact__messaging-btn"
+                >
+                  <img src={InstagramImg} alt="" aria-hidden="true" className="contact__messaging-icon" />
+                  Instagram DM
+                </a>
               </div>
 
               <p className="hours-heading">Openingsuren</p>
