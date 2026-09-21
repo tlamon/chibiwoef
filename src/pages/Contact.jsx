@@ -53,8 +53,53 @@ export default function Contact() {
               <h2 className="contact__info-heading">Welkom ♡ </h2>
               <p className="contact__info-sub">
                 Weldra opent ChibiWoef haar deuren, maar je kunt nu al een
-                afspraak plannen!
+                afspraak plannen! Via <a href={`mailto:${INFO.email}`}>email</a>, telefoon of een van de onderstaande kanalen kan je mij ook bereiken. Tot snel!
               </p>
+
+              <div className="contact__messaging">
+                <a
+                  href="https://wa.me/32496309459"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="contact__messaging-btn"
+                >
+                  <img
+                    src={WhatsAppImg}
+                    alt=""
+                    aria-hidden="true"
+                    className="contact__messaging-icon"
+                  />
+                  WhatsApp
+                </a>
+                <a
+                  href="https://m.me/61594738795832"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="contact__messaging-btn"
+                >
+                  <img
+                    src={MessengerImg}
+                    alt=""
+                    aria-hidden="true"
+                    className="contact__messaging-icon"
+                  />
+                  Messenger
+                </a>
+                <a
+                  href="https://ig.me/m/chibiwoef"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="contact__messaging-btn"
+                >
+                  <img
+                    src={InstagramImg}
+                    alt=""
+                    aria-hidden="true"
+                    className="contact__messaging-icon"
+                  />
+                  Instagram DM
+                </a>
+              </div>
 
               <div className="contact-info-cards">
                 <div className="info-card">
@@ -105,52 +150,6 @@ export default function Contact() {
                     </a>
                   </div>
                 </div>
-              </div>
-
-              <p className="contact__messaging-heading">Stuur een bericht</p>
-              <div className="contact__messaging">
-                <a
-                  href="https://wa.me/32496309459"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="contact__messaging-btn"
-                >
-                  <img
-                    src={WhatsAppImg}
-                    alt=""
-                    aria-hidden="true"
-                    className="contact__messaging-icon"
-                  />
-                  WhatsApp
-                </a>
-                <a
-                  href="https://m.me/61594738795832"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="contact__messaging-btn"
-                >
-                  <img
-                    src={MessengerImg}
-                    alt=""
-                    aria-hidden="true"
-                    className="contact__messaging-icon"
-                  />
-                  Messenger
-                </a>
-                <a
-                  href="https://ig.me/m/chibiwoef"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="contact__messaging-btn"
-                >
-                  <img
-                    src={InstagramImg}
-                    alt=""
-                    aria-hidden="true"
-                    className="contact__messaging-icon"
-                  />
-                  Instagram DM
-                </a>
               </div>
 
               <div className="contact__social">

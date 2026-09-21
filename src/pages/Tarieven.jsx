@@ -214,8 +214,11 @@ export default function Tarieven() {
             <div className="content-block__head">
               <p className="content-block__sub">
                 Richtprijzen incl. 21% BTW. De definitieve prijs hangt af van de
-                vachtconditie en het gedrag. Voorlopig werk ik enkel met dieren
-                tot en met een gewicht van 30 kg.
+                vachtconditie en het gedrag. <br />
+                <h3>
+                  Belangrijke informatie: Voorlopig werk ik enkel met dieren tot
+                  en met een gewicht van 30 kg.
+                </h3>
               </p>
               <div className="pricing-promo">
                 <p className="pricing-promo__item pricing-promo__item--current">
