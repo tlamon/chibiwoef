@@ -39,7 +39,7 @@ export default function Contact() {
     <main>
       <div className="page-hero">
         <span className="badge">Kom jij ook graag snuffelen?</span>
-        <h1 className="page-hero__title">Plan hier binnenkort een afspraak</h1>
+        <h1 className="page-hero__title">Plan hier een afspraak</h1>
         <p className="page-hero__sub">
           Kies een dienst en een tijdstip dat jou past. Je ontvangt meteen een
           bevestiging in je agenda.
@@ -50,7 +50,7 @@ export default function Contact() {
         <div className="container">
           <div className="contact__grid">
             <div>
-              <h2 className="contact__info-heading">Maak een afspraak ♡ </h2>
+              <h2 className="contact__info-heading">Welkom ♡ </h2>
               <p className="contact__info-sub">
                 Weldra opent ChibiWoef haar deuren, maar je kunt nu al een
                 afspraak plannen!
@@ -107,27 +107,6 @@ export default function Contact() {
                 </div>
               </div>
 
-              <div className="contact__social">
-                <a
-                  href="https://www.instagram.com/chibiwoef"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Instagram"
-                  className="contact__social-link"
-                >
-                  <img src={InstagramImg} alt="Instagram" className="contact__social-icon" />
-                </a>
-                <a
-                  href="https://www.facebook.com/profile.php?id=61594738795832"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Facebook"
-                  className="contact__social-link"
-                >
-                  <img src={FacebookImg} alt="Facebook" className="contact__social-icon" />
-                </a>
-              </div>
-
               <p className="contact__messaging-heading">Stuur een bericht</p>
               <div className="contact__messaging">
                 <a
@@ -136,7 +115,12 @@ export default function Contact() {
                   rel="noopener noreferrer"
                   className="contact__messaging-btn"
                 >
-                  <img src={WhatsAppImg} alt="" aria-hidden="true" className="contact__messaging-icon" />
+                  <img
+                    src={WhatsAppImg}
+                    alt=""
+                    aria-hidden="true"
+                    className="contact__messaging-icon"
+                  />
                   WhatsApp
                 </a>
                 <a
@@ -145,7 +129,12 @@ export default function Contact() {
                   rel="noopener noreferrer"
                   className="contact__messaging-btn"
                 >
-                  <img src={MessengerImg} alt="" aria-hidden="true" className="contact__messaging-icon" />
+                  <img
+                    src={MessengerImg}
+                    alt=""
+                    aria-hidden="true"
+                    className="contact__messaging-icon"
+                  />
                   Messenger
                 </a>
                 <a
@@ -154,8 +143,42 @@ export default function Contact() {
                   rel="noopener noreferrer"
                   className="contact__messaging-btn"
                 >
-                  <img src={InstagramImg} alt="" aria-hidden="true" className="contact__messaging-icon" />
+                  <img
+                    src={InstagramImg}
+                    alt=""
+                    aria-hidden="true"
+                    className="contact__messaging-icon"
+                  />
                   Instagram DM
+                </a>
+              </div>
+
+              <div className="contact__social">
+                <a
+                  href="https://www.instagram.com/chibiwoef"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                  className="contact__social-link"
+                >
+                  <img
+                    src={InstagramImg}
+                    alt="Instagram"
+                    className="contact__social-icon"
+                  />
+                </a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=61594738795832"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                  className="contact__social-link"
+                >
+                  <img
+                    src={FacebookImg}
+                    alt="Facebook"
+                    className="contact__social-icon"
+                  />
                 </a>
               </div>
 

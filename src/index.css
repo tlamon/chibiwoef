@@ -882,6 +882,16 @@ h4 {
 .cta-banner__phone:hover {
   text-decoration: underline;
 }
+.cta-banner__messaging {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+.contact-banner-wrap {
+  padding-bottom: 0;
+  padding-top: 80px;
+}
 @media (max-width: 768px) {
   .cta-banner {
     padding: 24px;

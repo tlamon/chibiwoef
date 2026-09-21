@@ -10,7 +10,7 @@ import HeartImg from "../assets/heart.png";
 import HaircutImg from "../assets/haircut.jpg";
 import massageImg from "../assets/massage.webp";
 import ChihuahuaImg from "../assets/chihuahua.jpg";
-import MobileImg from "../assets/mobile.webp";
+import ContactBanner from "../components/ContactBanner";
 import LavenderImg from "../assets/lavendel.png";
 import EucalyptusImg from "../assets/eucalyptus.png";
 import ChamomileImg from "../assets/kamille.png";
@@ -254,23 +254,7 @@ export default function Home() {
       </section>
 
       {/* ── CTA Banner ── */}
-      <div className="container" style={{ paddingBottom: "0" }}>
-        <div className="cta-banner cta-banner--contact">
-          <img
-            src={MobileImg}
-            className="cta-banner__icon"
-            alt=""
-            aria-hidden="true"
-          />
-          <div className="cta-banner__text">
-            <h2 className="cta-banner__title">Plan een afspraak</h2>
-            <span className="cta-banner__sub">(Vanaf oktober 2026)</span>
-            <a href="tel:+32496309459" className="cta-banner__phone">
-              +32 496 309 459
-            </a>
-          </div>
-        </div>
-      </div>
+      <ContactBanner />
     </main>
   );
 }

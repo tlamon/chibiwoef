@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import PawIcon from "../assets/paw.svg";
-import MobileImg from "../assets/mobile.webp";
+import ContactBanner from "../components/ContactBanner";
 import TopDogImg from "../assets/sleepy.png";
 
 const treatments = [
@@ -329,24 +329,7 @@ export default function Tarieven() {
         </div>
       </section>
 
-      <section class="services">
-        <div class="container">
-          <div className="cta-banner cta-banner--contact">
-            <img
-              src={MobileImg}
-              className="cta-banner__icon"
-              alt=""
-              aria-hidden="true"
-            />
-            <div className="cta-banner__text">
-              <h2 className="cta-banner__title">Plan een afspraak</h2>
-              <a href="tel:+32496309459" className="cta-banner__phone">
-                +32 496 309 459
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ContactBanner />
     </main>
   );
 }
