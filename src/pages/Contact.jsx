@@ -190,6 +190,23 @@ export default function Contact() {
                   </>
                 ))}
               </dl>
+
+              <div className="contact__map">
+                <iframe
+                  title="Locatie Chibi Woef"
+                  src="https://maps.google.com/maps?q=Langerheide+26,+3150+Haacht,+Belgium&hl=nl&z=15&output=embed"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+                <a
+                  href="https://www.google.com/maps/dir/?api=1&destination=Langerheide+26,+3150+Haacht,+Belgium"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="contact__map-link"
+                >
+                  Route plannen ↗
+                </a>
+              </div>
             </div>
 
             {/* ── Cal.com embed ── */}
