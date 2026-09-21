@@ -194,7 +194,7 @@ export default function Contact() {
             </div>
 
             {/* ── Cal.com embed ── */}
-            {/* <div className="book-form-card">
+            <div className="book-form-card">
               <Cal
                 namespace={CAL_USERNAME}
                 calLink={CAL_USERNAME}
@@ -206,7 +206,7 @@ export default function Contact() {
                 }}
                 config={{ theme: "light" }}
               />
-            </div> */}
+            </div>
           </div>
         </div>
       </section>
