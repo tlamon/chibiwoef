@@ -84,7 +84,8 @@ export default function Home() {
               professionele was- en trimbeurt, een ontspannende massage of
               gewoon een momentje van rust en aandacht voor jouw trouwe
               viervoeter. Klaar om jouw chibi te laten stralen? Boek dan tijdig
-              een afspraak. We kunnen niet wachten om jullie te ontmoeten :) <br />
+              een afspraak. We kunnen niet wachten om jullie te ontmoeten :){" "}
+              <br />
               Tot snel bij Chibi Woef! 🐾
             </p>
             <div className="hero__actions">
@@ -194,9 +195,11 @@ export default function Home() {
             vond dan bij mensen. Ze leren me elke dag hoe waardevol het is om
             simpelweg in het 'nu' te leven. Wat begon als het verzorgen van mijn
             eigen hondjes en katjes, groeide uit tot een diepe passie die ik nu
-            mag omzetten in mijn beroep. Tijdens een erkende opleiding bij
-            Toscanzahoeve leer ik de fijne knepen van het vak, zodat ik eind
-            2026 de deuren van Chibi Woef kan openen. <br />
+            mag omzetten in mijn beroep. Met een achtergrond in IT besloot ik in
+            2026 om een carrièreswitch te maken (beter laat dan nooit). Tijdens
+            een erkende opleiding bij Toscanzahoeve leer ik de fijne knepen van
+            het vak, zodat ik eind 2026 de deuren van Chibi Woef kan openen.{" "}
+            <br />
             Een plek waar rust, begrip en oprechte zorg voor jouw trouwe
             viervoeter centraal staan.
           </p>
