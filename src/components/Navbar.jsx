@@ -10,7 +10,7 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="navbar__inner">
         <Link to="/" className="navbar__logo" onClick={close}>
-          <img src={logoImg} alt="Chibi Woef" className="logo-img" />
+          <img src={logoImg} alt="ChibiWoef" className="logo-img" />
         </Link>
 
         <button

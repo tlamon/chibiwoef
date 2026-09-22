@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Privacy() {
   useEffect(() => {
-    document.title = "Privacyverklaring – Chibi Woef";
+    document.title = "Privacyverklaring – ChibiWoef";
   }, []);
 
   return (
@@ -11,7 +11,7 @@ export default function Privacy() {
       <div className="page-hero">
         <h1 className="page-hero__title">Privacyverklaring</h1>
         <p className="page-hero__sub">
-          Chibi Woef respecteert jouw privacy en verwerkt persoonsgegevens in
+          ChibiWoef respecteert jouw privacy en verwerkt persoonsgegevens in
           overeenstemming met de AVG / GDPR.
         </p>
       </div>
@@ -22,7 +22,7 @@ export default function Privacy() {
             <div className="privacy-content">
               <h2>1. Wie zijn wij?</h2>
               <p>
-                <strong>Chibi Woef</strong> — hondentrimsalon
+                <strong>ChibiWoef</strong> — hondentrimsalon
                 <br />
                 Langerheide 26, Haacht, België
                 <br />

@@ -208,7 +208,7 @@ export default function Tarieven() {
   const [selectedLetter, setSelectedLetter] = useState("A");
 
   useEffect(() => {
-    document.title = "Tarieven – Chibi Woef";
+    document.title = "Tarieven – ChibiWoef";
   }, []);
 
   const breedsByLetter = breedPriceRows.filter(

@@ -4,7 +4,7 @@ import MemeImg from "../assets/lipstick-dog.webp";
 
 export default function NotFound() {
   useEffect(() => {
-    document.title = "Pagina niet gevonden – Chibi Woef";
+    document.title = "Pagina niet gevonden – ChibiWoef";
   }, []);
 
   return (

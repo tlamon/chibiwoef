@@ -62,7 +62,7 @@ const services = [
 
 export default function Home() {
   useEffect(() => {
-    document.title = "Chibi Woef – Hondentrimsalon in Haacht";
+    document.title = "ChibiWoef – Hondentrimsalon in Haacht";
   }, []);
 
   return (
@@ -73,20 +73,20 @@ export default function Home() {
             <div className="hero__badge">
               Welkom! <span className="emoji">🐶</span>
             </div>
-            <h1 className="hero__title">Chibi Woef</h1>
+            <h1 className="hero__title">ChibiWoef</h1>
             <h2 className="hero__subtitle">
               Zorg voor jouw trouwe viervoeter met liefde, rust en begrip.
             </h2>
             <br />
             <p className="hero__text">
               Hello! Zoek je nog een warme en stressvrije plek om jouw hond of
-              kat te verwennen? Bij Chibi Woef kan je nu terecht voor een
+              kat te verwennen? Bij ChibiWoef kan je nu terecht voor een
               professionele was- en trimbeurt, een ontspannende massage of
               gewoon een momentje van rust en aandacht voor jouw trouwe
               viervoeter. Klaar om jouw chibi te laten stralen? Boek dan tijdig
               een afspraak. We kunnen niet wachten om jullie te ontmoeten :){" "}
               <br />
-              Tot snel bij Chibi Woef! 🐾
+              Tot snel bij ChibiWoef! 🐾
             </p>
             <div className="hero__actions">
               <Link to="/contact" className="btn btn-primary">
@@ -166,7 +166,7 @@ export default function Home() {
               geduld en echte aandacht wordt verzorgd.
             </p>
             <p className="about__text">
-              Chibi Woef is een nieuw trimsalon, klein van opzet maar groot van
+              ChibiWoef is een nieuw trimsalon, klein van opzet maar groot van
               hart. Bij angstige of gevoelige dieren kiezen we altijd voor
               vertrouwen boven perfectie. Liever een rustige, positieve ervaring
               met stapjes vooruit, dan een ‘perfecte’ trimbeurt die stress of
@@ -187,7 +187,7 @@ export default function Home() {
 
       <section className="features">
         <div className="container text-center">
-          <span className="badge">Waarom Chibi Woef? 🐾</span>
+          <span className="badge">Waarom ChibiWoef? 🐾</span>
           <h2 className="section-heading">Wie ik ben</h2>
           <p className="section-sub">
             Dieren zijn voor mij altijd een constante geweest; een bron van
@@ -198,7 +198,7 @@ export default function Home() {
             mag omzetten in mijn beroep. Met een achtergrond in IT besloot ik in
             2026 om een carrièreswitch te maken (beter laat dan nooit). Tijdens
             een erkende opleiding bij Toscanzahoeve leer ik de fijne knepen van
-            het vak, zodat ik eind 2026 de deuren van Chibi Woef kan openen.{" "}
+            het vak, zodat ik eind 2026 de deuren van ChibiWoef kan openen.{" "}
             <br />
             Een plek waar rust, begrip en oprechte zorg voor jouw trouwe
             viervoeter centraal staan.

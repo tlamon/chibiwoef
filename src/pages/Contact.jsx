@@ -26,7 +26,7 @@ const HOURS = [
 
 export default function Contact() {
   useEffect(() => {
-    document.title = "Afspraak maken – Chibi Woef";
+    document.title = "Afspraak maken – ChibiWoef";
   }, []);
 
   useEffect(() => {
@@ -196,7 +196,7 @@ export default function Contact() {
 
               <div className="contact__map">
                 <iframe
-                  title="Locatie Chibi Woef"
+                  title="Locatie ChibiWoef"
                   src="https://maps.google.com/maps?q=Langerheide+26,+3150+Haacht,+Belgium&hl=nl&z=15&output=embed"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"

@@ -65,7 +65,7 @@ const rules = [
 
 export default function Huisregels() {
   useEffect(() => {
-    document.title = "Huisregels – Chibi Woef";
+    document.title = "Huisregels – ChibiWoef";
   }, []);
 
   return (

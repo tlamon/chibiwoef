@@ -10,7 +10,7 @@ export default function Footer() {
       <div className="container">
         <div className="footer__grid">
           <div>
-            <div className="footer__brand">♥ Chibi Woef</div>
+            <div className="footer__brand">♥ ChibiWoef</div>
             <p className="footer__tagline">
               Zorg voor jouw trouwe viervoeters met liefde, rust en begrip
             </p>
@@ -65,7 +65,7 @@ export default function Footer() {
 
         <div className="footer__bottom">
           <span>
-            © 2026 Chibi Woef. All rights reserved. ·{" "}
+            © 2026 ChibiWoef. All rights reserved. ·{" "}
             <Link to="/privacy">Privacyverklaring</Link>
           </span>
           <span className="footer__paw">
