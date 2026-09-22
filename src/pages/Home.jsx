@@ -84,7 +84,7 @@ export default function Home() {
               professionele was- en trimbeurt, een ontspannende massage of
               gewoon een momentje van rust en aandacht voor jouw trouwe
               viervoeter. Klaar om jouw chibi te laten stralen? Boek dan tijdig
-              een afspraak! Wekunnen niet wachten om jullie te ontmoeten! <br />
+              een afspraak. We kunnen niet wachten om jullie te ontmoeten :) <br />
               Tot snel bij Chibi Woef! 🐾
             </p>
             <div className="hero__actions">

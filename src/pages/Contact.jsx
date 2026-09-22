@@ -41,8 +41,8 @@ export default function Contact() {
         <span className="badge">Kom jij ook graag snuffelen?</span>
         <h1 className="page-hero__title">Plan hier een afspraak</h1>
         <p className="page-hero__sub">
-          Kies een dienst en een tijdstip dat jou past. Je ontvangt meteen een
-          bevestiging in je agenda.
+          Kies een tijdstip dat jou past. Je ontvangt snel een bevestiging in je
+          agenda.
         </p>
       </div>
 
@@ -53,7 +53,8 @@ export default function Contact() {
               <h2 className="contact__info-heading">Welkom ♡ </h2>
               <p className="contact__info-sub">
                 Weldra opent ChibiWoef haar deuren, maar je kunt nu al een
-                afspraak plannen! Via <a href={`mailto:${INFO.email}`}>email</a>, telefoon of een van de onderstaande kanalen kan je mij ook bereiken. Tot snel!
+                afspraak plannen via <a href={`mailto:${INFO.email}`}>email</a>,
+                telefoon of een van de onderstaande kanalen. Tot snel!
               </p>
 
               <div className="contact__messaging">
@@ -152,6 +153,18 @@ export default function Contact() {
                 </div>
               </div>
 
+              <div>
+                <p className="hours-heading">Openingsuren</p>
+                <dl className="hours-grid">
+                  {HOURS.map((h) => (
+                    <>
+                      <dt key={h.day}>{h.day}</dt>
+                      <dd key={h.time}>{h.time}</dd>
+                    </>
+                  ))}
+                </dl>
+              </div>
+
               <div className="contact__social">
                 <a
                   href="https://www.instagram.com/chibiwoef"
@@ -180,16 +193,6 @@ export default function Contact() {
                   />
                 </a>
               </div>
-
-              <p className="hours-heading">Openingsuren</p>
-              <dl className="hours-grid">
-                {HOURS.map((h) => (
-                  <>
-                    <dt key={h.day}>{h.day}</dt>
-                    <dd key={h.time}>{h.time}</dd>
-                  </>
-                ))}
-              </dl>
 
               <div className="contact__map">
                 <iframe

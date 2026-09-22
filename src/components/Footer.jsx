@@ -12,8 +12,7 @@ export default function Footer() {
           <div>
             <div className="footer__brand">♥ Chibi Woef</div>
             <p className="footer__tagline">
-              Zorg voor jouw trouwe viervoeters met liefde en begrip vanaf eind
-              2026.
+              Zorg voor jouw trouwe viervoeters met liefde, rust en begrip
             </p>
           </div>
 
@@ -76,6 +75,16 @@ export default function Footer() {
               aria-hidden="true"
               className="footer__paw-icon"
             />
+          </span>
+          <span>
+            Website door{" "}
+            <a
+              href="mailto:tjankui@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Lemoon
+            </a>
           </span>
           <a
             href="https://www.facebook.com/profile.php?id=61594738795832"
