@@ -26,7 +26,7 @@ const features = [
     img: LavenderImg,
     bg: "var(--lavender-light)",
     title: "Natuurlijke producten",
-    text: "We werken uitsluitend met hypoallergene, diervriendelijke shampoos en verzorgingsproducten. Zacht voor de huid, geweldig voor de vacht.",
+    text: "We werken uitsluitend met hypoallergene, diervriendelijke shampoos en verzorgingsproducten. Zacht voor de huid, geweldig voor de vacht. ",
   },
   {
     img: EucalyptusImg,
@@ -229,9 +229,11 @@ export default function Home() {
             Wij willen de wereld graag een beetje mooier maken, één chibi
             tegelijk. Daarom maken we gebruik van natuurlijke en
             diervriendelijke producten en bieden we een persoonlijke,
-            stressvrije aanpak. Jouw trouwe viervoeter staat hier centraal. Zo
-            kunnen we samen zorgen voor een stralende vacht en een gelukkig
-            hart.
+            stressvrije aanpak. Onze shampoo's bevatten gezonde en helende
+            essentiële oliën; ze zijn pH neutraal, mild voor huid en haar, niet
+            getest op dieren en bovendien helemaal vegan. Jouw trouwe viervoeter
+            staat hier centraal. Zo kunnen we samen zorgen voor een stralende
+            vacht en een gelukkig hart.
           </p>
           <div className="services__grid">
             {services.map((s) => (

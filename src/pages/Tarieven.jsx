@@ -5,6 +5,11 @@ import TopDogImg from "../assets/sleepy.png";
 
 const treatments = [
   {
+    name: "Was & Splash",
+    desc: "Een heerlijke shampoo- en schuimbeurt, uitwaaien onder de föhn en een grondige borstelbeurt. Pedicure (nagels knippen en/of vijlen) is inbegrepen. Perfect als tussendoor behandeling om de vacht fris, glanzend en klit-vrij te houden.",
+    price: "€ 40 – € 65",
+  },
+  {
     name: "Pawdicure",
     desc: "Nagels knippen en/of vijlen. We knippen nooit te kort en vijlen bij voorkeur om splijten te voorkomen. Voor honden die het spannend vinden, knippen we de nagels in meerdere korte sessies. Bij ingegroeide nagels verwijzen we je graag door naar de dierenarts voor een veilige behandeling.",
     price: "€ 10",
@@ -25,9 +30,19 @@ const treatments = [
     price: "€ 25",
   },
   {
-    name: "Puppy gewenning (15-30 min)",
-    desc: "Een eerste, zachte kennismaking met de geuren en kleuren van een trimsalon. We maken er een leuk, speels moment van met veel positieve associaties, zodat jouw dikke vriend zich goed voelt op de tafel, in het bad en onder de föhn.",
-    price: "Gratis (tot 5 maanden)",
+    name: "Puppy gewenning – Deel 1: Meet & Greet (15-20 min)",
+    desc: "Kennismaking met de kapster, het materiaal en de omgeving via positieve associaties (snoepjes). De pootjes worden voorzichtig natgemaakt en gedroogd, en er wordt rustig gekamd. Liefst zo vroeg mogelijk, rond 9 weken.",
+    price: "€ 15",
+  },
+  {
+    name: "Puppy gewenning – Deel 2: Was & Splash (",
+    desc: "De pup gaat helemaal in bad, wordt volledig gedroogd en gekamd, pootjes worden geknipt. Een eerste echte badervaring in alle rust, op het tempo van jouw pup.",
+    price: "€ 35 - € 50",
+  },
+  {
+    name: "Puppy gewenning – Deel 3: Eerste trimbeurt",
+    desc: "Nu de pup vertrouwd is met het salon, gaan we voor de eerste volledige verzorgingsbeurt. Als beloning voor jullie geduld krijgen jullie € 15 korting op de standaardprijs.",
+    price: "Standaardprijs (€ 15 korting)",
   },
   {
     name: "Standaard gewenning (15-30 min)",
@@ -35,8 +50,8 @@ const treatments = [
     price: "€ 15 - € 30",
   },
   {
-    name: "Tussentijdse kambeurt",
-    desc: "Opfris- en ontknoop kambeurt voor honden én katten. Ideaal om klitten te voorkomen, de vacht luchtig te houden en/of jouw dier rustig te laten wennen aan het borstelen en verzorging. Kleine & middelgrote dieren: ±30 min (€ 20 - € 30). Grote honden: ±40 min (€ 40). 🐾 <b>10 kambeurten = 1 kambeurt gratis</b> (10 kambeurtenkaart in het salon verkrijgbaar)",
+    name: "Tussentijdse kambeurt (±30 min)",
+    desc: "Opfris- en ontknoop kambeurt voor honden én katten. Ideaal om klitten te voorkomen, de vacht luchtig te houden en/of jouw dier rustig te laten wennen aan het borstelen en verzorging. Bij klitten of knopen wordt extra tijd gerekend. 🐾 <b>10 kambeurten = 1 kambeurt gratis</b> (10 kambeurtenkaart in het salon verkrijgbaar)",
     price: "€ 20 - € 40",
   },
   {
