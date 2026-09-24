@@ -20,7 +20,7 @@ const treatments = [
     price: "€ 8",
   },
   {
-    name: "Katten trimbeurt (vachtverzorging) ♔",
+    name: "Kambeurt katten ♔",
     desc: "Speciaal voor onze gevoelige harige hoogheden die weigeren mee te werken aan hun eigen vachtverzorging. Omdat katten nu eenmaal de baas zijn, kammen en ontwollen we in alle rust en volledig op hun tempo de koninklijke vacht. Inclusief een vorstelijke manicure (nagels knippen) en een zachte oorreiniging. Wassen? Dat doen we uw majesteit absoluut niet aan!",
     price: "€ 45",
   },
@@ -35,8 +35,8 @@ const treatments = [
     price: "€ 15",
   },
   {
-    name: "Puppy gewenning – Deel 2: Was & Splash (",
-    desc: "De pup gaat helemaal in bad, wordt volledig gedroogd en gekamd, pootjes worden geknipt. Een eerste echte badervaring in alle rust, op het tempo van jouw pup.",
+    name: "Puppy gewenning – Deel 2: Was & Splash (+/- 60 min)",
+    desc: "De pup gaat helemaal in bad, wordt volledig gedroogd en gekamd, de pootjes worden bijgeknipt en/of geschoren. Een eerste echte badervaring in alle rust, op het tempo van jouw pup.",
     price: "€ 35 - € 50",
   },
   {
@@ -244,7 +244,7 @@ export default function Tarieven() {
             </div>
             <section
               className="breed-pricing"
-              aria-label="Prijsindicatie per ras"
+              aria-label="Prijsindicatie voor volledige trimbeurt per ras"
             >
               <h3 className="breed-pricing__title">Prijsindicatie per ras</h3>
               <p className="breed-pricing__hint">
