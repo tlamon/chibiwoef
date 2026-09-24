@@ -1556,6 +1556,19 @@ h4 {
   gap: 10px;
   margin-bottom: 32px;
 }
+.contact__messaging-img-btn {
+  display: inline-flex;
+  transition: var(--transition);
+}
+.contact__messaging-img-btn:hover {
+  opacity: 0.85;
+  transform: translateY(-3px);
+}
+.contact__messaging-img {
+  height: 35px;
+  width: auto;
+  display: block;
+}
 .contact__messaging-btn {
   display: inline-flex;
   align-items: center;

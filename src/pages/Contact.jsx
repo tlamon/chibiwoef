@@ -5,8 +5,9 @@ import HomeImg from "../assets/home.png";
 import EnvelopeImg from "../assets/envelope.png";
 import InstagramImg from "../assets/instagram.svg";
 import FacebookImg from "../assets/facebook.svg";
-import WhatsAppImg from "../assets/whatsapp.svg";
-import MessengerImg from "../assets/messenger.svg";
+import BtnWhatsApp from "../assets/btn-whatsapp.png";
+import BtnMessenger from "../assets/btn-messenger.png";
+import BtnInstagram from "../assets/btn-instagram.png";
 
 const CAL_USERNAME = "chibiwoef";
 
@@ -62,43 +63,25 @@ export default function Contact() {
                   href="https://wa.me/32496309459"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="contact__messaging-btn"
+                  className="contact__messaging-img-btn"
                 >
-                  <img
-                    src={WhatsAppImg}
-                    alt=""
-                    aria-hidden="true"
-                    className="contact__messaging-icon"
-                  />
-                  WhatsApp
+                  <img src={BtnWhatsApp} alt="WhatsApp" className="contact__messaging-img" />
                 </a>
                 <a
                   href="https://m.me/61594738795832"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="contact__messaging-btn"
+                  className="contact__messaging-img-btn"
                 >
-                  <img
-                    src={MessengerImg}
-                    alt=""
-                    aria-hidden="true"
-                    className="contact__messaging-icon"
-                  />
-                  Messenger
+                  <img src={BtnMessenger} alt="Messenger" className="contact__messaging-img" />
                 </a>
                 <a
                   href="https://ig.me/m/chibiwoef"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="contact__messaging-btn"
+                  className="contact__messaging-img-btn"
                 >
-                  <img
-                    src={InstagramImg}
-                    alt=""
-                    aria-hidden="true"
-                    className="contact__messaging-icon"
-                  />
-                  Instagram DM
+                  <img src={BtnInstagram} alt="Instagram DM" className="contact__messaging-img" />
                 </a>
               </div>
 
