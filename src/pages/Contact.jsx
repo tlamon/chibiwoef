@@ -65,7 +65,11 @@ export default function Contact() {
                   rel="noopener noreferrer"
                   className="contact__messaging-img-btn"
                 >
-                  <img src={BtnWhatsApp} alt="WhatsApp" className="contact__messaging-img" />
+                  <img
+                    src={BtnWhatsApp}
+                    alt="WhatsApp"
+                    className="contact__messaging-img"
+                  />
                 </a>
                 <a
                   href="https://m.me/61594738795832"
@@ -73,7 +77,11 @@ export default function Contact() {
                   rel="noopener noreferrer"
                   className="contact__messaging-img-btn"
                 >
-                  <img src={BtnMessenger} alt="Messenger" className="contact__messaging-img" />
+                  <img
+                    src={BtnMessenger}
+                    alt="Messenger"
+                    className="contact__messaging-img"
+                  />
                 </a>
                 <a
                   href="https://ig.me/m/chibiwoef"
@@ -81,7 +89,11 @@ export default function Contact() {
                   rel="noopener noreferrer"
                   className="contact__messaging-img-btn"
                 >
-                  <img src={BtnInstagram} alt="Instagram DM" className="contact__messaging-img" />
+                  <img
+                    src={BtnInstagram}
+                    alt="Instagram DM"
+                    className="contact__messaging-img"
+                  />
                 </a>
               </div>
 
@@ -137,7 +149,9 @@ export default function Contact() {
               </div>
 
               <div>
-                <p className="hours-heading">Openingsuren</p>
+                <p className="hours-heading">
+                  Openingsuren (enkel op afspraak)
+                </p>
                 <dl className="hours-grid">
                   {HOURS.map((h) => (
                     <>
