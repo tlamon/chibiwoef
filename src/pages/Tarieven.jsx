@@ -31,18 +31,18 @@ const treatments = [
   },
   {
     name: "Puppy gewenning – Deel 1: Meet & Greet (15-20 min)",
-    desc: "Kennismaking met de kapster, het materiaal en de omgeving via positieve associaties (snoepjes). De pootjes worden voorzichtig natgemaakt en gedroogd, en er wordt rustig gekamd. Liefst zo vroeg mogelijk, rond 9 weken.",
+    desc: "Kennismaking met de kapster, het materiaal en de omgeving via positieve associaties (snoepjes). De pootjes worden voorzichtig natgemaakt en gedroogd, en er wordt rustig gekamd. Liefst tijdens hun 2e socialisatiefase, van 8 tot 12 weken. De nieuwsgierigheid van de puppy is in deze periode groter dan de angst. Het is het ideale moment om de pup op een positieve en rustige manier te laten wennen.",
     price: "€ 15",
   },
   {
     name: "Puppy gewenning – Deel 2: Was & Splash (+/- 60 min)",
-    desc: "De pup gaat helemaal in bad, wordt volledig gedroogd en gekamd, de pootjes worden bijgeknipt en/of geschoren. Een eerste echte badervaring in alle rust, op het tempo van jouw pup.",
+    desc: "De pup gaat helemaal in bad, wordt volledig gedroogd en gekamd, de pootjes worden bijgeknipt en geschoren. Een eerste echte badervaring in alle rust, op het tempo van jouw pup.",
     price: "€ 35 - € 50",
   },
   {
     name: "Puppy gewenning – Deel 3: Eerste trimbeurt",
-    desc: "Nu de pup vertrouwd is met het salon, gaan we voor de eerste volledige verzorgingsbeurt. Als beloning voor jullie geduld krijgen jullie € 15 korting op de standaardprijs.",
-    price: "Standaardprijs (€ 15 korting)",
+    desc: "Nu de pup vertrouwd is met het salon, gaan we voor de eerste volledige verzorgingsbeurt. Als beloning voor het geduld krijgt het baasje € 15 korting op de standaardprijs (om snoepjes mee te kopen 😉 ).",
+    price: "Standaardprijs (-€ 15 korting)",
   },
   {
     name: "Standaard gewenning (15-30 min)",
