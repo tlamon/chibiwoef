@@ -26,7 +26,11 @@ export default function ContactBanner() {
               rel="noopener noreferrer"
               className="contact__messaging-img-btn"
             >
-              <img src={BtnWhatsApp} alt="WhatsApp" className="contact__messaging-img" />
+              <img
+                src={BtnWhatsApp}
+                alt="WhatsApp"
+                className="contact__messaging-img"
+              />
             </a>
             <a
               href="https://m.me/61594738795832"
@@ -34,7 +38,11 @@ export default function ContactBanner() {
               rel="noopener noreferrer"
               className="contact__messaging-img-btn"
             >
-              <img src={BtnMessenger} alt="Messenger" className="contact__messaging-img" />
+              <img
+                src={BtnMessenger}
+                alt="Messenger"
+                className="contact__messaging-img"
+              />
             </a>
             <a
               href="https://ig.me/m/chibiwoef"
@@ -42,7 +50,11 @@ export default function ContactBanner() {
               rel="noopener noreferrer"
               className="contact__messaging-img-btn"
             >
-              <img src={BtnInstagram} alt="Instagram DM" className="contact__messaging-img" />
+              <img
+                src={BtnInstagram}
+                alt="Instagram DM"
+                className="contact__messaging-img"
+              />
             </a>
           </div>
         </div>

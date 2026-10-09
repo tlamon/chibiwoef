@@ -10,6 +10,11 @@ const treatments = [
     price: "€ 40 – € 65",
   },
   {
+    name: "Tussentijdse borstel- & kambeurt (±30 min)",
+    desc: "Opfris- en ontknoop kambeurt voor honden én katten. Ideaal om klitten te voorkomen, de vacht luchtig te houden of jouw dier rustig te laten wennen aan het borstelen en verzorging. Bij klitten of knopen wordt extra tijd gerekend. 🐾 <b>10 kambeurten = 1 kambeurt gratis</b> (10 kambeurtenkaart in het salon verkrijgbaar)",
+    price: "€ 20 - € 45",
+  },
+  {
     name: "Pawdicure",
     desc: "Nagels knippen en/of vijlen. We knippen nooit te kort en vijlen bij voorkeur om splijten te voorkomen. Voor honden die het spannend vinden, knippen we de nagels in meerdere korte sessies. Bij ingegroeide nagels verwijzen we je graag door naar de dierenarts voor een veilige behandeling.",
     price: "€ 10",
@@ -20,7 +25,7 @@ const treatments = [
     price: "€ 8",
   },
   {
-    name: "Kambeurt katten ♔",
+    name: "Trimbeurt katten ♔",
     desc: "Speciaal voor onze gevoelige harige hoogheden die weigeren mee te werken aan hun eigen vachtverzorging. Omdat katten nu eenmaal de baas zijn, kammen en ontwollen we in alle rust en volledig op hun tempo de koninklijke vacht. Inclusief een vorstelijke manicure (nagels knippen) en een zachte oorreiniging. Wassen? Dat doen we uw majesteit absoluut niet aan!",
     price: "€ 45",
   },
@@ -50,11 +55,6 @@ const treatments = [
     price: "€ 15 - € 30",
   },
   {
-    name: "Tussentijdse kambeurt (±30 min)",
-    desc: "Opfris- en ontknoop kambeurt voor honden én katten. Ideaal om klitten te voorkomen, de vacht luchtig te houden en/of jouw dier rustig te laten wennen aan het borstelen en verzorging. Bij klitten of knopen wordt extra tijd gerekend. 🐾 <b>10 kambeurten = 1 kambeurt gratis</b> (10 kambeurtenkaart in het salon verkrijgbaar)",
-    price: "€ 20 - € 40",
-  },
-  {
     name: "Vlooien & teken behandeling",
     desc: "Extra intensieve wasbeurt met vlooien en teken shampoo. Verplicht bij ongewenste gastjes en om de hygiene in het salon te bewaren.",
     price: "+ € 25",
@@ -69,6 +69,7 @@ const breedPriceRows = [
   { breed: "Amerikaanse cocker", price: "€ 100" },
   { breed: "Amerikaanse Staffordshire terrier", price: "€ 60" },
   { breed: "Australische herder", price: "€ 75" },
+  { breed: "Australische herder mini", price: "€ 50" },
   { breed: "Australische terrier", price: "€ 60" },
   { breed: "Basenji", price: "€ 55" },
   { breed: "Basset fauve de Bretagne", price: "€ 75" },
@@ -87,13 +88,13 @@ const breedPriceRows = [
   { breed: "Bulldog Engels", price: "€ 55" },
   { breed: "Bull terrier", price: "€ 50" },
   { breed: "Cairn terrier", price: "€ 70" },
-  { breed: "Cavalier King Charles", price: "€ 70" },
+  { breed: "Cavalier King Charles", price: "€ 65" },
   { breed: "Cavapoo", price: "€ 70" },
-  { breed: "Chihuahua korthaar", price: "€ 50" },
-  { breed: "Chihuahua langhaar", price: "€ 55" },
+  { breed: "Chihuahua korthaar", price: "€ 45" },
+  { breed: "Chihuahua langhaar", price: "€ 50" },
   { breed: "Chinese naakthond", price: "€ 45" },
   { breed: "Clumber spaniel", price: "€ 70" },
-  { breed: "Cockapoo", price: "€ 90" },
+  { breed: "Cockapoo", price: "€ 85" },
   { breed: "Corgi", price: "€ 55" },
   { breed: "Coton de tulear", price: "€ 70" },
   { breed: "Dalmatier", price: "€ 65" },
@@ -122,7 +123,7 @@ const breedPriceRows = [
   { breed: "Gordon setter", price: "€ 85" },
   { breed: "Grand Basset Griffon Vendeen", price: "€ 70" },
   { breed: "Griffon", price: "€ 60" },
-  { breed: "Griffon ruwharig", price: "€ 80" },
+  { breed: "Griffon ruwharig", price: "€ 70" },
   { breed: "Groenendaler", price: "€ 75" },
   { breed: "Havanezer", price: "€ 70" },
   { breed: "Heidewachtel", price: "€ 70" },
@@ -134,7 +135,7 @@ const breedPriceRows = [
   { breed: "Ierse terrier", price: "€ 90" },
   { breed: "Italiaans windhondje", price: "€ 45" },
   { breed: "Jack Russell terrier kort", price: "€ 45" },
-  { breed: "Jack Russell terrier ruw", price: "€ 80" },
+  { breed: "Jack Russell terrier ruw", price: "€ 70" },
   { breed: "Japanse spaniel", price: "€ 55" },
   { breed: "Keeshond klein / Dwergkees / Pomeriaan (<5kg)", price: "€ 60" },
   { breed: "Keeshond middel", price: "€ 65" },
@@ -147,9 +148,9 @@ const breedPriceRows = [
   { breed: "Labrador retriever", price: "€ 60" },
   { breed: "Lhasa apso", price: "€ 70" },
   { breed: "Maltezer", price: "€ 65" },
+  { breed: "Mini Maltezer", price: "€ 50" },
   { breed: "Mechelse herder", price: "€ 65" },
   { breed: "Mini Australische herder", price: "€ 50" },
-  { breed: "Mini Maltezer", price: "€ 50" },
   { breed: "Mopshond", price: "€ 45" },
   { breed: "Morkie", price: "€ 55" },
   { breed: "Munsterlander", price: "€ 75" },
@@ -182,9 +183,15 @@ const breedPriceRows = [
   { breed: "Soft coated wheaten terrier", price: "€ 70" },
   { breed: "Spaanse waterhond", price: "€ 100" },
   { breed: "Sussex spaniel", price: "€ 70" },
-  { breed: "Teckel kort", price: "€ 50" },
-  { breed: "Teckel lang", price: "€ 55" },
-  { breed: "Teckel ruw", price: "€ 80" },
+  { breed: "Teckel Kaninchen korthaar", price: "€ 45" },
+  { breed: "Teckel Kaninchen langhaar", price: "€ 50" },
+  { breed: "Teckel Kaninchen ruwhaar", price: "€ 70" },
+  { breed: "Teckel Dwerg korthaar", price: "€ 45" },
+  { breed: "Teckel Dwerg langhaar", price: "€ 55" },
+  { breed: "Teckel Dwerg ruwhaar", price: "€ 75" },
+  { breed: "Teckel Standaard korthaar", price: "€ 50" },
+  { breed: "Teckel Standaard langhaar", price: "€ 60" },
+  { breed: "Teckel Standaard ruwhaar", price: "€ 80" },
   { breed: "Tervuerense herder", price: "€ 75" },
   { breed: "Tibetaanse spaniel", price: "€ 55" },
   { breed: "Tibetaanse terrier", price: "€ 80" },
@@ -228,8 +235,8 @@ export default function Tarieven() {
             </div>
             <div className="content-block__head">
               <p className="content-block__sub">
-                Richtprijzen incl. 21% BTW. De definitieve prijs hangt af van de
-                vachtconditie en het gedrag. <br />
+                Onderstaande prijzen zijn (vanaf) richtprijzen. De definitieve
+                prijs hangt af van de vachtconditie en het gedrag. <br />
                 <h3>
                   Belangrijke informatie: Voorlopig werk ik enkel met dieren tot
                   en met een gewicht van 30 kg.
@@ -242,6 +249,36 @@ export default function Tarieven() {
                 </p>
               </div>
             </div>
+
+            <ul className="treatment-list">
+              {treatments.map((b) => (
+                <li
+                  className="treatment-row treatment-row--service"
+                  key={b.name}
+                >
+                  <img
+                    src={PawIcon}
+                    className="treatment-row__icon"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <div className="treatment-row__body">
+                    <span className="treatment-row__title">{b.name}</span>
+                    <span
+                      className="treatment-row__desc"
+                      dangerouslySetInnerHTML={{ __html: b.desc }}
+                    />
+                  </div>
+                  <span>{b.price}</span>
+                </li>
+              ))}
+            </ul>
+
+            <p className="pricing-note">
+              Heb je een hond boven 30 kg? Laat het gerust weten, dan denken we
+              graag mee en verwijzen we je eventueel warm door waar nodig.
+            </p>
+
             <section
               className="breed-pricing"
               aria-label="Prijsindicatie voor volledige trimbeurt per ras"
@@ -297,44 +334,13 @@ export default function Tarieven() {
                 )}
               </div>
             </section>
-
-            <ul className="treatment-list">
-              {treatments.map((b) => (
-                <li
-                  className="treatment-row treatment-row--service"
-                  key={b.name}
-                >
-                  <img
-                    src={PawIcon}
-                    className="treatment-row__icon"
-                    alt=""
-                    aria-hidden="true"
-                  />
-                  <div className="treatment-row__body">
-                    <span className="treatment-row__title">{b.name}</span>
-                    <span
-                      className="treatment-row__desc"
-                      dangerouslySetInnerHTML={{ __html: b.desc }}
-                    />
-                  </div>
-                  <span>{b.price}</span>
-                </li>
-              ))}
-            </ul>
-
-            <p className="pricing-note">
-              Heb je een hond boven 30 kg? Laat het gerust weten, dan denken we
-              graag mee en verwijzen we je eventueel warm door waar nodig.
-            </p>
           </div>
         </div>
       </section>
       <section class="about">
         <div class="container text-center">
           <div>
-            <p className="box-white__label">
-              Belangrijk om te weten: Scope & Rust
-            </p>
+            <p className="box-white__label">Goed om te weten: Scope & Rust</p>
             <p className="box-white__items">
               De bovenstaande tabel dient als richtlijn voor honden/katten met
               een goed onderhouden vacht. Bij extreme klitten, vervilting of

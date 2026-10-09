@@ -1015,11 +1015,11 @@ h4 {
 }
 .treatment-row__title {
   color: var(--teal-dark);
+  /* font-family: var(--font-zen); */
   font-family: var(--font-heading);
   font-weight: 600;
-  font-family: var(--font-zen);
   font-size: 1.2rem;
-  letter-spacing: 1.5px;
+  /* letter-spacing: 1.5px; */
   text-transform: uppercase;
 }
 .treatment-row__desc {
