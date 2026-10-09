@@ -398,6 +398,9 @@ export default function Tarieven() {
                     </p>
                   </div>
                 </div>
+                <p className="table-scroll-hint" aria-hidden="true">
+                  ← veeg om meer te zien →
+                </p>
                 <div className="pricing-table-wrap">
                   <table className="pricing-table">
                     <thead>
@@ -509,6 +512,9 @@ export default function Tarieven() {
                     </tbody>
                   </table>
                 </div>
+                <p className="table-scroll-hint" aria-hidden="true">
+                  ← veeg om meer te zien →
+                </p>
                 <ul className="treatment-list">
                   {treatments.map((b) => (
                     <li
