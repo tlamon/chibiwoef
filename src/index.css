@@ -1147,10 +1147,20 @@ h4 {
     background:
       linear-gradient(to right, var(--white) 20%, transparent),
       linear-gradient(to left, var(--white) 20%, transparent) right,
-      radial-gradient(farthest-side at 0 50%, rgba(0,0,0,.08), transparent) left,
-      radial-gradient(farthest-side at 100% 50%, rgba(0,0,0,.08), transparent) right;
+      radial-gradient(farthest-side at 0 50%, rgba(0, 0, 0, 0.08), transparent)
+        left,
+      radial-gradient(
+          farthest-side at 100% 50%,
+          rgba(0, 0, 0, 0.08),
+          transparent
+        )
+        right;
     background-repeat: no-repeat;
-    background-size: 2rem 100%, 2rem 100%, 0.8rem 100%, 0.8rem 100%;
+    background-size:
+      2rem 100%,
+      2rem 100%,
+      0.8rem 100%,
+      0.8rem 100%;
     background-attachment: local, local, scroll, scroll;
     background-color: var(--white);
   }
@@ -1163,9 +1173,19 @@ h4 {
     animation: hint-nudge 2s ease-in-out 0.5s 3;
   }
   @keyframes hint-nudge {
-    0%, 100% { opacity: 0.5; transform: translateX(0); }
-    40% { opacity: 1; transform: translateX(6px); }
-    60% { opacity: 1; transform: translateX(-6px); }
+    0%,
+    100% {
+      opacity: 0.5;
+      transform: translateX(0);
+    }
+    40% {
+      opacity: 1;
+      transform: translateX(6px);
+    }
+    60% {
+      opacity: 1;
+      transform: translateX(-6px);
+    }
   }
 }
 .pricing-table {
