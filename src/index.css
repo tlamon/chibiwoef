@@ -1376,21 +1376,9 @@ h4 {
 
 .breed-pricing__grid {
   list-style: none;
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 8px 16px;
-}
-
-.breed-pricing__grid::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  width: 1px;
-  background: var(--border);
-  transform: translateX(-0.5px);
+  columns: 2;
+  column-gap: 16px;
+  column-rule: 1px solid var(--border);
 }
 
 .breed-pricing__item {
@@ -1400,10 +1388,18 @@ h4 {
   gap: 12px;
   border-bottom: 1px dashed var(--border);
   padding-bottom: 6px;
+  break-inside: avoid;
 }
 
 .breed-pricing__name {
   color: var(--charcoal);
+}
+.breed-pricing__coat {
+  display: block;
+  font-style: normal;
+  color: var(--teal-dark);
+  opacity: 0.75;
+  margin-top: 2px;
 }
 
 .breed-pricing__price {
@@ -1429,11 +1425,8 @@ h4 {
   }
 
   .breed-pricing__grid {
-    grid-template-columns: 1fr;
-  }
-
-  .breed-pricing__grid::before {
-    display: none;
+    columns: 1;
+    column-rule: none;
   }
 }
 
