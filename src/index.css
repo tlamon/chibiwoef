@@ -2,6 +2,14 @@
    ChibiWoef — Global Styles
    ============================================================ */
 
+@font-face {
+  font-family: "Idamoji";
+  src: url("./fonts/Idamoji.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 *,
 *::before,
 *::after {
@@ -48,7 +56,8 @@
   --font-heading: "Balsamiq Sans", sans-serif;
   --font-subtitle: "Gochi Hand", cursive;
   --font-zen:
-    "Zen Loop", Avenir, "Century Gothic", Futura, system-ui, sans-serif;
+    "Idamoji", "Zen Loop", Avenir, "Century Gothic", Futura, system-ui,
+    sans-serif;
   --font-body:
     "Avenir Next", Avenir, "Century Gothic", Futura, system-ui, sans-serif;
   --transition: all 0.22s ease;
@@ -345,11 +354,9 @@ h4 {
 }
 .footer__tagline {
   font-size: 25px;
-  line-height: 2rem;
+  line-height: 1.5rem;
   max-width: 768px;
   font-family: var(--font-zen);
-  letter-spacing: 0.06rem;
-  font-weight: 700;
 }
 .footer__heading {
   font-family: var(--font-body);
@@ -1015,10 +1022,10 @@ h4 {
 }
 .treatment-row__title {
   color: var(--teal-dark);
-  /* font-family: var(--font-zen); */
   font-family: var(--font-heading);
+  font-family: var(--font-zen);
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   /* letter-spacing: 1.5px; */
   text-transform: uppercase;
 }
@@ -1027,7 +1034,6 @@ h4 {
   font-size: 1rem;
   color: var(--muted);
   font-style: italic;
-  margin-top: 3px;
   font-weight: normal;
 }
 .treatment-row--service {
@@ -1080,10 +1086,8 @@ h4 {
   text-align: center;
   border-bottom: 1px solid var(--border);
   color: var(--muted);
-  font-family: var(--font-zen);
-  text-transform: uppercase;
-  font-size: 2rem;
-  letter-spacing: 1px;
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
 }
 .pricing-table thead th:first-child {
   text-align: left;
@@ -1128,7 +1132,7 @@ h4 {
   border-bottom: none;
 }
 .pricing-table tbody td {
-  padding: 14px 14px;
+  padding: 5px 14px;
   vertical-align: top;
 }
 .pricing-price {

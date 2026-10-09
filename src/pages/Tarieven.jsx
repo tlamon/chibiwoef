@@ -359,7 +359,6 @@ export default function Tarieven() {
                     </p>
                   </div>
                 </div>
-
                 <div className="pricing-table-wrap">
                   <table className="pricing-table">
                     <thead>
@@ -471,7 +470,34 @@ export default function Tarieven() {
                     </tbody>
                   </table>
                 </div>
-
+                <ul className="treatment-list">
+                  {treatments.map((b) => (
+                    <li
+                      className="treatment-row treatment-row--service"
+                      key={b.name}
+                    >
+                      <img
+                        src={PawIcon}
+                        className="treatment-row__icon"
+                        alt=""
+                        aria-hidden="true"
+                      />
+                      <div className="treatment-row__body">
+                        <span className="treatment-row__title">{b.name}</span>
+                        <span
+                          className="treatment-row__desc"
+                          dangerouslySetInnerHTML={{ __html: b.desc }}
+                        />
+                      </div>
+                      <span>{b.price}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="pricing-note">
+                  Heb je een hond boven 30 kg? Laat het gerust weten, dan denken
+                  we graag mee en verwijzen we je eventueel warm door waar
+                  nodig.
+                </p>
                 <section
                   className="breed-pricing"
                   aria-label="Prijsindicatie voor volledige trimbeurt per ras"
@@ -533,41 +559,11 @@ export default function Tarieven() {
                     )}
                   </div>
                 </section>
-
-                <ul className="treatment-list">
-                  {treatments.map((b) => (
-                    <li
-                      className="treatment-row treatment-row--service"
-                      key={b.name}
-                    >
-                      <img
-                        src={PawIcon}
-                        className="treatment-row__icon"
-                        alt=""
-                        aria-hidden="true"
-                      />
-                      <div className="treatment-row__body">
-                        <span className="treatment-row__title">{b.name}</span>
-                        <span
-                          className="treatment-row__desc"
-                          dangerouslySetInnerHTML={{ __html: b.desc }}
-                        />
-                      </div>
-                      <span>{b.price}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                <p className="pricing-note">
-                  Heb je een hond boven 30 kg? Laat het gerust weten, dan denken
-                  we graag mee en verwijzen we je eventueel warm door waar
-                  nodig.
-                </p>
               </div>
 
               <div>
                 <p className="box-white__label">
-                  Belangrijk om te weten: Scope & Rust
+                  Goed om te weten: Scope & Rust
                 </p>
                 <p className="box-white__items">
                   De bovenstaande tabel dient als richtlijn voor honden/katten

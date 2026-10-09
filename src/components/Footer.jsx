@@ -12,7 +12,8 @@ export default function Footer() {
           <div>
             <div className="footer__brand">♥ ChibiWoef</div>
             <p className="footer__tagline">
-              Zorg voor jouw trouwe viervoeters met liefde, rust en begrip
+              Zorg voor jouw trouwe viervoeters <br />
+              met liefde, rust en begrip
             </p>
           </div>
 
