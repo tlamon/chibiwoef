@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Tarieven from "./pages/Tarieven";
+import TarievenKatten from "./pages/TarievenKatten";
 import Contact from "./pages/Contact";
 import Huisregels from "./pages/Huisregels";
 import NotFound from "./pages/NotFound";
@@ -43,6 +44,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/tarieven" element={<Tarieven />} />
+        <Route path="/tarieven/katten" element={<TarievenKatten />} />
         <Route path="/huisregels" element={<Huisregels />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/privacy" element={<Privacy />} />

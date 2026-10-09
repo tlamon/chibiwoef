@@ -340,6 +340,7 @@ export default function Tarieven() {
                 <div className="pricing-bone" role="note" aria-live="polite">
                   <h2>Prijslijst</h2>
                 </div>
+
                 <div className="content-block__head">
                   <p className="content-block__sub">
                     Richtprijzen incl. 21% BTW. De definitieve prijs hangt af

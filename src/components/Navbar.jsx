@@ -49,7 +49,7 @@ export default function Navbar() {
                 Huisregels
               </NavLink>
             </li>{" "}
-            <li>
+            <li className="navbar__dropdown">
               <NavLink
                 to="/tarieven"
                 className={({ isActive }) =>
@@ -59,6 +59,31 @@ export default function Navbar() {
               >
                 Tarieven
               </NavLink>
+              <ul className="navbar__dropdown-menu">
+                <li>
+                  <NavLink
+                    to="/tarieven"
+                    end
+                    className={({ isActive }) =>
+                      `navbar__dropdown-item${isActive ? " active" : ""}`
+                    }
+                    onClick={close}
+                  >
+                    Honden
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/tarieven/katten"
+                    className={({ isActive }) =>
+                      `navbar__dropdown-item${isActive ? " active" : ""}`
+                    }
+                    onClick={close}
+                  >
+                    Katten
+                  </NavLink>
+                </li>
+              </ul>
             </li>{" "}
             <li>
               <NavLink
