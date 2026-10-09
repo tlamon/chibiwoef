@@ -24,35 +24,31 @@ const rules = [
   },
   {
     title: "Ziekte of loopsheid",
-    text: "Breng geen zieke of loopse dieren mee, dit ter bescherming van jouw dier en onze andere gasten. We zoeken graag samen naar een nieuw moment om jouw dier te verwennen wanneer hij of zij zich beter voelt.",
-  },
-  {
-    title: "Annuleren of wijzigen afspraak",
-    text: "We snappen het, soms is het nodig om een afspraak te wijzigen of te annuleren. Daarom is dit gratis tot 24 uur voor de afspraak zodat we tijdig iemand anders kunnen inplannen. Daarna rekenen wij 50% van het tarief.",
+    text: "Breng geen zieke of loopse dieren mee, dit ter bescherming van jouw dier en onze andere gasten. We zoeken graag samen naar een nieuw moment om jouw dier te verwennen wanneer hij/zij zich beter voelt.",
   },
   {
     title: "Op tijd komen",
     text: "Kom op tijd, niet te vroeg of te laat. Een vertraging van meer dan 15 minuten kan betekenen dat de afspraak verzet of geannuleerd wordt.",
   },
   {
+    title: "Annuleren of wijzigen afspraak",
+    text: "We snappen het, soms is het nodig om een afspraak te wijzigen of te annuleren. Daarom is dit gratis tot 24 uur voor de afspraak zodat we eventueel tijdig iemand anders kunnen inplannen. Daarna rekenen wij 50% van het tarief.",
+  },
+  {
     title: "Een-op-een begeleiding?",
-    text: "Liefst wel, maar bij angstige, heel jonge of oudere dieren maak ik ook uitzonderingen. Sessies doe ik liever een-op-een omdat dit kan helpen om jouw dier zich beter te laten ontspannen en om het vertrouwen op te bouwen. We houden je op de hoogte wanneer je jouw trouwe vriend weer kunt komen ophalen.",
+    text: "Soms gaan sessies beter een-op-een omdat dit kan helpen om jouw dier zich beter te laten ontspannen en om het vertrouwen met de kapster op te bouwen. Soms werkt het ook averechts en vind het dier juist veel steun en moed bij de aanwezigheid van het baasje. Elk dier is anders en we bekijken individueel wat het beste werkt. ",
   },
   {
     title: "Veiligheid eerst",
     text: "Wij behouden het recht om een trimbeurt stop te zetten wanneer het dier grote stress ervaart en/of agressief gedrag vertoont. We gaan steeds op zoek naar een oplossing die het beste is voor jouw dier, en zullen dit altijd in overleg doen.",
   },
   {
-    title: "Vaccinatie katten",
-    text: "Katten moeten ingeënt zijn tegen kattenziekte en niesziekte.",
-  },
-  {
     title: "Vlooienbeleid",
-    text: "Bij vlooien kunnen we uw afspraak annuleren of brengen wij extra behandelingskosten in rekening. Het salon moet nadien grondig worden gereinigd en gedesinfecteerd, wat extra tijd en middelen kost. Afspraken die na een vlooienbehandeling plaatsvinden moeten worden geannulleerd. Gelieve uw huisdier daarom vooraf te behandelen tegen deze parasieten om ongemak en extra kosten te voorkomen. Indien dit niet mogelijk is, kunnen we samen zoeken naar een oplossing, zoals het plannen van een extra vlooienbehandeling bij ons voor de trimbeurt.",
+    text: "Bij vlooien kunnen we uw afspraak annuleren of brengen wij extra behandelingskosten in rekening. Het salon moet nadien grondig worden gereinigd en gedesinfecteerd, wat extra tijd en middelen kost. Afspraken die na een vlooienbehandeling plaatsvinden moeten worden geannulleerd. Gelieve uw huisdier daarom vooraf te behandelen tegen deze parasieten om ongemak en extra kosten te voorkomen. Indien dit niet mogelijk is, kunnen we samen zoeken naar een oplossing, zoals het plannen van een vlooienbehandeling op het einde van de dag zodat de rest van de afspraken niet wordt beïnvloed.",
   },
   {
     title: "Betaling",
-    text: "Betaling vindt plaats direct na afloop van de dienst via Cash, Bancontact/Payconiq of PayPal. We vragen vriendelijk om contant geld mee te brengen of de betaling via de app te doen, aangezien we niet altijd wisselgeld kunnen geven.",
+    text: "Betaling vindt plaats direct na afloop van de dienst via Cash, Bancontact/Payconiq of PayPal. Gelieve gepast te betalen bij een cash betaling want ik heb niet altijd wisselgeld beschikbaar.",
   },
   {
     title: "Mogelijke meerprijs",
