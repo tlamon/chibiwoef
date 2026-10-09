@@ -15,7 +15,7 @@ const treatments = [
   },
   {
     name: "Tussentijdse borstel- & kambeurt (±30 min)",
-    desc: "Opfris- en ontknoop kambeurt voor honden én katten. Ideaal om klitten te voorkomen, de vacht luchtig te houden of jouw dier rustig te laten wennen aan het borstelen en verzorging. Bij klitten of knopen wordt extra tijd gerekend. 🐾 <b>10 kambeurten = 1 kambeurt gratis</b> (10 kambeurtenkaart in het salon verkrijgbaar)",
+    desc: "Opfris- en ontknoop kambeurt voor honden én katten. Ideaal om klitten te voorkomen, de vacht luchtig te houden of jouw dier rustig te laten wennen aan het borstelen en verzorging. Bij veel klitten of knopen wordt extra tijd gerekend. 🐾 <b>10 kambeurten = 1 kambeurt gratis</b> (10 kambeurtenkaart in het salon verkrijgbaar)",
     price: "€ 20 - € 45",
   },
   {
