@@ -20,13 +20,20 @@ function initGA() {
 }
 
 function ScrollToTop() {
-  const { pathname } = useLocation();
+  const { pathname, hash } = useLocation();
   useEffect(() => {
-    window.scrollTo(0, 0);
+    if (hash) {
+      const el = document.querySelector(hash);
+      if (el) {
+        setTimeout(() => el.scrollIntoView({ behavior: "smooth" }), 50);
+      }
+    } else {
+      window.scrollTo(0, 0);
+    }
     if (getCookieConsentValue("chibiwoef_cookie_consent") === "true") {
       ReactGA.send({ hitType: "pageview", page: pathname });
     }
-  }, [pathname]);
+  }, [pathname, hash]);
   return null;
 }
 

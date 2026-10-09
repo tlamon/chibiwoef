@@ -83,6 +83,15 @@ export default function Navbar() {
                     Katten
                   </NavLink>
                 </li>
+                <li>
+                  <a
+                    href="/tarieven#rassentabel"
+                    className="navbar__dropdown-item"
+                    onClick={close}
+                  >
+                    Rassentabel
+                  </a>
+                </li>
               </ul>
             </li>{" "}
             <li>
