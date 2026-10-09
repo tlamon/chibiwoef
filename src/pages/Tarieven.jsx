@@ -387,14 +387,14 @@ export default function Tarieven() {
                   </p>
                   <div className="pricing-promo">
                     <p className="pricing-promo__item pricing-promo__item--current">
+                      Opstartactie september t.e.m. november 2026:
                       <strong>
-                        Opstartactie september t.e.m. november 2026:
-                      </strong>{" "}
-                      15% kennismakingskorting op alle trimbeurten.
+                        15% kennismakingskorting op alle trimbeurten!
+                      </strong>
                     </p>
                     <p className="pricing-promo__item pricing-promo__item--next">
-                      <strong>December 2026 t.e.m. februari 2027:</strong> 10%
-                      opstartkorting op alle trimbeurten.
+                      December 2026 t.e.m. februari 2027:
+                      <strong>10% opstartkorting op alle trimbeurten!</strong>
                     </p>
                   </div>
                 </div>

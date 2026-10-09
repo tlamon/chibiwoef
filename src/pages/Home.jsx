@@ -70,8 +70,14 @@ export default function Home() {
       <section className="hero">
         <div className="hero__inner">
           <div>
-            <div className="hero__badge">
-              Welkom! <span className="emoji">🐶</span>
+            <div className="hero__badge-row">
+              {/* <div className="hero__badge">
+                Welkom! <span className="emoji">🐶</span>
+              </div> */}
+              <div className="hero__badge ">
+                <span className="emoji">🎉</span> 15% opstartkorting op alle
+                trimbeurten!
+              </div>
             </div>
             <h1 className="hero__title">ChibiWoef</h1>
             <h2 className="hero__subtitle">
@@ -229,11 +235,11 @@ export default function Home() {
           <p className="section-sub">
             Wij willen de wereld graag een beetje mooier maken, één chibi
             tegelijk. Daarom maken we gebruik van natuurlijke en
-            diervriendelijke producten. Onze shampoo's bevatten gezonde en helende
-            essentiële oliën; ze zijn pH neutraal, mild voor huid en haar, niet
-            getest op dieren en bovendien helemaal vegan. Jouw trouwe viervoeter
-            staat hier centraal. Zo kunnen we samen zorgen voor een stralende
-            vacht en een gelukkig hart.
+            diervriendelijke producten. Onze shampoo's bevatten gezonde en
+            helende essentiële oliën; ze zijn pH neutraal, mild voor huid en
+            haar, niet getest op dieren en bovendien helemaal vegan. Jouw trouwe
+            viervoeter staat hier centraal. Zo kunnen we samen zorgen voor een
+            stralende vacht en een gelukkig hart.
           </p>
           <div className="services__grid">
             {services.map((s) => (

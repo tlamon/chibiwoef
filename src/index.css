@@ -42,6 +42,7 @@
   --brown-light: #c09e85;
   --brown-dark: #4e321f;
   --muted: #7d6e65;
+  --extra-muted: #a89b91;
   --white: #ffffff;
   --card-bg: #f2ebe0;
   --border: #ddd9cf;
@@ -560,6 +561,17 @@ h4 {
   gap: 12px;
   flex-wrap: wrap;
   margin-bottom: 28px;
+}
+.hero__badge-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: no-wrap;
+  margin-bottom: 20px;
+}
+.hero__promo {
+  color: #a54d2f;
+  background: #ffe6d6;
 }
 
 .hero__visual {
@@ -1250,7 +1262,7 @@ h4 {
   display: inline-block;
 }
 .pricing-price--original {
-  color: var(--muted);
+  color: var(--extra-muted);
   text-decoration: line-through;
   text-decoration-thickness: 0.8px;
   margin-right: 8px;
@@ -1748,7 +1760,6 @@ h4 {
 }
 .contact__info-sub {
   font-size: 16px;
-  color: var(--muted);
   margin-bottom: 32px;
   line-height: 1.7;
 }

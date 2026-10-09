@@ -53,9 +53,9 @@ export default function Contact() {
             <div>
               <h2 className="contact__info-heading">Welkom ♡ </h2>
               <p className="contact__info-sub">
-                Weldra opent ChibiWoef haar deuren, maar je kunt nu al een
-                afspraak plannen via <a href={`mailto:${INFO.email}`}>email</a>,
-                telefoon of een van de onderstaande kanalen. Tot snel!
+                We zijn geopend en we zijn er helemaal klaar voor! Plan je
+                afspraak via <a href={`mailto:${INFO.email}`}>email</a>,
+                telefoon of een van de onderstaande kanalen. Hopelijk tot snel! 
               </p>
 
               <div className="contact__messaging">
