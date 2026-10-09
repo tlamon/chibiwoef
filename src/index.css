@@ -1436,11 +1436,19 @@ h4 {
 
 /* RULES LIST */
 .rules-icon-wrap {
-  justify-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 .rules-icon {
   width: 100px;
   height: 100px;
+  margin: 0 30px;
+}
+.rules-icon--cat-music {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
 }
 .rules-list {
   list-style: none;

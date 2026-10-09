@@ -3,6 +3,7 @@ import PawIcon from "../assets/paw.svg";
 import RulesIcon from "../assets/rules.png";
 import HeartIcon from "../assets/heart.png";
 import PoodleImg from "../assets/poodle.jpg";
+import CatMusicImg from "../assets/cat-music.png";
 
 const rules = [
   {
@@ -83,6 +84,12 @@ export default function Huisregels() {
               <img
                 src={RulesIcon}
                 className="rules-icon"
+                alt=""
+                aria-hidden="true"
+              />
+              <img
+                src={CatMusicImg}
+                className="rules-icon rules-icon--cat-music"
                 alt=""
                 aria-hidden="true"
               />

@@ -157,11 +157,11 @@ export default function Home() {
             <p className="about__text">
               <em>Chibi</em> (ちび) komt uit het Japans en betekent zoiets als
               "klein en schattig" of "kleintje". Het is een koosnaampje dat we
-              gebruiken voor onze eigen hondjes, want voor ons zijn het niet
+              gebruiken voor onze eigen dieren, want voor ons zijn het niet
               zomaar huisdieren, het zijn onze kindjes.
             </p>
             <p className="about__text">
-              Die liefde nemen we mee in alles wat we doen. Jouw hond is ook
+              Die liefde nemen we mee in alles wat we doen. Jouw dier is ook
               iemands chibi en dat verdient een plek waar hij of zij met rust,
               geduld en echte aandacht wordt verzorgd.
             </p>
@@ -169,10 +169,11 @@ export default function Home() {
               ChibiWoef is een nieuw trimsalon, klein van opzet maar groot van
               hart. Bij angstige of gevoelige dieren kiezen we altijd voor
               vertrouwen boven perfectie. Liever een rustige, positieve ervaring
-              met stapjes vooruit, dan een ‘perfecte’ trimbeurt die stress of
-              angst veroorzaakt. Soms plannen we daarom bewust meerdere korte
-              sessies, zoals de kamsessies of gewenningsessies, zodat jouw dier
-              zich veilig voelt en graag terugkomt.
+              met kleine stapjes vooruit, dan een ‘perfecte’ trimbeurt die
+              stress, angst of zelf trauma veroorzaakt. Soms plannen we daarom
+              bewust meerdere korte sessies, zoals de kamsessies of
+              gewenningsessies, zodat jouw dier zich veilig voelt, ons leert
+              vertrouwen en graag terugkomt.
             </p>
             <Link
               to="/contact"
@@ -228,8 +229,7 @@ export default function Home() {
           <p className="section-sub">
             Wij willen de wereld graag een beetje mooier maken, één chibi
             tegelijk. Daarom maken we gebruik van natuurlijke en
-            diervriendelijke producten en bieden we een persoonlijke,
-            stressvrije aanpak. Onze shampoo's bevatten gezonde en helende
+            diervriendelijke producten. Onze shampoo's bevatten gezonde en helende
             essentiële oliën; ze zijn pH neutraal, mild voor huid en haar, niet
             getest op dieren en bovendien helemaal vegan. Jouw trouwe viervoeter
             staat hier centraal. Zo kunnen we samen zorgen voor een stralende
