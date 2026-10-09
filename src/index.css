@@ -1247,6 +1247,7 @@ h4 {
   width: min(680px, 40%);
   text-align: center;
   margin-right: 50%;
+  margin-top: -50px;
   transform: translateX(50%);
 }
 
