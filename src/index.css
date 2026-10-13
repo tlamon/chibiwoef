@@ -627,6 +627,43 @@ h4 {
   left: 13%;
   transform: rotate(-10deg);
 }
+.hero__speech-bubble {
+  position: absolute;
+  z-index: 3;
+  top: 4%;
+  left: 2%;
+  background: var(--ocre);
+  border-radius: 18px;
+  padding: 10px 16px;
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--charcoal);
+  line-height: 1.4;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transform: rotate(3deg);
+}
+.hero__speech-bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  right: 24px;
+  border-width: 12px 10px 0;
+  border-style: solid;
+  border-color: var(--ocre) transparent transparent;
+}
+@media (max-width: 768px) {
+  .hero__speech-bubble {
+    left: auto;
+    right: 2%;
+    transform: rotate(3deg);
+  }
+  .hero__speech-bubble::after {
+    right: auto;
+    left: 24px;
+  }
+}
 
 @media (max-width: 768px) {
   .hero__float--scissors {
@@ -664,6 +701,7 @@ h4 {
   }
   .hero__badge {
     font-size: 25px;
+    line-height: 0.7;
   }
 }
 
@@ -1409,7 +1447,6 @@ h4 {
     padding: 16px;
     position: relative;
     transform: none;
-    top: -3.5rem;
   }
 
   .pricing-bone::before,

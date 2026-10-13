@@ -381,9 +381,11 @@ export default function Tarieven() {
                   <p className="content-block__sub">
                     Richtprijzen incl. 21% BTW. De definitieve prijs hangt af
                     van de vachtconditie en het gedrag. Bekijk ook de{" "}
-                    <a href="#rassentabel">rassentabel onderaan</a> om een beter
-                    idee te krijgen van de prijzen. Voorlopig werken we met
-                    dieren tot en met een gewicht van 30 kg.
+                    <u>
+                      <a href="#rassentabel">rassentabel onderaan</a>
+                    </u>{" "}
+                    om een beter idee te krijgen van de prijzen. Voorlopig
+                    werken we met dieren tot en met een gewicht van 30 kg.
                   </p>
                   <div className="pricing-promo">
                     <p className="pricing-promo__item pricing-promo__item--current">

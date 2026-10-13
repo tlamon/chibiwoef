@@ -106,6 +106,11 @@ export default function Home() {
 
           <div className="hero__visual">
             <div className="hero__blob" />
+            <div className="hero__speech-bubble" aria-hidden="true">
+              🎉 15% korting
+              <br />
+              t.e.m. november!
+            </div>
             <div className="hero__img">
               <img
                 src={HeroImg}
