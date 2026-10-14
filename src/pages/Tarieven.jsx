@@ -296,6 +296,7 @@ const breedPriceRows = [
     breed: "Nova Scotia duck tolling retriever",
     coat: "Dubbele vacht",
     price: "€ 70",
+    page: "/rassen/nova-scotia-duck-tolling-retriever",
   },
   { breed: "Pekinees", coat: "Langhaar/Bevedering", price: "€ 60" },
   {

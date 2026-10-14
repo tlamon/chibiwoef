@@ -171,7 +171,7 @@ export const breeds = [
     fci: "FCI Groep 8 · Retrievers, Spaniëls en Waterhonden",
     fciSlug: "groep-8",
     metaDescription:
-      "Alles over de Flat-Coated Retriever: trimfrequentie, vachtverzorging en groomingaanpak. Notes from the grooming table – ChibiWoef.",
+      "Alles over de Flat-Coated Retriever: trimfrequentie, vachtverzorging en groomingaanpak. ChibiWoef.",
     weight: "25 – 35 kg",
     height: "56 – 62 cm",
     colors: [
@@ -237,34 +237,27 @@ export const breeds = [
           {
             title: "Voorbereiding",
             items: [
-              "Nagels knippen of vijlen elke 4–6 weken.",
+              "Nagels knippen of vijlen.",
               "Oren reinigen met een milde oorreinigingsoplossing.",
-              "Losse vacht en huidschilfers loswerken met een rubber curry, shedding blade of carding tool.",
-              "High-velocity dryer over de vacht om vuil te liften en losse haren los te maken.",
-              "Klitten in de langhaar zones uitborstelen.",
+              "Losse vacht en huidschilfers loswerken met een rubber curry, hark, slicker en/of plukmes.",
+              "Waterblazer om de vuiligheid en dode haren in de vacht los te maken.",
+              "Klitten in de langharige zones uitborstelen.",
             ],
           },
           {
             title: "Borstelen",
             items: [
               "Lijnborstelen in secties tot de hond volledig klitvrij is.",
-              "Controleer af met een brede kam en je handen.",
               "Extra aandacht voor: achter de oren, kraagzone, dijgebieden, buikvacht en staart.",
-            ],
-          },
-          {
-            title: "Carding (ondervacht)",
-            items: [
-              "Bij veel losse ondervacht: lijngewijs carden in de richting van de vachtgroei.",
-              "Gebruik een fijn strippingmes, puimsteen of #40 mes gehouden tussen de vingers.",
+              "Bij veel losse ondervacht: lijngewijs harken in de richting van de vachtgroei.",
             ],
           },
           {
             title: "Poten & Hakken",
             items: [
-              "Pads scheren met een #15 tot #40 mes.",
-              "Haar tussen de tenen bijknippen met dunscharen.",
-              "Hakkels licht bijwerken met dunscharen.",
+              "Voetzooltjes scheren.",
+              "Pootjes rond knippen.",
+              "Hakken licht bijwerken met een effileerschaar.",
             ],
           },
           {
@@ -273,6 +266,115 @@ export const breeds = [
               "Oren licht bijwerken met dunscharen voor een natuurlijke look.",
               "Lange uitwaaierende haren rond de oren met de hand wegtrekken.",
               "Afwerken met een fijne mist coat polish voor extra glans.",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "nova-scotia-duck-tolling-retriever",
+    name: "Nova Scotia Duck Tolling Retriever",
+    heroImg: null,
+    photo: "nova-scotia-duck-tolling-retriever.webp",
+    fci: "FCI Groep 8 · Retrievers, Spaniëls en Waterhonden",
+    fciSlug: "groep-8",
+    metaDescription:
+      "Alles over de Nova Scotia Duck Tolling Retriever: trimfrequentie, vachtverzorging en groomingaanpak. ChibiWoef.",
+    weight: "17 – 23 kg",
+    height: "45 – 51 cm",
+    colors: [
+      { label: "Rood / Oranje", cls: "red" },
+      { label: "Goud", cls: "yellow" },
+    ],
+    freq: null,
+    price: null,
+    didYouKnow: [
+      {
+        emoji: "🦊",
+        title: 'De "Vossentruc" (De Tolling-dans)',
+        text: 'De Toller heeft een unieke manier van jagen waar hij zijn naam aan dankt (tollen is oud-Engels voor lokken). In plaats van wild te vangen, rent en speelt de Toller vrolijk langs de waterkant om de aandacht van eenden te trekken. De eenden worden nieuwsgierig door deze "dansende vos" en zwemmen dichtbij, waarna de jager ze kan schieten en de Toller ze netjes apporteert.🦆',
+      },
+      {
+        emoji: "🎺",
+        title: "De Toller Scream",
+        text: "Als een Toller super enthousiast, nerveus of ongeduldig is (bijvoorbeeld als je een bal gaat gooien), produceert hij een heel specifiek geluid: de Toller Scream. Dit is geen normale blaf, maar een hoge, doordringende, bijna zingende kreet die klinkt alsof hij wordt achtervolgd. Heel typisch voor het ras!",
+      },
+      {
+        emoji: "🚀",
+        title: 'De "Red Rocket":',
+        text: "Hoewel ze eruitzien als een mini-Golden Retriever, hebben ze het energieniveau van een Border Collie. Het zijn echte werkhonden die een duidelijke taak nodig hebben (zoals agility, flyball of jachttraining) om gelukkig te blijven. In huis zijn ze rustig, mits ze buiten hun energie kwijt kunnen!",
+      },
+      {
+        emoji: "🍁",
+        title: "Trots Canadees erfgoed",
+        text: "Het ras werd ontwikkeld in Nova Scotia, Canada, in de vroege 19e eeuw. De Toller is zo'n belangrijk deel van de Canadese identiteit dat hij in 1995 tot officieel provinciaal symbool van Nova Scotia werd uitgeroepen.",
+      },
+    ],
+    sections: [
+      {
+        title: "Trimfrequentie",
+        type: "html",
+        content:
+          "De Nova Scotia Duck Tolling Retriever (kortweg de Toller) is de kleinste van alle retrieverrassen, maar heeft een minstens even grote persoonlijkheid! De verzorging is gelukkig relatief eenvoudig, omdat hun vacht van nature vuil- en waterafstotend is. De Toller hoeft maar <strong>2 à 3 keer per jaar</strong> naar het trimsalon, best rond de ruiperioden:" +
+          "<ol style='padding-left:1.8rem'>" +
+          "<li><strong>Lenterui (april/mei):</strong> wanneer de dikke wintervacht loslaat.</li>" +
+          "<li><strong>Herfstrui (oktober/november):</strong> wanneer de zomervacht plaatsmaakt voor de wintervacht.</li>" +
+          "<li><strong>Zomertweak (optioneel):</strong> vlak voor of na de zomer om hardnekkige pluiswol weg te werken.</li>" +
+          "</ol>",
+        freqRow: {
+          level: "laag",
+          label:
+            "🟢 Laag — 2 à 3 beurten per jaar, afgestemd op de ruiperioden",
+          price: "Was & Splash: € 55",
+          price2: "Volledige trimbeurt: € 70",
+          price3: "Tussentijdse borstel- & kambeurt: € 35",
+        },
+        warning:
+          "Scheer een Toller nooit kaal. Net als bij de Golden en Flat-Coat werkt de dubbele vacht als een natuurlijke isolatielaag en bescherming bij het zwemmen.",
+      },
+      {
+        title: "Trimbeurt",
+        type: "grouped",
+        intro:
+          "De trimbeurt van een Toller is vergelijkbaar met die van een Golden Retriever, maar vraagt minder tijd door de compactere bevedering:",
+        subSections: [
+          {
+            title: "Voorbereiding",
+            items: [
+              "Nagels knippen of vijlen elke 4–6 weken.",
+              "Oren reinigen -> Tollers zijn waterliefhebbers, dus de oren worden extra in de gaten gehouden op vocht en infecties.",
+              "Losse vacht loswerken met een rubbere kam of ontwoller.",
+              "Waterblazer om vuil en losse haren uit de vacht te blazen.",
+            ],
+          },
+          {
+            title: "Borstelen",
+            items: [
+              "Lijnborstelen in secties tot volledig klitvrij.",
+              "Extra aandacht voor: achter de oren, kraag, dijgebieden, buikvacht en staart.",
+            ],
+          },
+          {
+            title: "Ondervacht behandelen",
+            items: [
+              "Bij veel losse ondervacht: lijngewijs ontwollen of harken in de richting van de vachtgroei.",
+              "Deze is minder uitgesproken dan bij de Golden, maar niet overslaan tijdens ruiperiode.",
+            ],
+          },
+          {
+            title: "Poten & Hakken",
+            items: [
+              "Voetzolen uitscheren voor betere grip en hygiëne.",
+              "Haar tussen de tenen bijknippen met dunscharen.",
+              "Hakkels licht bijwerken indien nodig.",
+            ],
+          },
+          {
+            title: "Afwerking",
+            items: [
+              "Oren licht bijwerken voor een natuurlijke look.",
+              "Afwerken met coat polish voor extra glans op de roodgouden vacht.",
             ],
           },
         ],

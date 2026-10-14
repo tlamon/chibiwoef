@@ -24,7 +24,10 @@ export default function FciGroupPage() {
     <main>
       <Helmet>
         <title>{groupName} – ChibiWoef</title>
-        <meta name="description" content={`Overzicht van alle rassen in ${groupName} bij ChibiWoef.`} />
+        <meta
+          name="description"
+          content={`Overzicht van alle rassen in ${groupName} bij ChibiWoef.`}
+        />
       </Helmet>
 
       <div className="page-hero">

@@ -57,7 +57,7 @@ export default function App() {
           <Route path="/tarieven" element={<Tarieven />} />
           <Route path="/tarieven/katten" element={<TarievenKatten />} />
           <Route path="/rassen/:slug" element={<BreedPage />} />
-        <Route path="/fci/:groupSlug" element={<FciGroupPage />} />
+          <Route path="/fci/:groupSlug" element={<FciGroupPage />} />
           <Route path="/huisregels" element={<Huisregels />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy" element={<Privacy />} />
