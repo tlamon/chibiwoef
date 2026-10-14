@@ -11,7 +11,7 @@ import DogLIcon from "../assets/dog-l.svg";
 const treatments = [
   {
     name: "Was & Splash",
-    desc: "Een heerlijke shampoo- en schuimbeurt, uitwaaien onder de föhn en een grondige borstelbeurt. Pedicure (nagels knippen en/of vijlen) is inbegrepen. Perfect als tussendoor behandeling om de vacht fris, glanzend en klit-vrij te houden.",
+    desc: "Wassen, drogen met de waterblazer, nageltjes, oortjes en een oppervlakkige borstelbeurt om de vacht klitvrij te maken. <em>Let op: deze behandeling is géén rui-behandeling. Zit de vacht vol met losse onderwol of klitten? Kies dan voor een volledige trimbeurt.</em>",
     price: "€ 40 – € 65",
   },
   {
