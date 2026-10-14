@@ -10,6 +10,7 @@ import Home from "./pages/Home";
 import Tarieven from "./pages/Tarieven";
 import TarievenKatten from "./pages/TarievenKatten";
 import BreedPage from "./pages/breeds/BreedPage";
+import FciGroupPage from "./pages/breeds/FciGroupPage";
 import Contact from "./pages/Contact";
 import Huisregels from "./pages/Huisregels";
 import NotFound from "./pages/NotFound";
@@ -56,6 +57,7 @@ export default function App() {
           <Route path="/tarieven" element={<Tarieven />} />
           <Route path="/tarieven/katten" element={<TarievenKatten />} />
           <Route path="/rassen/:slug" element={<BreedPage />} />
+        <Route path="/fci/:groupSlug" element={<FciGroupPage />} />
           <Route path="/huisregels" element={<Huisregels />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy" element={<Privacy />} />

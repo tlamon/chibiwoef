@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useParams, Navigate } from "react-router-dom";
+import { useParams, Navigate, Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { getBreed } from "../../data/breeds";
 
@@ -31,7 +31,11 @@ export default function BreedPage() {
           aria-modal="true"
           aria-label={lightbox.caption ?? "Afbeelding"}
         >
-          <img src={lightbox.src} alt={lightbox.caption ?? ""} className="breed-lightbox__img" />
+          <img
+            src={lightbox.src}
+            alt={lightbox.caption ?? ""}
+            className="breed-lightbox__img"
+          />
           {lightbox.caption && (
             <p className="breed-lightbox__caption">{lightbox.caption}</p>
           )}
@@ -46,7 +50,13 @@ export default function BreedPage() {
 
       <div className="page-hero breed-page-hero">
         <div>
-          <span className="badge">{breed.fci}</span>
+          {breed.fciSlug ? (
+            <Link to={`/fci/${breed.fciSlug}`} className="badge badge--link">
+              {breed.fci}
+            </Link>
+          ) : (
+            <span className="badge">{breed.fci}</span>
+          )}
           <h1 className="page-hero__title">{breed.name}</h1>
         </div>
         {breed.heroImg && (
@@ -62,16 +72,18 @@ export default function BreedPage() {
       <section className="contact">
         <div className="container">
           <div className="breed-page__layout">
-            <div className="breed-page__photo">
-              <div className="breed-polaroid">
-                <img
-                  src={img(breed.photo)}
-                  alt={breed.name}
-                  loading="lazy"
-                  decoding="async"
-                />
+            {breed.photo && (
+              <div className="breed-page__photo">
+                <div className="breed-polaroid">
+                  <img
+                    src={img(breed.photo)}
+                    alt={breed.name}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
               </div>
-            </div>
+            )}
 
             <div className="breed-page__content">
               {breed.colors?.length > 0 && (
@@ -146,7 +158,12 @@ export default function BreedPage() {
                             <figure
                               key={ex.file}
                               className="breed-page__example"
-                              onClick={() => setLightbox({ src: img(ex.file), caption: ex.caption })}
+                              onClick={() =>
+                                setLightbox({
+                                  src: img(ex.file),
+                                  caption: ex.caption,
+                                })
+                              }
                               role="button"
                               tabIndex={0}
                               aria-label={`Vergroot: ${ex.caption ?? "afbeelding"}`}
@@ -224,6 +241,33 @@ export default function BreedPage() {
           </div>
         </div>
       </section>
+
+      {breed.didYouKnow && (
+        <section className="breed-did-you-know-section">
+          <div className="container">
+            <h2 className="breed-did-you-know-section__title">
+              💡 Wist je dat?
+            </h2>
+            {Array.isArray(breed.didYouKnow) ? (
+              <ul className="breed-page__did-you-know-list">
+                {breed.didYouKnow.map((fact) => (
+                  <li
+                    key={fact.title}
+                    className="breed-page__did-you-know-item"
+                  >
+                    <strong>
+                      {fact.emoji} {fact.title}
+                    </strong>
+                    <p>{fact.text}</p>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="breed-page__text">{breed.didYouKnow}</p>
+            )}
+          </div>
+        </section>
+      )}
     </main>
   );
 }

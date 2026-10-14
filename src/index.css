@@ -1826,6 +1826,79 @@ h4 {
   margin-top: 10px;
   flex-wrap: wrap;
 }
+.badge--link:hover {
+  background: var(--teal);
+  color: var(--white);
+}
+.fci-group__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 32px;
+  padding: 24px 0 40px;
+}
+.fci-group__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+.fci-group__polaroid {
+  width: 100%;
+}
+.fci-group__placeholder {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  background: var(--card-bg);
+}
+.fci-group__name {
+  font-family: var(--font-heading);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--charcoal);
+  text-align: center;
+  transition: var(--transition);
+}
+.fci-group__card:hover .fci-group__name {
+  color: var(--teal-dark);
+}
+.breed-did-you-know-section {
+  background: var(--ocre);
+  padding: 56px 0;
+}
+.breed-did-you-know-section__title {
+  font-size: clamp(22px, 3vw, 30px);
+  margin-bottom: 32px;
+  color: var(--charcoal);
+}
+.breed-page__did-you-know-label {
+  display: none;
+}
+.breed-page__did-you-know-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+.breed-page__did-you-know-item {
+  background: rgba(255, 255, 255, 0.55);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+}
+.breed-page__did-you-know-item strong {
+  display: block;
+  font-size: 15px;
+  color: var(--lavender-dark);
+  margin-bottom: 2px;
+}
+.breed-page__did-you-know-item p {
+  color: var(--charcoal);
+  line-height: 1.6;
+  margin: 0;
+}
 .breed-page__warning {
   margin-top: 14px;
   padding: 12px 16px;
