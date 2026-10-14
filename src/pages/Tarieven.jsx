@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import PawIcon from "../assets/paw.svg";
 import MobileImg from "../assets/mobile.webp";
 import TopDogImg from "../assets/sleepy.png";
@@ -269,7 +270,12 @@ const breedPriceRows = [
     coat: "Krul / fleece",
     price: "€ 100 – € 120",
   },
-  { breed: "Labrador retriever", coat: "Dubbele vacht/kort", price: "€ 60" },
+  {
+    breed: "Labrador retriever",
+    coat: "Dubbele vacht/kort",
+    price: "€ 60",
+    page: "/rassen/labrador-retriever",
+  },
   { breed: "Lhasa apso", coat: "Langhaar/Bevedering", price: "€ 70" },
   { breed: "Maltezer", coat: "Langhaar/Bevedering", price: "€ 65" },
   { breed: "Mini Maltezer", coat: "Langhaar/Bevedering", price: "€ 50" },
@@ -594,7 +600,18 @@ export default function Tarieven() {
                         {breedsByLetter.map((row) => (
                           <li key={row.breed} className="breed-pricing__item">
                             <span className="breed-pricing__name">
-                              {row.breed}
+                              {row.page ? (
+                                <Link
+                                  to={row.page}
+                                  className="breed-pricing__page-link"
+                                  title="Trimgids"
+                                >
+                                  {row.breed}
+                                </Link>
+                              ) : (
+                                row.breed
+                              )}
+
                               {row.coat && (
                                 <small className="breed-pricing__coat">
                                   {row.coat}

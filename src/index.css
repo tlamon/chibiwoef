@@ -1659,6 +1659,199 @@ h4 {
   font-weight: 700;
   white-space: nowrap;
 }
+.breed-pricing__page-link {
+  color: #a54d2f;
+  text-decoration: none;
+  transition: var(--transition);
+}
+.breed-pricing__page-link:hover {
+  text-decoration: underline;
+  color: var(--teal-dark);
+}
+
+/* ── Breed detail page ── */
+.breed-page-hero {
+  background-color: var(--card-bg);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='250'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.72' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='250' height='250' filter='url(%23g)' opacity='0.1'/%3E%3C/svg%3E");
+  background-blend-mode: multiply;
+  border-bottom: 1px solid var(--border);
+}
+.breed-page-hero__img {
+  height: 180px;
+  width: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .breed-page-hero {
+    flex-direction: column;
+    text-align: center;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .breed-page-hero__img {
+    height: 120px;
+  }
+}
+.breed-page__layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+.breed-page__photo {
+  position: sticky;
+  top: 88px;
+}
+.breed-polaroid {
+  position: relative;
+  background: var(--white);
+  padding: 12px 12px 48px;
+  box-shadow: 3px 6px 18px rgba(0, 0, 0, 0.18);
+  transform: rotate(-2deg);
+  transition: transform 0.3s ease;
+  display: block;
+}
+.breed-polaroid:hover {
+  transform: rotate(0deg) scale(1.02);
+}
+.breed-polaroid img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+}
+/* plakband */
+.breed-polaroid::before {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%) rotate(1deg);
+  width: 64px;
+  height: 26px;
+  background: rgba(255, 246, 190, 0.75);
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+  /* lichte glansstreep over de tape */
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.3) 0%,
+    transparent 40%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+}
+.breed-page__content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.breed-page__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.breed-page__tag {
+  background: var(--teal-light);
+  color: var(--teal-dark);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-heading);
+}
+.breed-page__colors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.breed-page__color {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+}
+.breed-page__color--black {
+  background: #2a2a2a;
+  color: #fff;
+}
+.breed-page__color--yellow {
+  background: var(--ocre);
+  color: var(--charcoal);
+}
+.breed-page__color--chocolate {
+  background: #6b3a2a;
+  color: #fff;
+}
+.breed-page__section-title {
+  font-size: 16px;
+  font-family: var(--font-heading);
+  color: var(--teal-dark);
+  margin-bottom: 8px;
+}
+.breed-page__section {
+  margin-bottom: 20px;
+}
+.breed-page__list {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+.breed-page__text {
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.75;
+}
+.breed-page__freq-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+.breed-page__freq {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 14px;
+  border-radius: var(--radius-pill);
+  font-size: 13px;
+  font-weight: 600;
+  font-family: var(--font-heading);
+  line-height: 1;
+}
+.breed-page__freq--laag {
+  background: #d4edda;
+  color: #276033;
+}
+.breed-page__freq--matig {
+  background: var(--ocre-light);
+  color: #7a5010;
+}
+.breed-page__freq--regelmatig {
+  background: #ffe0cc;
+  color: #a0440f;
+}
+.breed-page__freq--hoog {
+  background: #f8d7da;
+  color: #842029;
+}
+.breed-page__freq--price {
+  background: var(--lavender-light);
+  color: var(--lavender-dark);
+}
+@media (max-width: 768px) {
+  .breed-page__layout {
+    grid-template-columns: 1fr;
+  }
+  .breed-page__photo {
+    position: static;
+  }
+}
 
 .breed-pricing__empty {
   color: var(--muted);

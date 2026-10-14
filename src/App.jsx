@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Tarieven from "./pages/Tarieven";
 import TarievenKatten from "./pages/TarievenKatten";
+import Labrador from "./pages/breeds/Labrador";
 import Contact from "./pages/Contact";
 import Huisregels from "./pages/Huisregels";
 import NotFound from "./pages/NotFound";
@@ -52,6 +53,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/tarieven" element={<Tarieven />} />
         <Route path="/tarieven/katten" element={<TarievenKatten />} />
+        <Route path="/rassen/labrador-retriever" element={<Labrador />} />
         <Route path="/huisregels" element={<Huisregels />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/privacy" element={<Privacy />} />
