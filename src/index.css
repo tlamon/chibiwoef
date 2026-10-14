@@ -1790,6 +1790,18 @@ h4 {
   color: var(--teal-dark);
   margin-bottom: 8px;
 }
+.breed-page__subsection {
+  margin-top: 16px;
+}
+.breed-page__subsection-title {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--teal-dark);
+  font-family: var(--font-heading);
+  margin-bottom: 6px;
+}
 .breed-page__section {
   margin-bottom: 20px;
 }
@@ -1813,6 +1825,81 @@ h4 {
   gap: 8px;
   margin-top: 10px;
   flex-wrap: wrap;
+}
+.breed-page__warning {
+  margin-top: 14px;
+  padding: 12px 16px;
+  background: #fff8e1;
+  border-left: 4px solid #f0b429;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  color: var(--charcoal);
+  line-height: 1.6;
+}
+.breed-page__examples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 24px;
+  margin-bottom: 20px;
+}
+.breed-page__example {
+  flex: 1 1 180px;
+  max-width: 260px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  cursor: zoom-in;
+  transition: var(--transition);
+}
+.breed-page__example:hover {
+  box-shadow: var(--shadow-md);
+  transform: scale(1.02);
+}
+@media (max-width: 768px) {
+  .breed-page__example {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+.breed-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  cursor: zoom-out;
+  padding: 24px;
+}
+.breed-lightbox__img {
+  max-width: min(90vw, 800px);
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+}
+.breed-lightbox__caption {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14px;
+  font-style: italic;
+}
+.breed-page__example img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+.breed-page__example-caption {
+  text-align: center;
+  font-size: 12px;
+  font-style: italic;
+  color: var(--muted);
+  padding: 6px 8px;
+  background: var(--card-bg);
 }
 .breed-page__freq {
   display: inline-flex;
@@ -1842,7 +1929,6 @@ h4 {
 }
 .breed-page__freq--price {
   background: var(--lavender-light);
-  color: var(--lavender-dark);
 }
 @media (max-width: 768px) {
   .breed-page__layout {

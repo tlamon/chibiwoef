@@ -219,7 +219,8 @@ const breedPriceRows = [
   {
     breed: "Golden retriever",
     coat: "Dubbele vacht met bevedering",
-    price: "€ 75 - € 90 ",
+    price: "€ 80 ",
+    page: "/rassen/golden-retriever",
   },
   { breed: "Gordon setter", coat: "Langhaar/Bevedering", price: "€ 85" },
   { breed: "Grand Basset Griffon Vendeen", coat: "Ruwharig", price: "€ 70" },

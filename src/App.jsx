@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import { HelmetProvider } from "react-helmet-async";
 import CookieConsent, { getCookieConsentValue } from "react-cookie-consent";
 import { Link } from "react-router-dom";
 import ReactGA from "react-ga4";
@@ -8,7 +9,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Tarieven from "./pages/Tarieven";
 import TarievenKatten from "./pages/TarievenKatten";
-import Labrador from "./pages/breeds/Labrador";
+import BreedPage from "./pages/breeds/BreedPage";
 import Contact from "./pages/Contact";
 import Huisregels from "./pages/Huisregels";
 import NotFound from "./pages/NotFound";
@@ -46,72 +47,77 @@ export default function App() {
   }, []);
 
   return (
-    <BrowserRouter>
-      <ScrollToTop />
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/tarieven" element={<Tarieven />} />
-        <Route path="/tarieven/katten" element={<TarievenKatten />} />
-        <Route path="/rassen/labrador-retriever" element={<Labrador />} />
-        <Route path="/huisregels" element={<Huisregels />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/privacy" element={<Privacy />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-      <Footer />
-      <CookieConsent
-        cookieName="chibiwoef_cookie_consent"
-        location="bottom"
-        buttonText="Accepteren"
-        declineButtonText="Weigeren"
-        enableDeclineButton
-        onAccept={() => {
-          initGA();
-          ReactGA.send({ hitType: "pageview", page: window.location.pathname });
-        }}
-        style={{
-          background: "var(--teal-dark)",
-          color: "#fff",
-          fontSize: "0.875rem",
-          alignItems: "center",
-          gap: "1rem",
-          padding: "1rem 1.5rem",
-        }}
-        buttonStyle={{
-          background: "var(--ocre)",
-          color: "#fff",
-          fontFamily: "var(--font-body)",
-          fontWeight: "700",
-          fontSize: "0.875rem",
-          borderRadius: "999px",
-          padding: "0.5rem 1.25rem",
-          border: "none",
-          cursor: "pointer",
-        }}
-        declineButtonStyle={{
-          background: "transparent",
-          color: "rgba(255,255,255,0.7)",
-          fontFamily: "var(--font-body)",
-          fontSize: "0.875rem",
-          border: "1px solid rgba(255,255,255,0.4)",
-          borderRadius: "999px",
-          padding: "0.5rem 1.25rem",
-          cursor: "pointer",
-        }}
-      >
-        Wij gebruiken cookies voor analytische doeleinden (Google Analytics) om
-        onze website te verbeteren.{" "}
-        <Link
-          to="/privacy"
+    <HelmetProvider>
+      <BrowserRouter>
+        <ScrollToTop />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/tarieven" element={<Tarieven />} />
+          <Route path="/tarieven/katten" element={<TarievenKatten />} />
+          <Route path="/rassen/:slug" element={<BreedPage />} />
+          <Route path="/huisregels" element={<Huisregels />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+        <Footer />
+        <CookieConsent
+          cookieName="chibiwoef_cookie_consent"
+          location="bottom"
+          buttonText="Accepteren"
+          declineButtonText="Weigeren"
+          enableDeclineButton
+          onAccept={() => {
+            initGA();
+            ReactGA.send({
+              hitType: "pageview",
+              page: window.location.pathname,
+            });
+          }}
           style={{
-            color: "rgba(255,255,255,0.85)",
-            textDecoration: "underline",
+            background: "var(--teal-dark)",
+            color: "#fff",
+            fontSize: "0.875rem",
+            alignItems: "center",
+            gap: "1rem",
+            padding: "1rem 1.5rem",
+          }}
+          buttonStyle={{
+            background: "var(--ocre)",
+            color: "#fff",
+            fontFamily: "var(--font-body)",
+            fontWeight: "700",
+            fontSize: "0.875rem",
+            borderRadius: "999px",
+            padding: "0.5rem 1.25rem",
+            border: "none",
+            cursor: "pointer",
+          }}
+          declineButtonStyle={{
+            background: "transparent",
+            color: "rgba(255,255,255,0.7)",
+            fontFamily: "var(--font-body)",
+            fontSize: "0.875rem",
+            border: "1px solid rgba(255,255,255,0.4)",
+            borderRadius: "999px",
+            padding: "0.5rem 1.25rem",
+            cursor: "pointer",
           }}
         >
-          Meer info
-        </Link>
-      </CookieConsent>
-    </BrowserRouter>
+          Wij gebruiken cookies voor analytische doeleinden (Google Analytics)
+          om onze website te verbeteren.{" "}
+          <Link
+            to="/privacy"
+            style={{
+              color: "rgba(255,255,255,0.85)",
+              textDecoration: "underline",
+            }}
+          >
+            Meer info
+          </Link>
+        </CookieConsent>
+      </BrowserRouter>
+    </HelmetProvider>
   );
 }

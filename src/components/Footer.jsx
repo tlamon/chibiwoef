@@ -67,7 +67,7 @@ export default function Footer() {
         <div className="footer__bottom">
           <span>
             © 2026 ChibiWoef. All rights reserved. ·{" "}
-            <Link to="/privacy">Privacyverklaring</Link>
+            <Link to="/privacy">Privacyverklaring</Link> · BE0680709970
           </span>
           <span className="footer__paw">
             <img
