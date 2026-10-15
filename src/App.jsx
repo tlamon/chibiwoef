@@ -62,12 +62,24 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/tarieven" element={<Tarieven />} />
-          <Route path="/diensten/trimbeurt-katten" element={<TrimbeurtKatten />} />
-          <Route path="/diensten/trimbeurt-honden" element={<TrimbeurtHonden />} />
+          <Route
+            path="/diensten/trimbeurt-katten"
+            element={<TrimbeurtKatten />}
+          />
+          <Route
+            path="/diensten/trimbeurt-honden"
+            element={<TrimbeurtHonden />}
+          />
           <Route path="/diensten/was-en-splash" element={<WasEnSplash />} />
           <Route path="/diensten/kambeurt" element={<Kambeurt />} />
-          <Route path="/diensten/ontspanningsmassage" element={<Ontspanningsmassage />} />
-          <Route path="/diensten/puppy-gewenning" element={<PuppyGewenning />} />
+          <Route
+            path="/diensten/ontspanningsmassage"
+            element={<Ontspanningsmassage />}
+          />
+          <Route
+            path="/diensten/puppy-gewenning"
+            element={<PuppyGewenning />}
+          />
           <Route path="/diensten/gewenning" element={<Gewenning />} />
           <Route path="/diensten/:slug" element={<ServicePage />} />
           <Route

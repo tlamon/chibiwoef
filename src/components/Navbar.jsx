@@ -40,7 +40,11 @@ export default function Navbar() {
               </NavLink>
             </li>
             <li className="navbar__dropdown">
-              <span className={`navbar__link${pathname.startsWith("/diensten") ? " active" : ""}`}>Diensten</span>
+              <span
+                className={`navbar__link${pathname.startsWith("/diensten") ? " active" : ""}`}
+              >
+                Diensten
+              </span>
               <ul className="navbar__dropdown-menu">
                 <li>
                   <NavLink

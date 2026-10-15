@@ -39,8 +39,7 @@ export default function WasEnSplash() {
                   De ideale tussenstop tussen twee grote trimbeurten in of als
                   volledige behandeling voor kortharige honden.
                 </strong>{" "}
-                Heb je een langharige hond die wel een opfrisbeurt kan
-                gebruiken? Of heeft jouw viervoeter net iets te enthousiast in
+                Kan jouw hond af en toe wel eens een opfrisbeurt gebruiken? Of heeft jouw viervoeter net iets te enthousiast in
                 de modder gerold? Met een grondige Was &amp; Splash staat je
                 hond er weer stralend en welriekend bij.
               </p>
