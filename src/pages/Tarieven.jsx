@@ -11,57 +11,54 @@ import DogLIcon from "../assets/dog-l.svg";
 const treatments = [
   {
     name: "Was & Splash",
-    desc: "Wassen, drogen met de waterblazer, nageltjes, oortjes en een oppervlakkige borstelbeurt om de vacht klitvrij te maken. <em>Let op: deze behandeling is géén rui-behandeling. Zit de vacht vol met losse onderwol of klitten? Kies dan voor een volledige trimbeurt.</em>",
+    page: "/diensten/was-en-splash",
     price: "€ 40 – € 65",
   },
   {
     name: "Tussentijdse borstel- & kambeurt (±30 min)",
-    desc: "Opfris- en ontknoop kambeurt voor honden én katten. Ideaal om klitten te voorkomen, de vacht luchtig te houden of jouw dier rustig te laten wennen aan het borstelen en verzorging. Bij veel klitten of knopen wordt extra tijd gerekend. 🐾 <b>10 kambeurten = 1 kambeurt gratis</b> (10 kambeurtenkaart in het salon verkrijgbaar)",
+    page: "/diensten/kambeurt",
     price: "€ 20 - € 45",
   },
   {
     name: "Pawdicure",
-    desc: "Nagels knippen en/of vijlen. We knippen nooit te kort en vijlen bij voorkeur om splijten te voorkomen. Voor honden die het spannend vinden, knippen we de nagels in meerdere korte sessies. Bij ingegroeide nagels verwijzen we je graag door naar de dierenarts voor een veilige behandeling.",
     price: "€ 10",
   },
   {
     name: "Oren reinigen en/of plukken",
-    desc: "Milde reiniging met professionele vloeistof. Bij infecties sturen we je (uit liefde) door naar de dierenarts.",
     price: "€ 8",
   },
   {
     name: "Trimbeurt katten ♔",
-    desc: "Speciaal voor onze gevoelige harige hoogheden die weigeren mee te werken aan hun eigen vachtverzorging. Omdat katten nu eenmaal de baas zijn, kammen en ontwollen we in alle rust en volledig op hun tempo de koninklijke vacht. Inclusief een vorstelijke manicure (nagels knippen) en een zachte oorreiniging. Wassen? Dat doen we uw majesteit absoluut niet aan!",
+    page: "/diensten/trimbeurt-katten",
     price: "€ 45",
   },
   {
     name: "Ontspanningsmassage (20-30 min)",
-    desc: "Een rustmoment voor hond of kat; bevordert de bloedsomloop en verlaagt stress. ",
+    page: "/diensten/ontspanningsmassage",
     price: "€ 25",
   },
   {
     name: "Puppy gewenning – Deel 1: Meet & Greet (15-20 min)",
-    desc: "Kennismaking met de kapster, het materiaal en de omgeving via positieve associaties (snoepjes). De pootjes worden voorzichtig natgemaakt en gedroogd, en er wordt rustig gekamd. Liefst tijdens hun 2e socialisatiefase, van 8 tot 12 weken. De nieuwsgierigheid van de puppy is in deze periode groter dan de angst. Het is het ideale moment om de pup op een positieve en rustige manier te laten wennen.",
+    page: "/diensten/puppy-gewenning",
     price: "€ 15",
   },
   {
     name: "Puppy gewenning – Deel 2: Was & Splash (+/- 60 min)",
-    desc: "De pup gaat helemaal in bad, wordt volledig gedroogd en gekamd, de pootjes worden bijgeknipt en geschoren. Een eerste echte badervaring in alle rust, op het tempo van jouw pup.",
+    page: "/diensten/puppy-gewenning",
     price: "€ 35 - € 50",
   },
   {
     name: "Puppy gewenning – Deel 3: Eerste trimbeurt",
-    desc: "Nu de pup vertrouwd is met het salon, gaan we voor de eerste volledige verzorgingsbeurt. Als beloning voor het geduld krijgt het baasje € 15 korting op de standaardprijs (om snoepjes mee te kopen 😉 ).",
+    page: "/diensten/puppy-gewenning",
     price: "Standaardprijs (-€ 15 korting)",
   },
   {
     name: "Standaard gewenning (15-30 min)",
-    desc: "Speciaal voor angstige of onzekere dieren die een trimsalon niet gewend zijn. Hierbij maken we gebruik van positieve associaties met de tools, geuren en geluiden. We werken met lekkernijen, zachte aanrakingen en aanmoediging om vertrouwen op te bouwen. Soms is het nodig om meerdere sessies in te plannen, afhankelijk van het comfortniveau van jouw hond. De ene keer gaat het dier eens in het bad, de andere keer maken we er een spelletje van met de föhn. We stemmen dit volledig af op de behoeften van jouw dier.",
+    page: "/diensten/gewenning",
     price: "€ 15 - € 30",
   },
   {
     name: "Vlooien & teken behandeling",
-    desc: "Extra intensieve wasbeurt met vlooien en teken shampoo. Verplicht bij ongewenste gastjes en om de hygiene in het salon te bewaren.",
     price: "+ € 25",
   },
 ];
@@ -557,13 +554,9 @@ export default function Tarieven() {
                         alt=""
                         aria-hidden="true"
                       />
-                      <div className="treatment-row__body">
-                        <span className="treatment-row__title">{b.name}</span>
-                        <span
-                          className="treatment-row__desc"
-                          dangerouslySetInnerHTML={{ __html: b.desc }}
-                        />
-                      </div>
+                      <span className="treatment-row__title">
+                        {b.page ? <Link to={b.page}>{b.name}</Link> : b.name}
+                      </span>
                       <span>{b.price}</span>
                     </li>
                   ))}

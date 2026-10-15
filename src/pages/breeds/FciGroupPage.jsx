@@ -31,7 +31,7 @@ export default function FciGroupPage() {
       </Helmet>
 
       <div className="page-hero">
-        <span className="badge">Notes from the grooming table</span>
+        <span className="badge">Hondenrassen</span>
         <h1 className="page-hero__title">{groupName}</h1>
         <p className="page-hero__sub">
           Klik op een ras voor de volledige groomingfiche.

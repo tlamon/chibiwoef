@@ -4,9 +4,9 @@ import CrownImg from "../assets/crown.png";
 import PikachuImg from "../assets/pikachu.png";
 import KittyStareImg from "../assets/kittie-stare.png";
 
-export default function TarievenKatten() {
+export default function TrimbeurtKatten() {
   useEffect(() => {
-    document.title = "Tarieven Katten – ChibiWoef";
+    document.title = "Trimbeurt Katten – ChibiWoef";
   }, []);
 
   return (
@@ -21,7 +21,7 @@ export default function TarievenKatten() {
             className="badge__icon"
           />
         </span>
-        <h1 className="page-hero__title">Tarieven – Katten</h1>
+        <h1 className="page-hero__title">Trimbeurt Katten</h1>
         <p className="page-hero__sub">
           <i>
             "Owners of dogs will have noticed that, if you provide them with
@@ -35,7 +35,7 @@ export default function TarievenKatten() {
       </div>
       <section className="services">
         <div className="container">
-          <div className="cat-pricing__layout">
+          <div className="dienst__layout">
             <div className="about__img-wrap">
               <div className="about__img-card">
                 <img
@@ -57,24 +57,24 @@ export default function TarievenKatten() {
                 veel geduld.
               </p>
 
-              <div className="cat-pricing__cards">
-                <div className="cat-pricing__card">
+              <div className="dienst__cards">
+                <div className="dienst__card">
                   <p className="info-card__label">
                     <span className="icon">♔</span> Korthaar
                   </p>
-                  <p className="cat-pricing__price">€ 40</p>
-                  <p className="cat-pricing__duration">± 30 – 45 min</p>
-                  <p className="cat-pricing__examples">
+                  <p className="dienst__price">€ 40</p>
+                  <p className="dienst__duration">± 30 – 45 min</p>
+                  <p className="dienst__examples">
                     Europese korthaar, Britse korthaar, Siamees…
                   </p>
                 </div>
-                <div className="cat-pricing__card">
+                <div className="dienst__card">
                   <p className="info-card__label">
                     <span className="icon">♔</span> Langhaar
                   </p>
-                  <p className="cat-pricing__price">€ 50</p>
-                  <p className="cat-pricing__duration">± 45 – 60 min</p>
-                  <p className="cat-pricing__examples">
+                  <p className="dienst__price">€ 50</p>
+                  <p className="dienst__duration">± 45 – 60 min</p>
+                  <p className="dienst__examples">
                     Maine Coon, Ragdoll, Pers, Noorse boskat…
                   </p>
                 </div>
@@ -87,14 +87,14 @@ export default function TarievenKatten() {
                 afgebroken. Het welzijn van jouw kat staat altijd voorop.
               </p>
 
-              <div className="cat-pricing__cards">
-                <div className="cat-pricing__card">
+              <div className="dienst__cards">
+                <div className="dienst__card">
                   <p className="info-card__label">
                     <span className="icon">♔</span> Lion cut
                   </p>
-                  <p className="cat-pricing__price">€ 55</p>
-                  <p className="cat-pricing__duration">± 30 – 45 min</p>
-                  <p className="cat-pricing__examples">
+                  <p className="dienst__price">€ 55</p>
+                  <p className="dienst__duration">± 30 – 45 min</p>
+                  <p className="dienst__examples">
                     Enkel en alleen bij extreme gevallen wordt een kat
                     geschoren.
                   </p>

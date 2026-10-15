@@ -1,10 +1,11 @@
 import { useState } from "react";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, useLocation } from "react-router-dom";
 import logoImg from "../assets/logo.png";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const close = () => setOpen(false);
+  const { pathname } = useLocation();
 
   return (
     <nav className="navbar">
@@ -38,6 +39,88 @@ export default function Navbar() {
                 Home
               </NavLink>
             </li>
+            <li className="navbar__dropdown">
+              <span className={`navbar__link${pathname.startsWith("/diensten") ? " active" : ""}`}>Diensten</span>
+              <ul className="navbar__dropdown-menu">
+                <li>
+                  <NavLink
+                    to="/diensten/trimbeurt-honden"
+                    className={({ isActive }) =>
+                      `navbar__dropdown-item${isActive ? " active" : ""}`
+                    }
+                    onClick={close}
+                  >
+                    Trimbeurt honden
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/diensten/trimbeurt-katten"
+                    className={({ isActive }) =>
+                      `navbar__dropdown-item${isActive ? " active" : ""}`
+                    }
+                    onClick={close}
+                  >
+                    Trimbeurt katten
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/diensten/was-en-splash"
+                    className={({ isActive }) =>
+                      `navbar__dropdown-item${isActive ? " active" : ""}`
+                    }
+                    onClick={close}
+                  >
+                    Was &amp; Splash
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/diensten/kambeurt"
+                    className={({ isActive }) =>
+                      `navbar__dropdown-item${isActive ? " active" : ""}`
+                    }
+                    onClick={close}
+                  >
+                    Kambeurt
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/diensten/puppy-gewenning"
+                    className={({ isActive }) =>
+                      `navbar__dropdown-item${isActive ? " active" : ""}`
+                    }
+                    onClick={close}
+                  >
+                    Puppy gewenning
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/diensten/gewenning"
+                    className={({ isActive }) =>
+                      `navbar__dropdown-item${isActive ? " active" : ""}`
+                    }
+                    onClick={close}
+                  >
+                    Gewenning
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to="/diensten/ontspanningsmassage"
+                    className={({ isActive }) =>
+                      `navbar__dropdown-item${isActive ? " active" : ""}`
+                    }
+                    onClick={close}
+                  >
+                    Ontspanningsmassage
+                  </NavLink>
+                </li>
+              </ul>
+            </li>{" "}
             <li>
               <NavLink
                 to="/huisregels"
@@ -49,7 +132,7 @@ export default function Navbar() {
                 Huisregels
               </NavLink>
             </li>{" "}
-            <li className="navbar__dropdown">
+            <li>
               <NavLink
                 to="/tarieven"
                 className={({ isActive }) =>
@@ -59,40 +142,6 @@ export default function Navbar() {
               >
                 Tarieven
               </NavLink>
-              <ul className="navbar__dropdown-menu">
-                <li>
-                  <NavLink
-                    to="/tarieven"
-                    end
-                    className={({ isActive }) =>
-                      `navbar__dropdown-item${isActive ? " active" : ""}`
-                    }
-                    onClick={close}
-                  >
-                    Honden
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to="/tarieven/katten"
-                    className={({ isActive }) =>
-                      `navbar__dropdown-item${isActive ? " active" : ""}`
-                    }
-                    onClick={close}
-                  >
-                    Katten
-                  </NavLink>
-                </li>
-                <li>
-                  <a
-                    href="/tarieven#rassentabel"
-                    className="navbar__dropdown-item"
-                    onClick={close}
-                  >
-                    Rassentabel
-                  </a>
-                </li>
-              </ul>
             </li>{" "}
             <li>
               <NavLink

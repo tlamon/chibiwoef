@@ -8,7 +8,14 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Tarieven from "./pages/Tarieven";
-import TarievenKatten from "./pages/TarievenKatten";
+import TrimbeurtKatten from "./pages/TrimbeurtKatten";
+import TrimbeurtHonden from "./pages/TrimbeurtHonden";
+import WasEnSplash from "./pages/WasEnSplash";
+import Kambeurt from "./pages/Kambeurt";
+import Ontspanningsmassage from "./pages/Ontspanningsmassage";
+import PuppyGewenning from "./pages/PuppyGewenning";
+import Gewenning from "./pages/Gewenning";
+import ServicePage from "./pages/services/ServicePage";
 import BreedPage from "./pages/breeds/BreedPage";
 import FciGroupPage from "./pages/breeds/FciGroupPage";
 import Contact from "./pages/Contact";
@@ -55,7 +62,19 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/tarieven" element={<Tarieven />} />
-          <Route path="/tarieven/katten" element={<TarievenKatten />} />
+          <Route path="/diensten/trimbeurt-katten" element={<TrimbeurtKatten />} />
+          <Route path="/diensten/trimbeurt-honden" element={<TrimbeurtHonden />} />
+          <Route path="/diensten/was-en-splash" element={<WasEnSplash />} />
+          <Route path="/diensten/kambeurt" element={<Kambeurt />} />
+          <Route path="/diensten/ontspanningsmassage" element={<Ontspanningsmassage />} />
+          <Route path="/diensten/puppy-gewenning" element={<PuppyGewenning />} />
+          <Route path="/diensten/gewenning" element={<Gewenning />} />
+          <Route path="/diensten/:slug" element={<ServicePage />} />
+          <Route
+            path="/diensten/trimbeurt-honden"
+            element={<TrimbeurtHonden />}
+          />
+          <Route path="/diensten/:slug" element={<ServicePage />} />
           <Route path="/rassen/:slug" element={<BreedPage />} />
           <Route path="/fci/:groupSlug" element={<FciGroupPage />} />
           <Route path="/huisregels" element={<Huisregels />} />
