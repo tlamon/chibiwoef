@@ -35,20 +35,19 @@ export default function WasEnSplash() {
 
             <div>
               <p className="content-block__sub" style={{ marginTop: 0 }}>
-                <strong>
-                  De ideale tussenstop tussen twee grote trimbeurten in of als
-                  volledige behandeling voor kortharige honden.
-                </strong>{" "}
-                Kan jouw hond af en toe wel eens een opfrisbeurt gebruiken? Of heeft jouw viervoeter net iets te enthousiast in
-                de modder gerold? Met een grondige Was &amp; Splash staat je
-                hond er weer stralend en welriekend bij.
+                Kan jouw hond af en toe wel eens een opfrisbeurt gebruiken? Of
+                heeft jouw viervoeter net iets te enthousiast in de modder
+                gerold? Met een grondige Was &amp; Splash staat je hond er weer
+                stralend en welriekend bij.
               </p>
               <p className="content-block__sub">
                 <strong> Wat is inbegrepen?</strong>
                 <br />
                 <ul class="breed-page__list">
                   <li>Grondige wasbeurt met Hownd shampoo &amp; conditioner</li>
-                  <li>Vacht droogblazen met de waterblazer</li>
+                  <li>
+                    Vacht drogen en dode haren verwijderen met de waterblazer
+                  </li>
                   <li>Korte borstelbeurt voor een klitvrije vacht</li>
                   <li>Verzorging van de nagels en oren</li>
                 </ul>
@@ -66,13 +65,14 @@ export default function WasEnSplash() {
                     <br />
                     <strong>Als volledige behandeling</strong> <br />
                     voor gladde, kortharige honden (Mopshonden, Franse Bulldogs,
-                    Jack Russells…). Voor hen is deze formule voldoende.
+                    Jack Russells…) staat deze formule gelijk aan een volledige
+                    trimbeurt.
                   </p>
                 </div>
                 <div className="dienst__card">
                   <p className="info-card__label">💶 Prijs</p>
                   <p className="dienst__price">€ 40 – € 65</p>
-                  <p className="dienst__duration">± 60 – 90 min</p>
+                  <p className="dienst__duration">± 45 – 90 min</p>
                   <p className="dienst__examples">
                     Afhankelijk van grootte en vachtconditie
                   </p>
@@ -96,24 +96,30 @@ export default function WasEnSplash() {
               </p>
 
               {howndLogo && (
-                <div className="dienst__card brand-callout">
-                  <img
-                    src={howndLogo}
-                    alt="Hownd"
-                    className="brand-callout__logo"
-                  />
-                  <ul className="brand-callout__list">
-                    <li>
-                      <strong>100% Natuurlijk &amp; Veilig:</strong> De
-                      producten zijn volledig pH-neutraal, hypoallergeen en vrij
-                      van alcohol, zeep, sulfaten, kleurstoffen en parabenen.
-                    </li>
-                    <li>
-                      <strong>Ethische certificeringen:</strong> HOWND-producten
-                      zijn volledig vegan en dierproefvrij — geaccrediteerd met
-                      het <em>Leaping Bunny</em>-keurmerk.
-                    </li>
-                  </ul>
+                <div className="dienst__card">
+                  <p className="brand-callout__title">
+                    Wij gebruiken Hownd shampoo &amp; conditioner
+                  </p>
+                  <div className="brand-callout">
+                    <img
+                      src={howndLogo}
+                      alt="Hownd"
+                      className="brand-callout__logo"
+                    />
+                    <ul className="brand-callout__list">
+                      <li>
+                        <strong>100% Natuurlijk &amp; Veilig:</strong> De
+                        producten zijn volledig pH-neutraal, hypoallergeen en
+                        vrij van alcohol, zeep, sulfaten, kleurstoffen en
+                        parabenen.
+                      </li>
+                      <li>
+                        <strong>Ethische certificeringen:</strong>{" "}
+                        HOWND-producten zijn volledig vegan en dierproefvrij —
+                        geaccrediteerd met het <em>Leaping Bunny</em>-keurmerk.
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               )}
             </div>

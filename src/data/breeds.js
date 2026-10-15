@@ -148,8 +148,8 @@ export const breeds = [
       },
       {
         emoji: "🧠",
-        title: "Slim maar slechte waakhond",
-        text: "De Golden staat steevast in de top 5 van slimste hondenrassen en kan honderden commando's leren. Tegelijk zijn ze zo vriendelijk dat de kans groter is dat ze een inbreker enthousiast begroeten met een kwispelende staart en hem de weg wijzen naar de koelkast.",
+        title: "Slim maar twijfelachtige waakhond",
+        text: "De Golden staat steevast in de top 5 van slimste hondenrassen en kan honderden commando's leren. Tegelijk zijn ze zo vriendelijk dat de kans groter is dat ze een inbreker enthousiast begroeten met een kwispelende staart terwijl ze hem de weg wijzen naar de koelkast.",
       },
       {
         emoji: "🕵️",

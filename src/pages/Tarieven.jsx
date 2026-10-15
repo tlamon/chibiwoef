@@ -432,7 +432,7 @@ export default function Tarieven() {
                   <table className="pricing-table">
                     <thead>
                       <tr>
-                        <th>Vachttype</th>
+                        <th>Volledige trimbeurt</th>
                         <th>
                           <div className="pricing-size-head">
                             <img

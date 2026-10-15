@@ -211,7 +211,7 @@ export const services = [
           "Kennismaking met de trimster, het materiaal en de omgeving. De pootjes worden voorzichtig natgemaakt en gedroogd, en er wordt rustig gekamd. <strong>Liefst tijdens de 2e socialisatiefase (8–12 weken)</strong> — op dat moment is de nieuwsgierigheid van de pup groter dan de angst. Het ideale moment om het salon als een fijne plek te verankeren.",
       },
       {
-        title: "Stap 2 · Was & Splash (~60 min) — € 35 – € 50",
+        title: "Stap 2 · Was & Splash (45-60 min) — € 35 – € 50",
         type: "html",
         content:
           "De pup gaat voor het eerst helemaal in bad: volledig gewassen, gedroogd en gekamd. De pootjes worden bijgeknipt en geschoren. Alles in alle rust, op het tempo van jouw pup.",
