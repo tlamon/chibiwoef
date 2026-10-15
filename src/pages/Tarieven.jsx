@@ -168,6 +168,12 @@ const breedPriceRows = [
   { breed: "Chinese naakthond", coat: "Korthaar/glad", price: "€ 45" },
   { breed: "Clumber spaniel", coat: "Langhaar/Bevedering", price: "€ 70" },
   { breed: "Cockapoo", coat: "Krul / fleece", price: "€ 75 – € 95" },
+  {
+    breed: "Cocker Spaniel (Engels)",
+    coat: "Langhaar/Bevedering met plukvacht",
+    price: "€ 80",
+    page: "/rassen/engelse-cocker-spaniel",
+  },
   { breed: "Corgi", coat: "Dubbele vacht", price: "€ 55" },
   { breed: "Coton de tulear", coat: "Langhaar/Bevedering", price: "€ 70" },
   { breed: "Dalmatier", coat: "Korthaar/glad", price: "€ 60" },
@@ -202,6 +208,7 @@ const breedPriceRows = [
     breed: "Engelse Cocker Spaniel",
     coat: "Langhaar/Bevedering",
     price: "€ 80",
+    page: "/rassen/engelse-cocker-spaniel",
   },
   { breed: "Engelse setter", coat: "Langhaar/Bevedering", price: "€ 80" },
   {

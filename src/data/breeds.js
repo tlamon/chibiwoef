@@ -336,13 +336,19 @@ export const breeds = [
       {
         title: "Trimbeurt",
         type: "grouped",
+        exampleImgs: [
+          {
+            file: "nova-scotia-duck-tolling-retriever-example.png",
+            caption: "Naturel model",
+          },
+        ],
         intro:
           "De trimbeurt van een Toller is vergelijkbaar met die van een Golden Retriever, maar vraagt minder tijd door de compactere bevedering:",
         subSections: [
           {
             title: "Voorbereiding",
             items: [
-              "Nagels knippen of vijlen elke 4–6 weken.",
+              "Nagels knippen of vijlen.",
               "Oren reinigen -> Tollers zijn waterliefhebbers, dus de oren worden extra in de gaten gehouden op vocht en infecties.",
               "Losse vacht loswerken met een rubbere kam of ontwoller.",
               "Waterblazer om vuil en losse haren uit de vacht te blazen.",
@@ -375,6 +381,149 @@ export const breeds = [
             items: [
               "Oren licht bijwerken voor een natuurlijke look.",
               "Afwerken met coat polish voor extra glans op de roodgouden vacht.",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    slug: "engelse-cocker-spaniel",
+    name: "Engelse Cocker Spaniël",
+    heroImg: null,
+    photo: "engelse-cocker-spaniel.webp",
+    fci: "FCI Groep 8 · Retrievers, Spaniëls en Waterhonden",
+    fciSlug: "groep-8",
+    metaDescription:
+      "Alles over de Engelse Cocker Spaniël: trimfrequentie, plukken vs. scheren, vachtverzorging en groomingaanpak. ChibiWoef.",
+    weight: "12 – 14,5 kg",
+    height: "38 – 41 cm",
+    colors: [
+      { label: "Zwart", cls: "black" },
+      { label: "Goud / Oranje", cls: "yellow" },
+      { label: "Chocolade", cls: "chocolate" },
+      { label: "Blue Roan", cls: "teal" },
+    ],
+    freq: null,
+    price: null,
+    didYouKnow: [
+      {
+        emoji: "🪵",
+        title: '"Cocker" dankt zijn naam aan een vogel',
+        text: "De honden zijn oorspronkelijk gefokt in Groot-Brittannië om te jagen op de houtsnip. De Engelse naam voor deze vogel is de Woodcock. Omdat deze spaniëls uitblonken in het opsporen van juist deze vogel, kregen ze de naam 'Cocker' Spaniël.",
+      },
+      {
+        emoji: "👂",
+        title: "Gevaar voor natte oren (en infecties)",
+        text: "Hun iconische lange flaporen zijn prachtig, maar sluiten de gehoorgang volledig af van frisse lucht. Hierdoor blijft de binnenkant van het oor snel vochtig, wat hen erg gevoelig maakt voor oorontstekingen. Veel eigenaren gebruiken daarom speciale 'snoods' (een soort haarband voor honden) tijdens het eten, zodat de oren niet in de voerbak hangen!",
+      },
+      {
+        emoji: "🎬",
+        title: "Beroemdste Disney-hond",
+        text: "De bekendste Engelse Cocker Spaniël ter wereld is ongetwijfeld Lady uit de iconische Disney-film Lady and the Tramp (Roel en de Vagebond). Haar elegante uiterlijk en zijdezachte oren zorgden wereldwijd voor een gigantische populariteit van het ras.",
+      },
+      {
+        emoji: "🐾",
+        title: "De vrolijke 'Wiggle'",
+        text: 'Cockers staan bekend als ontzettend enthousiast. Als ze blij zijn, kwispelen ze niet alleen met hun staart, maar schudt hun hele achterhand en heupen vrolijk mee. In het Engels noemen liefhebbers dit gedrag liefkozend de "Cocker Wiggle".',
+      },
+    ],
+    sections: [
+      {
+        title: "Trimfrequentie",
+        type: "html",
+        content:
+          "De Engelse Cocker Spaniël heeft een van de meest arbeidsintensieve vachten van de spaniëlgroep. De zijdezachte, halflange vacht met karakteristieke <em>bevedering</em> op oren, borst, buik en poten raakt snel verklít als er niet regelmatig aandacht aan wordt besteed. Een Cocker moet elke <strong>6 à 8 weken</strong> (maximaal 10 weken) naar het trimsalon.",
+        freqRow: {
+          level: "hoog",
+          label: "🔴 Hoog — thuis kammen: minimaal 3 à 4 keer per week",
+          price: "Was & Splash: € 65",
+          price2: "Volledige trimbeurt: € 80",
+          price3: "Tussentijdse borstel- & kambeurt: € 45",
+        },
+        warning:
+          "Gecastreerde of gesteriliseerde Cockers krijgen vaak een hormoonvacht: de vacht wordt pluizig, krullend en niet meer te plukken. Zulke honden moeten volledig geknipt en/of geschoren worden om klitten te voorkomen.",
+      },
+      {
+        title: "De vacht: opbouw en onderhoud",
+        type: "html",
+        content:
+          "Net als bij de Golden Retriever of een herdershond heeft de Engelse Cocker Spaniël een <strong>dubbele vacht</strong> die bestaat uit twee lagen:" +
+          "<ul style='padding-left:1.8rem;margin:0.6rem 0'>" +
+          "<li><strong>De ondervacht (wol):</strong> Een zachte, kortere laag die dicht op de huid zit om de hond warm te houden.</li>" +
+          "<li><strong>De bovenvacht (dekharen):</strong> De langere, gladde haren op de rug en de bevedering aan de poten en buik.</li>" +
+          "</ul>" +
+          "Bij veel honden met een dubbele vacht (zoals de Toller of de Labrador) valt de dode bovenvacht er vanzelf uit. Bij de Engelse Cocker Spaniël is dat <em>niet</em> zo — de dode haren op de rug blijven in het haarzakje zitten en laten niet uit zichzelf los. Omdat ze handmatig verwijderd moeten worden, noemen we het een <strong>plukvacht</strong>." +
+          "<br><br>In de trimsalon behandelen we beide lagen dan ook op een andere manier:" +
+          "<ul style='padding-left:1.8rem;margin:0.6rem 0'>" +
+          "<li><strong>De bovenvacht wordt geplukt:</strong> de dode, lange haren op de rug worden er met de hand of een plukmesje uitgetrokken.</li>" +
+          "<li><strong>De ondervacht wordt gecard:</strong> met een bot mesje of een herdersharkje wordt de overtollige, losse wol eronderuit geharkt.</li>" +
+          "</ul>" +
+          "Kortom: de Engelse Cocker Spaniël heeft een <strong>dubbele vacht die je onderhoudt als een plukvacht</strong>.",
+      },
+      {
+        title: "Thuis kammen",
+        type: "html",
+        content:
+          "Minstens <strong>3 à 4 keer per week kammen</strong> is een must, dagelijks is zelfs nog beter. Focus op de oksels, liezen, de 'broek' en de lange flaporen: dit zijn ware magneetzones voor klitten, takjes en klitbollen na een wandeling. Gebruik een pennenborstel of slickerborstel om laag voor laag te werken, en controleer altijd tot op de huid met een fijne metalen kam.",
+      },
+      {
+        title: "Trimbeurt",
+        type: "grouped",
+        exampleImgs: [
+          {
+            file: "english-cocker-spaniel-example.webp",
+            caption: "Ras standaard trimmodel",
+          },
+          {
+            file: "engelse-cocker-spaniel-example2.jpg",
+            caption: "Ras standaard trimmodel",
+          },
+        ],
+        intro:
+          "Een Cocker-trim combineert twee verschillende technieken: plukken voor de rug en scheren/knippen voor de rest:",
+        subSections: [
+          {
+            title: "Voorbereiding",
+            items: [
+              "Nagels knippen of vijlen",
+              "Oren reinigen; Cockers zijn bijzonder gevoelig voor oorontstekingen door hun afgesloten gehoorgang.",
+              "Losse klitten en vacht borstelen met een slickerborstel.",
+              "Eventueel een waterblazer om vuil en losse haren uit de vacht te blazen.",
+            ],
+          },
+          {
+            title: "Plukken & Carding (rug)",
+            items: [
+              "De dode, losse bovenvacht op de rug wordt met de hand of een bot trimmesje uitgeplukt.",
+              "Plukken behoudt de juiste vachttextuur: glad, glanzend en waterafstotend.",
+              "Bij te zachte of wollige vachten (bijv. na castratie) wordt de rug ook weleens geschoren op  3, 6, 9 of 10mm.",
+              "Nooit 'tegen de haargroei' knippen — dit maakt gaten in de vacht die vrijwel niet te herstellen zijn.",
+            ],
+          },
+          {
+            title: "Scheren & Knippen (hoofd, hals, oren)",
+            items: [
+              "Het hoofd wordt kort gehouden met een effileerschaar of tondeuze (#7F of #10) voor een strakke look.",
+              "De hals en de keelstreek worden kortgeschoren in een 'V'-lijn volgend de cowlick, van de oren naar het borstbeen.",
+              "De bovenkant van de oren (top 1/3) wordt kortgeknipt of geschoren voor een betere luchtcirculatie.",
+              "De lange bevedering onderaan de oren wordt licht bijgewerkt en rondgeknipt voor een nette look.",
+            ],
+          },
+          {
+            title: "Furnishings (bevedering)",
+            items: [
+              "De lange haren aan de achterkant van de voorpoten en de 'broek' worden gekamd en licht bijgewerkt.",
+              "De voorkant van de voorpoten: kort en glad, vloeiend overgaand in de lange bevedering aan de achterkant.",
+              "Buikvacht: laten of licht bijknippen voor een gebalanceerde silhouet.",
+            ],
+          },
+          {
+            title: "Poten & Hakken",
+            items: [
+              "Voetzolen uitscheren.",
+              "Poten rondknippen.",
+              "Hakken licht bijwerken met een effileerschaar of een #4F in omgekeerde richting.",
             ],
           },
         ],
