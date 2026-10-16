@@ -418,12 +418,8 @@ export default function Tarieven() {
                 <div className="content-block__head">
                   <p className="content-block__sub">
                     Richtprijzen incl. 21% BTW. De definitieve prijs hangt af
-                    van de vachtconditie en het gedrag. Bekijk ook de{" "}
-                    <u>
-                      <a href="#rassentabel">rassentabel onderaan</a>
-                    </u>{" "}
-                    om een beter idee te krijgen van de prijzen. Voorlopig
-                    werken we met dieren tot en met een gewicht van 30 kg.
+                    van de vachtconditie en het gedrag. Voorlopig werken we met
+                    dieren tot en met een gewicht van 30 kg.
                   </p>
                   <div className="pricing-promo">
                     <p className="pricing-promo__item pricing-promo__item--current">
@@ -438,12 +434,12 @@ export default function Tarieven() {
                     </p>
 
                     <p className="pricing-promo__item label-blue">
-                      Niet zeker welke vacht jouw hond heeft?{" "}
+                      Niet zeker welk ras of kruising jouw hond is?{" "}
                       <a
-                        href="#rassentabel"
+                        href="#vachttabel"
                         style={{ textDecoration: "underline" }}
                       >
-                        Bekijk de rassentabel
+                        Bekijk de vachttabel onderaan
                       </a>{" "}
                       of{" "}
                       <Link
@@ -456,10 +452,130 @@ export default function Tarieven() {
                     </p>
                   </div>
                 </div>
-                <p className="table-scroll-hint" aria-hidden="true">
-                  ← veeg om meer te zien →
-                </p>
-                <div className="pricing-table-wrap">
+
+                {/* Rassentabel */}
+                <section
+                  className="breed-pricing"
+                  aria-label="Prijsindicatie voor een volledige trimbeurt per ras"
+                >
+                  <div style={{ justifyItems: "center", marginTop: "12px" }}>
+                    <img
+                      src={DoggyBackIcon}
+                      alt=""
+                      aria-hidden="true"
+                      style={{ height: "80px", width: "auto" }}
+                    />
+                  </div>
+                  <h3 className="breed-pricing__title">
+                    Rassentabel - Prijsindicatie per ras
+                  </h3>
+                  <p className="breed-pricing__hint">
+                    Selecteer een letter om de rassen en prijzen te bekijken.
+                  </p>
+                  <div className="breed-pricing__letters" role="tablist">
+                    {alphabet.map((letter) => {
+                      const hasBreeds = breedPriceRows.some(
+                        (row) => row.breed.charAt(0).toUpperCase() === letter,
+                      );
+                      return (
+                        <button
+                          key={letter}
+                          type="button"
+                          role="tab"
+                          className={`breed-pricing__letter${selectedLetter === letter ? " is-active" : ""}`}
+                          aria-selected={selectedLetter === letter}
+                          aria-controls="breed-pricing-list"
+                          onClick={() => setSelectedLetter(letter)}
+                          disabled={!hasBreeds}
+                        >
+                          {letter}
+                        </button>
+                      );
+                    })}
+                  </div>
+                  <div
+                    className="breed-pricing__panel"
+                    id="breed-pricing-list"
+                    role="tabpanel"
+                  >
+                    {breedsByLetter.length > 0 ? (
+                      <ul className="breed-pricing__grid">
+                        {breedsByLetter.map((row) => (
+                          <li key={row.breed} className="breed-pricing__item">
+                            <span className="breed-pricing__name">
+                              {row.page ? (
+                                <Link
+                                  to={row.page}
+                                  className="breed-pricing__page-link"
+                                  title="Trimgids"
+                                >
+                                  {row.breed}
+                                </Link>
+                              ) : (
+                                row.breed
+                              )}
+
+                              {row.coat && (
+                                <small className="breed-pricing__coat">
+                                  {row.coat}
+                                </small>
+                              )}
+                            </span>
+                            <span className="breed-pricing__price">
+                              <span className="pricing-price pricing-price--original">
+                                {row.price}
+                              </span>
+                              <span className="pricing-price pricing-price--promo">
+                                {getDiscountedBreedPrice(
+                                  row.price,
+                                  currentDiscount,
+                                )}
+                              </span>
+                            </span>
+                          </li>
+                        ))}
+                      </ul>
+                    ) : (
+                      <p className="breed-pricing__empty">
+                        Geen rassen beschikbaar voor deze letter.
+                      </p>
+                    )}
+                  </div>
+                </section>
+
+                {/* Andere behandelingen */}
+                <h3
+                  className="breed-pricing__title"
+                  style={{ marginTop: "32px" }}
+                >
+                  Andere behandelingen
+                </h3>
+                <ul className="treatment-list">
+                  {treatments.map((b) => (
+                    <li
+                      className={`treatment-row treatment-row--service${
+                        b.name.startsWith("Puppy gewenning")
+                          ? " treatment-row--full"
+                          : ""
+                      }`}
+                      key={b.name}
+                    >
+                      <img
+                        src={PawIcon}
+                        className="treatment-row__icon"
+                        alt=""
+                        aria-hidden="true"
+                      />
+                      <span className="treatment-row__title">
+                        {b.page ? <Link to={b.page}>{b.name}</Link> : b.name}
+                      </span>
+                      <span className="treatment-row__price">{b.price}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                {/* Vachttabel */}
+                <div className="pricing-table-wrap" id="vachttabel">
                   <table className="pricing-table">
                     <thead>
                       <tr>
@@ -473,7 +589,7 @@ export default function Tarieven() {
                                 textUnderlineOffset: "3px",
                               }}
                             >
-                              Trimbeurt honden
+                              Trimbeurt honden op basis van vachttype
                             </Link>{" "}
                             <small
                               style={{
@@ -626,125 +742,6 @@ export default function Tarieven() {
                     </div>
                   ))}
                 </div>
-
-                <h3
-                  className="breed-pricing__title"
-                  style={{ marginTop: "32px" }}
-                >
-                  Andere behandelingen
-                </h3>
-                <ul className="treatment-list">
-                  {treatments.map((b) => (
-                    <li
-                      className={`treatment-row treatment-row--service${
-                        b.name.startsWith("Puppy gewenning")
-                          ? " treatment-row--full"
-                          : ""
-                      }`}
-                      key={b.name}
-                    >
-                      <img
-                        src={PawIcon}
-                        className="treatment-row__icon"
-                        alt=""
-                        aria-hidden="true"
-                      />
-                      <span className="treatment-row__title">
-                        {b.page ? <Link to={b.page}>{b.name}</Link> : b.name}
-                      </span>
-                      <span className="treatment-row__price">{b.price}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                <section
-                  className="breed-pricing"
-                  aria-label="Prijsindicatie voor volledige trimbeurt per ras"
-                >
-                  <div style={{ justifyItems: "center", marginTop: "12px" }}>
-                    <img
-                      src={DoggyBackIcon}
-                      alt=""
-                      aria-hidden="true"
-                      style={{ height: "80px", width: "auto" }}
-                    />
-                  </div>
-                  <h3 className="breed-pricing__title">
-                    Rassentabel - Prijsindicatie per ras
-                  </h3>
-                  <p className="breed-pricing__hint">
-                    Selecteer een letter om de rassen en prijzen te bekijken.
-                  </p>
-                  <div className="breed-pricing__letters" role="tablist">
-                    {alphabet.map((letter) => {
-                      const hasBreeds = breedPriceRows.some(
-                        (row) => row.breed.charAt(0).toUpperCase() === letter,
-                      );
-                      return (
-                        <button
-                          key={letter}
-                          type="button"
-                          role="tab"
-                          className={`breed-pricing__letter${selectedLetter === letter ? " is-active" : ""}`}
-                          aria-selected={selectedLetter === letter}
-                          aria-controls="breed-pricing-list"
-                          onClick={() => setSelectedLetter(letter)}
-                          disabled={!hasBreeds}
-                        >
-                          {letter}
-                        </button>
-                      );
-                    })}
-                  </div>
-                  <div
-                    className="breed-pricing__panel"
-                    id="breed-pricing-list"
-                    role="tabpanel"
-                  >
-                    {breedsByLetter.length > 0 ? (
-                      <ul className="breed-pricing__grid">
-                        {breedsByLetter.map((row) => (
-                          <li key={row.breed} className="breed-pricing__item">
-                            <span className="breed-pricing__name">
-                              {row.page ? (
-                                <Link
-                                  to={row.page}
-                                  className="breed-pricing__page-link"
-                                  title="Trimgids"
-                                >
-                                  {row.breed}
-                                </Link>
-                              ) : (
-                                row.breed
-                              )}
-
-                              {row.coat && (
-                                <small className="breed-pricing__coat">
-                                  {row.coat}
-                                </small>
-                              )}
-                            </span>
-                            <span className="breed-pricing__price">
-                              <span className="pricing-price pricing-price--original">
-                                {row.price}
-                              </span>
-                              <span className="pricing-price pricing-price--promo">
-                                {getDiscountedBreedPrice(
-                                  row.price,
-                                  currentDiscount,
-                                )}
-                              </span>
-                            </span>
-                          </li>
-                        ))}
-                      </ul>
-                    ) : (
-                      <p className="breed-pricing__empty">
-                        Geen rassen beschikbaar voor deze letter.
-                      </p>
-                    )}
-                  </div>
-                </section>
               </div>
               {/* end box-white honden */}
 
@@ -785,7 +782,7 @@ export default function Tarieven() {
                                 color: "var(--muted)",
                               }}
                             >
-                              (prijsindicatie)
+                              (prijsindicatie op basis van vacht)
                             </small>
                           </div>
                         </th>

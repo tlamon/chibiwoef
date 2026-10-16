@@ -1233,6 +1233,7 @@ h4 {
 }
 .pricing-table-wrap {
   overflow-x: auto;
+  margin-top: 4rem;
 }
 .table-scroll-hint {
   display: none;
