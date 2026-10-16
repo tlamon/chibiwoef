@@ -437,6 +437,21 @@ export default function Tarieven() {
                       <strong>10% opstartkorting op alle trimbeurten!</strong>
                     </p>
                   </div>
+
+                  <p className="pricing-note">
+                    Niet zeker welke vacht jouw hond heeft?{" "}
+                    <a
+                      href="#rassentabel"
+                      style={{ textDecoration: "underline" }}
+                    >
+                      Bekijk de rassentabel
+                    </a>{" "}
+                    of{" "}
+                    <Link to="/contact" style={{ textDecoration: "underline" }}>
+                      geef een seintje
+                    </Link>
+                    .
+                  </p>
                 </div>
                 <p className="table-scroll-hint" aria-hidden="true">
                   ← veeg om meer te zien →
@@ -582,7 +597,9 @@ export default function Tarieven() {
                 <div className="pricing-cards-mobile">
                   {pricingRows.map((row) => (
                     <div key={row.coatType} className="pricing-card-mobile">
-                      <p className="pricing-card-mobile__title">{row.coatType}</p>
+                      <p className="pricing-card-mobile__title">
+                        {row.coatType}
+                      </p>
                       {[
                         { label: "XS  (<5 kg)", orig: row.xs },
                         { label: "S   (5–10 kg)", orig: row.s },
@@ -590,22 +607,22 @@ export default function Tarieven() {
                         { label: "L   (20–30 kg)", orig: row.l },
                       ].map(({ label, orig }) => (
                         <div key={label} className="pricing-card-mobile__row">
-                          <span className="pricing-card-mobile__label">{label}</span>
+                          <span className="pricing-card-mobile__label">
+                            {label}
+                          </span>
                           <span>
-                            <span className="pricing-price pricing-price--original">{orig}</span>
-                            <span className="pricing-price pricing-price--promo">{getDiscountedPrice(orig, currentDiscount)}</span>
+                            <span className="pricing-price pricing-price--original">
+                              {orig}
+                            </span>
+                            <span className="pricing-price pricing-price--promo">
+                              {getDiscountedPrice(orig, currentDiscount)}
+                            </span>
                           </span>
                         </div>
                       ))}
                     </div>
                   ))}
                 </div>
-
-                <p className="pricing-note">
-                  Niet zeker welke vacht jouw hond heeft?{" "}
-                  <a href="#rassentabel" style={{ textDecoration: "underline" }}>Bekijk de rassentabel</a> of{" "}
-                  <Link to="/contact" style={{ textDecoration: "underline" }}>geef een seintje</Link>.
-                </p>
 
                 <h3
                   className="breed-pricing__title"

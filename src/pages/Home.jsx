@@ -39,6 +39,7 @@ const features = [
 const services = [
   {
     slug: "groom",
+    page: "/diensten/trimbeurt-honden",
     img: HaircutImg,
     title: "Volledige trimbeurt",
     text: "Uitgebreide was en schuimbeurt, knippen en/of plukken, nageltjes knippen, oortjes.. Check! ✔ Jouw hond verlaat het salon zo glanzend dat andere honden jaloers gaan blaffen.",
@@ -46,6 +47,7 @@ const services = [
   },
   {
     slug: "vet",
+    page: "/diensten/was-en-splash",
     img: ChihuahuaImg,
     title: "Was & Splash",
     text: "Een heerlijke shampoo, even uitwaaien onder de fohn en lekker borstelen. Nageltjes niet vergeten. Perfect als tussendoor behandeling om de vacht fris en glanzend te houden.",
@@ -53,6 +55,7 @@ const services = [
   },
   {
     slug: "board",
+    page: "/diensten/ontspanningsmassage",
     img: massageImg,
     title: "Massage",
     text: "Geef jouw hond of kat een zachte en warme massage. Dit is niet alleen ontspannend, maar stimuleert ook de bloedcirculatie en bevordert een gezonde vacht. Perfect voor gespannen of oudere dieren die aan artritis lijden.",
@@ -258,8 +261,8 @@ export default function Home() {
                 <div className="service-card__body">
                   <h3 className="service-card__title">{s.title}</h3>
                   <p className="service-card__text">{s.text}</p>
-                  <Link to="/tarieven" className="service-card__link">
-                    Bekijk tarieven →
+                  <Link to={s.page} className="service-card__link">
+                    Meer info →
                   </Link>
                 </div>
               </div>
