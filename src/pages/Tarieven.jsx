@@ -7,6 +7,9 @@ import DogXsIcon from "../assets/dog-xs.svg";
 import DogSIcon from "../assets/dog-s.svg";
 import DogMIcon from "../assets/dog-m.svg";
 import DogLIcon from "../assets/dog-l.svg";
+import DoggyBackIcon from "../assets/doggy-back-icon.webp";
+import CatIcon from "../assets/cat-icon.png";
+import KittieStareImg from "../assets/kittie-stare.png";
 
 const treatments = [
   {
@@ -30,12 +33,21 @@ const treatments = [
   {
     name: "Trimbeurt katten ♔",
     page: "/diensten/trimbeurt-katten",
-    price: "€ 45",
+    price: "€ 40 – € 55",
   },
   {
     name: "Ontspanningsmassage (20-30 min)",
     page: "/diensten/ontspanningsmassage",
     price: "€ 25",
+  },
+  {
+    name: "Standaard gewenning (15-30 min)",
+    page: "/diensten/gewenning",
+    price: "€ 15 - € 30",
+  },
+  {
+    name: "Vlooien & teken behandeling",
+    price: "+ € 25",
   },
   {
     name: "Puppy gewenning – Deel 1: Meet & Greet (15-20 min)",
@@ -51,15 +63,6 @@ const treatments = [
     name: "Puppy gewenning – Deel 3: Eerste trimbeurt",
     page: "/diensten/puppy-gewenning",
     price: "Standaardprijs (-€ 15 korting)",
-  },
-  {
-    name: "Standaard gewenning (15-30 min)",
-    page: "/diensten/gewenning",
-    price: "€ 15 - € 30",
-  },
-  {
-    name: "Vlooien & teken behandeling",
-    price: "+ € 25",
   },
 ];
 
@@ -121,6 +124,16 @@ const parseEuro = (price) => Number(price.replace(/[^\d]/g, ""));
 const getDiscountedPrice = (price, discount) => {
   const discountedAmount = parseEuro(price) * (1 - discount);
   return formatEuro(Math.round(discountedAmount / 5) * 5);
+};
+
+// handles single prices and ranges like "€ 75 – € 95"
+const getDiscountedBreedPrice = (price, discount) => {
+  if (!price || !/\d/.test(price)) return null;
+  if (price.includes("–")) {
+    const [lo, hi] = price.split("–").map((p) => p.trim());
+    return `${getDiscountedPrice(lo, discount)} – ${getDiscountedPrice(hi, discount)}`;
+  }
+  return getDiscountedPrice(price, discount);
 };
 
 const breedPriceRows = [
@@ -399,7 +412,7 @@ export default function Tarieven() {
                   <img src={TopDogImg} alt="" className="top-dog__img" />
                 </div>
                 <div className="pricing-bone" role="note" aria-live="polite">
-                  <h2>Prijslijst</h2>
+                  <h2>Prijslijst Honden</h2>
                 </div>
 
                 <div className="content-block__head">
@@ -432,7 +445,35 @@ export default function Tarieven() {
                   <table className="pricing-table">
                     <thead>
                       <tr>
-                        <th>Volledige trimbeurt</th>
+                        <th>
+                          <div style={{ textAlign: "left" }}>
+                            <Link
+                              to="/diensten/trimbeurt-honden"
+                              style={{
+                                color: "var(--teal-dark)",
+                                textDecoration: "underline",
+                                textUnderlineOffset: "3px",
+                              }}
+                            >
+                              Trimbeurt honden
+                            </Link>{" "}
+                            <small
+                              style={{
+                                fontWeight: "normal",
+                                color: "var(--muted)",
+                              }}
+                            >
+                              (prijsindicatie)
+                            </small>
+                            <small
+                              className="treatment-row__desc"
+                              style={{ display: "block", fontWeight: "normal" }}
+                            >
+                              Knippen, scheren, plukken, wassen, drogen, nagels
+                              knippen &amp; oren reinigen
+                            </small>
+                          </div>
+                        </th>
                         <th>
                           <div className="pricing-size-head">
                             <img
@@ -498,9 +539,6 @@ export default function Tarieven() {
                             <span className="treatment-row__title">
                               {row.coatType}
                             </span>
-                            <span className="treatment-row__desc">
-                              {row.note}
-                            </span>
                           </td>
                           <td>
                             <span className="pricing-price pricing-price--original">
@@ -542,10 +580,20 @@ export default function Tarieven() {
                 <p className="table-scroll-hint" aria-hidden="true">
                   ← veeg om meer te zien →
                 </p>
+                <h3
+                  className="breed-pricing__title"
+                  style={{ marginTop: "32px" }}
+                >
+                  Andere behandelingen
+                </h3>
                 <ul className="treatment-list">
                   {treatments.map((b) => (
                     <li
-                      className="treatment-row treatment-row--service"
+                      className={`treatment-row treatment-row--service${
+                        b.name.startsWith("Puppy gewenning")
+                          ? " treatment-row--full"
+                          : ""
+                      }`}
                       key={b.name}
                     >
                       <img
@@ -557,21 +605,25 @@ export default function Tarieven() {
                       <span className="treatment-row__title">
                         {b.page ? <Link to={b.page}>{b.name}</Link> : b.name}
                       </span>
-                      <span>{b.price}</span>
+                      <span className="treatment-row__price">{b.price}</span>
                     </li>
                   ))}
                 </ul>
-                <p className="pricing-note" id="rassentabel">
-                  Heb je een hond boven 30 kg? Laat het gerust weten, dan denken
-                  we graag mee en verwijzen we je eventueel warm door waar
-                  nodig.
-                </p>
+
                 <section
                   className="breed-pricing"
                   aria-label="Prijsindicatie voor volledige trimbeurt per ras"
                 >
+                  <div style={{ justifyItems: "center", marginTop: "12px" }}>
+                    <img
+                      src={DoggyBackIcon}
+                      alt=""
+                      aria-hidden="true"
+                      style={{ height: "80px", width: "auto" }}
+                    />
+                  </div>
                   <h3 className="breed-pricing__title">
-                    Prijsindicatie per ras
+                    Rassentabel - Prijsindicatie per ras
                   </h3>
                   <p className="breed-pricing__hint">
                     Selecteer een letter om de rassen en prijzen te bekijken.
@@ -626,7 +678,15 @@ export default function Tarieven() {
                               )}
                             </span>
                             <span className="breed-pricing__price">
-                              {row.price}
+                              <span className="pricing-price pricing-price--original">
+                                {row.price}
+                              </span>
+                              <span className="pricing-price pricing-price--promo">
+                                {getDiscountedBreedPrice(
+                                  row.price,
+                                  currentDiscount,
+                                )}
+                              </span>
                             </span>
                           </li>
                         ))}
@@ -639,17 +699,113 @@ export default function Tarieven() {
                   </div>
                 </section>
               </div>
+              {/* end box-white honden */}
 
-              <div>
+              <div className="box-white">
+                <div style={{ justifyItems: "center", position: "relative" }}>
+                  <img
+                    src={KittieStareImg}
+                    alt=""
+                    aria-hidden="true"
+                    className="top-cat__img"
+                  />
+                  <div style={{ margin: "20px 0" }}>
+                    <h2>Prijslijst katten</h2>
+                  </div>
+                </div>
+                <p className="table-scroll-hint" aria-hidden="true">
+                  ← veeg om meer te zien →
+                </p>
+                <div className="pricing-table-wrap">
+                  <table className="pricing-table">
+                    <thead>
+                      <tr>
+                        <th>
+                          <div style={{ textAlign: "left" }}>
+                            <Link
+                              to="/diensten/trimbeurt-katten"
+                              style={{
+                                color: "var(--teal-dark)",
+                                textDecoration: "underline",
+                                textUnderlineOffset: "3px",
+                              }}
+                            >
+                              Trimbeurt katten ♔
+                            </Link>{" "}
+                            <small
+                              style={{
+                                fontWeight: "normal",
+                                color: "var(--muted)",
+                              }}
+                            >
+                              (prijsindicatie)
+                            </small>
+                          </div>
+                        </th>
+                        <th style={{ textAlign: "center" }}>Prijs</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {[
+                        {
+                          type: "Korthaar",
+                          note: "± 30–45 min · Europese korthaar, Britse korthaar, Siamees…",
+                          price: "€ 40",
+                        },
+                        {
+                          type: "Langhaar",
+                          note: "± 45–60 min · Maine Coon, Ragdoll, Pers, Noorse boskat…",
+                          price: "€ 50",
+                        },
+                        {
+                          type: "Lion cut",
+                          note: "± 30–45 min · enkel bij extreme klitten of op aanvraag",
+                          price: "€ 55",
+                        },
+                      ].map((row) => (
+                        <tr key={row.type}>
+                          <td>
+                            <span className="treatment-row__title">
+                              {row.type}
+                            </span>
+                            <span className="treatment-row__desc">
+                              {row.note}
+                            </span>
+                          </td>
+                          <td>
+                            <span className="pricing-price pricing-price--original">
+                              {row.price}
+                            </span>
+                            <span className="pricing-price pricing-price--promo">
+                              {getDiscountedPrice(row.price, currentDiscount)}
+                            </span>
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+                <div style={{ justifySelf: "right", marginTop: "12px" }}>
+                  <img
+                    src={CatIcon}
+                    alt=""
+                    aria-hidden="true"
+                    style={{ height: "80px", width: "auto" }}
+                  />
+                </div>
+              </div>
+              {/* end box-white katten */}
+
+              <div className="box-white box-white--info">
                 <p className="box-white__label">
                   Goed om te weten: Scope & Rust
                 </p>
                 <p className="box-white__items">
-                  De bovenstaande tabel dient als richtlijn voor honden/katten
-                  met een goed onderhouden vacht. Bij extreme klitten,
-                  vervilting of ongewenst gedrag vraagt dit extra tijd, daarom
-                  rekenen we dan een toeslag van €25. Zo garanderen we de rust
-                  en kwaliteit die uw dier verdient.
+                  De bovenstaande tabellen dienen als richtlijn voor
+                  honden/katten met een goed onderhouden vacht. Bij extreme
+                  klitten, vervilting of ongewenst gedrag vraagt dit extra tijd,
+                  daarom rekenen we dan een toeslag van €25. Zo garanderen we de
+                  rust en kwaliteit die uw dier verdient.
                 </p>
               </div>
             </div>

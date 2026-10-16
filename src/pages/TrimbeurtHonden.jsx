@@ -57,7 +57,7 @@ export default function TrimbeurtHonden() {
                 <strong>Wat is inbegrepen?</strong>
                 <br />
                 <ul className="breed-page__list">
-                  <li>Nagels knippen of vijlen &amp; oren controleren</li>
+                  <li>Nagels knippen of vijlen</li>
                   <li>Grondig wassen met Hownd shampoo &amp; conditioner</li>
                   <li>Drogen met de waterblazer</li>
                   <li>Uitwollen en uitborstelen tot volledig klitvrij</li>
@@ -69,6 +69,7 @@ export default function TrimbeurtHonden() {
                     Uitscheren van de voetzolen en de sanitaire zones (indien
                     gewenst).
                   </li>
+                  <li>Oren reinigen</li>
                 </ul>
               </p>
 
