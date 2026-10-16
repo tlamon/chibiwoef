@@ -436,22 +436,25 @@ export default function Tarieven() {
                       December 2026 t.e.m. februari 2027:
                       <strong>10% opstartkorting op alle trimbeurten!</strong>
                     </p>
-                  </div>
 
-                  <p className="pricing-note">
-                    Niet zeker welke vacht jouw hond heeft?{" "}
-                    <a
-                      href="#rassentabel"
-                      style={{ textDecoration: "underline" }}
-                    >
-                      Bekijk de rassentabel
-                    </a>{" "}
-                    of{" "}
-                    <Link to="/contact" style={{ textDecoration: "underline" }}>
-                      geef een seintje
-                    </Link>
-                    .
-                  </p>
+                    <p className="pricing-promo__item label-blue">
+                      Niet zeker welke vacht jouw hond heeft?{" "}
+                      <a
+                        href="#rassentabel"
+                        style={{ textDecoration: "underline" }}
+                      >
+                        Bekijk de rassentabel
+                      </a>{" "}
+                      of{" "}
+                      <Link
+                        to="/contact"
+                        style={{ textDecoration: "underline" }}
+                      >
+                        geef een seintje
+                      </Link>
+                      .
+                    </p>
+                  </div>
                 </div>
                 <p className="table-scroll-hint" aria-hidden="true">
                   ← veeg om meer te zien →
