@@ -46,7 +46,6 @@ export default function Ontspanningsmassage() {
                   </p>
                 </div>
                 <div className="dienst__card">
-                  <p className="info-card__label">💶 Prijs</p>
                   <p className="dienst__price">€ 25</p>
                   <p className="dienst__duration">± 20 – 30 min</p>
                   <p className="dienst__examples">

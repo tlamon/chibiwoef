@@ -70,7 +70,6 @@ export default function WasEnSplash() {
                   </p>
                 </div>
                 <div className="dienst__card">
-                  <p className="info-card__label">💶 Prijs</p>
                   <p className="dienst__price">€ 40 – € 65</p>
                   <p className="dienst__duration">± 45 – 90 min</p>
                   <p className="dienst__examples">

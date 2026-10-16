@@ -66,7 +66,6 @@ export default function Gewenning() {
 
               <div className="dienst__cards">
                 <div className="dienst__card">
-                  <p className="info-card__label">💶 Prijs</p>
                   <p className="dienst__price">€ 15 – € 30</p>
                   <p className="dienst__duration">± 15 – 30 min</p>
                   <p className="dienst__examples">Voor honden én katten</p>
