@@ -1213,8 +1213,6 @@ h4 {
     display: none;
   }
   .treatment-row {
-    flex-direction: column;
-    align-items: center;
     gap: 6px;
   }
 }
@@ -1301,7 +1299,7 @@ h4 {
   border-bottom: 1px solid var(--border);
   color: var(--muted);
   font-family: var(--font-heading);
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
 .pricing-table thead th:first-child {
   text-align: left;
@@ -2473,9 +2471,6 @@ h4 {
   }
   .service-card__link {
     font-size: 15px;
-  }
-  .treatment-row__title {
-    font-size: 20px;
   }
   .footer__links a,
   .footer__links li {

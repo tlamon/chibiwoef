@@ -470,7 +470,13 @@ export default function Tarieven() {
                     Rassentabel - Prijsindicatie per ras
                   </h3>
                   <p className="breed-pricing__hint">
-                    Selecteer een letter om de rassen en prijzen te bekijken.
+                    Selecteer een letter om de rassen en prijzen te bekijken
+                    voor een{" "}
+                    <u>
+                      <a href="/diensten/trimbeurt-honden">
+                        volledige trimbeurt
+                      </a>
+                    </u>
                   </p>
                   <div className="breed-pricing__letters" role="tablist">
                     {alphabet.map((letter) => {
@@ -576,6 +582,9 @@ export default function Tarieven() {
 
                 {/* Vachttabel */}
                 <div className="pricing-table-wrap" id="vachttabel">
+                  <h3 className="breed-pricing__title">
+                    Vachttabel - Prijsindicatie per vachttype
+                  </h3>
                   <table className="pricing-table">
                     <thead>
                       <tr>
@@ -589,7 +598,7 @@ export default function Tarieven() {
                                 textUnderlineOffset: "3px",
                               }}
                             >
-                              Trimbeurt honden op basis van vachttype
+                              Volledige trimbeurt
                             </Link>{" "}
                             <small
                               style={{
