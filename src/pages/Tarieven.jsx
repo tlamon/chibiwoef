@@ -70,7 +70,7 @@ const pricingRows = [
   {
     coatType: "Korthaar / glad",
     note: "Wassen & drogen, nagels knippen en oren reinigen",
-    xs: "€ 45",
+    xs: "€ 40",
     s: "€ 45",
     m: "€ 55",
     l: "€ 60",
@@ -583,7 +583,8 @@ export default function Tarieven() {
                 {/* Vachttabel */}
                 <div className="pricing-table-wrap" id="vachttabel">
                   <h3 className="breed-pricing__title">
-                    Vachttabel - Prijsindicatie per vachttype
+                    Vachttabel - Prijsindicatie per vachttype voor een volledige
+                    trimbeurt
                   </h3>
                   <table className="pricing-table">
                     <thead>
@@ -723,6 +724,10 @@ export default function Tarieven() {
 
                 {/* mobile-only card grid — hidden on desktop via CSS */}
                 <div className="pricing-cards-mobile">
+                  <h3 className="breed-pricing__title">
+                    Vachttabel - Prijsindicatie per vachttype voor een volledige
+                    trimbeurt
+                  </h3>
                   {pricingRows.map((row) => (
                     <div key={row.coatType} className="pricing-card-mobile">
                       <p className="pricing-card-mobile__title">
