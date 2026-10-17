@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import CrownImg from "../assets/crown.png";
-import PikachuImg from "../assets/pikachu.png";
+import PikachuImg from "../assets/pikachu.webp";
 import KittyStareImg from "../assets/kittie-stare.png";
 
 export default function TrimbeurtKatten() {
