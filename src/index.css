@@ -1879,6 +1879,10 @@ h4 {
   background: var(--ocre);
   color: var(--charcoal);
 }
+breed-page__color--brown {
+  background: #8b4513;
+  color: #fff;
+}
 .breed-page__color--chocolate {
   background: #6b3a2a;
   color: #fff;
@@ -1889,6 +1893,42 @@ h4 {
 }
 .breed-page__color--teal {
   background: var(--teal);
+  color: #fff;
+}
+.breed-page__color--white {
+  background: #fff;
+  color: #000;
+}
+.breed-page__color--cream {
+  background: #f5f5dc;
+  color: #000;
+}
+.breed-page__color--blue {
+  background: #7391a6;
+  color: #fff;
+}
+.breed-page__color--fawn {
+  background: var(--ocre);
+  color: #fff;
+}
+.breed-page__color--gray {
+  background: #808080;
+  color: #fff;
+}
+.breed-page__color--biscuit {
+  background: #f5deb3;
+  color: #000;
+}
+.breed-page__color--silver {
+  background: #c0c0c0;
+  color: #000;
+}
+.breed-page__color--black-mask {
+  background: #000;
+  color: #fff;
+}
+.breed-page__color--brown {
+  background: #8b4513;
   color: #fff;
 }
 .breed-page__section-title {

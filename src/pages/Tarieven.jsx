@@ -315,7 +315,12 @@ const breedPriceRows = [
     price: "€ 70",
     page: "/rassen/nova-scotia-duck-tolling-retriever",
   },
-  { breed: "Pekinees", coat: "Langhaar/Bevedering", price: "€ 60" },
+  {
+    breed: "Pekingees",
+    coat: "Langhaar/Bevedering",
+    price: "€ 60",
+    page: "/rassen/pekingees",
+  },
   {
     breed: "Poedel groot (koningspoedel)",
     coat: "Krul / fleece",

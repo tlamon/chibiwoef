@@ -8,386 +8,7 @@
  */
 
 export const breeds = [
-  {
-    slug: "labrador-retriever",
-    name: "Labrador Retriever",
-    heroImg: "labrador-retriever-hero.png",
-    photo: "labrador-retriever.webp",
-    fci: "FCI Groep 8 · Retrievers, Spaniëls en Waterhonden",
-    fciSlug: "groep-8",
-    metaDescription:
-      "Alles over de Labrador Retriever: trimfrequentie, vachttype, wassen en drogen. ChibiWoef.",
-    weight: "25 – 36 kg",
-    height: "54 – 57 cm",
-    colors: [
-      { label: "Zwart", cls: "black" },
-      { label: "Geel / Crème", cls: "yellow" },
-      { label: "Chocolade / Bruin", cls: "chocolate" },
-    ],
-    freq: null,
-    price: null,
-    sections: [
-      {
-        title: "Trimfrequentie",
-        type: "text",
-        content:
-          "Een labrador heeft een korte dichte stokvacht en een waterafstotende ondervacht (dubbele vacht). Dat betekent dat hij ongeveer 1 keer per week geborsteld kan worden om losse haren en vuil te verwijderen. Tijdens de rui periodes (lente en herfst) verliezen ze veel ondervacht en helpt het om de vacht vaker te borstelen (2-3 keer per week of zelfs dagelijks). Zo blijft de vacht schoon en gezond en hebben jij (of je robotstofzuiger) minder werk.",
-        freqRow: {
-          level: "laag",
-          label:
-            "🟢 Laag — 1 keer per week borstelen met een rubberen borstel of ondervachtkam (zoals een Furminator) om de dode onderwol los te maken",
-          price: "Volledige trimbeurt/Was & Splash: € 60",
-        },
-      },
-      {
-        title: "Vacht & Huid",
-        type: "list",
-        items: [
-          "Korte, waterafstotende, strakke vacht die dicht op het lichaam ligt.",
-          "Weert zowel warmte als koude dankzij de waterafstotende ondervacht.",
-          "De huid produceert van nature lichaamsvet — dit kan een 'hondengeur' veroorzaken bij sommige honden.",
-          "Tijdens de rui periodes wisselt de vacht volledig waardoor er veel losse haren vrijkomen.",
-        ],
-      },
-      {
-        title: "Tijdens de trimbeurt",
-        type: "text",
-        content:
-          "De vacht wordt geborsteld en gewassen met een milde shampoo. Daarna blazen we de losse en dode haren weg met een waterblazer. De oren worden gecontroleerd en indien nodig gereinigd. De nagels worden geknipt en de voetzolen worden geschoren.",
-      },
-    ],
-  },
-  {
-    slug: "golden-retriever",
-    name: "Golden Retriever",
-    heroImg: null,
-    photo: "golden-retriever.webp",
-    fci: "FCI Groep 8 · Retrievers, Spaniëls en Waterhonden",
-    fciSlug: "groep-8",
-    metaDescription:
-      "Alles over de Golden Retriever: trimfrequentie, borstelen, carding en afwerking ChibiWoef.",
-    weight: "25 – 34 kg",
-    height: "51 – 61 cm",
-    colors: [
-      { label: "Licht goud / Crème", cls: "yellow" },
-      { label: "Goud", cls: "yellow" },
-      { label: "Donker goud", cls: "chocolate" },
-    ],
-    freq: null,
-    price: null,
-    sections: [
-      {
-        title: "Trimfrequentie",
-        type: "html",
-        content:
-          "Een Golden Retriever heeft een dubbele vacht met een zachte ondervacht en een waterafstotende bovenvacht. De ondervacht wisselt tijdens de ruiperiode volledig waardoor ze veel losse haren verliezen. Gemiddeld komen ze 2 tot 4 keer per jaar naar het trimsalon (<strong>om de 3 à 6 maanden</strong>).",
-        freqRow: {
-          level: "matig",
-          label: "🟡 Matig — kammen en borstelen: 1 tot 2 keer per week",
-          price: "Was & Splash: € 60",
-          price2: "Volledige trimbeurt: € 80",
-          price3: "Tussentijdse borstel- & kambeurt: € 45",
-        },
-        warning:
-          "Scheer een Golden Retriever nooit kaal. Hun dubbele vacht werkt als een natuurlijke isolatielaag. Als je de vacht afscheert, verstoor je dit systeem, groeit de ondervacht vaak stugger en wolliger terug, en kan de hond zijn warmte juist minder goed kwijt.",
-      },
-      {
-        title: "Trimbeurt",
-        type: "grouped",
-        exampleImgs: [
-          { file: "golden-retriever-example.webp", caption: "Naturel model" },
-        ],
-        intro:
-          "Tijdens een volledige trimbeurt voor jouw Golden Retriever doen we het volgende:",
-        subSections: [
-          {
-            title: "Kleine verzorging",
-            items: [
-              "Nagels knippen of vijlen",
-              "Oren nakijken en reinigen indien nodig",
-              "Losse vacht en huidschilfers loswerken met een rubberen borstel, uitwolzaag, puimsteen of trimmes.",
-              "Drogen met de waterblazer om losse en dode haren los te maken.",
-              "Klitten in de langhaar zones uitborstelen of scheren voor het wassen.",
-            ],
-          },
-          {
-            title: "Borstel- en kambeurt",
-            items: [
-              "Lijnborstelen in secties tot de hond volledig klitvrij is.",
-              "Extra aandacht voor: zones achter de oren, kraag, dijgebieden, buikvacht en staart.",
-            ],
-          },
-          {
-            title: "Ontwollen of harken van de ondervacht",
-            items: [
-              "Bij veel losse ondervacht: lijngewijs ontwollen in de richting van de vachtgroei met een herdershark en/of puimsteen.",
-              "Dit verwijdert de zachte, donzige ondervacht zodat de dekhaartjes beter aansluiten.",
-            ],
-          },
-          {
-            title: "Poten, Hakken en oren",
-            items: [
-              "Voetzooltjes uitscheren voor een betere grip en om vuilophoping te voorkomen.",
-              "Poten rond knippen",
-              "De hak bij langere vacht licht bijwerken met de effileerschaar",
-              "Oren licht bijwerken en eventueel plukken van dode haren.",
-            ],
-          },
-        ],
-      },
-    ],
-    didYouKnow: [
-      {
-        emoji: "💦",
-        title: "Gebouwd voor het water",
-        text: "Golden Retrievers hebben heuse zwemvliezen tussen hun tenen. Samen met hun waterafstotende vacht en hun staart die als een roer werkt, zijn het geboren watersporthonden. Ze werden in de 19e eeuw gefokt door Lord Tweedmouth in Schotland als ultieme jachthond voor ijskoud water.",
-      },
-      {
-        emoji: "🥚",
-        title: "De zachte bek",
-        text: "Een getrainde Golden Retriever kan een rauw kippenei in zijn bek nemen en dragen zonder dat de schaal breekt. Dit is ook waarom ze zo graag 'cadeautjes' brengen als je thuiskomt — een schoen, een sok, een tak. Ze móéten iets in hun bek hebben om hun enthousiasme te tonen.",
-      },
-      {
-        emoji: "🧠",
-        title: "Slim maar twijfelachtige waakhond",
-        text: "De Golden staat steevast in de top 5 van slimste hondenrassen en kan honderden commando's leren. Tegelijk zijn ze zo vriendelijk dat de kans groter is dat ze een inbreker enthousiast begroeten met een kwispelende staart terwijl ze hem de weg wijzen naar de koelkast.",
-      },
-      {
-        emoji: "🕵️",
-        title: "Een hond met een baan",
-        text: "Door hun intelligentie en kalm karakter worden ze wereldwijd het meest ingezet als geleidehond, hulphond en therapiehond. In Hollywood zijn ze ook onmisbaar — denk aan Shadow uit Homeward Bound of Buddy uit de Air Bud-films.",
-      },
-      {
-        emoji: "🎨",
-        title: "Oren als kleurenkaart",
-        text: "Je kunt aan de oren van een Golden Retriever puppy zien welke kleur hij krijgt als volwassen hond. De rest van de vacht kleurt na verloop van tijd mee met de (vaak donkerdere) tint van de oren.",
-      },
-    ],
-  },
-  {
-    slug: "flat-coated-retriever",
-    name: "Flat-Coated Retriever",
-    heroImg: null,
-    photo: "flat-coated-retriever.webp",
-    fci: "FCI Groep 8 · Retrievers, Spaniëls en Waterhonden",
-    fciSlug: "groep-8",
-    metaDescription:
-      "Alles over de Flat-Coated Retriever: trimfrequentie, vachtverzorging en groomingaanpak. ChibiWoef.",
-    weight: "25 – 35 kg",
-    height: "56 – 62 cm",
-    colors: [
-      { label: "Zwart", cls: "black" },
-      { label: "Lever / Bruin", cls: "chocolate" },
-    ],
-    freq: null,
-    price: null,
-    didYouKnow: [
-      {
-        emoji: "🧚",
-        title: "De 'Peter Pan' van de hondenwereld",
-        text: "Terwijl de meeste honden rond hun tweede jaar volwassen en rustiger worden, blijft een Flat-coat tot zijn derde of vierde levensjaar (en vaak zelfs tot op hoge leeftijd!) een speelse, maffe puppy met een onuitputtelijke dosis energie.",
-      },
-      {
-        emoji: "😁",
-        title: "De 'Flatcoat Smile'",
-        text: "Dit ras staat erom bekend dat ze letterlijk kunnen glimlachen als ze super blij zijn. Ze trekken dan hun lippen een stukje naar achteren waardoor je hun tanden ziet. Geen paniek, het is absoluut geen dreiggedrag, maar een teken van pure, aanstekelijke vreugde!",
-      },
-      {
-        emoji: "🐕",
-        title: "De vrolijkste staart van het hondenrijk",
-        text: "Volgens keurmeesters en liefhebbers heeft de Flat-coat een van de meest actieve staarten ter wereld. Hun staart staat werkelijk nooit stil. Zelfs als ze geconcentreerd aan het werk zijn of rustig moeten wachten, blijft die harige staart onvermoeibaar heen en weer zwiepen.",
-      },
-      {
-        emoji: "🧱",
-        title: "Gegoten silhouet",
-        text: "Als je een Flat-coat van de zijkant bekijkt, zie je iets heel bijzonders aan zijn hoofd. Waar een Golden of Labrador een duidelijke 'stop' (de knik tussen de snuit en het voorhoofd) heeft, loopt de kop van de Flat-coat in één vloeiende, elegante lijn door. Kynologen omschrijven dit als een hoofd dat 'uit één stuk gegoten is'.",
-      },
-      {
-        emoji: "🎩",
-        title: "Bijna uitgestorven",
-        text: "Vóór de grote doorbraak van de Labrador en de Golden Retriever was de Flat-coat dé populairste jachthond van de Britse adel en boswachters. Door de Wereldoorlogen stierf het ras echter bijna uit. Gelukkig hebben toegewijde liefhebbers het ras kunnen redden, al is het nog steeds een exclusiever ras dan de Golden.",
-      },
-      {
-        emoji: "🍫",
-        title: "Zwart of Lever",
-        text: "In tegenstelling tot de regenboog aan kleuren bij andere retrievers, is de Flat-coat er officieel in slechts twee kleuren: gitzwart (black) of prachtig diepbruin (liver). Heel uitzonderlijk wordt er weleens een gele puppy geboren, maar die kleur is volgens de officiële rasstandaard niet erkend.",
-      },
-    ],
-    sections: [
-      {
-        title: "Trimfrequentie",
-        type: "html",
-        content:
-          "De Flat-Coated Retriever heeft een vergelijkbare vacht als de Golden Retriever: een dichte, waterafstotende buitenvacht met bevedering op oren, borst, buik, poten en staart. De vacht is iets platter en gladder. Gemiddeld komen ze <strong>om de 3 à 6 maanden</strong> naar het trimsalon.",
-        freqRow: {
-          level: "matig",
-          label: "🟡 Matig — kammen en borstelen: 1 tot 2 keer per week",
-          price: "Was & Splash: € 60",
-          price2: "Volledige trimbeurt: € 80",
-          price3: "Tussentijdse borstel- & kambeurt: € 45",
-        },
-        warning:
-          "Scheer een Flat-Coated Retriever nooit kaal. Net als bij de Golden Retriever werkt de dubbele vacht als een natuurlijke isolatielaag. Scheren verstoort dit systeem en de ondervacht kan stugger en wolliger teruggroeien.",
-      },
-      {
-        title: "Trimbeurt",
-        type: "grouped",
-        intro:
-          "De trimbeurt van een Flat-Coated Retriever is vrijwel identiek aan die van een Golden Retriever. Tijdens een volledige trimbeurt doen we het volgende:",
-        subSections: [
-          {
-            title: "Voorbereiding",
-            items: [
-              "Nagels knippen of vijlen.",
-              "Oren reinigen met een milde oorreinigingsoplossing.",
-              "Losse vacht en huidschilfers loswerken met een rubber curry, hark, slicker en/of plukmes.",
-              "Waterblazer om de vuiligheid en dode haren in de vacht los te maken.",
-              "Klitten in de langharige zones uitborstelen.",
-            ],
-          },
-          {
-            title: "Borstelen",
-            items: [
-              "Lijnborstelen in secties tot de hond volledig klitvrij is.",
-              "Extra aandacht voor: achter de oren, kraagzone, dijgebieden, buikvacht en staart.",
-              "Bij veel losse ondervacht: lijngewijs harken in de richting van de vachtgroei.",
-            ],
-          },
-          {
-            title: "Poten & Hakken",
-            items: [
-              "Voetzooltjes scheren.",
-              "Pootjes rond knippen.",
-              "Hakken licht bijwerken met een effileerschaar.",
-            ],
-          },
-          {
-            title: "Afwerking",
-            items: [
-              "Oren licht bijwerken met dunscharen voor een natuurlijke look.",
-              "Lange uitwaaierende haren rond de oren met de hand wegtrekken.",
-              "Afwerken met een fijne mist coat polish voor extra glans.",
-            ],
-          },
-        ],
-      },
-    ],
-  },
-  {
-    slug: "nova-scotia-duck-tolling-retriever",
-    name: "Nova Scotia Duck Tolling Retriever",
-    heroImg: null,
-    photo: "nova-scotia-duck-tolling-retriever.webp",
-    fci: "FCI Groep 8 · Retrievers, Spaniëls en Waterhonden",
-    fciSlug: "groep-8",
-    metaDescription:
-      "Alles over de Nova Scotia Duck Tolling Retriever: trimfrequentie, vachtverzorging en groomingaanpak. ChibiWoef.",
-    weight: "17 – 23 kg",
-    height: "45 – 51 cm",
-    colors: [
-      { label: "Rood / Oranje", cls: "red" },
-      { label: "Goud", cls: "yellow" },
-    ],
-    freq: null,
-    price: null,
-    didYouKnow: [
-      {
-        emoji: "🦊",
-        title: 'De "Vossentruc" (De Tolling-dans)',
-        text: 'De Toller heeft een unieke manier van jagen waar hij zijn naam aan dankt (tollen is oud-Engels voor lokken). In plaats van wild te vangen, rent en speelt de Toller vrolijk langs de waterkant om de aandacht van eenden te trekken. De eenden worden nieuwsgierig door deze "dansende vos" en zwemmen dichtbij, waarna de jager ze kan schieten en de Toller ze netjes apporteert.🦆',
-      },
-      {
-        emoji: "🎺",
-        title: "De Toller Scream",
-        text: "Als een Toller super enthousiast, nerveus of ongeduldig is (bijvoorbeeld als je een bal gaat gooien), produceert hij een heel specifiek geluid: de Toller Scream. Dit is geen normale blaf, maar een hoge, doordringende, bijna zingende kreet die klinkt alsof hij wordt achtervolgd. Heel typisch voor het ras!",
-      },
-      {
-        emoji: "🚀",
-        title: 'De "Red Rocket":',
-        text: "Hoewel ze eruitzien als een mini-Golden Retriever, hebben ze het energieniveau van een Border Collie. Het zijn echte werkhonden die een duidelijke taak nodig hebben (zoals agility, flyball of jachttraining) om gelukkig te blijven. In huis zijn ze rustig, mits ze buiten hun energie kwijt kunnen!",
-      },
-      {
-        emoji: "🍁",
-        title: "Trots Canadees erfgoed",
-        text: "Het ras werd ontwikkeld in Nova Scotia, Canada, in de vroege 19e eeuw. De Toller is zo'n belangrijk deel van de Canadese identiteit dat hij in 1995 tot officieel provinciaal symbool van Nova Scotia werd uitgeroepen.",
-      },
-    ],
-    sections: [
-      {
-        title: "Trimfrequentie",
-        type: "html",
-        content:
-          "De Nova Scotia Duck Tolling Retriever (kortweg de Toller) is de kleinste van alle retrieverrassen, maar heeft een minstens even grote persoonlijkheid! De verzorging is gelukkig relatief eenvoudig, omdat hun vacht van nature vuil- en waterafstotend is. De Toller hoeft maar <strong>2 à 3 keer per jaar</strong> naar het trimsalon, best rond de ruiperioden:" +
-          "<ol style='padding-left:1.8rem'>" +
-          "<li><strong>Lenterui (april/mei):</strong> wanneer de dikke wintervacht loslaat.</li>" +
-          "<li><strong>Herfstrui (oktober/november):</strong> wanneer de zomervacht plaatsmaakt voor de wintervacht.</li>" +
-          "<li><strong>Zomertweak (optioneel):</strong> vlak voor of na de zomer om hardnekkige pluiswol weg te werken.</li>" +
-          "</ol>",
-        freqRow: {
-          level: "laag",
-          label:
-            "🟢 Laag — 2 à 3 beurten per jaar, afgestemd op de ruiperioden",
-          price: "Was & Splash: € 55",
-          price2: "Volledige trimbeurt: € 70",
-          price3: "Tussentijdse borstel- & kambeurt: € 35",
-        },
-        warning:
-          "Scheer een Toller nooit kaal. Net als bij de Golden en Flat-Coat werkt de dubbele vacht als een natuurlijke isolatielaag en bescherming bij het zwemmen.",
-      },
-      {
-        title: "Trimbeurt",
-        type: "grouped",
-        exampleImgs: [
-          {
-            file: "nova-scotia-duck-tolling-retriever-example.png",
-            caption: "Naturel model",
-          },
-        ],
-        intro:
-          "De trimbeurt van een Toller is vergelijkbaar met die van een Golden Retriever, maar vraagt minder tijd door de compactere bevedering:",
-        subSections: [
-          {
-            title: "Voorbereiding",
-            items: [
-              "Nagels knippen of vijlen.",
-              "Oren reinigen -> Tollers zijn waterliefhebbers, dus de oren worden extra in de gaten gehouden op vocht en infecties.",
-              "Losse vacht loswerken met een rubbere kam of ontwoller.",
-              "Waterblazer om vuil en losse haren uit de vacht te blazen.",
-            ],
-          },
-          {
-            title: "Borstelen",
-            items: [
-              "Lijnborstelen in secties tot volledig klitvrij.",
-              "Extra aandacht voor: achter de oren, kraag, dijgebieden, buikvacht en staart.",
-            ],
-          },
-          {
-            title: "Ondervacht behandelen",
-            items: [
-              "Bij veel losse ondervacht: lijngewijs ontwollen of harken in de richting van de vachtgroei.",
-              "Deze is minder uitgesproken dan bij de Golden, maar niet overslaan tijdens ruiperiode.",
-            ],
-          },
-          {
-            title: "Poten & Hakken",
-            items: [
-              "Voetzolen uitscheren voor betere grip en hygiëne.",
-              "Haar tussen de tenen bijknippen met dunscharen.",
-              "Hakkels licht bijwerken indien nodig.",
-            ],
-          },
-          {
-            title: "Afwerking",
-            items: [
-              "Oren licht bijwerken voor een natuurlijke look.",
-              "Afwerken met coat polish voor extra glans op de roodgouden vacht.",
-            ],
-          },
-        ],
-      },
-    ],
-  },
+  // E
   {
     slug: "engelse-cocker-spaniel",
     name: "Engelse Cocker Spaniël",
@@ -397,6 +18,8 @@ export const breeds = [
     fciSlug: "groep-8",
     metaDescription:
       "Alles over de Engelse Cocker Spaniël: trimfrequentie, plukken vs. scheren, vachtverzorging en groomingaanpak. ChibiWoef.",
+    description:
+      "De Engelse Cocker Spaniël is een middelgroot hondenras dat bekend staat om zijn vrolijke en aanhankelijke karakter. Oorspronkelijk gefokt als jachthond in Groot-Brittannië, excelleert hij in het opsporen van vogels zoals de houtsnip. Tegenwoordig is het een geliefde gezinshond die veel aandacht en verzorging nodig heeft, vooral vanwege zijn zijdezachte, halflange vacht met karakteristieke bevedering.",
     weight: "12 – 14,5 kg",
     height: "38 – 41 cm",
     colors: [
@@ -404,6 +27,15 @@ export const breeds = [
       { label: "Goud / Oranje", cls: "yellow" },
       { label: "Chocolade", cls: "chocolate" },
       { label: "Blue Roan", cls: "teal" },
+      { label: "Rood", cls: "red" },
+      { label: "Brindle", cls: "brindle" },
+      { label: "Wit", cls: "white" },
+      { label: "Crème", cls: "cream" },
+      { label: "Blauw", cls: "blue" },
+      { label: "Bruin", cls: "brown" },
+      { label: "Fawn", cls: "fawn" },
+      { label: "Grijs", cls: "gray" },
+      { label: "Biscuit", cls: "biscuit" },
     ],
     freq: null,
     price: null,
@@ -525,6 +157,521 @@ export const breeds = [
               "Voetzolen uitscheren.",
               "Poten rondknippen.",
               "Hakken licht bijwerken met een effileerschaar of een #4F in omgekeerde richting.",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  // F
+  {
+    slug: "flat-coated-retriever",
+    name: "Flat-Coated Retriever",
+    heroImg: null,
+    photo: "flat-coated-retriever.webp",
+    fci: "FCI Groep 8 · Retrievers, Spaniëls en Waterhonden",
+    fciSlug: "groep-8",
+    metaDescription:
+      "Alles over de Flat-Coated Retriever: trimfrequentie, vachtverzorging en groomingaanpak. ChibiWoef.",
+    weight: "25 – 35 kg",
+    height: "56 – 62 cm",
+    colors: [
+      { label: "Zwart", cls: "black" },
+      { label: "Lever / Bruin", cls: "chocolate" },
+    ],
+    freq: null,
+    price: null,
+    didYouKnow: [
+      {
+        emoji: "🧚",
+        title: "De 'Peter Pan' van de hondenwereld",
+        text: "Terwijl de meeste honden rond hun tweede jaar volwassen en rustiger worden, blijft een Flat-coat tot zijn derde of vierde levensjaar (en vaak zelfs tot op hoge leeftijd!) een speelse, maffe puppy met een onuitputtelijke dosis energie.",
+      },
+      {
+        emoji: "😁",
+        title: "De 'Flatcoat Smile'",
+        text: "Dit ras staat erom bekend dat ze letterlijk kunnen glimlachen als ze super blij zijn. Ze trekken dan hun lippen een stukje naar achteren waardoor je hun tanden ziet. Geen paniek, het is absoluut geen dreiggedrag, maar een teken van pure, aanstekelijke vreugde!",
+      },
+      {
+        emoji: "🐕",
+        title: "De vrolijkste staart van het hondenrijk",
+        text: "Volgens keurmeesters en liefhebbers heeft de Flat-coat een van de meest actieve staarten ter wereld. Hun staart staat werkelijk nooit stil. Zelfs als ze geconcentreerd aan het werk zijn of rustig moeten wachten, blijft die harige staart onvermoeibaar heen en weer zwiepen.",
+      },
+      {
+        emoji: "🧱",
+        title: "Gegoten silhouet",
+        text: "Als je een Flat-coat van de zijkant bekijkt, zie je iets heel bijzonders aan zijn hoofd. Waar een Golden of Labrador een duidelijke 'stop' (de knik tussen de snuit en het voorhoofd) heeft, loopt de kop van de Flat-coat in één vloeiende, elegante lijn door. Kynologen omschrijven dit als een hoofd dat 'uit één stuk gegoten is'.",
+      },
+      {
+        emoji: "🎩",
+        title: "Bijna uitgestorven",
+        text: "Vóór de grote doorbraak van de Labrador en de Golden Retriever was de Flat-coat dé populairste jachthond van de Britse adel en boswachters. Door de Wereldoorlogen stierf het ras echter bijna uit. Gelukkig hebben toegewijde liefhebbers het ras kunnen redden, al is het nog steeds een exclusiever ras dan de Golden.",
+      },
+      {
+        emoji: "🍫",
+        title: "Zwart of Lever",
+        text: "In tegenstelling tot de regenboog aan kleuren bij andere retrievers, is de Flat-coat er officieel in slechts twee kleuren: gitzwart (black) of prachtig diepbruin (liver). Heel uitzonderlijk wordt er weleens een gele puppy geboren, maar die kleur is volgens de officiële rasstandaard niet erkend.",
+      },
+    ],
+    sections: [
+      {
+        title: "Trimfrequentie",
+        type: "html",
+        content:
+          "De Flat-Coated Retriever heeft een vergelijkbare vacht als de Golden Retriever: een dichte, waterafstotende buitenvacht met bevedering op oren, borst, buik, poten en staart. De vacht is iets platter en gladder. Gemiddeld komen ze <strong>om de 3 à 6 maanden</strong> naar het trimsalon.",
+        freqRow: {
+          level: "matig",
+          label: "🟡 Matig — kammen en borstelen: 1 tot 2 keer per week",
+          price: "Was & Splash: € 60",
+          price2: "Volledige trimbeurt: € 80",
+          price3: "Tussentijdse borstel- & kambeurt: € 45",
+        },
+        warning:
+          "Scheer een Flat-Coated Retriever nooit kaal. Net als bij de Golden Retriever werkt de dubbele vacht als een natuurlijke isolatielaag. Scheren verstoort dit systeem en de ondervacht kan stugger en wolliger teruggroeien.",
+      },
+      {
+        title: "Trimbeurt",
+        type: "grouped",
+        intro:
+          "De trimbeurt van een Flat-Coated Retriever is vrijwel identiek aan die van een Golden Retriever. Tijdens een volledige trimbeurt doen we het volgende:",
+        subSections: [
+          {
+            title: "Voorbereiding",
+            items: [
+              "Nagels knippen of vijlen.",
+              "Oren reinigen met een milde oorreinigingsoplossing.",
+              "Losse vacht en huidschilfers loswerken met een rubber curry, hark, slicker en/of plukmes.",
+              "Waterblazer om de vuiligheid en dode haren in de vacht los te maken.",
+              "Klitten in de langharige zones uitborstelen.",
+            ],
+          },
+          {
+            title: "Borstelen",
+            items: [
+              "Lijnborstelen in secties tot de hond volledig klitvrij is.",
+              "Extra aandacht voor: achter de oren, kraagzone, dijgebieden, buikvacht en staart.",
+              "Bij veel losse ondervacht: lijngewijs harken in de richting van de vachtgroei.",
+            ],
+          },
+          {
+            title: "Poten & Hakken",
+            items: [
+              "Voetzooltjes scheren.",
+              "Pootjes rond knippen.",
+              "Hakken licht bijwerken met een effileerschaar.",
+            ],
+          },
+          {
+            title: "Afwerking",
+            items: [
+              "Oren licht bijwerken met dunscharen voor een natuurlijke look.",
+              "Lange uitwaaierende haren rond de oren met de hand wegtrekken.",
+              "Afwerken met een fijne mist coat polish voor extra glans.",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  // G
+  {
+    slug: "golden-retriever",
+    name: "Golden Retriever",
+    heroImg: null,
+    photo: "golden-retriever.webp",
+    fci: "FCI Groep 8 · Retrievers, Spaniëls en Waterhonden",
+    fciSlug: "groep-8",
+    metaDescription:
+      "Alles over de Golden Retriever: trimfrequentie, borstelen, carding en afwerking ChibiWoef.",
+    weight: "25 – 34 kg",
+    height: "51 – 61 cm",
+    colors: [
+      { label: "Licht goud / Crème", cls: "yellow" },
+      { label: "Goud", cls: "yellow" },
+      { label: "Donker goud", cls: "chocolate" },
+    ],
+    freq: null,
+    price: null,
+    sections: [
+      {
+        title: "Trimfrequentie",
+        type: "html",
+        content:
+          "Een Golden Retriever heeft een dubbele vacht met een zachte ondervacht en een waterafstotende bovenvacht. De ondervacht wisselt tijdens de ruiperiode volledig waardoor ze veel losse haren verliezen. Gemiddeld komen ze 2 tot 4 keer per jaar naar het trimsalon (<strong>om de 3 à 6 maanden</strong>).",
+        freqRow: {
+          level: "matig",
+          label: "🟡 Matig — kammen en borstelen: 1 tot 2 keer per week",
+          price: "Was & Splash: € 60",
+          price2: "Volledige trimbeurt: € 80",
+          price3: "Tussentijdse borstel- & kambeurt: € 45",
+        },
+        warning:
+          "Scheer een Golden Retriever nooit kaal. Hun dubbele vacht werkt als een natuurlijke isolatielaag. Als je de vacht afscheert, verstoor je dit systeem, groeit de ondervacht vaak stugger en wolliger terug, en kan de hond zijn warmte juist minder goed kwijt.",
+      },
+      {
+        title: "Trimbeurt",
+        type: "grouped",
+        exampleImgs: [
+          { file: "golden-retriever-example.webp", caption: "Naturel model" },
+        ],
+        intro:
+          "Tijdens een volledige trimbeurt voor jouw Golden Retriever doen we het volgende:",
+        subSections: [
+          {
+            title: "Kleine verzorging",
+            items: [
+              "Nagels knippen of vijlen",
+              "Oren nakijken en reinigen indien nodig",
+              "Losse vacht en huidschilfers loswerken met een rubberen borstel, uitwolzaag, puimsteen of trimmes.",
+              "Drogen met de waterblazer om losse en dode haren los te maken.",
+              "Klitten in de langhaar zones uitborstelen of scheren voor het wassen.",
+            ],
+          },
+          {
+            title: "Borstel- en kambeurt",
+            items: [
+              "Lijnborstelen in secties tot de hond volledig klitvrij is.",
+              "Extra aandacht voor: zones achter de oren, kraag, dijgebieden, buikvacht en staart.",
+            ],
+          },
+          {
+            title: "Ontwollen of harken van de ondervacht",
+            items: [
+              "Bij veel losse ondervacht: lijngewijs ontwollen in de richting van de vachtgroei met een herdershark en/of puimsteen.",
+              "Dit verwijdert de zachte, donzige ondervacht zodat de dekhaartjes beter aansluiten.",
+            ],
+          },
+          {
+            title: "Poten, Hakken en oren",
+            items: [
+              "Voetzooltjes uitscheren voor een betere grip en om vuilophoping te voorkomen.",
+              "Poten rond knippen",
+              "De hak bij langere vacht licht bijwerken met de effileerschaar",
+              "Oren licht bijwerken en eventueel plukken van dode haren.",
+            ],
+          },
+        ],
+      },
+    ],
+    didYouKnow: [
+      {
+        emoji: "💦",
+        title: "Gebouwd voor het water",
+        text: "Golden Retrievers hebben heuse zwemvliezen tussen hun tenen. Samen met hun waterafstotende vacht en hun staart die als een roer werkt, zijn het geboren watersporthonden. Ze werden in de 19e eeuw gefokt door Lord Tweedmouth in Schotland als ultieme jachthond voor ijskoud water.",
+      },
+      {
+        emoji: "🥚",
+        title: "De zachte bek",
+        text: "Een getrainde Golden Retriever kan een rauw kippenei in zijn bek nemen en dragen zonder dat de schaal breekt. Dit is ook waarom ze zo graag 'cadeautjes' brengen als je thuiskomt — een schoen, een sok, een tak. Ze móéten iets in hun bek hebben om hun enthousiasme te tonen.",
+      },
+      {
+        emoji: "🧠",
+        title: "Slim maar twijfelachtige waakhond",
+        text: "De Golden staat steevast in de top 5 van slimste hondenrassen en kan honderden commando's leren. Tegelijk zijn ze zo vriendelijk dat de kans groter is dat ze een inbreker enthousiast begroeten met een kwispelende staart terwijl ze hem de weg wijzen naar de koelkast.",
+      },
+      {
+        emoji: "🕵️",
+        title: "Een hond met een baan",
+        text: "Door hun intelligentie en kalm karakter worden ze wereldwijd het meest ingezet als geleidehond, hulphond en therapiehond. In Hollywood zijn ze ook onmisbaar — denk aan Shadow uit Homeward Bound of Buddy uit de Air Bud-films.",
+      },
+      {
+        emoji: "🎨",
+        title: "Oren als kleurenkaart",
+        text: "Je kunt aan de oren van een Golden Retriever puppy zien welke kleur hij krijgt als volwassen hond. De rest van de vacht kleurt na verloop van tijd mee met de (vaak donkerdere) tint van de oren.",
+      },
+    ],
+  },
+  // L
+  {
+    slug: "labrador-retriever",
+    name: "Labrador Retriever",
+    heroImg: "labrador-retriever-hero.png",
+    photo: "labrador-retriever.webp",
+    fci: "FCI Groep 8 · Retrievers, Spaniëls en Waterhonden",
+    fciSlug: "groep-8",
+    metaDescription:
+      "Alles over de Labrador Retriever: trimfrequentie, vachttype, wassen en drogen. ChibiWoef.",
+    weight: "25 – 36 kg",
+    height: "54 – 57 cm",
+    colors: [
+      { label: "Zwart", cls: "black" },
+      { label: "Geel / Crème", cls: "yellow" },
+      { label: "Chocolade / Bruin", cls: "chocolate" },
+    ],
+    freq: null,
+    price: null,
+    sections: [
+      {
+        title: "Trimfrequentie",
+        type: "text",
+        content:
+          "Een labrador heeft een korte dichte stokvacht en een waterafstotende ondervacht (dubbele vacht). Dat betekent dat hij ongeveer 1 keer per week geborsteld kan worden om losse haren en vuil te verwijderen. Tijdens de rui periodes (lente en herfst) verliezen ze veel ondervacht en helpt het om de vacht vaker te borstelen (2-3 keer per week of zelfs dagelijks). Zo blijft de vacht schoon en gezond en hebben jij (of je robotstofzuiger) minder werk.",
+        freqRow: {
+          level: "laag",
+          label:
+            "🟢 Laag — 1 keer per week borstelen met een rubberen borstel of ondervachtkam (zoals een Furminator) om de dode onderwol los te maken",
+          price: "Volledige trimbeurt/Was & Splash: € 60",
+        },
+      },
+      {
+        title: "Vacht & Huid",
+        type: "list",
+        items: [
+          "Korte, waterafstotende, strakke vacht die dicht op het lichaam ligt.",
+          "Weert zowel warmte als koude dankzij de waterafstotende ondervacht.",
+          "De huid produceert van nature lichaamsvet — dit kan een 'hondengeur' veroorzaken bij sommige honden.",
+          "Tijdens de rui periodes wisselt de vacht volledig waardoor er veel losse haren vrijkomen.",
+        ],
+      },
+      {
+        title: "Tijdens de trimbeurt",
+        type: "text",
+        content:
+          "De vacht wordt geborsteld en gewassen met een milde shampoo. Daarna blazen we de losse en dode haren weg met een waterblazer. De oren worden gecontroleerd en indien nodig gereinigd. De nagels worden geknipt en de voetzolen worden geschoren.",
+      },
+    ],
+  },
+  // N
+  {
+    slug: "nova-scotia-duck-tolling-retriever",
+    name: "Nova Scotia Duck Tolling Retriever",
+    heroImg: null,
+    photo: "nova-scotia-duck-tolling-retriever.webp",
+    fci: "FCI Groep 8 · Retrievers, Spaniëls en Waterhonden",
+    fciSlug: "groep-8",
+    metaDescription:
+      "Alles over de Nova Scotia Duck Tolling Retriever: trimfrequentie, vachtverzorging en groomingaanpak. ChibiWoef.",
+    weight: "17 – 23 kg",
+    height: "45 – 51 cm",
+    colors: [
+      { label: "Rood / Oranje", cls: "red" },
+      { label: "Goud", cls: "yellow" },
+    ],
+    freq: null,
+    price: null,
+    didYouKnow: [
+      {
+        emoji: "🦊",
+        title: 'De "Vossentruc" (De Tolling-dans)',
+        text: 'De Toller heeft een unieke manier van jagen waar hij zijn naam aan dankt (tollen is oud-Engels voor lokken). In plaats van wild te vangen, rent en speelt de Toller vrolijk langs de waterkant om de aandacht van eenden te trekken. De eenden worden nieuwsgierig door deze "dansende vos" en zwemmen dichtbij, waarna de jager ze kan schieten en de Toller ze netjes apporteert.🦆',
+      },
+      {
+        emoji: "🎺",
+        title: "De Toller Scream",
+        text: "Als een Toller super enthousiast, nerveus of ongeduldig is (bijvoorbeeld als je een bal gaat gooien), produceert hij een heel specifiek geluid: de Toller Scream. Dit is geen normale blaf, maar een hoge, doordringende, bijna zingende kreet die klinkt alsof hij wordt achtervolgd. Heel typisch voor het ras!",
+      },
+      {
+        emoji: "🚀",
+        title: 'De "Red Rocket":',
+        text: "Hoewel ze eruitzien als een mini-Golden Retriever, hebben ze het energieniveau van een Border Collie. Het zijn echte werkhonden die een duidelijke taak nodig hebben (zoals agility, flyball of jachttraining) om gelukkig te blijven. In huis zijn ze rustig, mits ze buiten hun energie kwijt kunnen!",
+      },
+      {
+        emoji: "🍁",
+        title: "Trots Canadees erfgoed",
+        text: "Het ras werd ontwikkeld in Nova Scotia, Canada, in de vroege 19e eeuw. De Toller is zo'n belangrijk deel van de Canadese identiteit dat hij in 1995 tot officieel provinciaal symbool van Nova Scotia werd uitgeroepen.",
+      },
+    ],
+    sections: [
+      {
+        title: "Trimfrequentie",
+        type: "html",
+        content:
+          "De Nova Scotia Duck Tolling Retriever (kortweg de Toller) is de kleinste van alle retrieverrassen, maar heeft een minstens even grote persoonlijkheid! De verzorging is gelukkig relatief eenvoudig, omdat hun vacht van nature vuil- en waterafstotend is. De Toller hoeft maar <strong>2 à 3 keer per jaar</strong> naar het trimsalon, best rond de ruiperioden:" +
+          "<ol style='padding-left:1.8rem'>" +
+          "<li><strong>Lenterui (april/mei):</strong> wanneer de dikke wintervacht loslaat.</li>" +
+          "<li><strong>Herfstrui (oktober/november):</strong> wanneer de zomervacht plaatsmaakt voor de wintervacht.</li>" +
+          "<li><strong>Zomertweak (optioneel):</strong> vlak voor of na de zomer om hardnekkige pluiswol weg te werken.</li>" +
+          "</ol>",
+        freqRow: {
+          level: "laag",
+          label:
+            "🟢 Laag — 2 à 3 beurten per jaar, afgestemd op de ruiperioden",
+          price: "Was & Splash: € 55",
+          price2: "Volledige trimbeurt: € 70",
+          price3: "Tussentijdse borstel- & kambeurt: € 35",
+        },
+        warning:
+          "Scheer een Toller nooit kaal. Net als bij de Golden en Flat-Coat werkt de dubbele vacht als een natuurlijke isolatielaag en bescherming bij het zwemmen.",
+      },
+      {
+        title: "Trimbeurt",
+        type: "grouped",
+        exampleImgs: [
+          {
+            file: "nova-scotia-duck-tolling-retriever-example.png",
+            caption: "Naturel model",
+          },
+        ],
+        intro:
+          "De trimbeurt van een Toller is vergelijkbaar met die van een Golden Retriever, maar vraagt minder tijd door de compactere bevedering:",
+        subSections: [
+          {
+            title: "Voorbereiding",
+            items: [
+              "Nagels knippen of vijlen.",
+              "Oren reinigen -> Tollers zijn waterliefhebbers, dus de oren worden extra in de gaten gehouden op vocht en infecties.",
+              "Losse vacht loswerken met een rubbere kam of ontwoller.",
+              "Waterblazer om vuil en losse haren uit de vacht te blazen.",
+            ],
+          },
+          {
+            title: "Borstelen",
+            items: [
+              "Lijnborstelen in secties tot volledig klitvrij.",
+              "Extra aandacht voor: achter de oren, kraag, dijgebieden, buikvacht en staart.",
+            ],
+          },
+          {
+            title: "Ondervacht behandelen",
+            items: [
+              "Bij veel losse ondervacht: lijngewijs ontwollen of harken in de richting van de vachtgroei.",
+              "Deze is minder uitgesproken dan bij de Golden, maar niet overslaan tijdens ruiperiode.",
+            ],
+          },
+          {
+            title: "Poten & Hakken",
+            items: [
+              "Voetzolen uitscheren voor betere grip en hygiëne.",
+              "Haar tussen de tenen bijknippen met dunscharen.",
+              "Hakkels licht bijwerken indien nodig.",
+            ],
+          },
+          {
+            title: "Afwerking",
+            items: [
+              "Oren licht bijwerken voor een natuurlijke look.",
+              "Afwerken met coat polish voor extra glans op de roodgouden vacht.",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  // P
+  {
+    slug: "pekingees",
+    name: "Pekingees",
+    heroImg: null,
+    photo: "pekingese.webp",
+    didYouKnowImg: "pekingese-royal.jpg",
+    fci: "FCI Groep 9 · Gezelschapshonden",
+    fciSlug: "groep-9",
+    metaDescription:
+      "Alles over de Pekingees: trimfrequentie, intensieve vachtverzorging en de specifieke groomingaanpak voor de leeuwenkraag. ChibiWoef.",
+    description:
+      "De Pekingees (of Pekinees) is een eeuwenoud Chinees hondenras dat oorspronkelijk exclusief werd gefokt als gezelschapshond voor de keizerlijke familie in het Gerechtelijk Hof van Beijing. Vanwege hun weelderige kraag en trotse houding stonden ze destijds bekend als 'leeuwhonden'. Tegenwoordig is het een karaktervolle, rustige gezelschapshond die erg gehecht is aan zijn eigen gezin, maar ook specifieke zorg en aandacht vraagt vanwege hun unieke vacht en bouw.",
+    weight: "3.5 – 6 kg",
+    height: "15 – 25 cm",
+    colors: [
+      { label: "Rood", cls: "red" },
+      { label: "Fawn", cls: "fawn" },
+      { label: "Crème", cls: "cream" },
+      { label: "Wit", cls: "white" },
+      { label: "Zwart", cls: "black" },
+      { label: "Grijs", cls: "gray" },
+      { label: "Biscuit", cls: "biscuit" },
+      { label: "Bruin", cls: "brown" },
+    ],
+    freq: null,
+    price: null,
+    didYouKnow: [
+      {
+        emoji: "🦁",
+        title: "De kleine leeuw van de keizer",
+        text: "Volgens een oude Chinese legende werd de Pekingees geboren uit een liefde tussen een leeuw en een vlinder. De leeuw smeekte de Boeddha om hem te verkleinen zodat hij met zijn geliefde kon zijn, maar hij behield wel zijn dappere leeuwenhart en weelderige manen. Vandaar hun trotse en moedige karakter!",
+      },
+      {
+        emoji: "👑",
+        title: "Exclusief koninklijk bezit",
+        text: "In het oude China was de Pekingees heilig. Ze mochten uitsluitend worden bezeten door leden van het keizerlijke hof in de Verboden Stad. Gewone burgers die probeerden een Pekingees te stelen, riskeerden de doodstraf. De honden werden zelfs behandeld als royalty en hadden hun eigen bedienden.",
+      },
+      {
+        emoji: " sleeve",
+        title: "Mouwhondjes",
+        text: "De allerkleinste Pekingezen stonden bekend als 'mouwhondjes'. De keizerlijke familie droeg deze mini-hondjes letterlijk in de brede, hangende mouwen van hun traditionele gewaden. Ze dienden niet alleen als gezelschap, maar ook als een soort levende kruik om de handen warm te houden.",
+      },
+      {
+        emoji: "👃",
+        title: "Gevoelig voor hitte",
+        text: "Vanwege hun extreem korte snuit (brachycefaal) kunnen Pekingezen hun warmte erg moeilijk kwijt via hijgen. In de zomer of in een warme trimsalon hebben ze snel last van ademhalingsproblemen. Koeling, rust en een airco zijn voor dit ras tijdens het trimmen van levensbelang!",
+      },
+    ],
+    sections: [
+      {
+        title: "Trimfrequentie",
+        type: "html",
+        content:
+          "De Pekingees heeft een weelderige, dubbele vacht die zeer intensieve verzorging vraagt. Hoewel ze een klein formaat hebben, is hun vachtonderhoud een grote taak. Om klitten en pijnlijke viltplekken te voorkomen, moet een Pekingees met een volle showvacht elke <strong>6 à 8 weken</strong> naar het trimsalon. Wordt de vacht korter gehouden in een praktisch model? Dan is 4 à 5 keer per jaar voldoende. De verzorging thuis blijft echter dagelijks noodzakelijk." +
+          "<ol style='padding-left:1.8rem'>" +
+          "<li><strong>Regelmatig onderhoud (elke 6-8 weken):</strong> voor het professioneel uitwollen, wassen en klitvrij maken van de lange dubbele vacht.</li>" +
+          "<li><strong>Ruiperioden:</strong> extra intensieve behandelingen om de zware ondervacht los te werken.</li>" +
+          "<li><strong>Gezichtsverzorging:</strong> de diepe neusplooi moet continu schoon en droog gehouden worden om infecties te voorkomen.</li>" +
+          "</ol>",
+        freqRow: {
+          level: "hoog",
+          label:
+            "🔴 Hoog — Elke 6 à 8 weken intensieve verzorging (of vaker thuis borstelen)",
+          price: "Was & Splash: € 45",
+          price2: "Volledige trimbeurt (Korthaar/Model): € 65",
+          price3: "Tussentijdse borstel-, ontwol- & kambeurt: € 40",
+        },
+        warning:
+          "Scheer de dubbele vacht van een Pekingees bij voorkeur niet volledig kaal. De vacht beschermt de kwetsbare huid tegen zonnebrand en helpt (ondanks de dikte) paradoxaal genoeg bij de thermoregulatie, mits deze volledig klitvrij en uitgewold is.",
+      },
+      {
+        title: "Trimbeurt",
+        type: "grouped",
+        exampleImgs: [
+          {
+            file: "pekingese-example1.jpg",
+            caption:
+              "Praktisch model met korte vacht voor makkelijker onderhoud",
+          },
+          {
+            file: "pekingese-example2.jpg",
+            caption:
+              "Praktisch model met korte vacht voor makkelijker onderhoud",
+          },
+          {
+            file: "pekingese-example.webp",
+            caption: "Model met leeuwenkraag",
+          },
+        ],
+        intro:
+          "De trimbeurt van een Pekingees is een secuur werk waarbij rust en verkoeling centraal staan vanwege hun gevoelige ademhaling:",
+        subSections: [
+          {
+            title: "Voorbereiding & Gezicht",
+            items: [
+              "Nagels knippen en de haren tussen de voetzooltjes voorzichtig wegscheren.",
+              "Grote, bolle ogen controleren en voorzichtig reinigen met een milde oogcleaner.",
+              "De diepe huidplooi boven de neus grondig reinigen en drogen om smetplekken en schimmels te voorkomen.",
+              "Oren nakijken op overtollig haar en vuil.",
+            ],
+          },
+          {
+            title: "Wassen & Drogen",
+            items: [
+              "Wassen met een milde, hydraterende shampoo die geschikt is voor een zware, dubbele vacht.",
+              "Gebruik van een rijke conditioner om het borstelen te vergemakkelijken.",
+              "Voorzichtig droogblazen met de waterblazer op een milde, lauwe stand (let op stress en oververhitting).",
+            ],
+          },
+          {
+            title: "Borstelen & Ontwollen",
+            items: [
+              "Lijngewijs borstelen met een pinnenborstel (zonder nopjes) om de ondervacht vanaf de huid los te werken.",
+              "Met een grove kam controleren op hardnekkige klitten, specifiek achter de oren, in de oksels en bij de broek (achterkant).",
+              "Dode ondervacht voorzichtig uitharken zonder de lange dekvacht te beschadigen.",
+            ],
+          },
+          {
+            title: "Modelleren & Knippen",
+            items: [
+              "De karakteristieke 'leeuwenkraag' rond de nek mooi vol uitborstelen en in model brengen.",
+              "De 'broek' en de lange bevedering aan de poten subtiel bijpunten met een effileerschaar voor een verzorgde look.",
+              "De lange staartvacht (die over de rug gedragen wordt) uitwaaieren en controleren op klitten.",
+              "Optioneel (op verzoek van eigenaar): de vacht inkorten tot een vlot, korter 'pet-coat' model voor makkelijker thuisweldadig onderhoud.",
             ],
           },
         ],

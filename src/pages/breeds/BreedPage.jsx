@@ -58,6 +58,7 @@ export default function BreedPage() {
             <span className="badge">{breed.fci}</span>
           )}
           <h1 className="page-hero__title">{breed.name}</h1>
+          <p className="page-hero__sub">{breed.description}</p>
         </div>
         {breed.heroImg && (
           <img
@@ -244,27 +245,32 @@ export default function BreedPage() {
 
       {breed.didYouKnow && (
         <section className="breed-did-you-know-section">
-          <div className="container">
-            <h2 className="breed-did-you-know-section__title">
-              💡 Wist je dat?
-            </h2>
-            {Array.isArray(breed.didYouKnow) ? (
-              <ul className="breed-page__did-you-know-list">
-                {breed.didYouKnow.map((fact) => (
-                  <li
-                    key={fact.title}
-                    className="breed-page__did-you-know-item"
-                  >
-                    <strong>
-                      {fact.emoji} {fact.title}
-                    </strong>
-                    <p>{fact.text}</p>
-                  </li>
-                ))}
-              </ul>
-            ) : (
-              <p className="breed-page__text">{breed.didYouKnow}</p>
-            )}
+          <div className="about__inner">
+            <div className="">
+              <img src={img(breed.didYouKnowImg)} alt="" aria-hidden="true" />
+            </div>
+            <div className="container">
+              <h2 className="breed-did-you-know-section__title">
+                💡 Wist je dat?
+              </h2>
+              {Array.isArray(breed.didYouKnow) ? (
+                <ul className="breed-page__did-you-know-list">
+                  {breed.didYouKnow.map((fact) => (
+                    <li
+                      key={fact.title}
+                      className="breed-page__did-you-know-item"
+                    >
+                      <strong>
+                        {fact.emoji} {fact.title}
+                      </strong>
+                      <p>{fact.text}</p>
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p className="breed-page__text">{breed.didYouKnow}</p>
+              )}
+            </div>
           </div>
         </section>
       )}
