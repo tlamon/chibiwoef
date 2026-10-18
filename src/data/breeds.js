@@ -31,10 +31,11 @@ export const breeds = [
         title: "Trimfrequentie",
         type: "text",
         content:
-          "Een labrador heeft een korte dubbele vacht. Dat betekent dat hij regelmatig geborsteld moet worden om losse haren te verwijderen en klitten te voorkomen. Één keer per week tot eens per 12 weken, afhankelijk van de levensstijl van de hond en de tijd van het jaar. Tijdens de rui periodes helpt het om de vacht vaker te wassen (bijvoorbeeld tijdens de lente en herfst), hierdoor blijft de vacht schoon en gezond en hebben jij of je robotstofzuiger minder werk.",
+          "Een labrador heeft een korte dichte stokvacht en een waterafstotende ondervacht (dubbele vacht). Dat betekent dat hij ongeveer 1 keer per week geborsteld kan worden om losse haren en vuil te verwijderen. Tijdens de rui periodes (lente en herfst) verliezen ze veel ondervacht en helpt het om de vacht vaker te borstelen (2-3 keer per week of zelfs dagelijks). Zo blijft de vacht schoon en gezond en hebben jij (of je robotstofzuiger) minder werk.",
         freqRow: {
           level: "laag",
-          label: "🟢 Laag — wassen elke 6–12 weken",
+          label:
+            "🟢 Laag — 1 keer per week borstelen met een rubberen borstel of ondervachtkam (zoals een Furminator) om de dode onderwol los te maken",
           price: "Volledige trimbeurt/Was & Splash: € 60",
         },
       },

@@ -2436,6 +2436,11 @@ h4 {
   box-shadow: var(--shadow-md);
   border: 1.5px solid var(--border);
 }
+/* Calendly */
+/* hide profile section */
+section[data-testid="profile-header-card"] {
+  display: none;
+}
 @media (max-width: 768px) {
   .contact__grid {
     grid-template-columns: 1fr;

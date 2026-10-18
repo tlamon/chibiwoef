@@ -812,7 +812,7 @@ export default function Tarieven() {
                         },
                         {
                           type: "Langhaar",
-                          note: "± 45–60 min · Maine Coon, Ragdoll, Pers, Noorse boskat…",
+                          note: "± 30–45 min · Maine Coon, Ragdoll, Pers, Noorse boskat…",
                           price: "€ 50",
                         },
                         {

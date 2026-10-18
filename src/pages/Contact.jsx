@@ -1,5 +1,5 @@
 import Cal, { getCalApi } from "@calcom/embed-react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import MobileImg from "../assets/mobile2.png";
 import HomeImg from "../assets/home.png";
 import EnvelopeImg from "../assets/envelope.png";
@@ -10,6 +10,36 @@ import BtnMessenger from "../assets/btn-messenger.png";
 import BtnInstagram from "../assets/btn-instagram.png";
 
 const CAL_USERNAME = "chibiwoef";
+
+const EVENT_TYPES = [
+  {
+    id: "wassen-drogen",
+    title: "Wash & Splash",
+    description: "Wassen, drogen, borstelen, nagels en oren verzorgen",
+    duration: "45 min - 60 min",
+    slug: "wassen-en-drogen",
+  },
+  {
+    id: "volledige-trimbeurt",
+    title: "Volledige Trimbeurt",
+    description:
+      "Wassen, drogen, knippen/scheren/plukken volgens rasstandaard of naar wens.",
+    duration: "120 min - 180 min",
+    slug: "trimbeurt",
+  },
+  {
+    id: "kambeurt-hond",
+    title: "Kambeurt Hond",
+    duration: "45 min",
+    slug: "kambeurt-hond",
+  },
+  {
+    id: "kambeurt-kat",
+    title: "Kambeurt Kat",
+    duration: "45 min",
+    slug: "kat-verzorging",
+  },
+];
 
 const INFO = {
   address: "Langerheide 26, 3150 Haacht, België",
@@ -22,19 +52,24 @@ const HOURS = [
   { day: "Donderdag", time: "08:00 – 18:00" },
   { day: "Vrijdag", time: "08:00 – 18:00" },
   { day: "Zaterdag", time: "08:00 – 13:00" },
-  // { day: "Zondag en feestdagen", time: "Gesloten" },
 ];
 
 export default function Contact() {
+  // Standaard selecteren we het eerste event type
+  const [selectedEvent, setSelectedEvent] = useState(EVENT_TYPES[0]);
+
   useEffect(() => {
     document.title = "Afspraak maken – ChibiWoef";
   }, []);
 
   useEffect(() => {
     getCalApi({ namespace: CAL_USERNAME }).then((cal) => {
-      cal("ui", { theme: "light", hideEventTypeDetails: false });
+      cal("ui", { theme: "light", hideEventTypeDetails: true });
     });
   }, []);
+
+  // Dynamische link die de juiste slug combineert met de parameter om details te verbergen
+  const currentCalLink = `${CAL_USERNAME}/${selectedEvent.slug}?hideEventTypeDetails=1`;
 
   return (
     <main>
@@ -42,8 +77,8 @@ export default function Contact() {
         <span className="badge">Kom jij ook graag snuffelen?</span>
         <h1 className="page-hero__title">Plan hier een afspraak</h1>
         <p className="page-hero__sub">
-          Kies een tijdstip dat jou past. Je ontvangt snel een bevestiging in je
-          agenda.
+          Kies een behandeling en een tijdstip dat jou past. Je ontvangt snel
+          een bevestiging.
         </p>
       </div>
 
@@ -53,9 +88,10 @@ export default function Contact() {
             <div>
               <h2 className="contact__info-heading">Welkom ♡ </h2>
               <p className="contact__info-sub">
-                We zijn geopend en we zijn er helemaal klaar voor! Plan je
-                afspraak via <a href={`mailto:${INFO.email}`}>email</a>,
-                telefoon of een van de onderstaande kanalen. Hopelijk tot snel! 
+                Klaar om jouw chibi te verwennen? Plan je afspraak via{" "}
+                <a href={`mailto:${INFO.email}`}>email</a>,{" "}
+                <a href={`tel:${INFO.phone.replace(/\s/g, "")}`}>telefoon</a> of
+                een van de onderstaande kanalen. Tot snel!
               </p>
 
               <div className="contact__messaging">
@@ -154,10 +190,10 @@ export default function Contact() {
                 </p>
                 <dl className="hours-grid">
                   {HOURS.map((h) => (
-                    <>
-                      <dt key={h.day}>{h.day}</dt>
-                      <dd key={h.time}>{h.time}</dd>
-                    </>
+                    <div key={h.day} style={{ display: "contents" }}>
+                      <dt>{h.day}</dt>
+                      <dd>{h.time}</dd>
+                    </div>
                   ))}
                 </dl>
               </div>
@@ -209,19 +245,82 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* ── Cal.com embed ── */}
-            <div className="book-form-card">
-              <Cal
-                namespace={CAL_USERNAME}
-                calLink={CAL_USERNAME}
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  minHeight: "600px",
-                  border: "none",
-                }}
-                config={{ theme: "light" }}
-              />
+            <div>
+              {/* ── STAP 1: Custom Event Type Knoppen ── */}
+              <div className="event-selector" style={{ margin: "2rem 0" }}>
+                <p style={{ fontWeight: "bold", marginBottom: "1rem" }}>
+                  1. Kies een behandeling:
+                </p>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "0.75rem",
+                  }}
+                >
+                  {EVENT_TYPES.map((event) => (
+                    <button
+                      key={event.id}
+                      type="button"
+                      onClick={() => setSelectedEvent(event)}
+                      style={{
+                        textAlign: "left",
+                        padding: "1rem",
+                        borderRadius: "8px",
+                        border:
+                          selectedEvent.id === event.id
+                            ? "2px solid #000"
+                            : "1px solid #ccc",
+                        backgroundColor:
+                          selectedEvent.id === event.id ? "#f9f9f9" : "#fff",
+                        cursor: "pointer",
+                        transition: "all 0.2s ease",
+                      }}
+                    >
+                      <div
+                        style={{
+                          display: "flex",
+                          justifyContent: "space-between",
+                          fontWeight: "bold",
+                        }}
+                      >
+                        <span>{event.title}</span>
+                        <span style={{ color: "#666" }}>{event.duration}</span>
+                      </div>
+                      <p
+                        style={{
+                          margin: "0.25rem 0 0 0",
+                          fontSize: "0.9rem",
+                          color: "#555",
+                        }}
+                      >
+                        {event.description}
+                      </p>
+                    </button>
+                  ))}
+                </div>
+              </div>
+              {/* ── STAP 2: Dynamische Cal.com embed gebaseerd op selectie ── */}
+              <div className="book-form-card">
+                <p style={{ fontWeight: "bold", marginBottom: "1rem" }}>
+                  2. Kies datum & tijdstip:
+                </p>
+                <Cal
+                  key={selectedEvent.id} // Forceert re-render van widget bij wissel van behandeling
+                  namespace={CAL_USERNAME}
+                  calLink={currentCalLink}
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    minHeight: "650px",
+                    border: "none",
+                  }}
+                  config={{
+                    theme: "light",
+                    hideEventTypeDetails: true,
+                  }}
+                />
+              </div>
             </div>
           </div>
         </div>
