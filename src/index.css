@@ -1018,7 +1018,7 @@ h4 {
 }
 @media (max-width: 768px) {
   .cta-banner {
-    padding: 24px;
+    padding: 24px 24px 170px;
     border-radius: var(--radius-lg);
     min-height: 300px;
     background-size: 90%;
@@ -1777,7 +1777,7 @@ h4 {
   width: auto;
   object-fit: contain;
   flex-shrink: 0;
-  margin: 0 auto;
+  margin: 30px auto 0;
 }
 @media (max-width: 768px) {
   .breed-page-hero {
@@ -1894,7 +1894,7 @@ breed-page__color--brown {
   color: #fff;
 }
 .breed-page__color--red {
-  background: #c0392b;
+  background: #c55f12;
   color: #fff;
 }
 .breed-page__color--teal {

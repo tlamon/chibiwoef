@@ -229,6 +229,16 @@ export default function BreedPage() {
                           {section.freqRow.price3}
                         </span>
                       )}
+                      {section.freqRow.price4 && (
+                        <span className="breed-page__freq breed-page__freq--price">
+                          {section.freqRow.price4}
+                        </span>
+                      )}
+                      {section.freqRow.price5 && (
+                        <span className="breed-page__freq breed-page__freq--price">
+                          {section.freqRow.price5}
+                        </span>
+                      )}
                     </div>
                   )}
                   {section.warning && (

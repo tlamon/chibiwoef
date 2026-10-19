@@ -8,6 +8,170 @@
  */
 
 export const breeds = [
+  // D
+  {
+    slug: "doodle",
+    name: "Doodle",
+    heroImg: "labradoodle.jpg",
+    photo: "labradoodle-colors.avif",
+    fci: "Geen FCI-erkenning · Populaire kruising / Gezelshapsmix",
+    fciSlug: "groep-9",
+    metaDescription:
+      "Alles over de Doodle-vachtverzorging: trimfrequentie, de beruchte vachtwissel, het voorkomen van vilt en handige thuistips. ChibiWoef.",
+    description:
+      "De Doodle (zoals de Labradoodle en Goldendoodle) is oorspronkelijk ontstaan uit de wens om een allergievriendelijke geleidehond te fokken. Inmiddels hebben deze 'teddyberen' de harten van duizenden gezinnen veroverd. Hoewel ze bekendstaan om hun vrolijke, sociale en intelligente karakter, is hun unieke, non-shedding krul- of golfvacht een van de meest intensieve vachttypes in het trimsalon. Zonder de juiste verzorging ligt vilt snel op de loer.",
+    weight: "3 – 35 kg",
+    height: "25 – 65 cm",
+    colors: [
+      { label: "Crème", cls: "cream" },
+      { label: "Rood", cls: "red" },
+      { label: "Chocolade", cls: "chocolate" },
+      { label: "Zwart", cls: "black" },
+      { label: "Goud", cls: "yellow" },
+      { label: "Wit", cls: "white" },
+      { label: "Zilver / Grijs", cls: "gray" },
+      { label: "Abrikoos", cls: "apricot" },
+    ],
+    freq: null,
+    price: null,
+    didYouKnow: [
+      {
+        emoji: "🦮",
+        title: "Geboren als 'hypoallergene' hulphond",
+        text: "In 1989 kruiste de Australiër Wally Conron een Labrador met een Poedel. Zijn doel? Een geleidehond fokken voor een blinde vrouw op Hawaï wiens echtgenoot zwaar allergisch was voor hondenhaartjes. De Labradoodle was geboren!",
+      },
+      {
+        emoji: "🪮",
+        title: "De beruchte 'Vachtwissel'",
+        text: "Rond de leeftijd van 7 tot 14 maanden wisselt een Doodle-pup zijn zachte puppyvacht in voor een volwassen vacht. De dode puppyharen blijven massaal in de nieuwe krullen hangen. Dit is de meest kritieke periode waarin een Doodle binnen een paar dagen compleet in de vilt kan schieten!",
+      },
+      {
+        emoji: "🧸",
+        title: "Geen 'erkend' hondenras",
+        text: "Hoewel je ze op elke straathoek ziet, is de Doodle officieel geen erkend hondenras door de FCI. Het is een kruising. Hierdoor is elke vacht een verrassing: de ene Doodle heeft dikke poedelkrullen (wool coat), de ander losse golven (fleece coat) en een enkeling heeft stugge haren (hair coat). Wist je trouwens dat de doodle voor 75% uit poedelgenen bestaat? Vandaar hun hoge intelligentie en trainbaarheid.",
+      },
+      {
+        emoji: "🌪️",
+        title: "Wandelende stofzuigers",
+        text: "Omdat een Doodle-vacht zo dicht en wollig is, werkt deze buiten als een magneet voor de natuur. Takjes, blaadjes, zand en klisbollen blijven moeiteloos in de vacht haken. Na een boswandeling nemen ze vaak het halve bos mee naar binnen!",
+      },
+    ],
+    sections: [
+      {
+        title: "Trimfrequentie & Tarieven",
+        type: "html",
+        content:
+          "De Doodle-vacht behoort tot de absolute topklasse qua onderhoudsintensiviteit. Omdat ze nauwelijks tot niet verharen, blijven alle dode haren in de vacht zitten. Wordt dit niet losgemaakt? Dan transformeert de vacht binnen no-time in een harde viltlaag die pijnlijk strak op de huid zit. Een Doodle moet elke <strong>6 à 8 weken</strong> naar het trimsalon voor een professionele behandeling. Omdat het type vacht (krul of fleece) en het gedrag van de hond de behandeltijd sterk beïnvloeden, werken wij met transparante <strong>vanaf-prijzen</strong> per gewichtsklasse:" +
+          "<ul style='padding-left:1.8rem;margin:0.6rem 0'>" +
+          "<li><strong>Doodle Klein (onder 10 kg):</strong> Ideaal voor handzame varianten (zoals de Cockapoo of Mini Doodle). Heeft een kortere behandeltijd.</li>" +
+          "<li><strong>Doodle Middel (10 tot 20 kg):</strong> De meest voorkomende, actieve gezinshond-grootte (Medium Labradoodle).</li>" +
+          "<li><strong>Doodle Groot (boven 20 kg):</strong> Vraagt de maximale behandeltijd en aanzienlijk meer droog- en knipwerk wegens het grote oppervlak (Standaard Labradoodle of Bernedoodle).</li>" +
+          "</ul>" +
+          "<ol style='padding-left:1.8rem'>" +
+          "<li><strong>Volledige trimbeurt:</strong> Inclusief wassen met professionele shampoo, conditioner, handmatig droogblazen, volledig doorkammen en modelleren met de schaar of opzetkammen.</li>" +
+          "<li><strong>Tussentijdse was- & blaasbeurt:</strong> Dé perfecte onderhoudsbeurt tussen twee grote trimbeurten in. De vacht wordt gewassen, gevoed met conditioner, volledig droog- en uitgeblazen met de waterblazer en grondig doorgekamd om klitten tijdig te verwijderen.</li>" +
+          "<li><strong>Huid- en oorverzorging:</strong> Inspectie en milde reiniging van de gehoorgang en het knippen van de nagels is bij elke behandeling standaard inbegrepen.</li>" +
+          "</ol>",
+        freqRow: {
+          level: "hoog",
+          label:
+            "🔴 Hoog — thuis borstelen: minimaal 3 tot 4 keer per week grondig vanaf de huid",
+          price: "Volledige trimbeurt - Klein (<10kg): Vanaf € 75",
+          price2: "Volledige trimbeurt - Middel (10-20kg): Vanaf € 100",
+          price3: "Volledige trimbeurt - Groot (>20kg): Vanaf € 120",
+          price4:
+            "Was- & Blaasbeurt (Was & Splash) - Klein: € 45 | Middel: € 60 | Groot: € 75",
+          price5:
+            "Meerprijs bij zware klitten/vilt (per kwartier extra werk): € 15",
+        },
+        warning:
+          "Onze tarieven zijn gebaseerd op een klitvrije vacht en een meewerkende hond. Als een Doodle ernstig vervilt in het salon binnenkomt, is er uit het oogpunt van dierenwelzijn vaak maar één milde optie: kort scheren. Het ontvilten van een volledig vervilte vacht is voor de hond pijnlijk en beschadigt de huid. Goed thuisborstelen voorkomt deze 'kort-en-kaal-beurt'!",
+      },
+      {
+        title: "De Vacht: Fleece vs. Wool",
+        type: "html",
+        content:
+          "Bij Doodles onderscheiden we hoofdzakelijk twee veeleisende vachttypes die in het salon een specifieke aanpak vragen:" +
+          "<ul style='padding-left:1.8rem;margin:0.6rem 0'>" +
+          "<li><strong>Fleece Coat (Golvend/Zacht):</strong> Deze vacht heeft losse golven of krullen en voelt zijdezacht aan. Het vraagt veel borstelwerk omdat er makkelijk pluisklitten in ontstaan.</li>" +
+          "<li><strong>Wool Coat (Krullend/Dicht):</strong> Deze lijkt erg op de poedelvacht. Het is een zeer dichte vacht met spiraalkrullen die nauwelijks vuil doorlaat, maar enorm snel vilt bij de huid.</li>" +
+          "</ul>" +
+          "Beide vachttypes worden in het trimsalon <strong>nooit geplukt</strong>, maar met de hand geknipt, geëffileerd of met speciale opzetkammen op de tondeuse gemodelleerd naar de gewenste 'teddybeer-look'.",
+      },
+      {
+        title: "Thuisverzorging: De Gouden Regels",
+        type: "html",
+        content:
+          "Thuisverzorging is bij een Doodle 80% van het werk. Gebruik de juiste materialen om het je makkelijk te maken:" +
+          "<ol style='padding-left:1.8rem;margin:0.6rem 0'>" +
+          "<li><strong>Lijngewijs borstelen:</strong> Schuif de vacht omhoog en borstel laagje voor laagje vanaf de huid naar buiten met een stevige slickerborstel (zoals een Activet). Alleen over de bovenkant aaien heeft geen zin.</li>" +
+          "<li><strong>De nacontrole:</strong> Ga na het borstelen áltijd met een metalen kam door de vacht. Blijft de kam hangen? Then zit er nog een klit.</li>" +
+          "<li><strong>Focuszones:</strong> Schenk extra aandacht aan de oksels, de liezen, achter de oren en de snuit (waar eten in blijft hangen).</li>" +
+          "</ol>",
+      },
+      {
+        title: "Trimbeurt",
+        type: "grouped",
+        exampleImgs: [
+          {
+            file: "doodle-example.jpg",
+            caption: "Soorten Doodle-vachten: van zacht golvend tot krullend",
+          },
+          {
+            file: "doodle-example.webp",
+            caption: "Teddy-look",
+          },
+          {
+            file: "doodle-example2.webp",
+            caption: "Langere vacht voor een weelderige look",
+          },
+
+          {
+            file: "doodle-example3.webp",
+            caption: "Langere vacht voor een weelderige look",
+          },
+          {
+            file: "doodle-example4.webp",
+            caption: "Teddy-look",
+          },
+          {
+            file: "doodle-example5.jpg",
+            caption: "",
+          },
+          {
+            file: "doodle-example6.jpg",
+          },
+        ],
+        intro:
+          "Een complete trimbeurt voor een Doodle is een intensieve wellness-sessie die gemiddeld 2 tot 3 uur in beslag neemt:",
+        subSections: [
+          {
+            title: "Voorbereiding & Inspectie",
+            items: [
+              "Nagels knippen en het overtollige haar tussen de voetzolen wegscheren om uitglijden te voorkomen.",
+              "De gehoorgang controleren; Doedels groeien vaak veel haar in de oren dat vuil vasthoudt. Dit wordt voorzichtig vrijgemaakt.",
+              "De vacht volledig controleren op eventuele klitten en viltplekken.",
+            ],
+          },
+          {
+            title: "Wassen & Krachtig Uitblazen",
+            items: [
+              "Grondig wassen met een diepreinigende shampoo, gevolgd door een intensief voedende conditioner om het haar elastisch te maken.",
+              "Droogblazen met de waterblazer. De krachtige luchtstroom blaast de krullen recht (stretchen), waardoor eventuele diepe miniklitten direct zichtbaar worden en de vacht makkelijker te knippen is.",
+            ],
+          },
+          {
+            title: "Knippen & Modelleren",
+            items: [
+              "De vacht wordt met een schaar of opzetkammen op de gewenste lengte gebracht (veelal de fluffy teddy-look).",
+              "De pootjes worden mooi rond ('kattenpootjes') geknipt.",
+              "De snuit wordt in een karakteristieke ronde vorm geknipt, waarbij de oogjes goed vrijgemaakt worden zodat de hond weer helder kan kijken.",
+            ],
+          },
+        ],
+      },
+    ],
+  },
   // E
   {
     slug: "engelse-cocker-spaniel",

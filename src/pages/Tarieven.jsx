@@ -189,18 +189,21 @@ const breedPriceRows = [
   { breed: "Dalmatier", coat: "Korthaar/glad", price: "€ 60" },
   {
     breed: "Doodle klein (<10kg)",
-    coat: "Krul / fleece",
-    price: "€ 75 – € 95",
+    coat: "Krul / fleece ",
+    price: "€ 75",
+    page: "/rassen/doodle",
   },
   {
     breed: "Doodle middel (10-20kg)",
     coat: "Krul / fleece",
-    price: "€ 100 – € 105",
+    price: "€ 100",
+    page: "/rassen/doodle",
   },
   {
     breed: "Doodle groot (>20kg)",
     coat: "Krul / fleece",
-    price: "€ 100 – € 120",
+    price: "€ 120",
+    page: "/rassen/doodle",
   },
   {
     breed: "Drentsche patrijshond",
