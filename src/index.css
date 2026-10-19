@@ -1931,6 +1931,10 @@ breed-page__color--brown {
   background: #8b4513;
   color: #fff;
 }
+.breed-page__color--apricot {
+  background: #fbceb1;
+  color: #000;
+}
 .breed-page__section-title {
   font-family: var(--font-heading);
   color: var(--teal-dark);

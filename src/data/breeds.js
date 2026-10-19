@@ -431,6 +431,130 @@ export const breeds = [
       },
     ],
   },
+  // M
+  {
+    slug: "mopshond",
+    name: "Mopshond",
+    heroImg: null,
+    photo: "mopshond.webp",
+    didYouKnowImg: "imperial-pugs.jpg",
+    fci: "FCI Groep 9 · Gezelschapshonden",
+    fciSlug: "groep-9",
+    metaDescription:
+      "Alles over de Mopshond: onderhoudsvriendelijke korthaarvacht, rimpelverzorging en de aanpak van het seizoensgebonden verharen. ChibiWoef.",
+    description:
+      "De Mopshond (of Pug) is een eeuwenoud en charmant gezelschapshondje dat zijn oorsprong vindt in het oude China als ware metgezel van de keizerlijke familie. Ze staan bekend om hun compacte, vierkante bouw, diepe rimpels en grote, expressieve ogen. Het is een vrolijke, loyale en komische metgezel die houdt van menselijk gezelschap, maar door zijn specifieke bouw wel de juiste zorg en aandacht nodig heeft.",
+    weight: "6.3 – 8.1 kg",
+    height: "25 – 33 cm",
+    colors: [
+      { label: "Fawn (Zandkleurig)", cls: "fawn" },
+      { label: "Zwart", cls: "black" },
+      { label: "Zilver", cls: "silver" },
+      { label: "Abrikoos", cls: "apricot" },
+    ],
+    freq: null,
+    price: null,
+    didYouKnow: [
+      {
+        emoji: "🇨🇳",
+        title: "Afstammeling van de Happa",
+        text: "De Mopshond deelt zijn wortels met de mysterieuze 'Happa'. Dit was een eeuwenoud, kortharig minihondje uit het keizerlijke China. Samen met de langharige Pekingees vormde de Happa de basis voor de kleine gezelschapshonden die we vandaag kennen. De mops is dus direct familie van de keizerlijke paleishonden!",
+      },
+      {
+        emoji: "👑",
+        title: "Het koninklijke merkteken",
+        text: "De diepe rimpels op het voorhoofd van de mops waren in het oude China zeer waardevol. De Chinezen zagen in het rimpelpatroon vaak het karakter voor 'Prins' (王). Men geloofde dat deze honden met een koninklijk merkteken werden geboren.",
+      },
+      {
+        emoji: "🔤",
+        title: "Mopperend gezicht",
+        text: "De mops heeft wereldwijd veel verschillende namen. In Engelstalige landen heet hij 'Pug' (mogelijk afgeleid van het Latijnse 'pugnus', wat vuist betekent, vanwege zijn compacte kop). In Duitsland en Nederland noemen we hem 'Mops', wat afgeleid is van het Oudhollandse woord 'mopoeren' (mopperen of een nors gezicht trekken).",
+      },
+      {
+        emoji: "👃",
+        title: "Korte snuit, grote zorg",
+        text: "Net als de Pekingees is de Mopshond brachycefaal (kortsnuitig). Ze kunnen slecht tegen extreme hitte and raken snel oververhit omdat ze hun warmte niet goed kwijt kunnen via hijgen. Tijdens warme zomerdagen of een bezoek aan het trimsalon zijn een koele omgeving en voldoende rust cruciaal.",
+      },
+    ],
+    sections: [
+      {
+        title: "Trimfrequentie",
+        type: "html",
+        content:
+          "De Mopshond heeft een korte, gladde vacht die een <strong>lage tot gemiddelde intensiteit</strong> van verzorging vraagt. Hoewel ze niet geknipt of geschoren hoeven te worden, kunnen mopsen (vooral de fawn-kleurige varianten met een dubbele vacht) enorm hard verharen. Een bezoek aan het trimsalon is voornamelijk gericht op het effectief verwijderen van losse ondervacht en het verzorgen van de huidplooien. Dit gebeurt idealiter <strong>2 à 4 keer per jaar</strong>, bij voorkeur tijdens de grote ruiperioden in het voor- en najaar." +
+          "<ol style='padding-left:1.8rem'>" +
+          "<li><strong>Rui-behandeling (2-4 keer per jaar):</strong> om de loslatende, stugge haren en ondervacht professioneel uit te wassen en te blazen.</li>" +
+          "<li><strong>Rimpel- en neusverzorging:</strong> de diepe huidplooi boven de neus moet wekelijks (thuis) gecontroleerd en schoongemaakt worden om smetplekken te voorkomen.</li>" +
+          "<li><strong>Nagelverzorging:</strong> Mopshonden lopen hun nagels door hun lichte gewicht en bouw vaak niet goed af, waardoor regelmatig knippen nodig is.</li>" +
+          "</ol>",
+        freqRow: {
+          level: "laag",
+          label:
+            "🟢 Laag tot Medium — 2 à 4 keer per jaar een rui- en opfrisbehandeling",
+          price: "Wassen & Korthaar rui-behandeling: € 45",
+          price2: "Tussentijdse plooi- & nagelverzorging: € 10",
+          price3: null,
+        },
+        warning:
+          "Doordat de Mopshond een brachycefaal ras is, kan hij slecht tegen hitte. Tijdens warme dagen of in een warme trimsalon is het belangrijk om de hond voldoende rust en koelte te bieden. Oververhitting kan leiden tot ernstige gezondheidsproblemen. Door hun compacte vorm staan hun tandjes vaak dicht op elkaar, daarom is het belangrijk om een goede mondhygiëne te handhaven, poets regelmatig de tanden en laat de tandjes controleren door een dierenarts.",
+      },
+      {
+        title: "Leuke Weetjes & Raskenmerken",
+        type: "grouped",
+        exampleImgs: [
+          {
+            file: "mops.jpg",
+            caption:
+              "Zachtaardig, loyaal, intelligent met een sprankeltje koppigheid.",
+          },
+          {
+            file: "mops2.webp",
+            caption:
+              "Een dolblij, sociaal karakter en een echte vriend voor wie dat verdient.",
+          },
+          {
+            file: "mops-teefje.jpg",
+            caption:
+              "Vierkant gebouwd, met een stevige, compacte bouw en een krulstaart die strak over de rug op de heup gedragen wordt.",
+          },
+        ],
+        intro:
+          "De Mopshond is een fascinerend ras vol verrassingen. Ontdek de unieke uiterlijke kenmerken en het gouden karakter van deze kleine royale patat:",
+        subSections: [
+          {
+            title: "Multum in Parvo (Veel in een klein beetje)",
+            items: [
+              "Ideaal vierkant gebouwd: de Mopshond hoort evenveel ruglengte als beenlengte te hebben.",
+              "Stevig en compact gebouwd, afgewerkt met een krulstaart (bij voorkeur een dubbele krul) die strak vlak over de rug op de heup gedragen wordt.",
+              "Grote, donkere en bolvormige ogen met een zachte, vragende of denkende(?) blik die met momenten ondeugend kunnen glinsteren.",
+            ],
+          },
+          {
+            title: "Gespierd, niet dik",
+            items: [
+              "Hoewel de mops er dik uit kan zien, is hij dat van nature niet! Zijn robuuste voorkomen komt door een zeer goed ontwikkeld bottenstelsel en stevige spieren.",
+              "Het zijn actieve honden die graag wandelen en rondrennen; voldoende beweging houdt hun spiermassa in topconditie.",
+            ],
+          },
+          {
+            title: "Unieke Vachttekeningen",
+            items: [
+              "Voorzien van een gitzwart, contrasterend masker rond de snuit en een donkere duimafdruk op het voorhoofd.",
+              "Beschikt over de kenmerkende 'aalstreep': een fijne, donkere lijn die van de achterhoofdsknobbel helemaal tot aan de staartpunt loopt.",
+            ],
+          },
+          {
+            title: "Karakter & Vitaliteit",
+            items: [
+              "Een zachtaardige huishond en grote kindervriend die bekenden altijd dolblij en met karakter onthaalt.",
+              "Grappig-koppig, nieuwsgierig, moedig en dol op gezelligheid. Vanwege hun gevoelige aard reageren ze het best op een consequente, maar zachte opvoeding.",
+              "Gezond en vitaal tot op hoge leeftijd: mopsen worden met gemak 13 tot 15 jaar oud, met uitschieters die zelfs de 18 jaar aantikken!",
+            ],
+          },
+        ],
+      },
+    ],
+  },
   // N
   {
     slug: "nova-scotia-duck-tolling-retriever",
@@ -571,6 +695,7 @@ export const breeds = [
       { label: "Grijs", cls: "gray" },
       { label: "Biscuit", cls: "biscuit" },
       { label: "Bruin", cls: "brown" },
+      { label: "Abrikoos", cls: "apricot" },
     ],
     freq: null,
     price: null,
@@ -690,4 +815,5 @@ export function getBreedsByFciSlug(fciSlug) {
 
 export const fciGroups = {
   "groep-8": "FCI Groep 8 · Retrievers, Spaniëls en Waterhonden",
+  "groep-9": "FCI Groep 9 · Gezelschapshonden",
 };
