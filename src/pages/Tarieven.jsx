@@ -304,7 +304,12 @@ const breedPriceRows = [
   { breed: "Mini Maltezer", coat: "Langhaar/Bevedering", price: "€ 50" },
   { breed: "Mechelse herder", coat: "Korthaar/glad", price: "€ 60" },
   { breed: "Mini Australische herder", coat: "Dubbele vacht", price: "€ 50" },
-  { breed: "Mopshond", coat: "Korthaar/glad", price: "€ 45" },
+  {
+    breed: "Mopshond",
+    coat: "Korthaar/glad",
+    price: "€ 45",
+    page: "/rassen/mopshond",
+  },
   { breed: "Morkie", coat: "Langhaar/Bevedering", price: "€ 55" },
   { breed: "Munsterlander", coat: "Langhaar/Bevedering", price: "€ 75" },
   { breed: "Norfolk terrier", coat: "Ruwharig", price: "€ 80" },
