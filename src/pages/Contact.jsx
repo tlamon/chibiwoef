@@ -23,7 +23,7 @@ const EVENT_TYPES = [
     id: "volledige-trimbeurt",
     title: "Volledige Trimbeurt",
     description:
-      "Wassen, drogen, knippen/scheren/plukken volgens rasstandaard of naar wens.",
+      "Wassen, drogen, knippen/scheren/plukken in model of naar wens.",
     duration: "120 min - 180 min",
     slug: "trimbeurt",
   },

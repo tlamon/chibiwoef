@@ -4,13 +4,23 @@ import logoImg from "../assets/logo.png";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-  const close = () => setOpen(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false); // Nieuwe state voor de mobiele dropdown
   const { pathname } = useLocation();
+
+  const closeAll = () => {
+    setOpen(false);
+    setDropdownOpen(false);
+  };
+
+  const toggleDropdown = (e) => {
+    e.preventDefault();
+    setDropdownOpen((prev) => !prev);
+  };
 
   return (
     <nav className="navbar">
       <div className="navbar__inner">
-        <Link to="/" className="navbar__logo" onClick={close}>
+        <Link to="/" className="navbar__logo" onClick={closeAll}>
           <img src={logoImg} alt="ChibiWoef" className="logo-img" />
         </Link>
 
@@ -34,25 +44,45 @@ export default function Navbar() {
                 className={({ isActive }) =>
                   `navbar__link${isActive ? " active" : ""}`
                 }
-                onClick={close}
+                onClick={closeAll}
               >
                 Home
               </NavLink>
             </li>
+
             <li className="navbar__dropdown">
-              <span
-                className={`navbar__link${pathname.startsWith("/diensten") ? " active" : ""}`}
+              <button
+                type="button"
+                className={`navbar__link dropdown-toggle ${pathname.startsWith("/diensten") ? " active" : ""}`}
+                onClick={toggleDropdown}
+                aria-expanded={dropdownOpen}
+                style={{
+                  background: "none",
+                  border: "none",
+                  width: "100%",
+                  textAlign: "left",
+                  cursor: "pointer",
+                  display: "flex",
+                  justifyContent: "between",
+                  alignItems: "center",
+                }}
               >
                 Diensten
-              </span>
-              <ul className="navbar__dropdown-menu">
+                <span style={{ marginLeft: "6px", fontSize: "12px" }}>
+                  {dropdownOpen ? "▴" : "▾"}
+                </span>
+              </button>
+
+              <ul
+                className={`navbar__dropdown-menu${dropdownOpen ? " open" : " closed"}`}
+              >
                 <li>
                   <NavLink
                     to="/diensten/trimbeurt-honden"
                     className={({ isActive }) =>
                       `navbar__dropdown-item${isActive ? " active" : ""}`
                     }
-                    onClick={close}
+                    onClick={closeAll}
                   >
                     Trimbeurt honden
                   </NavLink>
@@ -63,7 +93,7 @@ export default function Navbar() {
                     className={({ isActive }) =>
                       `navbar__dropdown-item${isActive ? " active" : ""}`
                     }
-                    onClick={close}
+                    onClick={closeAll}
                   >
                     Trimbeurt katten
                   </NavLink>
@@ -74,7 +104,7 @@ export default function Navbar() {
                     className={({ isActive }) =>
                       `navbar__dropdown-item${isActive ? " active" : ""}`
                     }
-                    onClick={close}
+                    onClick={closeAll}
                   >
                     Was &amp; Splash
                   </NavLink>
@@ -85,7 +115,7 @@ export default function Navbar() {
                     className={({ isActive }) =>
                       `navbar__dropdown-item${isActive ? " active" : ""}`
                     }
-                    onClick={close}
+                    onClick={closeAll}
                   >
                     Kambeurt
                   </NavLink>
@@ -96,7 +126,7 @@ export default function Navbar() {
                     className={({ isActive }) =>
                       `navbar__dropdown-item${isActive ? " active" : ""}`
                     }
-                    onClick={close}
+                    onClick={closeAll}
                   >
                     Puppy gewenning
                   </NavLink>
@@ -107,7 +137,7 @@ export default function Navbar() {
                     className={({ isActive }) =>
                       `navbar__dropdown-item${isActive ? " active" : ""}`
                     }
-                    onClick={close}
+                    onClick={closeAll}
                   >
                     Gewenning
                   </NavLink>
@@ -118,42 +148,43 @@ export default function Navbar() {
                     className={({ isActive }) =>
                       `navbar__dropdown-item${isActive ? " active" : ""}`
                     }
-                    onClick={close}
+                    onClick={closeAll}
                   >
                     Ontspanningsmassage
                   </NavLink>
                 </li>
               </ul>
-            </li>{" "}
+            </li>
+
             <li>
               <NavLink
                 to="/huisregels"
                 className={({ isActive }) =>
                   `navbar__link${isActive ? " active" : ""}`
                 }
-                onClick={close}
+                onClick={closeAll}
               >
                 Huisregels
               </NavLink>
-            </li>{" "}
+            </li>
             <li>
               <NavLink
                 to="/tarieven"
                 className={({ isActive }) =>
                   `navbar__link${isActive ? " active" : ""}`
                 }
-                onClick={close}
+                onClick={closeAll}
               >
                 Tarieven
               </NavLink>
-            </li>{" "}
+            </li>
             <li>
               <NavLink
                 to="/contact"
                 className={({ isActive }) =>
                   `navbar__link cta-link${isActive ? " active" : ""}`
                 }
-                onClick={close}
+                onClick={closeAll}
               >
                 Contact
               </NavLink>

@@ -320,15 +320,21 @@ h4 {
 @media (max-width: 768px) {
   .navbar__dropdown-menu {
     position: static;
-    display: flex;
     box-shadow: none;
     border: none;
+    display: none;
     padding: 0 0 0 16px;
     background: transparent;
   }
   .navbar__dropdown-item {
     font-size: 15px;
-    padding: 6px 8px;
+    padding: 6px 20px;
+  }
+  .navbar__dropdown-menu.closed {
+    display: none !important;
+  }
+  .navbar__dropdown-menu.open {
+    display: flex !important;
   }
 }
 .navbar__hamburger {
