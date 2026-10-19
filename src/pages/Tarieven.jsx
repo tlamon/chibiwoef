@@ -190,7 +190,7 @@ const breedPriceRows = [
   {
     breed: "Doodle klein (<10kg)",
     coat: "Krul / fleece ",
-    price: "€ 75",
+    price: "€ 80",
     page: "/rassen/doodle",
   },
   {
