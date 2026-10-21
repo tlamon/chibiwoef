@@ -10,6 +10,7 @@ import DogLIcon from "../assets/dog-l.svg";
 import DoggyBackIcon from "../assets/doggy-back-icon.webp";
 import CatIcon from "../assets/cat-icon.png";
 import KittieStareImg from "../assets/kittie-stare.png";
+import ContactBanner from "../components/ContactBanner";
 
 const treatments = [
   {
@@ -123,7 +124,9 @@ const parseEuro = (price) => Number(price.replace(/[^\d]/g, ""));
 
 const getDiscountedPrice = (price, discount) => {
   const discountedAmount = parseEuro(price) * (1 - discount);
-  return formatEuro(Math.round(discountedAmount / 5) * 5);
+  // Afronden op € 0,50 nauwkeurig
+  const roundedAmount = Math.round(discountedAmount * 2) / 2;
+  return formatEuro(roundedAmount);
 };
 
 // handles single prices and ranges like "€ 75 – € 95"
@@ -441,13 +444,13 @@ export default function Tarieven() {
                   </p>
                   <div className="pricing-promo">
                     <p className="pricing-promo__item pricing-promo__item--current">
-                      Opstartactie september t.e.m. november 2026:
+                      Opstartactie september t.e.m. december 2026:
                       <strong>
                         15% kennismakingskorting op alle trimbeurten!
                       </strong>
                     </p>
                     <p className="pricing-promo__item pricing-promo__item--next">
-                      December 2026 t.e.m. februari 2027:
+                      januari 2027 t.e.m. maart 2027:
                       <strong>10% opstartkorting op alle trimbeurten!</strong>
                     </p>
 
@@ -885,25 +888,11 @@ export default function Tarieven() {
                 </p>
               </div>
             </div>
-
-            {/* CTA */}
-            <div className="cta-banner cta-banner--contact">
-              <img
-                src={MobileImg}
-                className="cta-banner__icon"
-                alt=""
-                aria-hidden="true"
-              />
-              <div className="cta-banner__text">
-                <h2 className="cta-banner__title">Plan een afspraak</h2>
-                <a href="tel:+32496309459" className="cta-banner__phone">
-                  +32 496 309 459
-                </a>
-              </div>
-            </div>
           </div>
         </div>
       </section>
+      {/* ── CTA Banner ── */}
+      <ContactBanner />
     </main>
   );
 }
