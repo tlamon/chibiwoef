@@ -967,6 +967,135 @@ export const breeds = [
       },
     ],
   },
+  // Y
+  {
+    slug: "yorkshire-terrier",
+    name: "Yorkshire Terriër",
+    heroImg: null,
+    photo: "yorkshire-terrier.jpg",
+    fci: "FCI Groep 3 · Terriërs",
+    fciSlug: "groep-3",
+    metaDescription:
+      "Alles over de Yorkshire Terriër: trimfrequentie, de zijdeachtige vacht zonder ondervacht en de specifieke groomingaanpak voor de topknot. ChibiWoef.",
+    description:
+      "De Yorkshire Terriër is een van de kleinste en populairste terriërrassen ter wereld. Oorspronkelijk gefokt in het noorden van Engeland voor de jacht op ongedierte, is deze kleine 'reus' tegenwoordig een geliefde en pittige gezelschapshond. Hun meest opvallende kenmerk is de prachtige, staalblauwe en tankleurige vacht die van nature zijdezacht is en tot aan de grond kan groeien. Een Yorkie heeft karakter in overvloed, maar vraagt door zijn unieke haarstructuur wel om een consequente vachtverzorging.",
+    weight: "2.5 – 3.2 kg",
+    height: "15 – 23 cm",
+    colors: [
+      { label: "Staalblauw & Tan", cls: "blue" },
+      { label: "Zwart & Tan", cls: "black" },
+      { label: "Zwart & Goud", cls: "yellow" },
+    ],
+    freq: null,
+    price: null,
+    didYouKnow: [
+      {
+        emoji: "🏭",
+        title: "Van textielfabriek naar de catwalk",
+        text: "In de 19e eeuw werden Yorkies door Schotse wevers meegenomen naar de textielfabrieken en kolenmijnen in Yorkshire. Door hun compacte formaat en razendsnelle reflexen waren ze de ultieme jagers op ratten en muizen tussen de ronkende machines. Pas later ontdekte de high-society hoe elegant ze waren!",
+      },
+      {
+        emoji: "💆",
+        title: "Menselijk haar in plaats van bont",
+        text: "De vacht van een Yorkshire Terriër is heel bijzonder: ze hebben namelijk geen ondervacht en hun haren verharen amper. De structuur lijkt sprekend op menselijk haar; het groeit continu door en raakt niet in de rui. Hierdoor worden ze vaak beter verdragen door mensen met een milde hondenallergie.",
+      },
+      {
+        emoji: "🎖️",
+        title: "De eerste officiële therapiehond",
+        text: "Een kleine Yorkie genaamd Smoky werd tijdens de Tweede Wereldoorlog gevonden in de jungle van Nieuw-Guinea. Ze overleefde tientallen gevechtsmissies en bezocht gewonde soldaten in de hospitalen. Smoky bleek een ongekend helend effect te hebben op de soldaten en ging de boeken in als de allereerste geregistreerde therapiehond.",
+      },
+      {
+        emoji: "🎀",
+        title: "De functionele 'Topknot'",
+        text: "Het iconische elastiekje of strikje op het hoofd van een Yorkie (de topknot) is niet alleen voor de show. Omdat de haren op hun snuit en voorhoofd erg lang worden, vallen ze continu in de grote, donkere ogen. De topknot voorkomt chronische oogirritaties en zorgt ervoor dat de hond weer vrij kan kijken.",
+      },
+    ],
+    sections: [
+      {
+        title: "Trimfrequentie",
+        type: "html",
+        content:
+          "Hoewel de Yorkshire Terriër een minihondje is, mag de vachtverzorging absoluut niet onderschat worden. Omdat het haar continu doorgroeit en heel fijn van structuur is, ontstaan er achter de oren, in de oksels en bij de pootjes razendsnel hardnekkige klitten. Om de vacht gezond, glanzend en klitvrij te houden, moet een Yorkie elke <strong>6 à 8 weken</strong> naar het trimsalon. Wordt de vacht in een heel kort en praktisch 'puppy-model' gehouden? Dan is een bezoek om de 8 à 10 weken vaak voldoende.",
+        freqRow: {
+          level: "regelmatig",
+          label:
+            "🟡 Regelmatig - minimaal 2 tot 3 keer per week thuis borstelen",
+          price: "Was & Splash (Tussentijds): € 40",
+          price2: "Volledige trimbeurt (Knippen/Model): € 60",
+          price3: "Tussentijdse borstel- & kambeurt: € 20",
+        },
+        warning:
+          "Gebruik thuis nooit een gewone hondenborstel met dikke nopjes; deze trekken de fijne zijdeharen kapot. Kies altijd voor een zachte slickerborstel zonder nopjes en een fijne metalen kam om tot diep op de huid te controleren.",
+      },
+      {
+        title: "De Vacht: Geen Ondervacht",
+        type: "html",
+        content:
+          "Omdat de Yorkshire Terriër geen ondervacht (wol) heeft, is de verzorging anders dan bij de meeste kleine hondjes:" +
+          "<ul style='padding-left:1.8rem;margin:0.6rem 0'>" +
+          "<li><strong>Geen plukvacht:</strong> Hoewel het een terriër is, wordt de zijdeachtige vacht van een Yorkie <em>nooit</em> geplukt.</li>" +
+          "<li><strong>Knippen of Scheren:</strong> In het trimsalon wordt de vacht met de hand geknipt (voor een vloeiende, natuurlijke look) of met opzetkammen zachtjes gemodelleerd naar de wensen van de eigenaar.</li>" +
+          "<li><strong>Gevoelig voor kou en nattigheid:</strong> Door het ontbreken van die isolerende wollaag hebben Yorkies het snel koud. Een goede was- en droogbeurt met warme handdoeken is in de trimsalon dan ook pure verwennerij.</li>" +
+          "</ul>",
+      },
+      {
+        title: "Trimbeurt",
+        type: "grouped",
+        exampleImgs: [
+          {
+            file: "yorkie.jpg",
+          },
+          {
+            file: "yorkie2.jpeg",
+          },
+          {
+            file: "yorkie3.jpg",
+          },
+          {
+            file: "yorkie4.jpeg",
+          },
+          {
+            file: "yorkie5.webp",
+            caption:
+              "Een Yorkie met een klassieke topknot en een kort model op het lichaam met langere poten.",
+          },
+          {
+            file: "yorkie6.jpg",
+            caption: "Een Yorkie met een teddybeer model.",
+          },
+        ],
+        intro:
+          "Een complete trimbeurt voor een Yorkshire Terriër is een verfijnd precisiewerkje waarbij we comfort en een schattige uitstraling combineren:",
+        subSections: [
+          {
+            title: "Hygiëne & Voorbereiding",
+            items: [
+              "Nageltjes zorgvuldig knippen. Omdat ze zo licht zijn, slijten de nagels nauwelijks vanzelf af.",
+              "De gevoelige ooghoeken heel voorzichtig reinigen en de traanstrepen vrijmaken van harde korstjes.",
+              "De haartjes aan de binnenkant en op de bovenste eenderde van de oren heel kort scheren (volgens de rasstandaard) zodat de oren mooi rechtop blijven staan en niet doorhangen.",
+              "De hygiënische zones (buik en rond de anus) netjes kortzetten voor een optimale hygiëne thuis.",
+            ],
+          },
+          {
+            title: "Zijdezacht Wassen",
+            items: [
+              "Wassen met een milde, intensief voedende glansshampoo die speciaal geschikt is voor fijne haarstructuren.",
+              "Gebruik van een hoogwaardige conditioner of maskertje om het haar extra soepel te maken, te beschermen tegen afbreken en glans te geven.",
+              "Met een handdoek droogdeppen (niet wild wrijven om klitten te voorkomen) en daarna handmatig droogfohnen terwijl er gelijktijdig wordt uitgeborsteld.",
+            ],
+          },
+          {
+            title: "Styling & Knippen",
+            items: [
+              "Het hoofdje mooi rond uitknippen in een guitig 'teddy-face' of het haar op het hoofd juist lang laten voor de klassieke topknot.",
+              "Het lichaam stylen naar keuze: een vlot kortharig sportmodel of het subtiel bijpunten van de lange, vallende zijdeharen.",
+              "De voetjes netjes rondom vrijknippen ('kattenpootjes') zodat de hond geen vuil of steentjes mee naar binnen loopt.",
+            ],
+          },
+        ],
+      },
+    ],
+  },
 ];
 
 export function getBreed(slug) {
@@ -978,6 +1107,15 @@ export function getBreedsByFciSlug(fciSlug) {
 }
 
 export const fciGroups = {
+  "groep-1": "FCI Groep 1 · Herdershonden en Veedrijvers",
+  "groep-2": "FCI Groep 2 · Pinschers, Schnauzers, Molossers en Sennenhonden",
+  "groep-3": "FCI Groep 3 · Terriërs",
+  "groep-4": "FCI Groep 4 · Teckels",
+  "groep-5": "FCI Groep 5 · Spitsen en Oertypen",
+  "groep-6": "FCI Groep 6 · Lopende honden, zweethonden en verwante rassen",
+  "groep-7": "FCI Groep 7 · Voorstaande honden",
   "groep-8": "FCI Groep 8 · Retrievers, Spaniëls en Waterhonden",
   "groep-9": "FCI Groep 9 · Gezelschapshonden",
+  "groep-10": "FCI Groep 10 · Windhonden",
+  "groep-11": "Niet erkende rassen of kruisingen",
 };

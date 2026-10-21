@@ -396,7 +396,12 @@ const breedPriceRows = [
   { breed: "West Highland white terrier", coat: "Ruwharig", price: "€ 65" },
   { breed: "Whippet", coat: "Korthaar/glad", price: "€ 55" },
   { breed: "Wolfskeeshond", coat: "Dubbele vacht", price: "€ 85" },
-  { breed: "Yorkshire terrier", coat: "Langhaar/Bevedering", price: "€ 60" },
+  {
+    breed: "Yorkshire terrier",
+    coat: "Langhaar/Bevedering",
+    price: "€ 60",
+    page: "/rassen/yorkshire-terrier",
+  },
   { breed: "Zwitserse herder", coat: "Dubbele vacht", price: "€ 90" },
 ];
 

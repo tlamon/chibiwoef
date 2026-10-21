@@ -255,7 +255,7 @@ export default function BreedPage() {
 
       {breed.didYouKnow && (
         <section className="breed-did-you-know-section">
-          <div className="about__inner">
+          <div className={` ${breed.didYouKnowImg && "about__inner"}`}>
             {breed.didYouKnowImg && (
               <div className="">
                 <img src={img(breed.didYouKnowImg)} alt="" aria-hidden="true" />
