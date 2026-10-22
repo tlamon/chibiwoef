@@ -63,9 +63,10 @@ export const breeds = [
         content:
           "De Doodle-vacht behoort tot de absolute topklasse qua onderhoudsintensiviteit. Omdat ze nauwelijks tot niet verharen, blijven alle dode haren in de vacht zitten. Wordt dit niet losgemaakt? Dan transformeert de vacht binnen no-time in een harde viltlaag die pijnlijk strak op de huid zit. Een Doodle moet elke <strong>6 à 8 weken</strong> naar het trimsalon voor een professionele behandeling. Omdat het type vacht (krul of fleece) en het gedrag van de hond de behandeltijd sterk beïnvloeden, werken wij met transparante <strong>vanaf-prijzen</strong> per gewichtsklasse:" +
           "<ul style='padding-left:1.8rem;margin:0.6rem 0'>" +
-          "<li><strong>Doodle Klein (onder 10 kg):</strong> Ideaal voor handzame varianten (zoals de Cockapoo of Mini Doodle). Heeft een kortere behandeltijd.</li>" +
-          "<li><strong>Doodle Middel (10 tot 20 kg):</strong> De meest voorkomende, actieve gezinshond-grootte (Medium Labradoodle).</li>" +
-          "<li><strong>Doodle Groot (boven 20 kg):</strong> Vraagt de maximale behandeltijd en aanzienlijk meer droog- en knipwerk wegens het grote oppervlak (Standaard Labradoodle of Bernedoodle).</li>" +
+          "<li><strong>Doodle mini/extra klein (<5kg):</strong> Voor de allerkleinste Doodles, zoals de Toy Doodle. Heeft de kortste behandeltijd.</li>" +
+          "<li><strong>Doodle Klein (5-10kg):</strong> Ideaal voor handzame varianten (zoals de Cockapoo of Mini Doodle). Heeft een kortere behandeltijd.</li>" +
+          "<li><strong>Doodle Middel (10-20kg):</strong> De meest voorkomende, actieve gezinshond-grootte (Medium Labradoodle).</li>" +
+          "<li><strong>Doodle Groot (>20kg):</strong> Vraagt de maximale behandeltijd en aanzienlijk meer droog- en knipwerk wegens het grote oppervlak (Standaard Labradoodle of Bernedoodle).</li>" +
           "</ul>" +
           "<ol style='padding-left:1.8rem'>" +
           "<li><strong>Volledige trimbeurt:</strong> Inclusief wassen met professionele shampoo, conditioner, handmatig droogblazen, volledig doorkammen en modelleren met de schaar of opzetkammen.</li>" +
@@ -75,8 +76,9 @@ export const breeds = [
         freqRow: {
           level: "hoog",
           label:
-            "🔴 Hoog — thuis borstelen: minimaal 3 tot 4 keer per week grondig vanaf de huid",
-          price: "Volledige trimbeurt - Klein (<10kg): Vanaf € 75",
+            "🔴 Hoog — minimaal 3 tot 4 keer per week grondig borstelen (vanaf de huid)",
+          price: "Volledige trimbeurt - Extra klein (<5kg): Vanaf € 75",
+          price: "Volledige trimbeurt - Klein (5-10kg): Vanaf € 80",
           price2: "Volledige trimbeurt - Middel (10-20kg): Vanaf € 100",
           price3: "Volledige trimbeurt - Groot (>20kg): Vanaf € 120",
           price4:
@@ -902,7 +904,7 @@ export const breeds = [
             "🔴 Hoog — Elke 6 à 8 weken intensieve verzorging (of vaker thuis borstelen)",
           price: "Was & Splash: € 45",
           price2: "Volledige trimbeurt (Korthaar/Model): € 65",
-          price3: "Tussentijdse borstel-, ontwol- & kambeurt: € 40",
+          price3: "Tussentijdse borstel- & kambeurt: € 40",
         },
         warning:
           "Scheer de dubbele vacht van een Pekingees bij voorkeur niet volledig kaal. De vacht beschermt de kwetsbare huid tegen zonnebrand en helpt (ondanks de dikte) paradoxaal genoeg bij de thermoregulatie, mits deze volledig klitvrij en uitgewold is.",

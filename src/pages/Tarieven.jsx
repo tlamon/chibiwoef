@@ -93,7 +93,7 @@ const pricingRows = [
     l: "€ 75",
   },
   {
-    coatType: "Krul / fleece (tot 2 cm)",
+    coatType: "Krul/fleece (tot 2 cm)",
     note: "Ontwollen, was-, droog- & knipwerk, nagels knippen en oren reinigen, volledige snit (kort)",
     xs: "€ 70",
     s: "€ 75",
@@ -101,7 +101,7 @@ const pricingRows = [
     l: "€ 100",
   },
   {
-    coatType: "Krul / fleece (langer dan 2 cm)",
+    coatType: "Krul/fleece (langer dan 2 cm)",
     note: "Ontwollen, wassen, drogen & modelknippen, nagels knippen en oren reinigen",
     xs: "€ 85",
     s: "€ 95",
@@ -158,8 +158,8 @@ const breedPriceRows = [
   { breed: "Basset hound", coat: "Korthaar/glad", price: "€ 60" },
   { breed: "Beagle", coat: "Korthaar/glad", price: "€ 55" },
   { breed: "Bearded collie", coat: "Langhaar/Bevedering", price: "€ 90" },
-  { breed: "Bedlington terrier", coat: "Krul / fleece", price: "€ 70" },
-  { breed: "Bichon frise", coat: "Krul / fleece", price: "€ 70 – € 85" },
+  { breed: "Bedlington terrier", coat: "Krul/fleece", price: "€ 70" },
+  { breed: "Bichon frise", coat: "Krul/fleece", price: "€ 70 – € 85" },
   { breed: "Boemer", coat: "Korthaar/glad", price: "€ 55" },
   { breed: "Border collie", coat: "Dubbele vacht", price: "€ 65" },
   { breed: "Border terrier", coat: "Ruwharig", price: "€ 70" },
@@ -175,12 +175,12 @@ const breedPriceRows = [
     coat: "Langhaar/Bevedering",
     price: "€ 65",
   },
-  { breed: "Cavapoo", coat: "Krul / fleece", price: "€ 75 – € 95" },
+  { breed: "Cavapoo", coat: "Krul/fleece", price: "€ 80" },
   { breed: "Chihuahua korthaar", coat: "Korthaar/glad", price: "€ 45" },
   { breed: "Chihuahua langhaar", coat: "Langhaar/Bevedering", price: "€ 50" },
   { breed: "Chinese naakthond", coat: "Korthaar/glad", price: "€ 45" },
   { breed: "Clumber spaniel", coat: "Langhaar/Bevedering", price: "€ 70" },
-  { breed: "Cockapoo", coat: "Krul / fleece", price: "€ 75 – € 95" },
+  { breed: "Cockapoo", coat: "Krul/fleece", price: "€ 80" },
   {
     breed: "Cocker Spaniel (Engels)",
     coat: "Langhaar/Bevedering met plukvacht",
@@ -191,20 +191,26 @@ const breedPriceRows = [
   { breed: "Coton de tulear", coat: "Langhaar/Bevedering", price: "€ 70" },
   { breed: "Dalmatier", coat: "Korthaar/glad", price: "€ 60" },
   {
-    breed: "Doodle klein (<10kg)",
-    coat: "Krul / fleece ",
+    breed: "Doodle extra klein (<5kg)",
+    coat: "Krul/fleece",
+    price: "€ 75",
+    page: "/rassen/doodle",
+  },
+  {
+    breed: "Doodle klein (5-10kg)",
+    coat: "Krul/fleece ",
     price: "€ 80",
     page: "/rassen/doodle",
   },
   {
     breed: "Doodle middel (10-20kg)",
-    coat: "Krul / fleece",
+    coat: "Krul/fleece",
     price: "€ 100",
     page: "/rassen/doodle",
   },
   {
     breed: "Doodle groot (>20kg)",
-    coat: "Krul / fleece",
+    coat: "Krul/fleece",
     price: "€ 120",
     page: "/rassen/doodle",
   },
@@ -278,25 +284,30 @@ const breedPriceRows = [
   {
     breed: "Keeshond klein / Dwergkees / Pomeriaan (<5kg)",
     coat: "Dubbele vacht",
-    price: "€ 60",
+    price: "€ 70",
   },
-  { breed: "Keeshond middel", coat: "Dubbele vacht", price: "€ 65" },
-  { breed: "Kerry blue terrier", coat: "Krul / fleece", price: "€ 100" },
+  { breed: "Keeshond middel", coat: "Dubbele vacht", price: "€ 75" },
+  {
+    breed: "Keeshond groot (Wolfskeeshond)",
+    coat: "Dubbele vacht",
+    price: "€ 85",
+  },
+  { breed: "Kerry blue terrier", coat: "Krul/fleece", price: "€ 100" },
   { breed: "Kooikerhondje", coat: "Langhaar/Bevedering", price: "€ 60" },
   { breed: "Laekense herder", coat: "Ruwharig", price: "€ 75" },
   {
     breed: "Labradoedel klein (<10kg)",
-    coat: "Krul / fleece",
+    coat: "Krul/fleece",
     price: "€ 75 – € 95",
   },
   {
     breed: "Labradoedel middel (10-20kg)",
-    coat: "Krul / fleece",
+    coat: "Krul/fleece",
     price: "€ 100 – € 105",
   },
   {
     breed: "Labradoedel groot (>20kg)",
-    coat: "Krul / fleece",
+    coat: "Krul/fleece",
     price: "€ 100 – € 120",
   },
   {
@@ -307,6 +318,7 @@ const breedPriceRows = [
   },
   { breed: "Lhasa apso", coat: "Langhaar/Bevedering", price: "€ 70" },
   { breed: "Maltezer", coat: "Langhaar/Bevedering", price: "€ 65" },
+  { breed: "Maltipoo", coat: "Krul/fleece", price: "€ 80" },
   { breed: "Mini Maltezer", coat: "Langhaar/Bevedering", price: "€ 50" },
   { breed: "Mechelse herder", coat: "Korthaar/glad", price: "€ 60" },
   { breed: "Mini Australische herder", coat: "Dubbele vacht", price: "€ 50" },
@@ -332,17 +344,18 @@ const breedPriceRows = [
     price: "€ 60",
     page: "/rassen/pekingees",
   },
-  { breed: "Poedel toy (<4 kg)", coat: "Krul / fleece", price: "€ 70" },
-  { breed: "Poedel klein (4–8 kg)", coat: "Krul / fleece", price: "€ 75" },
+  { breed: "Poedel toy (<4 kg)", coat: "Krul/fleece", price: "€ 70" },
+
+  { breed: "Poedel klein (4–8 kg)", coat: "Krul/fleece", price: "€ 75" },
   {
     breed: "Poedel middenslag (8–15 kg)",
-    coat: "Krul / fleece",
+    coat: "Krul/fleece",
     price: "€ 85",
   },
   {
     breed: "Poedel groot / Koningspoedel (>15 kg)",
-    coat: "Krul / fleece",
-    price: "€ 110",
+    coat: "Krul/fleece",
+    price: "€ 120",
   },
   { breed: "Pomeranian / dwergkees", coat: "Dubbele vacht", price: "€ 60" },
   { breed: "Powderpuff", coat: "Langhaar/Bevedering", price: "€ 55" },
@@ -363,7 +376,7 @@ const breedPriceRows = [
   { breed: "Siberische husky", coat: "Dubbele vacht", price: "€ 80" },
   { breed: "Sky terrier", coat: "Langhaar/Bevedering", price: "€ 70" },
   { breed: "Soft coated wheaten terrier", coat: "Ruwharig", price: "€ 70" },
-  { breed: "Spaanse waterhond", coat: "Krul / fleece", price: "€ 85 – € 105" },
+  { breed: "Spaanse waterhond", coat: "Krul/fleece", price: "€ 85 – € 105" },
   { breed: "Sussex spaniel", coat: "Langhaar/Bevedering", price: "€ 70" },
   { breed: "Teckel Kaninchen korthaar", coat: "Korthaar/glad", price: "€ 45" },
   {
@@ -443,8 +456,9 @@ export default function Tarieven() {
                 <div className="content-block__head">
                   <p className="content-block__sub">
                     Richtprijzen incl. 21% BTW. De definitieve prijs hangt af
-                    van de vachtconditie en het gedrag. Voorlopig werken we met
-                    dieren tot en met een gewicht van 30 kg.
+                    van de vachtconditie en het gedrag van de hond. Voorlopig
+                    werken we alleen met dieren tot en met een gewicht van 30
+                    kg.
                   </p>
                   <div className="pricing-promo">
                     <p className="pricing-promo__item pricing-promo__item--current">
