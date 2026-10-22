@@ -180,7 +180,7 @@ const breedPriceRows = [
   { breed: "Chihuahua langhaar", coat: "Langhaar/Bevedering", price: "€ 50" },
   { breed: "Chinese naakthond", coat: "Korthaar/glad", price: "€ 45" },
   { breed: "Clumber spaniel", coat: "Langhaar/Bevedering", price: "€ 70" },
-  { breed: "Cockapoo", coat: "Krul/fleece", price: "€ 80" },
+  { breed: "Cockapoo", coat: "Krul/fleece", price: "€ 85" },
   {
     breed: "Cocker Spaniel (Engels)",
     coat: "Langhaar/Bevedering met plukvacht",
