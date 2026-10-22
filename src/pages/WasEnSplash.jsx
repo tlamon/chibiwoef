@@ -86,9 +86,9 @@ export default function WasEnSplash() {
               </div>
 
               <p className="pricing-note">
-                <strong>⚠️ Let op:</strong> de Was &amp; Splash is géén
-                rui-behandeling of zware ontklitbeurt. Zit de vacht vol
-                hardnekkige knopen of losse onderwol? Kies dan voor een{" "}
+                <strong>⚠️</strong> de Was &amp; Splash is géén rui-behandeling
+                of zware ontklitbeurt. Zit de vacht vol hardnekkige knopen of
+                losse onderwol? Kies dan voor een{" "}
                 <Link to="/diensten/trimbeurt-honden">volledige trimbeurt</Link>
                 . Bekijk de prijstabel op de{" "}
                 <Link to="/tarieven">tariefpagina</Link>.

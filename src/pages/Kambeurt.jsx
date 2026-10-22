@@ -70,8 +70,8 @@ export default function Kambeurt() {
                 </div>
               </div>
               <p className="pricing-note">
-                <strong>⚠️ Let op:</strong> Zit de vacht vol hardnekkige knopen
-                en vervilte plekken die moeilijk te verwijderen zijn, kiezen we
+                <strong>⚠️ </strong> Zit de vacht vol hardnekkige knopen en
+                vervilte plekken die moeilijk te verwijderen zijn, kiezen we
                 voor het welzijn van jouw dier en bespreken we samen een passend
                 alternatief. Dit voorkomt onnodige stress en/of pijn voor jouw
                 huisdier.
