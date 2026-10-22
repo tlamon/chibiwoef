@@ -159,7 +159,7 @@ const breedPriceRows = [
   { breed: "Beagle", coat: "Korthaar/glad", price: "€ 55" },
   { breed: "Bearded collie", coat: "Langhaar/Bevedering", price: "€ 90" },
   { breed: "Bedlington terrier", coat: "Krul/fleece", price: "€ 70" },
-  { breed: "Bichon frise", coat: "Krul/fleece", price: "€ 70 – € 85" },
+  { breed: "Bichon frise", coat: "Krul/fleece", price: "€ 70" },
   { breed: "Boemer", coat: "Korthaar/glad", price: "€ 55" },
   { breed: "Border collie", coat: "Dubbele vacht", price: "€ 65" },
   { breed: "Border terrier", coat: "Ruwharig", price: "€ 70" },
@@ -295,20 +295,27 @@ const breedPriceRows = [
   { breed: "Kerry blue terrier", coat: "Krul/fleece", price: "€ 100" },
   { breed: "Kooikerhondje", coat: "Langhaar/Bevedering", price: "€ 60" },
   { breed: "Laekense herder", coat: "Ruwharig", price: "€ 75" },
+
   {
-    breed: "Labradoedel klein (<10kg)",
+    breed: "Labradoedel extra klein (<5kg)",
     coat: "Krul/fleece",
-    price: "€ 75 – € 95",
+    price: "€ 75",
+    page: "/rassen/doodle",
+  },
+  {
+    breed: "Labradoedel klein (5-10kg)",
+    coat: "Krul/fleece",
+    price: "€ 80",
   },
   {
     breed: "Labradoedel middel (10-20kg)",
     coat: "Krul/fleece",
-    price: "€ 100 – € 105",
+    price: "€ 100",
   },
   {
     breed: "Labradoedel groot (>20kg)",
     coat: "Krul/fleece",
-    price: "€ 100 – € 120",
+    price: "€ 120",
   },
   {
     breed: "Labrador retriever",
