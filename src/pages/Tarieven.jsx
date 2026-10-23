@@ -306,16 +306,19 @@ const breedPriceRows = [
     breed: "Labradoedel klein (5-10kg)",
     coat: "Krul/fleece",
     price: "€ 80",
+    page: "/rassen/doodle",
   },
   {
     breed: "Labradoedel middel (10-20kg)",
     coat: "Krul/fleece",
     price: "€ 100",
+    page: "/rassen/doodle",
   },
   {
     breed: "Labradoedel groot (>20kg)",
     coat: "Krul/fleece",
     price: "€ 120",
+    page: "/rassen/doodle",
   },
   {
     breed: "Labrador retriever",
@@ -420,7 +423,11 @@ const breedPriceRows = [
     price: "€ 70",
   },
   { breed: "Welsh terrier", coat: "Ruwharig", price: "€ 90" },
-  { breed: "West Highland white terrier", coat: "Ruwharig", price: "€ 65" },
+  {
+    breed: "West Highland white terrier (Westie)",
+    coat: "Ruwharig",
+    price: "€ 65",
+  },
   { breed: "Whippet", coat: "Korthaar/glad", price: "€ 55" },
   { breed: "Wolfskeeshond", coat: "Dubbele vacht", price: "€ 85" },
   {
