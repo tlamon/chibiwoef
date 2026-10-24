@@ -42,7 +42,7 @@ const services = [
     page: "/diensten/trimbeurt-honden",
     img: HaircutImg,
     title: "Volledige trimbeurt",
-    text: "Uitgebreide was en schuimbeurt, knippen en/of plukken, nageltjes knippen, oortjes.. Check! ✔ Jouw hond verlaat het salon zo glanzend dat andere honden jaloers gaan blaffen.",
+    text: "Uitgebreide was en schuimbeurt, knippen en/of plukken, nageltjes knippen, oortjes.. Check! ✔ Jouw hond verlaat het salon zo glanzend dat andere honden jaloers gaan huilen.",
     theme: "groom",
   },
   {

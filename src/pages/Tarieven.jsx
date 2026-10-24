@@ -87,7 +87,7 @@ const pricingRows = [
   {
     coatType: "Langhaar / bevedering",
     note: "Ontwollen, was-, droog- & knipwerk, nagels knippen en oren reinigen",
-    xs: "€ 55",
+    xs: "€ 60",
     s: "€ 65",
     m: "€ 70",
     l: "€ 75",
@@ -870,7 +870,7 @@ export default function Tarieven() {
                         },
                         {
                           type: "Lion cut",
-                          note: "± 30–45 min · enkel bij extreme klitten of op aanvraag",
+                          note: "± 30–60 min · enkel bij extreme klitten of op aanvraag",
                           price: "€ 55",
                         },
                       ].map((row) => (

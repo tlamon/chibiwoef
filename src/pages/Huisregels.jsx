@@ -27,8 +27,12 @@ const rules = [
     text: "Breng geen zieke of loopse dieren mee, dit ter bescherming van jouw dier en onze andere gasten. We zoeken graag samen naar een nieuw moment om jouw dier te verwennen wanneer hij/zij zich beter voelt.",
   },
   {
+    title: "Dierwelzijn & Respectvolle omgang",
+    text: "Bij ChibiWoef staat het welzijn en het comfort van jouw hond altijd op de eerste plaats. Wij werken uitsluitend op een diervriendelijke en geduldige manier, zonder dwang of harde hand. Elke vorm van mishandeling, fysieke overmacht of agressief gedrag richting de dieren wordt niet getolereerd. Dit leidt tot het onmiddellijk beëindigen van de afspraak.",
+  },
+  {
     title: "Op tijd komen",
-    text: "Kom op tijd, niet te vroeg of te laat. Een vertraging van meer dan 15 minuten kan betekenen dat de afspraak verzet of geannuleerd wordt.",
+    text: "Kom op tijd: niet te vroeg, maar ook niet te laat. Een vertraging van meer dan 15 minuten kan betekenen dat de afspraak verzet of geannuleerd moet worden om de planning voor de volgende klanten niet te verstoren.",
   },
   {
     title: "Annuleren of wijzigen afspraak",
@@ -36,19 +40,19 @@ const rules = [
   },
   {
     title: "Een-op-een begeleiding?",
-    text: "Soms gaan sessies beter een-op-een omdat dit kan helpen om jouw dier zich beter te laten ontspannen en om het vertrouwen met de kapster op te bouwen. Soms werkt het ook averechts en vind het dier juist veel steun en moed bij de aanwezigheid van het baasje. Elk dier is anders en we bekijken individueel wat het beste werkt. ",
+    text: "Soms gaan sessies beter een-op-een omdat dit kan helpen om jouw dier zich beter te laten ontspannen en om het vertrouwen met de kapster op te bouwen. Soms werkt het ook averechts en vindt het dier juist veel steun en moed bij de aanwezigheid van het baasje. Elk dier is anders en we bekijken individueel wat het beste werkt. ",
   },
   {
     title: "Veiligheid eerst",
-    text: "Wij behouden het recht om een trimbeurt stop te zetten wanneer het dier grote stress ervaart en/of agressief gedrag vertoont. We gaan steeds op zoek naar een oplossing die het beste is voor jouw dier, en zullen dit altijd in overleg doen.",
+    text: "Wij behouden het recht om een trimbeurt stop te zetten wanneer het dier grote stress ervaart en/of agressief gedrag vertoont. We gaan steeds op zoek naar een oplossing die het beste is voor jouw dier, en zullen dit altijd in overleg doen. Hierbij rekenen we enkel de tijd die we hebben besteed, de volledige behandeling wordt niet aangerekend.",
+  },
+  {
+    title: "In geval van nood",
+    text: "Bij een noodgeval behouden wij ons het recht voor om direct te handelen in het belang van het dier. Dit kan betekenen dat wij het dier onmiddellijk naar een dierenarts brengen of andere noodzakelijke maatregelen nemen.  Alle hieruit voortvloeiende medische kosten zijn volledig ten laste van de eigenaar.",
   },
   {
     title: "Vlooienbeleid",
-    text: "Bij vlooien kunnen we uw afspraak annuleren of brengen wij extra behandelingskosten in rekening. Het salon moet nadien grondig worden gereinigd en gedesinfecteerd, wat extra tijd en middelen kost. Afspraken die na een vlooienbehandeling plaatsvinden moeten worden geannulleerd. Gelieve uw huisdier daarom vooraf te behandelen tegen deze parasieten om ongemak en extra kosten te voorkomen. Indien dit niet mogelijk is, kunnen we samen zoeken naar een oplossing, zoals het plannen van een vlooienbehandeling op het einde van de dag zodat de rest van de afspraken niet wordt beïnvloed.",
-  },
-  {
-    title: "Betaling",
-    text: "Betaling vindt plaats direct na afloop van de dienst via Cash, Bancontact/Payconiq of PayPal. Gelieve gepast te betalen bij een cash betaling want ik heb niet altijd wisselgeld beschikbaar.",
+    text: "Bij vlooien kunnen we uw afspraak annuleren of brengen wij extra behandelingskosten in rekening. Het salon moet nadien grondig worden gereinigd en gedesinfecteerd, wat extra tijd en middelen kost. Afspraken die na een vlooienbehandeling plaatsvinden moeten worden geannulleerd. Gelieve uw huisdier daarom vooraf te behandelen tegen parasieten om ongemak en extra kosten te voorkomen. Indien dit niet mogelijk is, kunnen we samen zoeken naar een oplossing, zoals het plannen van een vlooienbehandeling op het einde van de dag zodat de rest van de afspraken niet wordt beïnvloed.",
   },
   {
     title: "Mogelijke meerprijs",
@@ -57,6 +61,10 @@ const rules = [
   {
     title: "Foto's op sociale media",
     text: "Ik maak graag foto's van mijn pluizige bezoekers voor op sociale media. Geef gerust aan als u hier bezwaar tegen heeft.",
+  },
+  {
+    title: "Betaling",
+    text: "Betaling vindt plaats direct na afloop van de dienst via Cash, Bancontact/Payconiq of PayPal. Gelieve gepast te betalen bij een cash betaling want ik heb niet altijd wisselgeld beschikbaar.",
   },
 ];
 
@@ -119,7 +127,7 @@ export default function Huisregels() {
           />
         </div>
         <p className="page-hero__sub">
-          Dankjewel voor je begrip{" "}
+          Dankjewel voor je begrip en het vertrouwen!
           <img src={HeartIcon} alt="" aria-hidden="true" />
         </p>
       </div>{" "}

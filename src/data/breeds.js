@@ -1022,7 +1022,7 @@ export const breeds = [
           level: "regelmatig",
           label:
             "🟡 Regelmatig - minimaal 2 tot 3 keer per week thuis borstelen",
-          price: "Was & Splash (Tussentijds): € 40",
+          price: "Was & Splash (Tussentijds): € 35",
           price2: "Volledige trimbeurt (Knippen/Model): € 60",
           price3: "Tussentijdse borstel- & kambeurt: € 20",
         },

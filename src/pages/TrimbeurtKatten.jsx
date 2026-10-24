@@ -93,7 +93,7 @@ export default function TrimbeurtKatten() {
                     <span className="icon">♔</span> Lion cut
                   </p>
                   <p className="dienst__price">€ 55</p>
-                  <p className="dienst__duration">± 30 – 45 min</p>
+                  <p className="dienst__duration">± 30 – 60 min</p>
                   <p className="dienst__examples">
                     Enkel en alleen bij extreme gevallen wordt een kat
                     geschoren.
