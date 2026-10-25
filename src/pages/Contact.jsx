@@ -39,6 +39,14 @@ const EVENT_TYPES = [
     duration: "45 min",
     slug: "kat-verzorging",
   },
+  {
+    id: "gewenning-hond",
+    title: "Gewenning Hond",
+    description:
+      "Een meet & greet sessie om jouw hond te laten wennen aan het salon.",
+    duration: "15 min - 30 min",
+    slug: "gewenning-meet-greet",
+  },
 ];
 
 const INFO = {
