@@ -41,11 +41,17 @@ const EVENT_TYPES = [
   },
   {
     id: "gewenning-hond",
-    title: "Gewenning Hond",
-    description:
-      "Een meet & greet sessie om jouw hond te laten wennen aan het salon.",
+    title: "Gewenning standaard",
+    description: "Een gewenning sessie voor jouw dier.",
     duration: "15 min - 30 min",
-    slug: "gewenning-meet-greet",
+    slug: "gewenning-standaard",
+  },
+  {
+    id: "gewenning-puppy-1",
+    title: "Puppy gewenning deel 1",
+    description: "Een eerste kennismaking met jouw puppy in het salon.",
+    duration: "15 min - 30 min",
+    slug: "gewenning-puppy-1",
   },
 ];
 
