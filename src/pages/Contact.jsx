@@ -13,19 +13,19 @@ const CAL_USERNAME = "chibiwoef";
 
 const EVENT_TYPES = [
   {
-    id: "wassen-drogen",
-    title: "Wash & Splash",
-    description: "Wassen, drogen, borstelen, nagels en oren verzorgen",
-    duration: "45 min - 60 min",
-    slug: "wassen-en-drogen",
-  },
-  {
     id: "volledige-trimbeurt",
     title: "Volledige Trimbeurt",
     description:
       "Wassen, drogen, knippen/scheren/plukken in model of naar wens.",
     duration: "120 min - 180 min",
     slug: "trimbeurt",
+  },
+  {
+    id: "wassen-drogen",
+    title: "Wash & Splash",
+    description: "Wassen, drogen, borstelen, nagels en oren verzorgen",
+    duration: "45 min - 60 min",
+    slug: "wassen-en-drogen",
   },
   {
     id: "kambeurt-hond",
