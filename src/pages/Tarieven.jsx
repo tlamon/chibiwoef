@@ -23,10 +23,10 @@ const treatments = [
     page: "/diensten/kambeurt",
     price: "€ 20 - € 45",
   },
-  {
-    name: "Pawdicure",
-    price: "€ 10",
-  },
+  // {
+  //   name: "Pawdicure",
+  //   price: "€ 10",
+  // },
   {
     name: "Oren reinigen en/of plukken",
     price: "€ 8",
