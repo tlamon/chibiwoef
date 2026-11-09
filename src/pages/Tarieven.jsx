@@ -284,7 +284,7 @@ const breedPriceRows = [
   {
     breed: "Keeshond klein / Dwergkees / Pomeriaan (<5kg)",
     coat: "Dubbele vacht",
-    price: "€ 70",
+    price: "€ 60",
   },
   { breed: "Keeshond middel", coat: "Dubbele vacht", price: "€ 75" },
   {
