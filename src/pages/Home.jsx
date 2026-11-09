@@ -112,7 +112,7 @@ export default function Home() {
             <div className="hero__speech-bubble" aria-hidden="true">
               🎉 15% korting
               <br />
-              t.e.m. november!
+              t.e.m. december!
             </div>
             <div className="hero__img">
               <img
