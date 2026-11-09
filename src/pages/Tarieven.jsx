@@ -151,7 +151,11 @@ const breedPriceRows = [
     price: "€ 60",
   },
   { breed: "Australische herder", coat: "Dubbele vacht", price: "€ 75" },
-  { breed: "Australische herder mini", coat: "Dubbele vacht", price: "€ 65" },
+  {
+    breed: "Australische herder mini / Miniature Amerikaanse herder",
+    coat: "Dubbele vacht",
+    price: "€ 65",
+  },
   { breed: "Australische terrier", coat: "Ruwharig", price: "€ 60" },
   { breed: "Basenji", coat: "Korthaar/glad", price: "€ 55" },
   { breed: "Basset fauve de Bretagne", coat: "Ruwharig", price: "€ 75" },
@@ -288,7 +292,7 @@ const breedPriceRows = [
   },
   { breed: "Keeshond middel", coat: "Dubbele vacht", price: "€ 75" },
   {
-    breed: "Keeshond groot (Wolfskeeshond)",
+    breed: "Keeshond groot / Wolfskeeshond",
     coat: "Dubbele vacht",
     price: "€ 85",
   },
@@ -331,7 +335,11 @@ const breedPriceRows = [
   { breed: "Maltipoo", coat: "Krul/fleece", price: "€ 80" },
   { breed: "Mini Maltezer", coat: "Langhaar/Bevedering", price: "€ 50" },
   { breed: "Mechelse herder", coat: "Korthaar/glad", price: "€ 60" },
-  { breed: "Mini Australische herder", coat: "Dubbele vacht", price: "€ 50" },
+  {
+    breed: "Mini Australische herder / Miniature Amerikaanse herder",
+    coat: "Dubbele vacht",
+    price: "€ 65",
+  },
   {
     breed: "Mopshond",
     coat: "Korthaar/glad",
