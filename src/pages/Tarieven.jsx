@@ -150,7 +150,11 @@ const breedPriceRows = [
     coat: "Korthaar/glad",
     price: "€ 60",
   },
-  { breed: "Australische herder", coat: "Dubbele vacht", price: "€ 75" },
+  {
+    breed: "Australische herder / Aussie",
+    coat: "Dubbele vacht",
+    price: "€ 75",
+  },
   {
     breed: "Australische herder mini / Miniature Amerikaanse herder",
     coat: "Dubbele vacht",
@@ -388,7 +392,11 @@ const breedPriceRows = [
   { breed: "Schotse terrier", coat: "Ruwharig", price: "€ 80" },
   { breed: "Sealyham terrier", coat: "Ruwharig", price: "€ 70" },
   { breed: "Shar pei", coat: "Korthaar/glad", price: "€ 60" },
-  { breed: "Sheltie", coat: "Dubbele vacht", price: "€ 70" },
+  {
+    breed: "Sheltie / Shetland sheepdog",
+    coat: "Dubbele vacht",
+    price: "€ 70",
+  },
   { breed: "Shiba inu", coat: "Dubbele vacht", price: "€ 65" },
   { breed: "Shih-tzu", coat: "Langhaar/Bevedering", price: "€ 65" },
   { breed: "Siberische husky", coat: "Dubbele vacht", price: "€ 80" },

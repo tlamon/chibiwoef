@@ -62,7 +62,8 @@ const INFO = {
 };
 
 const HOURS = [
-  { day: "Maandag", time: "08:00 – 18:00" },
+  { day: "Maandag", time: "10:00 – 19:00" },
+  { day: "Woensdag", time: "08:00 – 18:00" },
   { day: "Donderdag", time: "08:00 – 18:00" },
   { day: "Vrijdag", time: "08:00 – 18:00" },
   { day: "Zaterdag", time: "08:00 – 13:00" },
