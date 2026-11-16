@@ -51,12 +51,16 @@ const treatments = [
     price: "+ € 25",
   },
   {
+    name: "Froe Froe bijknippen",
+    price: "€ 10",
+  },
+  {
     name: "Puppy gewenning – Deel 1: Meet & Greet (15-20 min)",
     page: "/diensten/puppy-gewenning",
     price: "€ 15",
   },
   {
-    name: "Puppy gewenning – Deel 2: Was & Splash (+/- 60 min)",
+    name: "Puppy gewenning – Deel 2: Wasje & Drogen (+/- 60 min)",
     page: "/diensten/puppy-gewenning",
     price: "€ 35 - € 50",
   },
