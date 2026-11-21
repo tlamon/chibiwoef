@@ -182,7 +182,8 @@ const breedPriceRows = [
   { breed: "Bulldog Frans / Frenchy", coat: "Korthaar/glad", price: "€ 55" },
   { breed: "Bulldog Engels", coat: "Korthaar/glad", price: "€ 55" },
   { breed: "Bull terrier", coat: "Korthaar/glad", price: "€ 60" },
-  { breed: "Brussels Griffon", coat: "Ruwharig", price: "€ 70" },
+  { breed: "Brabancon", coat: "Korthaar/glad", price: "€ 45" },
+  { breed: "Brusselse Griffon", coat: "Ruwharig", price: "€ 70" },
   { breed: "Cairn terrier", coat: "Ruwharig", price: "€ 70" },
   {
     breed: "Cavalier King Charles",

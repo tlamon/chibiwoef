@@ -338,6 +338,22 @@ export default function Contact() {
               </div>
             </div>
           </div>
+          <div>
+            <br />
+            <a
+              href="https://www.hondentrimsalon-info.be/chibiwoef"
+              title="Chibiwoef"
+            >
+              Chibiwoef
+            </a>{" "}
+            is ook te vinden op{" "}
+            <a
+              href="https://www.hondentrimsalon-info.be/chibiwoef"
+              title="Chibiwoef"
+            >
+              www.hondentrimsalon-info.be
+            </a>
+          </div>
         </div>
       </section>
     </main>
