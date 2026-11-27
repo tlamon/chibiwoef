@@ -25,10 +25,10 @@ export default function TrimbeurtKatten() {
         <p className="page-hero__sub">
           <i>
             "Owners of dogs will have noticed that, if you provide them with
-            food and water and shelter and affection, they will think you are
+            food, water, shelter and affection, they will think you are
             god. <br />
             Whereas owners of cats are compelled to realize that, if you provide
-            them with food and water and shelter and affection, they draw the
+            them with food, water, shelter and affection, they draw the
             conclusion that <strong>they are gods.</strong>”
           </i>
         </p>
