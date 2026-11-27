@@ -52,7 +52,7 @@ const treatments = [
   },
   {
     name: "Froe Froe bijknippen",
-    price: "€ 10",
+    price: "€ 15",
   },
   {
     name: "Puppy gewenning – Deel 1: Meet & Greet (15-20 min)",
